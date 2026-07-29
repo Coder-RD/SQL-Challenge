@@ -2,21 +2,23 @@
 
 Welcome to my **#100DaysOfCode SQL Challenge** repository! 🎯
 
-This repository contains my daily SQL practice solutions from **HackerRank**, where I solve SQL problems to strengthen my database and query-writing skills.
+This repository contains my daily SQL practice solutions from **HackerRank**, where I solve SQL problems to strengthen my **database** and **query-writing skills**.
+
+---
 
 ## 📌 Goal
 
-- Practice SQL every day for 100 days.
-- Build a strong foundation in SQL and Database Management.
-- Improve problem-solving skills.
-- Maintain consistency through the #100DaysOfCode challenge.
+- 🎯 Practice SQL every day for 100 days.
+- 🛢️ Build a strong foundation in SQL and Database Management.
+- 🧩 Improve problem-solving skills.
+- 📈 Maintain consistency through the **#100DaysOfCode** challenge.
 
 ---
 
 ## 🛠️ Platform
 
-- 💻 HackerRank
-- 📚 SQL (Basic, Intermediate & Advanced)
+- 💻 **HackerRank**
+- 📚 **SQL (Basic, Intermediate & Advanced)**
 
 ---
 
@@ -33,6 +35,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Select All.sql
 │   └── Screenshot.png
 │
+├── Day3-SQL/
+│   ├── Revising the Select Query I.sql
+│   └── Screenshot (181).png
+│
 └── README.md
 ```
 
@@ -44,8 +50,9 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 |-----|-----------|--------|
 | Day 1 | Revising the Select Query II | ✅ Completed |
 | Day 2 | Select All | ✅ Completed |
-| Day 3 | Coming Soon | ⏳ |
+| Day 3 | Revising the Select Query I | ✅ Completed |
 | Day 4 | Coming Soon | ⏳ |
+| Day 5 | Coming Soon | ⏳ |
 | ... | ... | ... |
 | Day 100 | Coming Soon | ⏳ |
 
@@ -53,41 +60,41 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 ## 📖 Topics Covered
 
-- SELECT Statement
-- WHERE Clause
-- Filtering Records
-- Comparison Operators
-- Retrieving All Columns
-- SQL Fundamentals
+- ✅ SELECT Statement
+- ✅ WHERE Clause
+- ✅ Filtering Records
+- ✅ Comparison Operators
+- ✅ Retrieving All Columns (`SELECT *`)
+- ✅ SQL Fundamentals
 
-More SQL concepts will be added throughout the challenge.
+🔜 More SQL concepts will be added throughout the challenge.
 
 ---
 
 ## 🎯 Why This Repository?
 
-This repository documents my SQL learning journey and serves as a collection of solutions that demonstrate my progress in database querying and problem-solving.
+This repository documents my SQL learning journey and serves as a collection of solutions that demonstrate my progress in **database querying**, **logical thinking**, and **problem-solving**.
 
 ---
 
 ## 🧠 Skills I'm Building
 
-- SQL Queries
-- Database Fundamentals
-- Data Filtering
-- Query Optimization
-- Logical Thinking
-- Problem Solving
+- 🛢️ SQL Queries
+- 🗄️ Database Fundamentals
+- 🔍 Data Filtering
+- ⚡ Query Optimization
+- 🧩 Logical Thinking
+- 💡 Problem Solving
+- 📊 Data Analysis
 
 ---
 
 ## 📅 Challenge Progress
 
-✔ Day 1 Completed
-
-✔ Day 2 Completed
-
-⏳ Continuing every day...
+- ✅ Day 1 Completed
+- ✅ Day 2 Completed
+- ✅ Day 3 Completed
+- ⏳ Continuing every day...
 
 ---
 
@@ -95,8 +102,10 @@ This repository documents my SQL learning journey and serves as a collection of 
 
 If you like this repository, consider giving it a ⭐.
 
-Let's learn and grow together!
+Let's learn, build, and grow together! 🚀
 
 ---
 
-### #100DaysOfCode #SQL #HackerRank #Database #LearningInPublic #GitHub #CodingJourney
+### 🔖 Hashtags
+
+**#100DaysOfCode #SQL #HackerRank #Database #LearningInPublic #GitHub #CodingJourney #SQLChallenge #Developer #OpenToWork**
