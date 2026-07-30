@@ -1,28 +1,29 @@
-# 🚀 100 Days of SQL Challenge
+# 🗄️ 100 Days of SQL Challenge
 
 Welcome to my **#100DaysOfCode SQL Challenge** repository! 🎯
 
-This repository contains my daily SQL practice solutions from **HackerRank**, where I solve SQL problems to strengthen my **database** and **query-writing skills**.
+This repository contains my daily SQL practice solutions from **HackerRank**, where I solve real-world SQL problems to strengthen my database knowledge, query-writing skills, and logical thinking.
 
 ---
 
-## 📌 Goal
+# 🎯 Goal
 
-- 🎯 Practice SQL every day for 100 days.
-- 🛢️ Build a strong foundation in SQL and Database Management.
-- 🧩 Improve problem-solving skills.
-- 📈 Maintain consistency through the **#100DaysOfCode** challenge.
-
----
-
-## 🛠️ Platform
-
-- 💻 **HackerRank**
-- 📚 **SQL (Basic, Intermediate & Advanced)**
+- 🛢️ Practice SQL every day for 100 days.
+- 📚 Build a strong foundation in SQL and Database Management.
+- 🧩 Improve problem-solving and analytical thinking.
+- 📈 Stay consistent with the **#100DaysOfCode** challenge.
+- 🚀 Become proficient in writing efficient SQL queries.
 
 ---
 
-## 📂 Repository Structure
+# 🛠️ Platform
+
+- 💻 HackerRank
+- 🗄️ SQL (Basic, Intermediate & Advanced)
+
+---
+
+# 📂 Repository Structure
 
 ```text
 100DaysOfSQL/
@@ -39,73 +40,120 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Revising the Select Query I.sql
 │   └── Screenshot (181).png
 │
+├── Day4-SQL/
+│   ├── Select By ID.sql
+│   └── Screenshot (186).png
+│
 └── README.md
 ```
 
 ---
 
-## ✅ Progress
+# ✅ Progress
 
 | Day | Challenge | Status |
-|-----|-----------|--------|
-| Day 1 | Revising the Select Query II | ✅ Completed |
-| Day 2 | Select All | ✅ Completed |
-| Day 3 | Revising the Select Query I | ✅ Completed |
-| Day 4 | Coming Soon | ⏳ |
-| Day 5 | Coming Soon | ⏳ |
+|------|-----------|--------|
+| ✅ Day 1 | Revising the Select Query II | Completed |
+| ✅ Day 2 | Select All | Completed |
+| ✅ Day 3 | Revising the Select Query I | Completed |
+| ✅ Day 4 | Select By ID | Completed |
+| ⏳ Day 5 | Coming Soon | Pending |
 | ... | ... | ... |
-| Day 100 | Coming Soon | ⏳ |
+| 🎯 Day 100 | Coming Soon | Pending |
 
 ---
 
-## 📖 Topics Covered
+# 📖 Topics Covered
 
 - ✅ SELECT Statement
+- ✅ SELECT *
 - ✅ WHERE Clause
 - ✅ Filtering Records
 - ✅ Comparison Operators
-- ✅ Retrieving All Columns (`SELECT *`)
+- ✅ Retrieving Data by ID
 - ✅ SQL Fundamentals
+- ✅ Basic Query Writing
 
 🔜 More SQL concepts will be added throughout the challenge.
 
 ---
 
-## 🎯 Why This Repository?
-
-This repository documents my SQL learning journey and serves as a collection of solutions that demonstrate my progress in **database querying**, **logical thinking**, and **problem-solving**.
-
----
-
-## 🧠 Skills I'm Building
+# 🧠 Skills I'm Building
 
 - 🛢️ SQL Queries
 - 🗄️ Database Fundamentals
 - 🔍 Data Filtering
 - ⚡ Query Optimization
+- 📊 Data Retrieval
 - 🧩 Logical Thinking
 - 💡 Problem Solving
-- 📊 Data Analysis
+- 📈 Data Analysis
 
 ---
 
-## 📅 Challenge Progress
+# 📅 Challenge Progress
 
 - ✅ Day 1 Completed
 - ✅ Day 2 Completed
 - ✅ Day 3 Completed
+- ✅ Day 4 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-## 🌟 Connect With Me
+# 🎯 Why This Repository?
 
-If you like this repository, consider giving it a ⭐.
+This repository documents my SQL learning journey and showcases my daily progress while solving HackerRank SQL challenges.
 
-Let's learn, build, and grow together! 🚀
+It serves as a portfolio of my database skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
 
 ---
 
-### 🔖 Hashtags
+# 🌟 Future Topics
 
-**#100DaysOfCode #SQL #HackerRank #Database #LearningInPublic #GitHub #CodingJourney #SQLChallenge #Developer #OpenToWork**
+- 🔹 ORDER BY
+- 🔹 DISTINCT
+- 🔹 LIMIT
+- 🔹 Aggregate Functions
+- 🔹 GROUP BY
+- 🔹 HAVING
+- 🔹 INNER JOIN
+- 🔹 LEFT JOIN
+- 🔹 RIGHT JOIN
+- 🔹 FULL JOIN
+- 🔹 Subqueries
+- 🔹 Views
+- 🔹 Stored Procedures
+- 🔹 Window Functions
+- 🔹 CTE (Common Table Expressions)
+
+---
+
+# 📈 Current Statistics
+
+- 📅 Days Completed: **4 / 100**
+- 💻 Challenges Solved: **4**
+- 🗄️ Language: **SQL**
+- 🎯 Progress: **4% Complete**
+
+---
+
+# ⭐ Support
+
+If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
+
+Your support motivates me to continue learning and sharing my journey! 🚀
+
+---
+
+# 🤝 Connect With Me
+
+Let's learn, build, and grow together! 🌱
+
+📌 **GitHub:** https://github.com/Coder-RD
+
+---
+
+# 🔖 Hashtags
+
+`#100DaysOfCode` `#SQL` `#HackerRank` `#Database` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#OpenToWork`
