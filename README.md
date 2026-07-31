@@ -44,6 +44,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Select By ID.sql
 │   └── Screenshot (186).png
 │
+├── Day5-SQL/
+│   ├── Japanese Cities' Attributes.sql
+│   └── Screenshot (188).png
+│
 └── README.md
 ```
 
@@ -57,7 +61,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 2 | Select All | Completed |
 | ✅ Day 3 | Revising the Select Query I | Completed |
 | ✅ Day 4 | Select By ID | Completed |
-| ⏳ Day 5 | Coming Soon | Pending |
+| ✅ Day 5 | Japanese Cities' Attributes | Completed |
+| ⏳ Day 6 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -71,6 +76,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Filtering Records
 - ✅ Comparison Operators
 - ✅ Retrieving Data by ID
+- ✅ Basic Data Selection
 - ✅ SQL Fundamentals
 - ✅ Basic Query Writing
 
@@ -96,7 +102,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 1 Completed
 - ✅ Day 2 Completed
 - ✅ Day 3 Completed
-- ✅ Day 4 Completed 🎉
+- ✅ Day 4 Completed
+- ✅ Day 5 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -131,10 +138,10 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **4 / 100**
-- 💻 Challenges Solved: **4**
+- 📅 Days Completed: **5 / 100**
+- 💻 Challenges Solved: **5**
 - 🗄️ Language: **SQL**
-- 🎯 Progress: **4% Complete**
+- 🎯 Progress: **5% Complete** 🚀
 
 ---
 
