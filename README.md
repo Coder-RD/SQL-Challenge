@@ -52,6 +52,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Japanese Cities' Names.sql
 │   └── Screenshot (189).png
 │
+├── Day7-SQL/
+│   ├── Weather Observation Station 1.sql
+│   └── Screenshot (191).png
+│
 └── README.md
 ```
 
@@ -67,7 +71,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 4 | Select By ID | Completed |
 | ✅ Day 5 | Japanese Cities' Attributes | Completed |
 | ✅ Day 6 | Japanese Cities' Names | Completed |
-| ⏳ Day 7 | Coming Soon | Pending |
+| ✅ Day 7 | Weather Observation Station 1 | Completed |
+| ⏳ Day 8 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -86,6 +91,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Querying Specific Columns
 - ✅ Data Retrieval
 - ✅ Basic Query Writing
+- ✅ Retrieving Multiple Rows
 
 🔜 More SQL concepts will be added throughout the challenge.
 
@@ -111,7 +117,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 3 Completed
 - ✅ Day 4 Completed
 - ✅ Day 5 Completed
-- ✅ Day 6 Completed 🎉
+- ✅ Day 6 Completed
+- ✅ Day 7 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -146,10 +153,10 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **6 / 100**
-- 💻 Challenges Solved: **6**
+- 📅 Days Completed: **7 / 100**
+- 💻 Challenges Solved: **7**
 - 🗄️ Language: **SQL**
-- 🎯 Progress: **6% Complete** 🚀
+- 🎯 Progress: **7% Complete** 🚀
 
 ---
 
