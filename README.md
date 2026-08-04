@@ -60,6 +60,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Weather Observation Station 3.sql
 │   └── Screenshot (198).png
 │
+├── Day9-SQL/
+│   ├── Weather Observation Station 4.sql
+│   └── Screenshot (201).png
+│
 └── README.md
 ```
 
@@ -77,7 +81,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 6 | Japanese Cities' Names | Completed |
 | ✅ Day 7 | Weather Observation Station 1 | Completed |
 | ✅ Day 8 | Weather Observation Station 3 | Completed |
-| ⏳ Day 9 | Coming Soon | Pending |
+| ✅ Day 9 | Weather Observation Station 4 | Completed |
+| ⏳ Day 10 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -98,6 +103,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ MOD() Function
 - ✅ Filtering Even IDs
 - ✅ Removing Duplicate Records
+- ✅ String Functions
+- ✅ DISTINCT with String Operations
 
 🔜 More SQL concepts will be added throughout the challenge.
 
@@ -125,7 +132,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 5 Completed
 - ✅ Day 6 Completed
 - ✅ Day 7 Completed
-- ✅ Day 8 Completed 🎉
+- ✅ Day 8 Completed
+- ✅ Day 9 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -162,10 +170,10 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **8 / 100**
-- 💻 Challenges Solved: **8**
+- 📅 Days Completed: **9 / 100**
+- 💻 Challenges Solved: **9**
 - 🗄️ Language: **SQL**
-- 🎯 Progress: **8% Complete** 🚀
+- 🎯 Progress: **9% Complete** 🚀
 
 ---
 
