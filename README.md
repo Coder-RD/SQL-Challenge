@@ -64,6 +64,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Weather Observation Station 4.sql
 │   └── Screenshot (201).png
 │
+├── Day10-SQL/
+│   ├── Weather Observation Station 5.sql
+│   └── Screenshot (204).png
+│
 └── README.md
 ```
 
@@ -82,7 +86,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 7 | Weather Observation Station 1 | Completed |
 | ✅ Day 8 | Weather Observation Station 3 | Completed |
 | ✅ Day 9 | Weather Observation Station 4 | Completed |
-| ⏳ Day 10 | Coming Soon | Pending |
+| ✅ Day 10 | Weather Observation Station 5 | Completed |
+| ⏳ Day 11 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -105,6 +110,12 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Removing Duplicate Records
 - ✅ String Functions
 - ✅ DISTINCT with String Operations
+- ✅ LENGTH() Function
+- ✅ ORDER BY Clause
+- ✅ LIMIT Clause
+- ✅ Sorting Records
+- ✅ Alphabetical Ordering
+- ✅ Finding Minimum & Maximum String Length
 
 🔜 More SQL concepts will be added throughout the challenge.
 
@@ -116,6 +127,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 🗄️ Database Fundamentals
 - 🔍 Data Filtering
 - 📊 Data Retrieval
+- 📑 Data Sorting
+- 🔠 String Manipulation
 - ⚡ Query Optimization
 - 🧩 Logical Thinking
 - 💡 Problem Solving
@@ -133,7 +146,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 6 Completed
 - ✅ Day 7 Completed
 - ✅ Day 8 Completed
-- ✅ Day 9 Completed 🎉
+- ✅ Day 9 Completed
+- ✅ Day 10 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -148,9 +162,6 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 🌟 Future Topics
 
-- 🔹 ORDER BY
-- 🔹 DISTINCT (Advanced Usage)
-- 🔹 LIMIT
 - 🔹 Aggregate Functions
 - 🔹 GROUP BY
 - 🔹 HAVING
@@ -170,10 +181,10 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **9 / 100**
-- 💻 Challenges Solved: **9**
+- 📅 Days Completed: **10 / 100**
+- 💻 Challenges Solved: **10**
 - 🗄️ Language: **SQL**
-- 🎯 Progress: **9% Complete** 🚀
+- 🎯 Progress: **10% Complete** 🚀
 
 ---
 
