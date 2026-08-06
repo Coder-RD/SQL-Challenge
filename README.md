@@ -68,6 +68,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Weather Observation Station 5.sql
 │   └── Screenshot (204).png
 │
+├── Day11-SQL/
+│   ├── Weather Observation Station 6.sql
+│   └── Screenshot (205).png
+│
 └── README.md
 ```
 
@@ -87,7 +91,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 8 | Weather Observation Station 3 | Completed |
 | ✅ Day 9 | Weather Observation Station 4 | Completed |
 | ✅ Day 10 | Weather Observation Station 5 | Completed |
-| ⏳ Day 11 | Coming Soon | Pending |
+| ✅ Day 11 | Weather Observation Station 6 | Completed |
+| ⏳ Day 12 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -116,6 +121,11 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Sorting Records
 - ✅ Alphabetical Ordering
 - ✅ Finding Minimum & Maximum String Length
+- ✅ LIKE Operator
+- ✅ Pattern Matching
+- ✅ Filtering Data with Vowels
+- ✅ Wildcard Characters (`%`)
+- ✅ Query Optimization
 
 🔜 More SQL concepts will be added throughout the challenge.
 
@@ -129,6 +139,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 📊 Data Retrieval
 - 📑 Data Sorting
 - 🔠 String Manipulation
+- 🔍 Pattern Matching
 - ⚡ Query Optimization
 - 🧩 Logical Thinking
 - 💡 Problem Solving
@@ -147,7 +158,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 7 Completed
 - ✅ Day 8 Completed
 - ✅ Day 9 Completed
-- ✅ Day 10 Completed 🎉
+- ✅ Day 10 Completed
+- ✅ Day 11 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -181,10 +193,10 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **10 / 100**
-- 💻 Challenges Solved: **10**
+- 📅 Days Completed: **11 / 100**
+- 💻 Challenges Solved: **11**
 - 🗄️ Language: **SQL**
-- 🎯 Progress: **10% Complete** 🚀
+- 🎯 Progress: **11% Complete** 🚀
 
 ---
 
