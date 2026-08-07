@@ -72,6 +72,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Weather Observation Station 6.sql
 │   └── Screenshot (205).png
 │
+├── Day12-SQL/
+│   ├── Weather Observation Station 7.sql
+│   └── Screenshot (209).png
+│
 └── README.md
 ```
 
@@ -80,7 +84,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 # ✅ Progress
 
 | Day | Challenge | Status |
-|------|-----------|--------|
+|------|-----------|---------|
 | ✅ Day 1 | Revising the Select Query II | Completed |
 | ✅ Day 2 | Select All | Completed |
 | ✅ Day 3 | Revising the Select Query I | Completed |
@@ -92,7 +96,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 9 | Weather Observation Station 4 | Completed |
 | ✅ Day 10 | Weather Observation Station 5 | Completed |
 | ✅ Day 11 | Weather Observation Station 6 | Completed |
-| ⏳ Day 12 | Coming Soon | Pending |
+| ✅ Day 12 | Weather Observation Station 7 | Completed |
+| ⏳ Day 13 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -124,10 +129,15 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ LIKE Operator
 - ✅ Pattern Matching
 - ✅ Filtering Data with Vowels
+- ✅ REGEXP Operator
+- ✅ Beginning & Ending Pattern Matching
+- ✅ Matching Characters at the End of Strings (`$`)
+- ✅ DISTINCT with Pattern Matching
+- ✅ String Filtering Using REGEXP
 - ✅ Wildcard Characters (`%`)
 - ✅ Query Optimization
 
-🔜 More SQL concepts will be added throughout the challenge.
+🔜 More SQL concepts will be added throughout this challenge.
 
 ---
 
@@ -140,6 +150,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 📑 Data Sorting
 - 🔠 String Manipulation
 - 🔍 Pattern Matching
+- 🔤 Regular Expressions (REGEXP)
+- 📝 String Filtering
 - ⚡ Query Optimization
 - 🧩 Logical Thinking
 - 💡 Problem Solving
@@ -159,7 +171,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 8 Completed
 - ✅ Day 9 Completed
 - ✅ Day 10 Completed
-- ✅ Day 11 Completed 🎉
+- ✅ Day 11 Completed
+- ✅ Day 12 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -181,22 +194,31 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 - 🔹 LEFT JOIN
 - 🔹 RIGHT JOIN
 - 🔹 FULL JOIN
+- 🔹 SELF JOIN
+- 🔹 CROSS JOIN
 - 🔹 UNION
+- 🔹 UNION ALL
 - 🔹 CASE Statements
-- 🔹 Subqueries
+- 🔹 Nested Queries
+- 🔹 Correlated Subqueries
+- 🔹 Common Table Expressions (CTEs)
 - 🔹 Views
 - 🔹 Stored Procedures
+- 🔹 Triggers
+- 🔹 Indexes
 - 🔹 Window Functions
-- 🔹 CTE (Common Table Expressions)
+- 🔹 Ranking Functions
+- 🔹 Transactions
+- 🔹 Database Optimization
 
 ---
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **11 / 100**
-- 💻 Challenges Solved: **11**
+- 📅 Days Completed: **12 / 100**
+- 💻 Challenges Solved: **12**
 - 🗄️ Language: **SQL**
-- 🎯 Progress: **11% Complete** 🚀
+- 🎯 Progress: **12% Complete** 🚀
 
 ---
 
@@ -218,4 +240,4 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#SQL` `#HackerRank` `#Database` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#OpenToWork`
+`#100DaysOfCode` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#OpenToWork`
