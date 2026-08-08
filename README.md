@@ -16,10 +16,12 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 ---
 
-# 🛠️ Platform
+# 🛠️ Platform & Technology
 
-- 💻 HackerRank
-- 🗄️ SQL (Basic, Intermediate & Advanced)
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 📊 **Level:** Basic → Intermediate → Advanced
+- 🧠 **Focus:** Database, Query Writing & Problem Solving
 
 ---
 
@@ -76,168 +78,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Weather Observation Station 7.sql
 │   └── Screenshot (209).png
 │
+├── Day13-SQL/
+│   ├── Weather Observation Station 8.sql
+│   └── Screenshot (210).png
+│
 └── README.md
-```
-
----
-
-# ✅ Progress
-
-| Day | Challenge | Status |
-|------|-----------|---------|
-| ✅ Day 1 | Revising the Select Query II | Completed |
-| ✅ Day 2 | Select All | Completed |
-| ✅ Day 3 | Revising the Select Query I | Completed |
-| ✅ Day 4 | Select By ID | Completed |
-| ✅ Day 5 | Japanese Cities' Attributes | Completed |
-| ✅ Day 6 | Japanese Cities' Names | Completed |
-| ✅ Day 7 | Weather Observation Station 1 | Completed |
-| ✅ Day 8 | Weather Observation Station 3 | Completed |
-| ✅ Day 9 | Weather Observation Station 4 | Completed |
-| ✅ Day 10 | Weather Observation Station 5 | Completed |
-| ✅ Day 11 | Weather Observation Station 6 | Completed |
-| ✅ Day 12 | Weather Observation Station 7 | Completed |
-| ⏳ Day 13 | Coming Soon | Pending |
-| ... | ... | ... |
-| 🎯 Day 100 | Coming Soon | Pending |
-
----
-
-# 📖 Topics Covered
-
-- ✅ SELECT Statement
-- ✅ SELECT *
-- ✅ WHERE Clause
-- ✅ Filtering Records
-- ✅ Comparison Operators
-- ✅ Retrieving Data by ID
-- ✅ Basic Data Selection
-- ✅ Querying Specific Columns
-- ✅ Data Retrieval
-- ✅ DISTINCT Keyword
-- ✅ MOD() Function
-- ✅ Filtering Even IDs
-- ✅ Removing Duplicate Records
-- ✅ String Functions
-- ✅ DISTINCT with String Operations
-- ✅ LENGTH() Function
-- ✅ ORDER BY Clause
-- ✅ LIMIT Clause
-- ✅ Sorting Records
-- ✅ Alphabetical Ordering
-- ✅ Finding Minimum & Maximum String Length
-- ✅ LIKE Operator
-- ✅ Pattern Matching
-- ✅ Filtering Data with Vowels
-- ✅ REGEXP Operator
-- ✅ Beginning & Ending Pattern Matching
-- ✅ Matching Characters at the End of Strings (`$`)
-- ✅ DISTINCT with Pattern Matching
-- ✅ String Filtering Using REGEXP
-- ✅ Wildcard Characters (`%`)
-- ✅ Query Optimization
-
-🔜 More SQL concepts will be added throughout this challenge.
-
----
-
-# 🧠 Skills I'm Building
-
-- 🛢️ SQL Queries
-- 🗄️ Database Fundamentals
-- 🔍 Data Filtering
-- 📊 Data Retrieval
-- 📑 Data Sorting
-- 🔠 String Manipulation
-- 🔍 Pattern Matching
-- 🔤 Regular Expressions (REGEXP)
-- 📝 String Filtering
-- ⚡ Query Optimization
-- 🧩 Logical Thinking
-- 💡 Problem Solving
-- 📈 Data Analysis
-
----
-
-# 📅 Challenge Progress
-
-- ✅ Day 1 Completed
-- ✅ Day 2 Completed
-- ✅ Day 3 Completed
-- ✅ Day 4 Completed
-- ✅ Day 5 Completed
-- ✅ Day 6 Completed
-- ✅ Day 7 Completed
-- ✅ Day 8 Completed
-- ✅ Day 9 Completed
-- ✅ Day 10 Completed
-- ✅ Day 11 Completed
-- ✅ Day 12 Completed 🎉
-- ⏳ Continuing every day...
-
----
-
-# 🎯 Why This Repository?
-
-This repository documents my SQL learning journey and showcases my daily progress while solving HackerRank SQL challenges.
-
-It serves as a portfolio of my database skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
-
----
-
-# 🌟 Future Topics
-
-- 🔹 Aggregate Functions
-- 🔹 GROUP BY
-- 🔹 HAVING
-- 🔹 INNER JOIN
-- 🔹 LEFT JOIN
-- 🔹 RIGHT JOIN
-- 🔹 FULL JOIN
-- 🔹 SELF JOIN
-- 🔹 CROSS JOIN
-- 🔹 UNION
-- 🔹 UNION ALL
-- 🔹 CASE Statements
-- 🔹 Nested Queries
-- 🔹 Correlated Subqueries
-- 🔹 Common Table Expressions (CTEs)
-- 🔹 Views
-- 🔹 Stored Procedures
-- 🔹 Triggers
-- 🔹 Indexes
-- 🔹 Window Functions
-- 🔹 Ranking Functions
-- 🔹 Transactions
-- 🔹 Database Optimization
-
----
-
-# 📈 Current Statistics
-
-- 📅 Days Completed: **12 / 100**
-- 💻 Challenges Solved: **12**
-- 🗄️ Language: **SQL**
-- 🎯 Progress: **12% Complete** 🚀
-
----
-
-# ⭐ Support
-
-If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
-
-Your support motivates me to continue learning and sharing my journey! 🚀
-
----
-
-# 🤝 Connect With Me
-
-Let's learn, build, and grow together! 🌱
-
-📌 **GitHub:** https://github.com/Coder-RD
-
----
-
-# 🔖 Hashtags
-
-`#100DaysOfCode` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#OpenToWork`
