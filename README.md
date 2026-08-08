@@ -16,12 +16,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 ---
 
-# 🛠️ Platform & Technology
+# 🛠️ Platform
 
-- 💻 **Platform:** HackerRank
-- 🗄️ **Language:** SQL
-- 📊 **Level:** Basic → Intermediate → Advanced
-- 🧠 **Focus:** Database, Query Writing & Problem Solving
+- 💻 HackerRank
+- 🗄️ SQL (Basic, Intermediate & Advanced)
 
 ---
 
@@ -83,3 +81,227 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   └── Screenshot (210).png
 │
 └── README.md
+```
+
+---
+
+# ✅ Progress
+
+| Day | Challenge | Status |
+|---|---|---|
+| ✅ Day 1 | Revising the Select Query II | Completed |
+| ✅ Day 2 | Select All | Completed |
+| ✅ Day 3 | Revising the Select Query I | Completed |
+| ✅ Day 4 | Select By ID | Completed |
+| ✅ Day 5 | Japanese Cities' Attributes | Completed |
+| ✅ Day 6 | Japanese Cities' Names | Completed |
+| ✅ Day 7 | Weather Observation Station 1 | Completed |
+| ✅ Day 8 | Weather Observation Station 3 | Completed |
+| ✅ Day 9 | Weather Observation Station 4 | Completed |
+| ✅ Day 10 | Weather Observation Station 5 | Completed |
+| ✅ Day 11 | Weather Observation Station 6 | Completed |
+| ✅ Day 12 | Weather Observation Station 7 | Completed |
+| ✅ Day 13 | Weather Observation Station 8 | Completed |
+| ⏳ Day 14 | Coming Soon | Pending |
+| ... | ... | ... |
+| 🎯 Day 100 | Coming Soon | Pending |
+
+---
+
+# 📖 Topics Covered
+
+- ✅ SELECT Statement
+- ✅ SELECT *
+- ✅ WHERE Clause
+- ✅ Filtering Records
+- ✅ Comparison Operators
+- ✅ Retrieving Data by ID
+- ✅ Basic Data Selection
+- ✅ Querying Specific Columns
+- ✅ Data Retrieval
+- ✅ DISTINCT Keyword
+- ✅ MOD() Function
+- ✅ Filtering Even IDs
+- ✅ Removing Duplicate Records
+- ✅ String Functions
+- ✅ DISTINCT with String Operations
+- ✅ LENGTH() Function
+- ✅ ORDER BY Clause
+- ✅ LIMIT Clause
+- ✅ Sorting Records
+- ✅ Alphabetical Ordering
+- ✅ Finding Minimum & Maximum String Length
+- ✅ LIKE Operator
+- ✅ Pattern Matching
+- ✅ Filtering Data with Vowels
+- ✅ REGEXP Operator
+- ✅ Beginning & Ending Pattern Matching
+- ✅ Matching Characters at the End of Strings (`$`)
+- ✅ DISTINCT with Pattern Matching
+- ✅ String Filtering Using REGEXP
+- ✅ Wildcard Characters (`%`)
+- ✅ Logical Operators
+- ✅ AND / OR Conditions
+- ✅ First & Last Character Filtering
+- ✅ Query Optimization
+
+🔜 More SQL concepts will be added throughout this challenge.
+
+---
+
+# 🧠 Skills I'm Building
+
+- 🛢️ SQL Queries
+- 🗄️ Database Fundamentals
+- 🔍 Data Filtering
+- 📊 Data Retrieval
+- 📑 Data Sorting
+- 🔠 String Manipulation
+- 🔍 Pattern Matching
+- 🔤 Regular Expressions (REGEXP)
+- 📝 String Filtering
+- ⚡ Query Optimization
+- 🧩 Logical Thinking
+- 💡 Problem Solving
+- 📈 Data Analysis
+
+---
+
+# 📅 Challenge Progress
+
+- ✅ Day 1 Completed
+- ✅ Day 2 Completed
+- ✅ Day 3 Completed
+- ✅ Day 4 Completed
+- ✅ Day 5 Completed
+- ✅ Day 6 Completed
+- ✅ Day 7 Completed
+- ✅ Day 8 Completed
+- ✅ Day 9 Completed
+- ✅ Day 10 Completed
+- ✅ Day 11 Completed
+- ✅ Day 12 Completed
+- ✅ Day 13 Completed 🎉
+- ⏳ Continuing every day...
+
+---
+
+# 🆕 Day 13 – Weather Observation Station 8
+
+### 🎯 Challenge
+
+**Weather Observation Station 8**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 `SELECT`
+- 🔹 `DISTINCT`
+- 🔹 `WHERE`
+- 🔹 String Functions
+- 🔹 Pattern Matching
+- 🔹 Vowel Filtering
+- 🔹 Logical Conditions
+- 🔹 First Character Checking
+- 🔹 Last Character Checking
+
+### 📂 Files Added
+
+```text
+Day13-SQL/
+│
+├── Weather Observation Station 8.sql
+└── Screenshot (210).png
+```
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another SQL challenge completed as part of my **100 Days of SQL Challenge**.
+
+---
+
+# 🎯 Why This Repository?
+
+This repository documents my SQL learning journey and showcases my daily progress while solving HackerRank SQL challenges.
+
+It serves as a portfolio of my database skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
+
+---
+
+# 🌟 Future Topics
+
+- 🔹 Aggregate Functions
+- 🔹 GROUP BY
+- 🔹 HAVING
+- 🔹 INNER JOIN
+- 🔹 LEFT JOIN
+- 🔹 RIGHT JOIN
+- 🔹 FULL JOIN
+- 🔹 SELF JOIN
+- 🔹 CROSS JOIN
+- 🔹 UNION
+- 🔹 UNION ALL
+- 🔹 CASE Statements
+- 🔹 Nested Queries
+- 🔹 Correlated Subqueries
+- 🔹 Common Table Expressions (CTEs)
+- 🔹 Views
+- 🔹 Stored Procedures
+- 🔹 Triggers
+- 🔹 Indexes
+- 🔹 Window Functions
+- 🔹 Ranking Functions
+- 🔹 Transactions
+- 🔹 Database Optimization
+
+---
+
+# 📈 Current Statistics
+
+- 📅 Days Completed: **13 / 100**
+- 💻 Challenges Solved: **13**
+- 🗄️ Language: **SQL**
+- 🏆 Platform: **HackerRank**
+- 🎯 Progress: **13% Complete** 🚀
+
+---
+
+# 🔥 Current Streak
+
+**13 Days of SQL Practice Completed! 🎉**
+
+> 13 days down, 87 more to go! 🚀
+
+Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
+
+---
+
+# ⭐ Support
+
+If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
+
+Your support motivates me to continue learning and sharing my journey! 🚀
+
+---
+
+# 🤝 Connect With Me
+
+Let's learn, build, and grow together! 🌱
+
+📌 **GitHub:**  
+https://github.com/Coder-RD
+
+---
+
+# 🔖 Hashtags
+
+`#100DaysOfCode` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#OpenToWork`
