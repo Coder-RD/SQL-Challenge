@@ -80,6 +80,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 │   ├── Weather Observation Station 8.sql
 │   └── Screenshot (210).png
 │
+├── Day14-SQL/
+│   ├── Weather Observation Station 9.sql
+│   └── Screenshot (213).png
+│
 └── README.md
 ```
 
@@ -87,24 +91,25 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 # ✅ Progress
 
-| Day | Challenge | Status |
-|---|---|---|
-| ✅ Day 1 | Revising the Select Query II | Completed |
-| ✅ Day 2 | Select All | Completed |
-| ✅ Day 3 | Revising the Select Query I | Completed |
-| ✅ Day 4 | Select By ID | Completed |
-| ✅ Day 5 | Japanese Cities' Attributes | Completed |
-| ✅ Day 6 | Japanese Cities' Names | Completed |
-| ✅ Day 7 | Weather Observation Station 1 | Completed |
-| ✅ Day 8 | Weather Observation Station 3 | Completed |
-| ✅ Day 9 | Weather Observation Station 4 | Completed |
-| ✅ Day 10 | Weather Observation Station 5 | Completed |
-| ✅ Day 11 | Weather Observation Station 6 | Completed |
-| ✅ Day 12 | Weather Observation Station 7 | Completed |
-| ✅ Day 13 | Weather Observation Station 8 | Completed |
-| ⏳ Day 14 | Coming Soon | Pending |
-| ... | ... | ... |
-| 🎯 Day 100 | Coming Soon | Pending |
+| Day        | Challenge                     | Status    |
+| ---------- | ----------------------------- | --------- |
+| ✅ Day 1    | Revising the Select Query II  | Completed |
+| ✅ Day 2    | Select All                    | Completed |
+| ✅ Day 3    | Revising the Select Query I   | Completed |
+| ✅ Day 4    | Select By ID                  | Completed |
+| ✅ Day 5    | Japanese Cities' Attributes   | Completed |
+| ✅ Day 6    | Japanese Cities' Names        | Completed |
+| ✅ Day 7    | Weather Observation Station 1 | Completed |
+| ✅ Day 8    | Weather Observation Station 3 | Completed |
+| ✅ Day 9    | Weather Observation Station 4 | Completed |
+| ✅ Day 10   | Weather Observation Station 5 | Completed |
+| ✅ Day 11   | Weather Observation Station 6 | Completed |
+| ✅ Day 12   | Weather Observation Station 7 | Completed |
+| ✅ Day 13   | Weather Observation Station 8 | Completed |
+| ✅ Day 14   | Weather Observation Station 9 | Completed |
+| ⏳ Day 15   | Coming Soon                   | Pending   |
+| ...        | ...                           | ...       |
+| 🎯 Day 100 | Coming Soon                   | Pending   |
 
 ---
 
@@ -181,16 +186,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 10 Completed
 - ✅ Day 11 Completed
 - ✅ Day 12 Completed
-- ✅ Day 13 Completed 🎉
+- ✅ Day 13 Completed
+- ✅ Day 14 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 13 – Weather Observation Station 8
+# 🆕 Day 14 – Weather Observation Station 9
 
 ### 🎯 Challenge
 
-**Weather Observation Station 8**
+**Weather Observation Station 9**
 
 ### 💻 Platform
 
@@ -205,27 +211,28 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 🔹 `SELECT`
 - 🔹 `DISTINCT`
 - 🔹 `WHERE`
-- 🔹 String Functions
-- 🔹 Pattern Matching
-- 🔹 Vowel Filtering
+- 🔹 `REGEXP`
+- 🔹 Regular Expression Pattern Matching
+- 🔹 String Filtering
+- 🔹 Filtering City Names
+- 🔹 Character-Based Filtering
 - 🔹 Logical Conditions
-- 🔹 First Character Checking
-- 🔹 Last Character Checking
+- 🔹 SQL Pattern Matching
 
 ### 📂 Files Added
 
 ```text
-Day13-SQL/
+Day14-SQL/
 │
-├── Weather Observation Station 8.sql
-└── Screenshot (210).png
+├── Weather Observation Station 9.sql
+└── Screenshot (213).png
 ```
 
 ### ✅ Status
 
 **Completed 🎉**
 
-Another SQL challenge completed as part of my **100 Days of SQL Challenge**.
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -234,6 +241,15 @@ Another SQL challenge completed as part of my **100 Days of SQL Challenge**.
 This repository documents my SQL learning journey and showcases my daily progress while solving HackerRank SQL challenges.
 
 It serves as a portfolio of my database skills, demonstrates consistency, and reflects my commitment to continuous learning through the **#100DaysOfCode** challenge.
+
+Every challenge helps me improve my:
+
+- 🧠 Logical Thinking
+- 💻 SQL Skills
+- 🧩 Problem-Solving Ability
+- 🗄️ Database Knowledge
+- 📊 Data Analysis Skills
+- 🚀 Query-Writing Confidence
 
 ---
 
@@ -267,19 +283,21 @@ It serves as a portfolio of my database skills, demonstrates consistency, and re
 
 # 📈 Current Statistics
 
-- 📅 Days Completed: **13 / 100**
-- 💻 Challenges Solved: **13**
-- 🗄️ Language: **SQL**
-- 🏆 Platform: **HackerRank**
-- 🎯 Progress: **13% Complete** 🚀
+| 📊 Category          | Details             |
+| -------------------- | ------------------- |
+| 📅 Days Completed    | **14 / 100**        |
+| 💻 Challenges Solved | **14**              |
+| 🗄️ Language           | **SQL**             |
+| 🏆 Platform          | **HackerRank**      |
+| 🎯 Progress          | **14% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**13 Days of SQL Practice Completed! 🎉**
+**14 Days of SQL Practice Completed! 🎉**
 
-> 13 days down, 87 more to go! 🚀
+> 14 days down, 86 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
@@ -297,7 +315,8 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 Let's learn, build, and grow together! 🌱
 
-📌 **GitHub:**  
+📌 **GitHub:**
+
 https://github.com/Coder-RD
 
 ---
