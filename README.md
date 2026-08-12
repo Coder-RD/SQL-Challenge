@@ -91,33 +91,38 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Weather Observation Station 11.sql
     │   └── Screenshot (218).png
     │
+    ├── Day17-SQL/
+    │   ├── Weather Observation Station 12.sql
+    │   └── Screenshot (219).png
+    │
     └── README.md
 
 ---
 
 # ✅ Progress
 
-| Day        | Challenge                     | Status    |
-| ---------- | ----------------------------- | --------- |
-| ✅ Day 1    | Revising the Select Query II  | Completed |
-| ✅ Day 2    | Select All                    | Completed |
-| ✅ Day 3    | Revising the Select Query I   | Completed |
-| ✅ Day 4    | Select By ID                  | Completed |
-| ✅ Day 5    | Japanese Cities' Attributes   | Completed |
-| ✅ Day 6    | Japanese Cities' Names        | Completed |
-| ✅ Day 7    | Weather Observation Station 1 | Completed |
-| ✅ Day 8    | Weather Observation Station 3 | Completed |
-| ✅ Day 9    | Weather Observation Station 4 | Completed |
-| ✅ Day 10   | Weather Observation Station 5 | Completed |
-| ✅ Day 11   | Weather Observation Station 6 | Completed |
-| ✅ Day 12   | Weather Observation Station 7 | Completed |
-| ✅ Day 13   | Weather Observation Station 8 | Completed |
-| ✅ Day 14   | Weather Observation Station 9 | Completed |
+| Day        | Challenge                      | Status    |
+| ---------- | ------------------------------ | --------- |
+| ✅ Day 1    | Revising the Select Query II   | Completed |
+| ✅ Day 2    | Select All                     | Completed |
+| ✅ Day 3    | Revising the Select Query I    | Completed |
+| ✅ Day 4    | Select By ID                   | Completed |
+| ✅ Day 5    | Japanese Cities' Attributes    | Completed |
+| ✅ Day 6    | Japanese Cities' Names         | Completed |
+| ✅ Day 7    | Weather Observation Station 1  | Completed |
+| ✅ Day 8    | Weather Observation Station 3  | Completed |
+| ✅ Day 9    | Weather Observation Station 4  | Completed |
+| ✅ Day 10   | Weather Observation Station 5  | Completed |
+| ✅ Day 11   | Weather Observation Station 6  | Completed |
+| ✅ Day 12   | Weather Observation Station 7  | Completed |
+| ✅ Day 13   | Weather Observation Station 8  | Completed |
+| ✅ Day 14   | Weather Observation Station 9  | Completed |
 | ✅ Day 15   | Weather Observation Station 10 | Completed |
 | ✅ Day 16   | Weather Observation Station 11 | Completed |
-| ⏳ Day 17   | Coming Soon                   | Pending   |
-| ...        | ...                           | ...       |
-| 🎯 Day 100 | Coming Soon                   | Pending   |
+| ✅ Day 17   | Weather Observation Station 12 | Completed |
+| ⏳ Day 18   | Coming Soon                    | Pending   |
+| ...        | ...                            | ...       |
+| 🎯 Day 100  | Coming Soon                    | Pending   |
 
 ---
 
@@ -201,16 +206,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 13 Completed
 - ✅ Day 14 Completed
 - ✅ Day 15 Completed
-- ✅ Day 16 Completed 🎉
+- ✅ Day 16 Completed
+- ✅ Day 17 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 16 – Weather Observation Station 11
+# 🆕 Day 17 – Weather Observation Station 12
 
 ### 🎯 Challenge
 
-**Weather Observation Station 11**
+**Weather Observation Station 12**
 
 ### 💻 Platform
 
@@ -237,14 +243,14 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 ### 📂 Files Added
 
-    Day16-SQL/
+    Day17-SQL/
     │
-    ├── Weather Observation Station 11.sql
-    └── Screenshot (218).png
+    ├── Weather Observation Station 12.sql
+    └── Screenshot (219).png
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 11** challenge requires retrieving city names from the `STATION` table based on conditions involving whether the city name starts or ends with a vowel.
+The **Weather Observation Station 12** challenge requires retrieving city names from the `STATION` table that do not start with vowels and do not end with vowels.
 
 The `DISTINCT` keyword is used to ensure that duplicate city names are not included in the result.
 
@@ -307,19 +313,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **16 / 100**        |
-| 💻 Challenges Solved | **16**              |
+| 📅 Days Completed    | **17 / 100**        |
+| 💻 Challenges Solved | **17**              |
 | 🗄️ Language          | **SQL**             |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **16% Complete** 🚀 |
+| 🎯 Progress          | **17% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**16 Days of SQL Practice Completed! 🎉**
+**17 Days of SQL Practice Completed! 🎉**
 
-> 16 days down, 84 more to go! 🚀
+> 17 days down, 83 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
