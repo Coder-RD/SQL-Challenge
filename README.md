@@ -95,6 +95,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Weather Observation Station 12.sql
     │   └── Screenshot (219).png
     │
+    ├── Day18-SQL/
+    │   ├── Higher Than 75 Marks.sql
+    │   └── Screenshot (223).png
+    │
     └── README.md
 
 ---
@@ -120,7 +124,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 15   | Weather Observation Station 10 | Completed |
 | ✅ Day 16   | Weather Observation Station 11 | Completed |
 | ✅ Day 17   | Weather Observation Station 12 | Completed |
-| ⏳ Day 18   | Coming Soon                    | Pending   |
+| ✅ Day 18   | Higher Than 75 Marks           | Completed |
+| ⏳ Day 19   | Coming Soon                    | Pending   |
 | ...        | ...                            | ...       |
 | 🎯 Day 100  | Coming Soon                    | Pending   |
 
@@ -164,6 +169,12 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ City Name Filtering
 - ✅ Regular Expression Conditions
 - ✅ Query Optimization
+- ✅ Filtering Marks
+- ✅ Greater Than Conditions
+- ✅ ORDER BY with Multiple Columns
+- ✅ String Sorting
+- ✅ Sorting by Last Three Characters
+- ✅ ID-Based Sorting
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -186,6 +197,9 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 📈 Data Analysis
 - 🎯 Query Writing
 - 🗃️ Database Querying
+- 📊 Conditional Filtering
+- 🔢 Sorting Techniques
+- 🔤 String-Based Ordering
 
 ---
 
@@ -207,16 +221,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 14 Completed
 - ✅ Day 15 Completed
 - ✅ Day 16 Completed
-- ✅ Day 17 Completed 🎉
+- ✅ Day 17 Completed
+- ✅ Day 18 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 17 – Weather Observation Station 12
+# 🆕 Day 18 – Higher Than 75 Marks
 
 ### 🎯 Challenge
 
-**Weather Observation Station 12**
+**Higher Than 75 Marks**
 
 ### 💻 Platform
 
@@ -229,32 +244,39 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 ### 📚 Concepts Practiced
 
 - 🔹 SELECT
-- 🔹 DISTINCT
 - 🔹 WHERE
-- 🔹 REGEXP
-- 🔹 Regular Expression Pattern Matching
-- 🔹 String Filtering
-- 🔹 Filtering City Names
-- 🔹 First Character Conditions
-- 🔹 Last Character Conditions
-- 🔹 Vowel Filtering
-- 🔹 Logical Conditions
-- 🔹 SQL Pattern Matching
+- 🔹 Filtering Records
+- 🔹 Marks Filtering
+- 🔹 Greater Than Operator (`>`)
+- 🔹 ORDER BY
+- 🔹 Multiple Column Sorting
+- 🔹 String Functions
+- 🔹 Sorting by Last Three Characters
+- 🔹 ID-Based Sorting
+- 🔹 Query Writing
 
 ### 📂 Files Added
 
-    Day17-SQL/
+    Day18-SQL/
     │
-    ├── Weather Observation Station 12.sql
-    └── Screenshot (219).png
+    ├── Higher Than 75 Marks.sql
+    └── Screenshot (223).png
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 12** challenge requires retrieving city names from the `STATION` table that do not start with vowels and do not end with vowels.
+The **Higher Than 75 Marks** challenge requires retrieving the names of students whose marks are greater than 75.
 
-The `DISTINCT` keyword is used to ensure that duplicate city names are not included in the result.
+The result is sorted based on the **last three characters of the student's name**. If multiple students have the same last three characters, their records are sorted by **ID in ascending order**.
 
-Regular expressions can be used to check the first and last characters of city names.
+This challenge helps practice filtering records using the `WHERE` clause and sorting results using `ORDER BY`.
+
+### 🔑 SQL Concepts Used
+
+    WHERE Marks > 75
+
+The `WHERE` clause is used to filter students whose marks are greater than 75.
+
+The `ORDER BY` clause is then used to arrange the filtered records according to the required sorting conditions.
 
 ### ✅ Status
 
@@ -313,19 +335,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **17 / 100**        |
-| 💻 Challenges Solved | **17**              |
+| 📅 Days Completed    | **18 / 100**        |
+| 💻 Challenges Solved | **18**              |
 | 🗄️ Language          | **SQL**             |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **17% Complete** 🚀 |
+| 🎯 Progress          | **18% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**17 Days of SQL Practice Completed! 🎉**
+**18 Days of SQL Practice Completed! 🎉**
 
-> 17 days down, 83 more to go! 🚀
+> 18 days down, 82 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
