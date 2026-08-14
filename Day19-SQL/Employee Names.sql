@@ -1,0 +1,1 @@
+SELECT name From Employee ORDER BY name ASC;
