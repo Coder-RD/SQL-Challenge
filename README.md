@@ -99,6 +99,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Higher Than 75 Marks.sql
     │   └── Screenshot (223).png
     │
+    ├── Day19-SQL/
+    │   ├── Employee Names.sql
+    │   └── Screenshot (225).png
+    │
     └── README.md
 
 ---
@@ -125,7 +129,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 16   | Weather Observation Station 11 | Completed |
 | ✅ Day 17   | Weather Observation Station 12 | Completed |
 | ✅ Day 18   | Higher Than 75 Marks           | Completed |
-| ⏳ Day 19   | Coming Soon                    | Pending   |
+| ✅ Day 19   | Employee Names                 | Completed |
+| ⏳ Day 20   | Coming Soon                    | Pending   |
 | ...        | ...                            | ...       |
 | 🎯 Day 100  | Coming Soon                    | Pending   |
 
@@ -175,6 +180,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ String Sorting
 - ✅ Sorting by Last Three Characters
 - ✅ ID-Based Sorting
+- ✅ Alphabetical Sorting
+- ✅ Employee Data Retrieval
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -200,6 +207,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 📊 Conditional Filtering
 - 🔢 Sorting Techniques
 - 🔤 String-Based Ordering
+- 👨‍💼 Employee Data Handling
 
 ---
 
@@ -222,16 +230,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 15 Completed
 - ✅ Day 16 Completed
 - ✅ Day 17 Completed
-- ✅ Day 18 Completed 🎉
+- ✅ Day 18 Completed
+- ✅ Day 19 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 18 – Higher Than 75 Marks
+# 🆕 Day 19 – Employee Names
 
 ### 🎯 Challenge
 
-**Higher Than 75 Marks**
+**Employee Names**
 
 ### 💻 Platform
 
@@ -244,39 +253,33 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 ### 📚 Concepts Practiced
 
 - 🔹 SELECT
-- 🔹 WHERE
-- 🔹 Filtering Records
-- 🔹 Marks Filtering
-- 🔹 Greater Than Operator (`>`)
+- 🔹 Retrieving Employee Names
 - 🔹 ORDER BY
-- 🔹 Multiple Column Sorting
-- 🔹 String Functions
-- 🔹 Sorting by Last Three Characters
-- 🔹 ID-Based Sorting
+- 🔹 Alphabetical Sorting
+- 🔹 Ascending Order
 - 🔹 Query Writing
+- 🔹 Employee Data Retrieval
 
 ### 📂 Files Added
 
-    Day18-SQL/
+    Day19-SQL/
     │
-    ├── Higher Than 75 Marks.sql
-    └── Screenshot (223).png
+    ├── Employee Names.sql
+    └── Screenshot (225).png
 
 ### 💡 Key Concept
 
-The **Higher Than 75 Marks** challenge requires retrieving the names of students whose marks are greater than 75.
+The **Employee Names** challenge requires retrieving the names of all employees from the `Employee` table.
 
-The result is sorted based on the **last three characters of the student's name**. If multiple students have the same last three characters, their records are sorted by **ID in ascending order**.
+The employee names are displayed in **alphabetical order** using the `ORDER BY` clause.
 
-This challenge helps practice filtering records using the `WHERE` clause and sorting results using `ORDER BY`.
+### 🔑 SQL Concept Used
 
-### 🔑 SQL Concepts Used
+    SELECT name
+    FROM Employee
+    ORDER BY name ASC;
 
-    WHERE Marks > 75
-
-The `WHERE` clause is used to filter students whose marks are greater than 75.
-
-The `ORDER BY` clause is then used to arrange the filtered records according to the required sorting conditions.
+The `SELECT` statement retrieves the employee names, while the `ORDER BY` clause sorts the names alphabetically in ascending order.
 
 ### ✅ Status
 
@@ -335,19 +338,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **18 / 100**        |
-| 💻 Challenges Solved | **18**              |
+| 📅 Days Completed    | **19 / 100**        |
+| 💻 Challenges Solved | **19**              |
 | 🗄️ Language          | **SQL**             |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **18% Complete** 🚀 |
+| 🎯 Progress          | **19% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**18 Days of SQL Practice Completed! 🎉**
+**19 Days of SQL Practice Completed! 🎉**
 
-> 18 days down, 82 more to go! 🚀
+> 19 days down, 81 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
