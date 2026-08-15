@@ -103,6 +103,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Employee Names.sql
     │   └── Screenshot (225).png
     │
+    ├── Day20-SQL/
+    │   ├── Employee Salaries.sql
+    │   └── Screenshot (230).png
+    │
     └── README.md
 
 ---
@@ -130,7 +134,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 17   | Weather Observation Station 12 | Completed |
 | ✅ Day 18   | Higher Than 75 Marks           | Completed |
 | ✅ Day 19   | Employee Names                 | Completed |
-| ⏳ Day 20   | Coming Soon                    | Pending   |
+| ✅ Day 20   | Employee Salaries              | Completed |
+| ⏳ Day 21   | Coming Soon                    | Pending   |
 | ...        | ...                            | ...       |
 | 🎯 Day 100  | Coming Soon                    | Pending   |
 
@@ -182,6 +187,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ ID-Based Sorting
 - ✅ Alphabetical Sorting
 - ✅ Employee Data Retrieval
+- ✅ Salary Filtering
+- ✅ Employee Experience Filtering
+- ✅ Multiple WHERE Conditions
+- ✅ Sorting by Employee ID
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -208,6 +217,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 🔢 Sorting Techniques
 - 🔤 String-Based Ordering
 - 👨‍💼 Employee Data Handling
+- 💰 Salary-Based Filtering
+- 📅 Employee Experience Filtering
 
 ---
 
@@ -231,16 +242,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 16 Completed
 - ✅ Day 17 Completed
 - ✅ Day 18 Completed
-- ✅ Day 19 Completed 🎉
+- ✅ Day 19 Completed
+- ✅ Day 20 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 19 – Employee Names
+# 🆕 Day 20 – Employee Salaries
 
 ### 🎯 Challenge
 
-**Employee Names**
+**Employee Salaries**
 
 ### 💻 Platform
 
@@ -253,33 +265,43 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 ### 📚 Concepts Practiced
 
 - 🔹 SELECT
-- 🔹 Retrieving Employee Names
+- 🔹 WHERE
+- 🔹 Filtering Employee Records
+- 🔹 Salary Filtering
+- 🔹 Employee Experience Filtering
+- 🔹 Greater Than Operator (`>`)
+- 🔹 Less Than Operator (`<`)
+- 🔹 AND Operator
 - 🔹 ORDER BY
-- 🔹 Alphabetical Sorting
-- 🔹 Ascending Order
+- 🔹 Employee ID Sorting
 - 🔹 Query Writing
-- 🔹 Employee Data Retrieval
 
 ### 📂 Files Added
 
-    Day19-SQL/
+    Day20-SQL/
     │
-    ├── Employee Names.sql
-    └── Screenshot (225).png
+    ├── Employee Salaries.sql
+    └── Screenshot (230).png
 
 ### 💡 Key Concept
 
-The **Employee Names** challenge requires retrieving the names of all employees from the `Employee` table.
+The **Employee Salaries** challenge requires retrieving employee names based on their monthly salary and the number of months they have been working for the company.
 
-The employee names are displayed in **alphabetical order** using the `ORDER BY` clause.
+Employees are filtered using conditions on **salary** and **months**, and the result is sorted by **employee_id in ascending order**.
 
-### 🔑 SQL Concept Used
+### 🔑 SQL Concepts Used
 
     SELECT name
     FROM Employee
-    ORDER BY name ASC;
+    WHERE salary > ...
+      AND months < ...
+    ORDER BY employee_id ASC;
 
-The `SELECT` statement retrieves the employee names, while the `ORDER BY` clause sorts the names alphabetically in ascending order.
+The `WHERE` clause is used to filter employees according to salary and experience conditions.
+
+The `AND` operator combines multiple filtering conditions.
+
+The `ORDER BY` clause sorts the final result according to `employee_id` in ascending order.
 
 ### ✅ Status
 
@@ -338,19 +360,19 @@ Every challenge helps me improve my:
 
 | 📊 Category          | Details             |
 | -------------------- | ------------------- |
-| 📅 Days Completed    | **19 / 100**        |
-| 💻 Challenges Solved | **19**              |
+| 📅 Days Completed    | **20 / 100**        |
+| 💻 Challenges Solved | **20**              |
 | 🗄️ Language          | **SQL**             |
 | 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **19% Complete** 🚀 |
+| 🎯 Progress          | **20% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**19 Days of SQL Practice Completed! 🎉**
+**20 Days of SQL Practice Completed! 🎉**
 
-> 19 days down, 81 more to go! 🚀
+> 20 days down, 80 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
