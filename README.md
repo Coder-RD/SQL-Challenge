@@ -107,37 +107,42 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Employee Salaries.sql
     │   └── Screenshot (230).png
     │
+    ├── Day21-SQL/
+    │   ├── Type of Triangle.sql
+    │   └── Screenshot 2026-08-16 192320.png
+    │
     └── README.md
 
 ---
 
 # ✅ Progress
 
-| Day        | Challenge                      | Status    |
-| ---------- | ------------------------------ | --------- |
-| ✅ Day 1    | Revising the Select Query II   | Completed |
-| ✅ Day 2    | Select All                     | Completed |
-| ✅ Day 3    | Revising the Select Query I    | Completed |
-| ✅ Day 4    | Select By ID                   | Completed |
-| ✅ Day 5    | Japanese Cities' Attributes    | Completed |
-| ✅ Day 6    | Japanese Cities' Names         | Completed |
-| ✅ Day 7    | Weather Observation Station 1  | Completed |
-| ✅ Day 8    | Weather Observation Station 3  | Completed |
-| ✅ Day 9    | Weather Observation Station 4  | Completed |
-| ✅ Day 10   | Weather Observation Station 5  | Completed |
-| ✅ Day 11   | Weather Observation Station 6  | Completed |
-| ✅ Day 12   | Weather Observation Station 7  | Completed |
-| ✅ Day 13   | Weather Observation Station 8  | Completed |
-| ✅ Day 14   | Weather Observation Station 9  | Completed |
-| ✅ Day 15   | Weather Observation Station 10 | Completed |
-| ✅ Day 16   | Weather Observation Station 11 | Completed |
-| ✅ Day 17   | Weather Observation Station 12 | Completed |
-| ✅ Day 18   | Higher Than 75 Marks           | Completed |
-| ✅ Day 19   | Employee Names                 | Completed |
-| ✅ Day 20   | Employee Salaries              | Completed |
-| ⏳ Day 21   | Coming Soon                    | Pending   |
-| ...        | ...                            | ...       |
-| 🎯 Day 100  | Coming Soon                    | Pending   |
+| Day | Challenge | Status |
+| --- | --- | --- |
+| ✅ Day 1 | Revising the Select Query II | Completed |
+| ✅ Day 2 | Select All | Completed |
+| ✅ Day 3 | Revising the Select Query I | Completed |
+| ✅ Day 4 | Select By ID | Completed |
+| ✅ Day 5 | Japanese Cities' Attributes | Completed |
+| ✅ Day 6 | Japanese Cities' Names | Completed |
+| ✅ Day 7 | Weather Observation Station 1 | Completed |
+| ✅ Day 8 | Weather Observation Station 3 | Completed |
+| ✅ Day 9 | Weather Observation Station 4 | Completed |
+| ✅ Day 10 | Weather Observation Station 5 | Completed |
+| ✅ Day 11 | Weather Observation Station 6 | Completed |
+| ✅ Day 12 | Weather Observation Station 7 | Completed |
+| ✅ Day 13 | Weather Observation Station 8 | Completed |
+| ✅ Day 14 | Weather Observation Station 9 | Completed |
+| ✅ Day 15 | Weather Observation Station 10 | Completed |
+| ✅ Day 16 | Weather Observation Station 11 | Completed |
+| ✅ Day 17 | Weather Observation Station 12 | Completed |
+| ✅ Day 18 | Higher Than 75 Marks | Completed |
+| ✅ Day 19 | Employee Names | Completed |
+| ✅ Day 20 | Employee Salaries | Completed |
+| ✅ Day 21 | Type of Triangle | Completed |
+| ⏳ Day 22 | Coming Soon | Pending |
+| ... | ... | ... |
+| 🎯 Day 100 | Coming Soon | Pending |
 
 ---
 
@@ -191,6 +196,13 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Employee Experience Filtering
 - ✅ Multiple WHERE Conditions
 - ✅ Sorting by Employee ID
+- ✅ CASE Statements
+- ✅ Conditional Logic
+- ✅ Triangle Classification
+- ✅ Equilateral Triangle
+- ✅ Isosceles Triangle
+- ✅ Scalene Triangle
+- ✅ Triangle Validation
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -219,6 +231,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 👨‍💼 Employee Data Handling
 - 💰 Salary-Based Filtering
 - 📅 Employee Experience Filtering
+- 🔺 Conditional Classification
 
 ---
 
@@ -243,16 +256,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 17 Completed
 - ✅ Day 18 Completed
 - ✅ Day 19 Completed
-- ✅ Day 20 Completed 🎉
+- ✅ Day 20 Completed
+- ✅ Day 21 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 20 – Employee Salaries
+# 🆕 Day 21 – Type of Triangle
 
 ### 🎯 Challenge
 
-**Employee Salaries**
+**Type of Triangle**
 
 ### 💻 Platform
 
@@ -265,43 +279,47 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 ### 📚 Concepts Practiced
 
 - 🔹 SELECT
-- 🔹 WHERE
-- 🔹 Filtering Employee Records
-- 🔹 Salary Filtering
-- 🔹 Employee Experience Filtering
-- 🔹 Greater Than Operator (`>`)
-- 🔹 Less Than Operator (`<`)
-- 🔹 AND Operator
-- 🔹 ORDER BY
-- 🔹 Employee ID Sorting
-- 🔹 Query Writing
+- 🔹 CASE Statement
+- 🔹 Conditional Logic
+- 🔹 Comparison Operators
+- 🔹 Triangle Classification
+- 🔹 Triangle Validation
+- 🔹 Equilateral Triangle
+- 🔹 Isosceles Triangle
+- 🔹 Scalene Triangle
+- 🔹 Not A Triangle
+- 🔹 SQL Query Writing
 
 ### 📂 Files Added
 
-    Day20-SQL/
+    Day21-SQL/
     │
-    ├── Employee Salaries.sql
-    └── Screenshot (230).png
+    ├── Type of Triangle.sql
+    └── Screenshot 2026-08-16 192320.png
 
 ### 💡 Key Concept
 
-The **Employee Salaries** challenge requires retrieving employee names based on their monthly salary and the number of months they have been working for the company.
+The **Type of Triangle** challenge requires identifying the type of each record in the `TRIANGLES` table using the three side lengths.
 
-Employees are filtered using conditions on **salary** and **months**, and the result is sorted by **employee_id in ascending order**.
+The query classifies each record as:
 
-### 🔑 SQL Concepts Used
+- 🔺 **Equilateral** – All three sides are equal.
+- 🔺 **Isosceles** – Two sides are equal.
+- 🔺 **Scalene** – All three sides are different.
+- ❌ **Not A Triangle** – The given side lengths do not form a valid triangle.
 
-    SELECT name
-    FROM Employee
-    WHERE salary > ...
-      AND months < ...
-    ORDER BY employee_id ASC;
+The `CASE` statement is used to apply conditional logic and determine the correct triangle type.
 
-The `WHERE` clause is used to filter employees according to salary and experience conditions.
+### 🔑 SQL Concept Used
 
-The `AND` operator combines multiple filtering conditions.
+    CASE
+        WHEN ... THEN 'Not A Triangle'
+        WHEN ... THEN 'Equilateral'
+        WHEN ... THEN 'Isosceles'
+        ELSE 'Scalene'
+    END
 
-The `ORDER BY` clause sorts the final result according to `employee_id` in ascending order.
+The `CASE` statement checks the conditions for each triangle and returns the appropriate classification.
 
 ### ✅ Status
 
@@ -358,21 +376,21 @@ Every challenge helps me improve my:
 
 # 📈 Current Statistics
 
-| 📊 Category          | Details             |
-| -------------------- | ------------------- |
-| 📅 Days Completed    | **20 / 100**        |
-| 💻 Challenges Solved | **20**              |
-| 🗄️ Language          | **SQL**             |
-| 🏆 Platform          | **HackerRank**      |
-| 🎯 Progress          | **20% Complete** 🚀 |
+| 📊 Category | Details |
+| --- | --- |
+| 📅 Days Completed | **21 / 100** |
+| 💻 Challenges Solved | **21** |
+| 🗄️ Language | **SQL** |
+| 🏆 Platform | **HackerRank** |
+| 🎯 Progress | **21% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**20 Days of SQL Practice Completed! 🎉**
+**21 Days of SQL Practice Completed! 🎉**
 
-> 20 days down, 80 more to go! 🚀
+> 21 days down, 79 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
@@ -398,4 +416,4 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#OpenToWork`
