@@ -111,6 +111,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Type of Triangle.sql
     │   └── Screenshot 2026-08-16 192320.png
     │
+    ├── Day22-SQL/
+    │   ├── The PADS.sql
+    │   └── Screenshot 2026-08-17 213500.png
+    │
     └── README.md
 
 ---
@@ -140,7 +144,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 19 | Employee Names | Completed |
 | ✅ Day 20 | Employee Salaries | Completed |
 | ✅ Day 21 | Type of Triangle | Completed |
-| ⏳ Day 22 | Coming Soon | Pending |
+| ✅ Day 22 | The PADS | Completed |
+| ⏳ Day 23 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -203,6 +208,13 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Isosceles Triangle
 - ✅ Scalene Triangle
 - ✅ Triangle Validation
+- ✅ CONCAT() Function
+- ✅ GROUP BY
+- ✅ COUNT() Function
+- ✅ String Formatting
+- ✅ Occupation-Based Queries
+- ✅ Aggregate Functions
+- ✅ Sorting by Count
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -232,6 +244,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 💰 Salary-Based Filtering
 - 📅 Employee Experience Filtering
 - 🔺 Conditional Classification
+- 📊 Aggregate Data Analysis
+- 👥 Grouping Records
+- 🔢 Counting Records
+- 🏷️ Occupation-Based Data Handling
 
 ---
 
@@ -257,16 +273,17 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 18 Completed
 - ✅ Day 19 Completed
 - ✅ Day 20 Completed
-- ✅ Day 21 Completed 🎉
+- ✅ Day 21 Completed
+- ✅ Day 22 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-# 🆕 Day 21 – Type of Triangle
+# 🆕 Day 22 – The PADS
 
 ### 🎯 Challenge
 
-**Type of Triangle**
+**The PADS**
 
 ### 💻 Platform
 
@@ -279,47 +296,43 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 ### 📚 Concepts Practiced
 
 - 🔹 SELECT
-- 🔹 CASE Statement
-- 🔹 Conditional Logic
-- 🔹 Comparison Operators
-- 🔹 Triangle Classification
-- 🔹 Triangle Validation
-- 🔹 Equilateral Triangle
-- 🔹 Isosceles Triangle
-- 🔹 Scalene Triangle
-- 🔹 Not A Triangle
-- 🔹 SQL Query Writing
+- 🔹 CONCAT()
+- 🔹 GROUP BY
+- 🔹 COUNT()
+- 🔹 ORDER BY
+- 🔹 String Functions
+- 🔹 Aggregate Functions
+- 🔹 Occupation-Based Queries
+- 🔹 Alphabetical Sorting
+- 🔹 Counting Occurrences
+- 🔹 String Formatting
 
 ### 📂 Files Added
 
-    Day21-SQL/
+    Day22-SQL/
     │
-    ├── Type of Triangle.sql
-    └── Screenshot 2026-08-16 192320.png
+    ├── The PADS.sql
+    └── Screenshot 2026-08-17 213500.png
 
 ### 💡 Key Concept
 
-The **Type of Triangle** challenge requires identifying the type of each record in the `TRIANGLES` table using the three side lengths.
+The **The PADS** challenge requires generating two result sets from the `OCCUPATIONS` table.
 
-The query classifies each record as:
+The first result set displays each person's name followed by the first letter of their occupation in parentheses.
 
-- 🔺 **Equilateral** – All three sides are equal.
-- 🔺 **Isosceles** – Two sides are equal.
-- 🔺 **Scalene** – All three sides are different.
-- ❌ **Not A Triangle** – The given side lengths do not form a valid triangle.
+The second result set counts the number of occurrences of each occupation and displays the result in the required format.
 
-The `CASE` statement is used to apply conditional logic and determine the correct triangle type.
+The results are sorted according to the requirements of the challenge.
 
-### 🔑 SQL Concept Used
+### 🔑 SQL Concepts Used
 
-    CASE
-        WHEN ... THEN 'Not A Triangle'
-        WHEN ... THEN 'Equilateral'
-        WHEN ... THEN 'Isosceles'
-        ELSE 'Scalene'
-    END
+    SELECT
+    CONCAT()
+    GROUP BY
+    COUNT()
+    ORDER BY
 
-The `CASE` statement checks the conditions for each triangle and returns the appropriate classification.
+These SQL concepts are used to retrieve occupation data, format strings, count occurrences, group records, and sort the results.
 
 ### ✅ Status
 
@@ -378,19 +391,19 @@ Every challenge helps me improve my:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **21 / 100** |
-| 💻 Challenges Solved | **21** |
+| 📅 Days Completed | **22 / 100** |
+| 💻 Challenges Solved | **22** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
-| 🎯 Progress | **21% Complete** 🚀 |
+| 🎯 Progress | **22% Complete** 🚀 |
 
 ---
 
 # 🔥 Current Streak
 
-**21 Days of SQL Practice Completed! 🎉**
+**22 Days of SQL Practice Completed! 🎉**
 
-> 21 days down, 79 more to go! 🚀
+> 22 days down, 78 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
 
