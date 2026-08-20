@@ -115,6 +115,18 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── The PADS.sql
     │   └── Screenshot 2026-08-17 213500.png
     │
+    ├── Day23-SQL/
+    │   ├── SQL Challenge.sql
+    │   └── Screenshot.png
+    │
+    ├── Day24-SQL/
+    │   ├── SQL Challenge.sql
+    │   └── Screenshot.png
+    │
+    ├── Day25-SQL/
+    │   ├── Revising Aggregations - Averages.sql
+    │   └── Screenshot 2026-08-20 163540.png
+    │
     └── README.md
 
 ---
@@ -145,7 +157,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 20 | Employee Salaries | Completed |
 | ✅ Day 21 | Type of Triangle | Completed |
 | ✅ Day 22 | The PADS | Completed |
-| ⏳ Day 23 | Coming Soon | Pending |
+| ✅ Day 23 | SQL Challenge | Completed |
+| ✅ Day 24 | SQL Challenge | Completed |
+| ✅ Day 25 | Revising Aggregations - Averages | Completed |
+| ⏳ Day 26 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -215,6 +230,9 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Occupation-Based Queries
 - ✅ Aggregate Functions
 - ✅ Sorting by Count
+- ✅ AVG() Function
+- ✅ Average Calculation
+- ✅ Aggregate Data Analysis
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -248,6 +266,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 👥 Grouping Records
 - 🔢 Counting Records
 - 🏷️ Occupation-Based Data Handling
+- 🧮 Average Calculation
 
 ---
 
@@ -275,6 +294,9 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 20 Completed
 - ✅ Day 21 Completed
 - ✅ Day 22 Completed 🎉
+- ✅ Day 23 Completed 🎉
+- ✅ Day 24 Completed 🎉
+- ✅ Day 25 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -342,6 +364,62 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 ---
 
+# 🆕 Day 25 – Revising Aggregations - Averages
+
+### 🎯 Challenge
+
+**Revising Aggregations - Averages**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 AVG()
+- 🔹 Aggregate Functions
+- 🔹 Average Calculation
+- 🔹 Numerical Data
+- 🔹 Data Aggregation
+- 🔹 Query Writing
+
+### 📂 Files Added
+
+    Day25-SQL/
+    │
+    ├── Revising Aggregations - Averages.sql
+    └── Screenshot 2026-08-20 163540.png
+
+### 💡 Key Concept
+
+The **Revising Aggregations - Averages** challenge focuses on using the SQL `AVG()` aggregate function to calculate the average value of a numerical column.
+
+The `AVG()` function calculates the arithmetic mean of the values in a column.
+
+### 🔑 SQL Function Used
+
+    AVG()
+
+### Example
+
+    SELECT AVG(Column_Name)
+    FROM Table_Name;
+
+This query calculates the average value of the selected column.
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
+
+---
+
 # 🎯 Why This Repository?
 
 This repository documents my SQL learning journey and showcases my daily progress while solving HackerRank SQL challenges.
@@ -391,21 +469,158 @@ Every challenge helps me improve my:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **22 / 100** |
-| 💻 Challenges Solved | **22** |
+| 📅 Days Completed | **25 / 100** |
+| 💻 Challenges Solved | **25** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
-| 🎯 Progress | **22% Complete** 🚀 |
+| 📈 Progress | **25% Complete** 🚀 |
+| 🔥 Current Streak | **25 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**22 Days of SQL Practice Completed! 🎉**
+**25 Days of SQL Practice Completed! 🎉🔥**
 
-> 22 days down, 78 more to go! 🚀
+> 25 days down, 75 more to go! 🚀
 
 Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
+
+---
+
+# 🏆 Milestones
+
+| 🏁 Milestone | Status |
+| --- | --- |
+| 🎯 Day 10 | ✅ Completed |
+| 🎯 Day 20 | ✅ Completed |
+| 🎯 Day 25 | ✅ Completed |
+| 🎯 Day 50 | ⏳ Upcoming |
+| 🎯 Day 75 | ⏳ Upcoming |
+| 🏆 Day 100 | ⏳ Goal |
+
+---
+
+# 📚 Learning Approach
+
+My daily learning process includes:
+
+1. 📖 Understand the problem statement.
+2. 🧠 Analyze the required output.
+3. ✍️ Write the SQL query.
+4. 🧪 Test the query on HackerRank.
+5. 🔍 Understand the result.
+6. 📂 Save the solution in this repository.
+7. 📸 Add the successful submission screenshot.
+8. 🚀 Continue to the next challenge.
+
+---
+
+# 📊 Progress Tracker
+
+    Day 1    ████████████████████ 100% ✅
+    Day 5    ████████████████████ 100% ✅
+    Day 10   ████████████████████ 100% ✅
+    Day 15   ████████████████████ 100% ✅
+    Day 20   ████████████████████ 100% ✅
+    Day 25   ████████████████████ 100% ✅
+    Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
+    Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
+    Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+
+### 🚀 Overall Progress
+
+    [█████░░░░░░░░░░░░░░░] 25%
+
+**25 / 100 Days Completed**
+
+---
+
+# 💻 SQL Concepts Practiced
+
+### 🔹 SELECT
+
+    SELECT Column_Name
+    FROM Table_Name;
+
+### 🔹 Filtering
+
+    SELECT *
+    FROM Table_Name
+    WHERE Column_Name > Value;
+
+### 🔹 Sorting
+
+    SELECT *
+    FROM Table_Name
+    ORDER BY Column_Name ASC;
+
+### 🔹 Counting
+
+    SELECT COUNT(*)
+    FROM Table_Name;
+
+### 🔹 Average
+
+    SELECT AVG(Column_Name)
+    FROM Table_Name;
+
+### 🔹 Grouping
+
+    SELECT Column_Name, COUNT(*)
+    FROM Table_Name
+    GROUP BY Column_Name;
+
+---
+
+# 📖 Topics Learned So Far
+
+Throughout the first 25 days, I have practiced SQL concepts related to:
+
+- 🗄️ Data Retrieval
+- 🔍 Data Filtering
+- 📊 Data Sorting
+- 🔤 String Manipulation
+- 🔎 Pattern Matching
+- 🧮 Aggregate Functions
+- 👥 GROUP BY
+- 🔢 COUNT()
+- 📈 AVG()
+- 🏷️ Occupation-Based Queries
+- 👨‍💼 Employee Data
+- 💰 Salary Filtering
+- 🔺 Conditional Classification
+- 🧠 Logical Thinking
+- ⚡ Query Writing
+
+---
+
+# 📌 Daily Practice
+
+Every day, I solve a new SQL problem and add the solution to this repository.
+
+Each day's folder contains:
+
+- 💻 SQL Solution
+- 📸 HackerRank Submission Screenshot
+
+This makes the repository a complete record of my **100 Days of SQL learning journey**.
+
+---
+
+# 🌱 Learning in Public
+
+This challenge is not only about solving SQL problems.
+
+It is also about:
+
+- 🔥 Building consistency
+- 📚 Learning new concepts
+- 🧠 Improving logical thinking
+- 💻 Writing better queries
+- 📊 Understanding data
+- 🚀 Preparing for real-world database tasks
+- 🎯 Building a strong technical portfolio
 
 ---
 
@@ -430,3 +645,15 @@ https://github.com/Coder-RD
 # 🔖 Hashtags
 
 `#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#OpenToWork`
+
+---
+
+# 🚀 Keep Learning. Keep Coding. Keep Growing.
+
+> **"Consistency is the key to growth."** 💻🔥
+
+### 🎯 Goal: 100 Days of SQL
+
+**25 Days Completed ✅ | 75 Days Remaining ⏳ | 100 Days Goal 🎯**
+
+**Let's keep coding! 🚀🗄️💻📊**
