@@ -2,7 +2,7 @@
 
 Welcome to my **#100DaysOfCode SQL Challenge** repository! 🎯
 
-This repository contains my daily SQL practice solutions from **HackerRank**, where I solve real-world SQL problems to strengthen my database knowledge, query-writing skills, and logical thinking.
+This repository contains my daily SQL practice solutions from **HackerRank**, where I solve real-world SQL problems to strengthen my database knowledge, query-writing skills, logical thinking, and data analysis abilities.
 
 ---
 
@@ -13,13 +13,22 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 🧩 Improve problem-solving and analytical thinking.
 - 📈 Stay consistent with the **#100DaysOfCode** challenge.
 - 🚀 Become proficient in writing efficient SQL queries.
+- 💼 Prepare for technical interviews and real-world database tasks.
 
 ---
 
-# 🛠️ Platform
+# 🛠️ Platform & Technology
 
-- 💻 HackerRank
-- 🗄️ SQL (Basic, Intermediate & Advanced)
+- 💻 **HackerRank**
+- 🗄️ **SQL**
+- 🔹 Basic SQL
+- 🔹 Intermediate SQL
+- 🔹 Advanced SQL
+- 🔹 Aggregate Functions
+- 🔹 String Functions
+- 🔹 Regular Expressions
+- 🔹 Data Filtering
+- 🔹 Data Analysis
 
 ---
 
@@ -127,6 +136,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Revising Aggregations - Averages.sql
     │   └── Screenshot 2026-08-20 163540.png
     │
+    ├── Day26-SQL/
+    │   ├── Average Population.sql
+    │   └── Screenshot 2026-08-21 143833.png
+    │
     └── README.md
 
 ---
@@ -160,7 +173,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 23 | SQL Challenge | Completed |
 | ✅ Day 24 | SQL Challenge | Completed |
 | ✅ Day 25 | Revising Aggregations - Averages | Completed |
-| ⏳ Day 26 | Coming Soon | Pending |
+| ✅ Day 26 | Average Population | Completed |
+| ⏳ Day 27 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Coming Soon | Pending |
 
@@ -233,6 +247,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ AVG() Function
 - ✅ Average Calculation
 - ✅ Aggregate Data Analysis
+- ✅ Numerical Data Processing
+- ✅ Population Analysis
+- ✅ FLOOR() Function
+- ✅ Rounding Down Values
 
 🔜 More SQL concepts will be added throughout this challenge.
 
@@ -267,6 +285,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 🔢 Counting Records
 - 🏷️ Occupation-Based Data Handling
 - 🧮 Average Calculation
+- 🏙️ Population Data Analysis
+- 🔽 Rounding Down Values
 
 ---
 
@@ -297,6 +317,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 23 Completed 🎉
 - ✅ Day 24 Completed 🎉
 - ✅ Day 25 Completed 🎉
+- ✅ Day 26 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -412,6 +433,96 @@ The `AVG()` function calculates the arithmetic mean of the values in a column.
 
 This query calculates the average value of the selected column.
 
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Calculate average values using SQL.
+- Use aggregate functions.
+- Work with numerical data.
+- Perform basic data analysis.
+- Write efficient SQL queries.
+
+### ✅ Status
+
+**Completed 🎉**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
+
+---
+
+# 🆕 Day 26 – Average Population
+
+### 🎯 Challenge
+
+**Average Population**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 AVG()
+- 🔹 Aggregate Functions
+- 🔹 Average Calculation
+- 🔹 Population Data
+- 🔹 Numerical Data Analysis
+- 🔹 FLOOR()
+- 🔹 Rounding Down
+- 🔹 Query Writing
+
+### 📂 Files Added
+
+    Day26-SQL/
+    │
+    ├── Average Population.sql
+    └── Screenshot 2026-08-21 143833.png
+
+### 💡 Key Concept
+
+The **Average Population** challenge focuses on calculating the average population of all cities in the `CITY` table.
+
+The result must be **rounded down to the nearest integer**.
+
+This challenge provides practice with SQL aggregate functions, particularly `AVG()`, along with rounding down numerical results.
+
+### 🔑 SQL Concepts Used
+
+    SELECT
+    AVG()
+    FLOOR()
+
+### Example
+
+    SELECT FLOOR(AVG(POPULATION))
+    FROM CITY;
+
+The query calculates the average population of all cities and uses `FLOOR()` to round the result down to the nearest integer.
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Calculate the average of numerical data.
+- Use the `AVG()` aggregate function.
+- Use the `FLOOR()` function.
+- Round calculated values down.
+- Analyze population data.
+- Combine SQL functions in a single query.
+- Improve SQL query-writing skills.
+
+### 📊 Data Analysis
+
+The challenge demonstrates how SQL can be used to perform statistical calculations on datasets.
+
+The `CITY` table contains population information, and SQL aggregate functions can be used to calculate meaningful insights from that data.
+
 ### ✅ Status
 
 **Completed 🎉**
@@ -434,6 +545,8 @@ Every challenge helps me improve my:
 - 🗄️ Database Knowledge
 - 📊 Data Analysis Skills
 - 🚀 Query-Writing Confidence
+- 🔍 Analytical Thinking
+- 📈 Data Processing Skills
 
 ---
 
@@ -462,6 +575,7 @@ Every challenge helps me improve my:
 - 🔹 Ranking Functions
 - 🔹 Transactions
 - 🔹 Database Optimization
+- 🔹 Advanced Data Analysis
 
 ---
 
@@ -469,22 +583,23 @@ Every challenge helps me improve my:
 
 | 📊 Category | Details |
 | --- | --- |
-| 📅 Days Completed | **25 / 100** |
-| 💻 Challenges Solved | **25** |
+| 📅 Days Completed | **26 / 100** |
+| 💻 Challenges Solved | **26** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
-| 📈 Progress | **25% Complete** 🚀 |
-| 🔥 Current Streak | **25 Days** |
+| 📚 Difficulty | **Basic → Intermediate → Advanced** |
+| 📈 Progress | **26% Complete** 🚀 |
+| 🔥 Current Streak | **26 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-**25 Days of SQL Practice Completed! 🎉🔥**
+**26 Days of SQL Practice Completed! 🎉🔥**
 
-> 25 days down, 75 more to go! 🚀
+> 26 days down, 74 more to go! 🚀
 
-Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, and problem-solving.
+Consistency is the key to growth. Every query I solve is helping me become better at SQL, databases, data analysis, and problem-solving.
 
 ---
 
@@ -495,6 +610,7 @@ Consistency is the key to growth. Every query I solve is helping me become bette
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
+| 🎯 Day 26 | ✅ Completed 🎉 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -512,7 +628,8 @@ My daily learning process includes:
 5. 🔍 Understand the result.
 6. 📂 Save the solution in this repository.
 7. 📸 Add the successful submission screenshot.
-8. 🚀 Continue to the next challenge.
+8. 📝 Review the SQL concepts used.
+9. 🚀 Continue to the next challenge.
 
 ---
 
@@ -524,15 +641,16 @@ My daily learning process includes:
     Day 15   ████████████████████ 100% ✅
     Day 20   ████████████████████ 100% ✅
     Day 25   ████████████████████ 100% ✅
+    Day 26   ████████████████████ 100% ✅
     Day 50   ░░░░░░░░░░░░░░░░░░░░  50% ⏳
     Day 75   ░░░░░░░░░░░░░░░░░░░░  25% ⏳
     Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
 
 ### 🚀 Overall Progress
 
-    [█████░░░░░░░░░░░░░░░] 25%
+    [█████░░░░░░░░░░░░░░░] 26%
 
-**25 / 100 Days Completed**
+**26 / 100 Days Completed**
 
 ---
 
@@ -565,6 +683,11 @@ My daily learning process includes:
     SELECT AVG(Column_Name)
     FROM Table_Name;
 
+### 🔹 Average with Rounding Down
+
+    SELECT FLOOR(AVG(Column_Name))
+    FROM Table_Name;
+
 ### 🔹 Grouping
 
     SELECT Column_Name, COUNT(*)
@@ -575,7 +698,7 @@ My daily learning process includes:
 
 # 📖 Topics Learned So Far
 
-Throughout the first 25 days, I have practiced SQL concepts related to:
+Throughout the first 26 days, I have practiced SQL concepts related to:
 
 - 🗄️ Data Retrieval
 - 🔍 Data Filtering
@@ -586,12 +709,17 @@ Throughout the first 25 days, I have practiced SQL concepts related to:
 - 👥 GROUP BY
 - 🔢 COUNT()
 - 📈 AVG()
+- 🔽 FLOOR()
 - 🏷️ Occupation-Based Queries
 - 👨‍💼 Employee Data
 - 💰 Salary Filtering
+- 🏙️ City Data
+- 👥 Population Analysis
 - 🔺 Conditional Classification
 - 🧠 Logical Thinking
 - ⚡ Query Writing
+- 📊 Data Analysis
+- 🧩 Problem Solving
 
 ---
 
@@ -615,12 +743,14 @@ This challenge is not only about solving SQL problems.
 It is also about:
 
 - 🔥 Building consistency
-- 📚 Learning new concepts
+- 📚 Learning new SQL concepts
 - 🧠 Improving logical thinking
 - 💻 Writing better queries
 - 📊 Understanding data
+- 🗄️ Strengthening database knowledge
 - 🚀 Preparing for real-world database tasks
 - 🎯 Building a strong technical portfolio
+- 💼 Preparing for technical interviews
 
 ---
 
@@ -644,7 +774,21 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#MySQL` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#OpenToWork`
+`#100DaysOfCode`
+`#100DaysOfSQL`
+`#SQL`
+`#HackerRank`
+`#Database`
+`#MySQL`
+`#SQLChallenge`
+`#LearningInPublic`
+`#GitHub`
+`#CodingJourney`
+`#Developer`
+`#ProblemSolving`
+`#DataAnalytics`
+`#SQLLearning`
+`#OpenToWork`
 
 ---
 
@@ -652,8 +796,8 @@ https://github.com/Coder-RD
 
 > **"Consistency is the key to growth."** 💻🔥
 
-### 🎯 Goal: 100 Days of SQL
+### 🎯 Goal: Complete 100 Days of SQL
 
-**25 Days Completed ✅ | 75 Days Remaining ⏳ | 100 Days Goal 🎯**
+**26 Days Completed ✅ | 74 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊**
