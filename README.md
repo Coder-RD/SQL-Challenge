@@ -146,6 +146,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Japan Population.sql
     │   └── Screenshot 2026-08-22 164453.png
     │
+    ├── Day28-SQL/
+    │   ├── Population Density Difference.sql
+    │   └── Screenshot 2026-08-23 110107.png
+    │
     └── README.md
 
 ---
@@ -181,7 +185,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 25 | Revising Aggregations - Averages | Completed |
 | ✅ Day 26 | Average Population | Completed |
 | ✅ Day 27 | Japan Population | Completed |
-| ⏳ Day 28 | Coming Soon | Pending |
+| ✅ Day 28 | Population Density Difference | Completed |
+| ⏳ Day 29 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -211,6 +216,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Salary Filtering
 - ✅ Marks Filtering
 - ✅ Employee Data Filtering
+- ✅ Country-Based Filtering
 
 ### 🔹 String Functions
 
@@ -229,7 +235,6 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Pattern Matching
 - ✅ Beginning & Ending Pattern Matching
 - ✅ Character Matching
-- ✅ `$` Pattern
 - ✅ DISTINCT with REGEXP
 
 ### 🔹 Conditional Logic
@@ -247,11 +252,14 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ COUNT()
 - ✅ AVG()
 - ✅ SUM()
+- ✅ MAX()
+- ✅ MIN()
 - ✅ FLOOR()
 - ✅ Aggregate Data Analysis
 - ✅ Average Calculation
 - ✅ Population Analysis
 - ✅ Numerical Data Processing
+- ✅ Difference Calculation
 
 ### 🔹 Grouping
 
@@ -314,6 +322,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 25 Completed 🎉
 - ✅ Day 26 Completed 🎉
 - ✅ Day 27 Completed 🎉
+- ✅ Day 28 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
@@ -350,9 +359,9 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 The **The PADS** challenge focuses on generating formatted output from the `OCCUPATIONS` table.
 
-The first result displays each person's name followed by the first letter of their occupation in parentheses.
+The first query formats each person's name together with the first letter of their occupation.
 
-The second result counts the number of people in each occupation and sorts the results according to the challenge requirements.
+The second query counts the number of people in each occupation and sorts the results according to the challenge requirements.
 
 ### 🔑 SQL Concepts Used
 
@@ -451,7 +460,7 @@ Through this challenge, I practiced:
 
 The **Average Population** challenge focuses on calculating the average population of all cities in the `CITY` table.
 
-The result must be rounded down to the nearest integer.
+The result is rounded down to the nearest integer.
 
 ### 🔑 SQL Query Concept
 
@@ -518,7 +527,7 @@ Through this challenge, I practiced how to:
 
 The **Japan Population** challenge focuses on calculating the total population of cities located in Japan.
 
-The `SUM()` aggregate function is used to calculate the total population, while the `WHERE` clause filters the records using the required country code.
+The `SUM()` aggregate function is used to calculate the total population, while the `WHERE` clause filters records using the required country code.
 
 ### 🔑 SQL Query Concept
 
@@ -540,6 +549,76 @@ Through this challenge, I practiced how to:
 ### 📊 Data Analysis
 
 This challenge demonstrates how SQL can be used to extract meaningful information from structured datasets by combining filtering conditions with aggregate functions.
+
+### ✅ Status
+
+**Completed 🎉**
+
+---
+
+## 🆕 Day 28 – Population Density Difference
+
+### 🎯 Challenge
+
+**Population Density Difference**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 MAX()
+- 🔹 MIN()
+- 🔹 Aggregate Functions
+- 🔹 Arithmetic Operations
+- 🔹 Population Analysis
+- 🔹 Data Aggregation
+- 🔹 Numerical Data Processing
+- 🔹 Query Writing
+
+### 📂 Files Added
+
+    Day28-SQL/
+    ├── Population Density Difference.sql
+    └── Screenshot 2026-08-23 110107.png
+
+### 💡 Key Concept
+
+The **Population Density Difference** challenge focuses on finding the difference between the maximum and minimum population values in the `CITY` table.
+
+The query uses the `MAX()` and `MIN()` aggregate functions and subtracts the minimum population from the maximum population.
+
+### 🔑 SQL Query Concept
+
+    SELECT MAX(POPULATION) - MIN(POPULATION)
+    FROM CITY;
+
+### 🧠 How the Query Works
+
+- `MAX(POPULATION)` finds the highest population value in the `CITY` table.
+- `MIN(POPULATION)` finds the lowest population value.
+- The subtraction operation calculates the difference between these two values.
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Find the maximum value using `MAX()`.
+- Find the minimum value using `MIN()`.
+- Perform arithmetic operations in SQL.
+- Combine aggregate functions in a single query.
+- Analyze numerical data.
+- Solve database problems using concise SQL queries.
+
+### 📊 Data Analysis
+
+This challenge demonstrates how aggregate functions can be combined with arithmetic operations to quickly derive useful insights from a dataset.
 
 ### ✅ Status
 
@@ -602,23 +681,23 @@ The upcoming days will focus on advanced SQL concepts, including:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **27 / 100** |
-| 💻 Challenges Solved | **27** |
+| 📅 Days Completed | **28 / 100** |
+| 💻 Challenges Solved | **28** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🐬 Database | **MySQL** |
 | 📚 Difficulty | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **27% Complete** 🚀 |
-| 🔥 Current Streak | **27 Days** |
-| ⏳ Days Remaining | **73 Days** |
+| 📈 Progress | **28% Complete** 🚀 |
+| 🔥 Current Streak | **28 Days** |
+| ⏳ Days Remaining | **72 Days** |
 
 ---
 
 ## 🔥 Current Streak
 
-### **27 Days of SQL Practice Completed! 🎉🔥**
+### **28 Days of SQL Practice Completed! 🎉🔥**
 
-> **27 days down, 73 more to go! 🚀**
+> **28 days down, 72 more to go! 🚀**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, and problem-solving approach.
 
@@ -631,8 +710,8 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 26 | ✅ Completed |
-| 🎯 Day 27 | ✅ Completed 🎉 |
+| 🎯 Day 27 | ✅ Completed |
+| 🎯 Day 28 | ✅ Completed 🎉 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -663,17 +742,17 @@ My daily learning process includes:
     Day 15   ████████████████████ 100% ✅
     Day 20   ████████████████████ 100% ✅
     Day 25   ████████████████████ 100% ✅
-    Day 26   ████████████████████ 100% ✅
     Day 27   ████████████████████ 100% ✅
-    Day 50   █████░░░░░░░░░░░░░░░  54% ⏳
-    Day 75   █████░░░░░░░░░░░░░░░  36% ⏳
+    Day 28   ████████████████████ 100% ✅
+    Day 50   ░░░░░░░░░░░░░░░░░░░░  56% ⏳
+    Day 75   ░░░░░░░░░░░░░░░░░░░░  37% ⏳
     Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
 
 ### 🚀 Overall Progress
 
-    [█████░░░░░░░░░░░░░░░] 27%
+    [██████░░░░░░░░░░░░░░] 28%
 
-**27 / 100 Days Completed**
+**28 / 100 Days Completed**
 
 ---
 
@@ -717,6 +796,11 @@ My daily learning process includes:
     FROM CITY
     WHERE COUNTRYCODE = 'JPN';
 
+### 🔹 Maximum and Minimum Difference
+
+    SELECT MAX(POPULATION) - MIN(POPULATION)
+    FROM CITY;
+
 ### 🔹 Grouping
 
     SELECT Column_Name, COUNT(*)
@@ -727,7 +811,7 @@ My daily learning process includes:
 
 ## 📖 Topics Learned So Far
 
-Throughout the first 27 days, I have practiced SQL concepts related to:
+Throughout the first 28 days, I have practiced SQL concepts related to:
 
 - 🗄️ Data Retrieval
 - 🔍 Data Filtering
@@ -739,6 +823,8 @@ Throughout the first 27 days, I have practiced SQL concepts related to:
 - 🔢 COUNT()
 - 📈 AVG()
 - ➕ SUM()
+- 🔼 MAX()
+- 🔽 MIN()
 - 🔽 FLOOR()
 - 🏷️ Occupation-Based Queries
 - 👨‍💼 Employee Data
@@ -751,6 +837,7 @@ Throughout the first 27 days, I have practiced SQL concepts related to:
 - ⚡ Query Writing
 - 📊 Data Analysis
 - 🧩 Problem Solving
+- ➗ Arithmetic Operations
 
 ---
 
@@ -831,6 +918,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**27 Days Completed ✅ | 73 Days Remaining ⏳ | 100 Days Goal 🎯**
+**28 Days Completed ✅ | 72 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊**
