@@ -36,125 +36,131 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 ## 📂 Repository Structure
 
-    SQL-Challenge/
-    │
-    ├── Day1-SQL/
-    │   ├── Revising the Select Query II.sql
-    │   └── Screenshot.png
-    │
-    ├── Day2-SQL/
-    │   ├── Select All.sql
-    │   └── Screenshot.png
-    │
-    ├── Day3-SQL/
-    │   ├── Revising the Select Query I.sql
-    │   └── Screenshot (181).png
-    │
-    ├── Day4-SQL/
-    │   ├── Select By ID.sql
-    │   └── Screenshot (186).png
-    │
-    ├── Day5-SQL/
-    │   ├── Japanese Cities' Attributes.sql
-    │   └── Screenshot (188).png
-    │
-    ├── Day6-SQL/
-    │   ├── Japanese Cities' Names.sql
-    │   └── Screenshot (189).png
-    │
-    ├── Day7-SQL/
-    │   ├── Weather Observation Station 1.sql
-    │   └── Screenshot (191).png
-    │
-    ├── Day8-SQL/
-    │   ├── Weather Observation Station 3.sql
-    │   └── Screenshot (198).png
-    │
-    ├── Day9-SQL/
-    │   ├── Weather Observation Station 4.sql
-    │   └── Screenshot (201).png
-    │
-    ├── Day10-SQL/
-    │   ├── Weather Observation Station 5.sql
-    │   └── Screenshot (204).png
-    │
-    ├── Day11-SQL/
-    │   ├── Weather Observation Station 6.sql
-    │   └── Screenshot (205).png
-    │
-    ├── Day12-SQL/
-    │   ├── Weather Observation Station 7.sql
-    │   └── Screenshot (209).png
-    │
-    ├── Day13-SQL/
-    │   ├── Weather Observation Station 8.sql
-    │   └── Screenshot (210).png
-    │
-    ├── Day14-SQL/
-    │   ├── Weather Observation Station 9.sql
-    │   └── Screenshot (213).png
-    │
-    ├── Day15-SQL/
-    │   ├── Weather Observation Station 10.sql
-    │   └── Screenshot (215).png
-    │
-    ├── Day16-SQL/
-    │   ├── Weather Observation Station 11.sql
-    │   └── Screenshot (218).png
-    │
-    ├── Day17-SQL/
-    │   ├── Weather Observation Station 12.sql
-    │   └── Screenshot (219).png
-    │
-    ├── Day18-SQL/
-    │   ├── Higher Than 75 Marks.sql
-    │   └── Screenshot (223).png
-    │
-    ├── Day19-SQL/
-    │   ├── Employee Names.sql
-    │   └── Screenshot (225).png
-    │
-    ├── Day20-SQL/
-    │   ├── Employee Salaries.sql
-    │   └── Screenshot (230).png
-    │
-    ├── Day21-SQL/
-    │   ├── Type of Triangle.sql
-    │   └── Screenshot 2026-08-16 192320.png
-    │
-    ├── Day22-SQL/
-    │   ├── The PADS.sql
-    │   └── Screenshot 2026-08-17 213500.png
-    │
-    ├── Day23-SQL/
-    │   ├── SQL Challenge.sql
-    │   └── Screenshot.png
-    │
-    ├── Day24-SQL/
-    │   ├── SQL Challenge.sql
-    │   └── Screenshot.png
-    │
-    ├── Day25-SQL/
-    │   ├── Revising Aggregations - Averages.sql
-    │   └── Screenshot 2026-08-20 163540.png
-    │
-    ├── Day26-SQL/
-    │   ├── Average Population.sql
-    │   └── Screenshot 2026-08-21 143833.png
-    │
-    ├── Day27-SQL/
-    │   ├── Japan Population.sql
-    │   └── Screenshot 2026-08-22 164453.png
-    │
-    ├── Day28-SQL/
-    │   ├── Population Density Difference.sql
-    │   └── Screenshot 2026-08-23 110107.png
-    │
-    └── README.md
+```text
+SQL-Challenge/
+│
+├── Day1-SQL/
+│   ├── Revising the Select Query II.sql
+│   └── Screenshot.png
+│
+├── Day2-SQL/
+│   ├── Select All.sql
+│   └── Screenshot.png
+│
+├── Day3-SQL/
+│   ├── Revising the Select Query I.sql
+│   └── Screenshot (181).png
+│
+├── Day4-SQL/
+│   ├── Select By ID.sql
+│   └── Screenshot (186).png
+│
+├── Day5-SQL/
+│   ├── Japanese Cities' Attributes.sql
+│   └── Screenshot (188).png
+│
+├── Day6-SQL/
+│   ├── Japanese Cities' Names.sql
+│   └── Screenshot (189).png
+│
+├── Day7-SQL/
+│   ├── Weather Observation Station 1.sql
+│   └── Screenshot (191).png
+│
+├── Day8-SQL/
+│   ├── Weather Observation Station 3.sql
+│   └── Screenshot (198).png
+│
+├── Day9-SQL/
+│   ├── Weather Observation Station 4.sql
+│   └── Screenshot (201).png
+│
+├── Day10-SQL/
+│   ├── Weather Observation Station 5.sql
+│   └── Screenshot (204).png
+│
+├── Day11-SQL/
+│   ├── Weather Observation Station 6.sql
+│   └── Screenshot (205).png
+│
+├── Day12-SQL/
+│   ├── Weather Observation Station 7.sql
+│   └── Screenshot (209).png
+│
+├── Day13-SQL/
+│   ├── Weather Observation Station 8.sql
+│   └── Screenshot (210).png
+│
+├── Day14-SQL/
+│   ├── Weather Observation Station 9.sql
+│   └── Screenshot (213).png
+│
+├── Day15-SQL/
+│   ├── Weather Observation Station 10.sql
+│   └── Screenshot (215).png
+│
+├── Day16-SQL/
+│   ├── Weather Observation Station 11.sql
+│   └── Screenshot (218).png
+│
+├── Day17-SQL/
+│   ├── Weather Observation Station 12.sql
+│   └── Screenshot (219).png
+│
+├── Day18-SQL/
+│   ├── Higher Than 75 Marks.sql
+│   └── Screenshot (223).png
+│
+├── Day19-SQL/
+│   ├── Employee Names.sql
+│   └── Screenshot (225).png
+│
+├── Day20-SQL/
+│   ├── Employee Salaries.sql
+│   └── Screenshot (230).png
+│
+├── Day21-SQL/
+│   ├── Type of Triangle.sql
+│   └── Screenshot 2026-08-16 192320.png
+│
+├── Day22-SQL/
+│   ├── The PADS.sql
+│   └── Screenshot 2026-08-17 213500.png
+│
+├── Day23-SQL/
+│   ├── SQL Challenge.sql
+│   └── Screenshot.png
+│
+├── Day24-SQL/
+│   ├── SQL Challenge.sql
+│   └── Screenshot.png
+│
+├── Day25-SQL/
+│   ├── Revising Aggregations - Averages.sql
+│   └── Screenshot 2026-08-20 163540.png
+│
+├── Day26-SQL/
+│   ├── Average Population.sql
+│   └── Screenshot 2026-08-21 143833.png
+│
+├── Day27-SQL/
+│   ├── Japan Population.sql
+│   └── Screenshot 2026-08-22 164453.png
+│
+├── Day28-SQL/
+│   ├── Population Density Difference.sql
+│   └── Screenshot 2026-08-23 110107.png
+│
+├── Day29-SQL/
+│   ├── The Blunder.sql
+│   └── Screenshot.png
+│
+└── README.md
+```
 
 ---
 
-## ✅ Progress
+# ✅ Progress
 
 | Day | Challenge | Status |
 |---|---|---|
@@ -186,15 +192,16 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 26 | Average Population | Completed |
 | ✅ Day 27 | Japan Population | Completed |
 | ✅ Day 28 | Population Density Difference | Completed |
-| ⏳ Day 29 | Coming Soon | Pending |
+| ✅ Day 29 | The Blunder | Completed |
+| ⏳ Day 30 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
 ---
 
-## 📖 Topics Covered
+# 📖 Topics Covered
 
-### 🔹 SQL Fundamentals
+## 🔹 SQL Fundamentals
 
 - ✅ SELECT Statement
 - ✅ SELECT *
@@ -206,7 +213,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Data Retrieval
 - ✅ Query Writing
 
-### 🔹 Sorting & Filtering
+## 🔹 Sorting & Filtering
 
 - ✅ ORDER BY
 - ✅ LIMIT
@@ -218,18 +225,19 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Employee Data Filtering
 - ✅ Country-Based Filtering
 
-### 🔹 String Functions
+## 🔹 String Functions
 
 - ✅ String Manipulation
 - ✅ LENGTH()
 - ✅ CONCAT()
+- ✅ REPLACE()
 - ✅ LIKE
 - ✅ Wildcards
 - ✅ String Formatting
 - ✅ Pattern Matching
 - ✅ Vowel Filtering
 
-### 🔹 Regular Expressions
+## 🔹 Regular Expressions
 
 - ✅ REGEXP
 - ✅ Pattern Matching
@@ -237,7 +245,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Character Matching
 - ✅ DISTINCT with REGEXP
 
-### 🔹 Conditional Logic
+## 🔹 Conditional Logic
 
 - ✅ CASE Statements
 - ✅ Conditional Classification
@@ -247,7 +255,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Scalene Triangle
 - ✅ Triangle Validation
 
-### 🔹 Aggregate Functions
+## 🔹 Aggregate Functions
 
 - ✅ COUNT()
 - ✅ AVG()
@@ -255,13 +263,14 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ MAX()
 - ✅ MIN()
 - ✅ FLOOR()
+- ✅ CEIL()
 - ✅ Aggregate Data Analysis
 - ✅ Average Calculation
 - ✅ Population Analysis
 - ✅ Numerical Data Processing
 - ✅ Difference Calculation
 
-### 🔹 Grouping
+## 🔹 Grouping
 
 - ✅ GROUP BY
 - ✅ Occupation-Based Queries
@@ -270,7 +279,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 
 ---
 
-## 🧠 Skills I'm Building
+# 🧠 Skills I'm Building
 
 - 🛢️ SQL Query Writing
 - 🗄️ Database Fundamentals
@@ -290,10 +299,12 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 👨‍💼 Employee Data Handling
 - 💰 Salary-Based Filtering
 - 🎯 Technical Interview Preparation
+- 🔄 Data Transformation
+- 🔢 Numerical & Rounding Operations
 
 ---
 
-## 📅 Challenge Progress
+# 📅 Challenge Progress
 
 - ✅ Day 1 Completed
 - ✅ Day 2 Completed
@@ -323,11 +334,12 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 26 Completed 🎉
 - ✅ Day 27 Completed 🎉
 - ✅ Day 28 Completed 🎉
+- ✅ Day 29 Completed 🎉
 - ⏳ Continuing every day...
 
 ---
 
-## 🆕 Day 22 – The PADS
+# 🆕 Day 22 – The PADS
 
 ### 🎯 Challenge
 
@@ -377,7 +389,7 @@ The second query counts the number of people in each occupation and sorts the re
 
 ---
 
-## 🆕 Day 25 – Revising Aggregations - Averages
+# 🆕 Day 25 – Revising Aggregations - Averages
 
 ### 🎯 Challenge
 
@@ -407,12 +419,16 @@ The **Revising Aggregations - Averages** challenge focuses on calculating the ar
 
 ### 🔑 SQL Function
 
-    AVG()
+```sql
+AVG()
+```
 
 ### Example
 
-    SELECT AVG(Column_Name)
-    FROM Table_Name;
+```sql
+SELECT AVG(Column_Name)
+FROM Table_Name;
+```
 
 ### 🎯 Learning Outcome
 
@@ -430,7 +446,7 @@ Through this challenge, I practiced:
 
 ---
 
-## 🆕 Day 26 – Average Population
+# 🆕 Day 26 – Average Population
 
 ### 🎯 Challenge
 
@@ -464,8 +480,10 @@ The result is rounded down to the nearest integer.
 
 ### 🔑 SQL Query Concept
 
-    SELECT FLOOR(AVG(POPULATION))
-    FROM CITY;
+```sql
+SELECT FLOOR(AVG(POPULATION))
+FROM CITY;
+```
 
 The `AVG()` function calculates the average population, while `FLOOR()` rounds the result down to the nearest integer.
 
@@ -482,9 +500,11 @@ Through this challenge, I practiced how to:
 
 ### 📂 Files Added
 
-    Day26-SQL/
-    ├── Average Population.sql
-    └── Screenshot 2026-08-21 143833.png
+```text
+Day26-SQL/
+├── Average Population.sql
+└── Screenshot 2026-08-21 143833.png
+```
 
 ### ✅ Status
 
@@ -492,7 +512,7 @@ Through this challenge, I practiced how to:
 
 ---
 
-## 🆕 Day 27 – Japan Population
+# 🆕 Day 27 – Japan Population
 
 ### 🎯 Challenge
 
@@ -519,9 +539,11 @@ Through this challenge, I practiced how to:
 
 ### 📂 Files Added
 
-    Day27-SQL/
-    ├── Japan Population.sql
-    └── Screenshot 2026-08-22 164453.png
+```text
+Day27-SQL/
+├── Japan Population.sql
+└── Screenshot 2026-08-22 164453.png
+```
 
 ### 💡 Key Concept
 
@@ -531,9 +553,11 @@ The `SUM()` aggregate function is used to calculate the total population, while 
 
 ### 🔑 SQL Query Concept
 
-    SELECT SUM(POPULATION)
-    FROM CITY
-    WHERE COUNTRYCODE = 'JPN';
+```sql
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE COUNTRYCODE = 'JPN';
+```
 
 ### 🎯 Learning Outcome
 
@@ -556,7 +580,7 @@ This challenge demonstrates how SQL can be used to extract meaningful informatio
 
 ---
 
-## 🆕 Day 28 – Population Density Difference
+# 🆕 Day 28 – Population Density Difference
 
 ### 🎯 Challenge
 
@@ -584,9 +608,11 @@ This challenge demonstrates how SQL can be used to extract meaningful informatio
 
 ### 📂 Files Added
 
-    Day28-SQL/
-    ├── Population Density Difference.sql
-    └── Screenshot 2026-08-23 110107.png
+```text
+Day28-SQL/
+├── Population Density Difference.sql
+└── Screenshot 2026-08-23 110107.png
+```
 
 ### 💡 Key Concept
 
@@ -596,8 +622,10 @@ The query uses the `MAX()` and `MIN()` aggregate functions and subtracts the min
 
 ### 🔑 SQL Query Concept
 
-    SELECT MAX(POPULATION) - MIN(POPULATION)
-    FROM CITY;
+```sql
+SELECT MAX(POPULATION) - MIN(POPULATION)
+FROM CITY;
+```
 
 ### 🧠 How the Query Works
 
@@ -628,7 +656,100 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 ---
 
-## 🎯 Why This Repository?
+# 🆕 Day 29 – The Blunder
+
+### 🎯 Challenge
+
+**The Blunder**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 AVG()
+- 🔹 REPLACE()
+- 🔹 CEIL()
+- 🔹 Aggregate Functions
+- 🔹 String Manipulation
+- 🔹 Data Transformation
+- 🔹 Salary Data Analysis
+- 🔹 Rounding Functions
+- 🔹 Arithmetic Operations
+
+### 💡 Key Concept
+
+The **The Blunder** challenge focuses on calculating the difference between the actual average salary and the incorrect average salary obtained after removing zeros from the salary values.
+
+It helped strengthen my understanding of SQL aggregate functions, string manipulation, and rounding functions.
+
+### 🔑 SQL Functions Used
+
+```sql
+AVG()
+REPLACE()
+CEIL()
+```
+
+### 🧠 How the Query Works
+
+- `AVG()` is used to calculate the average salary.
+- `REPLACE()` removes zeros from salary values to calculate the incorrect average.
+- `CEIL()` rounds the final difference up to the nearest integer.
+- The difference between the actual average salary and the incorrect average salary is calculated.
+
+### 📚 Concepts Learned
+
+Through this challenge, I practiced:
+
+- Calculating averages using `AVG()`.
+- Manipulating salary values using `REPLACE()`.
+- Removing specific characters from data.
+- Comparing actual and modified data.
+- Applying mathematical operations.
+- Using `CEIL()` for rounding.
+- Combining multiple SQL functions in one query.
+- Performing salary data analysis.
+- Strengthening SQL problem-solving skills.
+
+### 📂 Directory
+
+```text
+Day29-SQL/
+├── The Blunder.sql
+└── Screenshot.png
+```
+
+### 🎯 Learning Outcome
+
+The **The Blunder** challenge helped strengthen my understanding of:
+
+- SQL aggregate functions.
+- String manipulation.
+- Data transformation.
+- Rounding functions.
+- Numerical analysis.
+- Query-writing logic.
+- Problem-solving skills.
+
+### 📈 Challenge Progress
+
+**Day 29 of 100 Days of SQL — Completed Successfully! 🎉🔥**
+
+### ✅ Status
+
+**Completed 🎉**
+
+Continuing to build consistency, strengthen SQL fundamentals, and improve problem-solving skills through daily practice.
+
+---
+
+# 🎯 Why This Repository?
 
 This repository documents my SQL learning journey and showcases my daily progress while solving HackerRank SQL challenges.
 
@@ -646,7 +767,7 @@ Every challenge helps me improve my:
 
 ---
 
-## 🌟 Future Topics
+# 🌟 Future Topics
 
 The upcoming days will focus on advanced SQL concepts, including:
 
@@ -677,33 +798,33 @@ The upcoming days will focus on advanced SQL concepts, including:
 
 ---
 
-## 📈 Current Statistics
+# 📈 Current Statistics
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **28 / 100** |
-| 💻 Challenges Solved | **28** |
+| 📅 Days Completed | **29 / 100** |
+| 💻 Challenges Solved | **29** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🐬 Database | **MySQL** |
 | 📚 Difficulty | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **28% Complete** 🚀 |
-| 🔥 Current Streak | **28 Days** |
-| ⏳ Days Remaining | **72 Days** |
+| 📈 Progress | **29% Complete** 🚀 |
+| 🔥 Current Streak | **29 Days** |
+| ⏳ Days Remaining | **71 Days** |
 
 ---
 
-## 🔥 Current Streak
+# 🔥 Current Streak
 
-### **28 Days of SQL Practice Completed! 🎉🔥**
+### **29 Days of SQL Practice Completed! 🎉🔥**
 
-> **28 days down, 72 more to go! 🚀**
+> **29 days down, 71 more to go! 🚀**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, and problem-solving approach.
 
 ---
 
-## 🏆 Milestones
+# 🏆 Milestones
 
 | 🏁 Milestone | Status |
 |---|---|
@@ -711,14 +832,16 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
 | 🎯 Day 27 | ✅ Completed |
-| 🎯 Day 28 | ✅ Completed 🎉 |
+| 🎯 Day 28 | ✅ Completed |
+| 🎯 Day 29 | ✅ Completed 🎉 |
+| 🎯 Day 30 | ⏳ Upcoming |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
 
 ---
 
-## 📚 Learning Approach
+# 📚 Learning Approach
 
 My daily learning process includes:
 
@@ -734,84 +857,120 @@ My daily learning process includes:
 
 ---
 
-## 📊 Progress Tracker
+# 📊 Progress Tracker
 
-    Day 1    ████████████████████ 100% ✅
-    Day 5    ████████████████████ 100% ✅
-    Day 10   ████████████████████ 100% ✅
-    Day 15   ████████████████████ 100% ✅
-    Day 20   ████████████████████ 100% ✅
-    Day 25   ████████████████████ 100% ✅
-    Day 27   ████████████████████ 100% ✅
-    Day 28   ████████████████████ 100% ✅
-    Day 50   ░░░░░░░░░░░░░░░░░░░░  56% ⏳
-    Day 75   ░░░░░░░░░░░░░░░░░░░░  37% ⏳
-    Day 100  ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+```text
+Day 1     ████████████████████ 100% ✅
+Day 5     ████████████████████ 100% ✅
+Day 10    ████████████████████ 100% ✅
+Day 15    ████████████████████ 100% ✅
+Day 20    ████████████████████ 100% ✅
+Day 25    ████████████████████ 100% ✅
+Day 27    ████████████████████ 100% ✅
+Day 28    ████████████████████ 100% ✅
+Day 29    ████████████████████ 100% ✅
+Day 50    ░░░░░░░░░░░░░░░░░░░░  58% ⏳
+Day 75    ░░░░░░░░░░░░░░░░░░░░  39% ⏳
+Day 100   ░░░░░░░░░░░░░░░░░░░░   0% ⏳
+```
 
-### 🚀 Overall Progress
+## 🚀 Overall Progress
 
-    [██████░░░░░░░░░░░░░░] 28%
+```text
+[██████░░░░░░░░░░░░░░] 29%
 
-**28 / 100 Days Completed**
-
----
-
-## 💻 SQL Concepts Practiced
-
-### 🔹 SELECT
-
-    SELECT Column_Name
-    FROM Table_Name;
-
-### 🔹 Filtering
-
-    SELECT *
-    FROM Table_Name
-    WHERE Column_Name > Value;
-
-### 🔹 Sorting
-
-    SELECT *
-    FROM Table_Name
-    ORDER BY Column_Name ASC;
-
-### 🔹 Counting
-
-    SELECT COUNT(*)
-    FROM Table_Name;
-
-### 🔹 Average
-
-    SELECT AVG(Column_Name)
-    FROM Table_Name;
-
-### 🔹 Average with Rounding Down
-
-    SELECT FLOOR(AVG(Column_Name))
-    FROM Table_Name;
-
-### 🔹 Sum with Filtering
-
-    SELECT SUM(POPULATION)
-    FROM CITY
-    WHERE COUNTRYCODE = 'JPN';
-
-### 🔹 Maximum and Minimum Difference
-
-    SELECT MAX(POPULATION) - MIN(POPULATION)
-    FROM CITY;
-
-### 🔹 Grouping
-
-    SELECT Column_Name, COUNT(*)
-    FROM Table_Name
-    GROUP BY Column_Name;
+29 / 100 Days Completed
+```
 
 ---
 
-## 📖 Topics Learned So Far
+# 💻 SQL Concepts Practiced
 
-Throughout the first 28 days, I have practiced SQL concepts related to:
+## 🔹 SELECT
+
+```sql
+SELECT Column_Name
+FROM Table_Name;
+```
+
+## 🔹 Filtering
+
+```sql
+SELECT *
+FROM Table_Name
+WHERE Column_Name > Value;
+```
+
+## 🔹 Sorting
+
+```sql
+SELECT *
+FROM Table_Name
+ORDER BY Column_Name ASC;
+```
+
+## 🔹 Counting
+
+```sql
+SELECT COUNT(*)
+FROM Table_Name;
+```
+
+## 🔹 Average
+
+```sql
+SELECT AVG(Column_Name)
+FROM Table_Name;
+```
+
+## 🔹 Average with Rounding Down
+
+```sql
+SELECT FLOOR(AVG(Column_Name))
+FROM Table_Name;
+```
+
+## 🔹 Sum with Filtering
+
+```sql
+SELECT SUM(POPULATION)
+FROM CITY
+WHERE COUNTRYCODE = 'JPN';
+```
+
+## 🔹 Maximum and Minimum Difference
+
+```sql
+SELECT MAX(POPULATION) - MIN(POPULATION)
+FROM CITY;
+```
+
+## 🔹 Grouping
+
+```sql
+SELECT Column_Name, COUNT(*)
+FROM Table_Name
+GROUP BY Column_Name;
+```
+
+## 🔹 String Replacement
+
+```sql
+SELECT REPLACE(Column_Name, '0', '')
+FROM Table_Name;
+```
+
+## 🔹 Ceiling / Rounding Up
+
+```sql
+SELECT CEIL(Value);
+```
+
+---
+
+# 📖 Topics Learned So Far
+
+Throughout the first **29 days**, I have practiced SQL concepts related to:
 
 - 🗄️ Data Retrieval
 - 🔍 Data Filtering
@@ -826,9 +985,12 @@ Throughout the first 28 days, I have practiced SQL concepts related to:
 - 🔼 MAX()
 - 🔽 MIN()
 - 🔽 FLOOR()
+- 🔝 CEIL()
+- 🔄 REPLACE()
 - 🏷️ Occupation-Based Queries
 - 👨‍💼 Employee Data
 - 💰 Salary Filtering
+- 💵 Salary Data Transformation
 - 🏙️ City Data
 - 🌍 Country-Based Filtering
 - 👥 Population Analysis
@@ -838,10 +1000,13 @@ Throughout the first 28 days, I have practiced SQL concepts related to:
 - 📊 Data Analysis
 - 🧩 Problem Solving
 - ➗ Arithmetic Operations
+- 🔄 Data Transformation
+- 🔢 Numerical Processing
+- 📐 Rounding Operations
 
 ---
 
-## 📌 Daily Practice
+# 📌 Daily Practice
 
 Every day, I solve a new SQL programming problem and add the solution to this repository.
 
@@ -854,7 +1019,7 @@ This repository serves as a complete record of my **100 Days of SQL learning jou
 
 ---
 
-## 🌱 Learning in Public
+# 🌱 Learning in Public
 
 This challenge is not only about solving SQL problems.
 
@@ -873,7 +1038,7 @@ It is also about:
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
 If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
 
@@ -881,7 +1046,7 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 ---
 
-## 🤝 Connect With Me
+# 🤝 Connect With Me
 
 Let's learn, build, and grow together! 🌱
 
@@ -891,23 +1056,23 @@ https://github.com/Coder-RD
 
 ---
 
-## 🔖 Hashtags
+# 🔖 Hashtags
 
-`#100DaysOfCode`
-`#100DaysOfSQL`
-`#SQL`
-`#HackerRank`
-`#Database`
-`#MySQL`
-`#SQLChallenge`
-`#LearningInPublic`
-`#GitHub`
-`#CodingJourney`
-`#Developer`
-`#ProblemSolving`
-`#DataAnalytics`
-`#SQLLearning`
-`#DatabaseManagement`
+`#100DaysOfCode`  
+`#100DaysOfSQL`  
+`#SQL`  
+`#HackerRank`  
+`#Database`  
+`#MySQL`  
+`#SQLChallenge`  
+`#LearningInPublic`  
+`#GitHub`  
+`#CodingJourney`  
+`#Developer`  
+`#ProblemSolving`  
+`#DataAnalytics`  
+`#SQLLearning`  
+`#DatabaseManagement`  
 `#OpenToWork`
 
 ---
@@ -918,6 +1083,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**28 Days Completed ✅ | 72 Days Remaining ⏳ | 100 Days Goal 🎯**
+**29 Days Completed ✅ | 71 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊**
