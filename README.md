@@ -160,6 +160,10 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
     │   ├── Top Earners.sql
     │   └── Screenshot 2026-08-25 194023.png
     │
+    ├── Day31-SQL/
+    │   ├── Weather Observation Station 2.sql
+    │   └── Screenshot 2026-08-26 171214.png
+    │
     └── README.md
 
 ---
@@ -198,7 +202,8 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 | ✅ Day 28 | Population Density Difference | Completed |
 | ✅ Day 29 | The Blunder | Completed |
 | ✅ Day 30 | Top Earners | Completed |
-| ⏳ Day 31 | Coming Soon | Pending |
+| ✅ Day 31 | Weather Observation Station 2 | Completed 🎉 |
+| ⏳ Day 32 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -269,6 +274,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ MIN()
 - ✅ FLOOR()
 - ✅ CEIL()
+- ✅ ROUND()
 - ✅ Aggregate Data Analysis
 - ✅ Average Calculation
 - ✅ Population Analysis
@@ -294,6 +300,16 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Arithmetic Operations
 - ✅ Aggregate Analysis
 
+## 🔹 Location & Weather Data Analysis
+
+- ✅ Latitude Analysis
+- ✅ Longitude Analysis
+- ✅ SUM()
+- ✅ ROUND()
+- ✅ Geographic Data Processing
+- ✅ Decimal Precision
+- ✅ Aggregate Calculations
+
 ---
 
 # 🧠 Skills I'm Building
@@ -315,6 +331,7 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - 🏙️ Population Data Analysis
 - 👨‍💼 Employee Data Handling
 - 💰 Salary-Based Analysis
+- 🌍 Geographic Data Analysis
 - 🎯 Technical Interview Preparation
 - 🔄 Data Transformation
 - 🔢 Numerical Operations
@@ -353,7 +370,78 @@ This repository contains my daily SQL practice solutions from **HackerRank**, wh
 - ✅ Day 28 Completed 🎉
 - ✅ Day 29 Completed 🎉
 - ✅ Day 30 Completed 🎉🔥
+- ✅ Day 31 Completed 🎉🔥
 - ⏳ Continuing every day...
+
+---
+
+# 🆕 Day 31 – Weather Observation Station 2
+
+### 🎯 Challenge
+
+**Weather Observation Station 2**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 SUM()
+- 🔹 ROUND()
+- 🔹 Aggregate Functions
+- 🔹 Latitude Data
+- 🔹 Longitude Data
+- 🔹 Decimal Rounding
+- 🔹 Numerical Data Processing
+- 🔹 Geographic Data Analysis
+
+### 💡 Key Concept
+
+The **Weather Observation Station 2** challenge focuses on calculating the total sum of the `LAT_N` and `LONG_W` values from the `STATION` table.
+
+Both results must be rounded to **2 decimal places**.
+
+### 🔑 SQL Query
+
+    SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2)
+    FROM STATION;
+
+### 🧠 How the Query Works
+
+- `SUM(LAT_N)` calculates the total of all northern latitude values.
+- `SUM(LONG_W)` calculates the total of all western longitude values.
+- `ROUND(..., 2)` rounds each result to two decimal places.
+- The query returns both values on the same line.
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Calculate totals using `SUM()`.
+- Round numerical results using `ROUND()`.
+- Work with latitude and longitude data.
+- Apply aggregate functions.
+- Handle decimal precision.
+- Perform basic geographic data analysis.
+- Write concise SQL queries.
+
+### 📂 Files Added
+
+    Day31-SQL/
+    ├── Weather Observation Station 2.sql
+    └── Screenshot 2026-08-26 171214.png
+
+### ✅ Status
+
+**Completed 🎉🔥**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -877,23 +965,23 @@ The upcoming days will focus on advanced SQL concepts, including:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **30 / 100** |
-| 💻 Challenges Solved | **30** |
+| 📅 Days Completed | **31 / 100** |
+| 💻 Challenges Solved | **31** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🐬 Database | **MySQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **30% Complete** 🚀 |
-| 🔥 Current Streak | **30 Days** |
-| ⏳ Days Remaining | **70 Days** |
+| 📈 Progress | **31% Complete** 🚀 |
+| 🔥 Current Streak | **31 Days** |
+| ⏳ Days Remaining | **69 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **30 Days of SQL Practice Completed! 🎉🔥**
+## **31 Days of SQL Practice Completed! 🎉🔥**
 
-> **30 days down, 70 more to go! 🚀**
+> **31 days down, 69 more to go! 🚀**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, and problem-solving approach.
 
@@ -909,7 +997,8 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 27 | ✅ Completed |
 | 🎯 Day 28 | ✅ Completed |
 | 🎯 Day 29 | ✅ Completed |
-| 🎯 Day 30 | ✅ Completed 🎉🔥 |
+| 🎯 Day 30 | ✅ Completed |
+| 🎯 Day 31 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -944,15 +1033,16 @@ My daily learning process includes:
     Day 28    ████████████████████ 100% ✅
     Day 29    ████████████████████ 100% ✅
     Day 30    ████████████████████ 100% ✅
-    Day 50    ██████░░░░░░░░░░░░░░  60% ⏳
-    Day 75    ████████░░░░░░░░░░░░  40% ⏳
-    Day 100   ██████░░░░░░░░░░░░░░  30% ⏳
+    Day 31    ████████████████████ 100% ✅
+    Day 50    ██████░░░░░░░░░░░░░░  62% ⏳
+    Day 75    ████████░░░░░░░░░░░░  41% ⏳
+    Day 100   ██████░░░░░░░░░░░░░░  31% ⏳
 
 ## 🚀 Overall Progress
 
-    [██████░░░░░░░░░░░░] 30%
+    [██████░░░░░░░░░░░░] 31%
 
-    30 / 100 Days Completed
+    31 / 100 Days Completed
 
 ---
 
@@ -1030,11 +1120,17 @@ My daily learning process includes:
 
     SELECT CEIL(Value);
 
+## 🔹 Sum and Round
+
+    SELECT ROUND(SUM(LAT_N), 2),
+           ROUND(SUM(LONG_W), 2)
+    FROM STATION;
+
 ---
 
 # 📖 Topics Learned So Far
 
-Throughout the first **30 days**, I have practiced SQL concepts related to:
+Throughout the first **31 days**, I have practiced SQL concepts related to:
 
 - 🗄️ Data Retrieval
 - 🔍 Data Filtering
@@ -1052,6 +1148,7 @@ Throughout the first **30 days**, I have practiced SQL concepts related to:
 - 🔝 CEIL()
 - 🔄 REPLACE()
 - 🔗 CONCAT()
+- 🔄 ROUND()
 - 🏷️ Occupation-Based Queries
 - 👨‍💼 Employee Data
 - 💰 Salary Filtering
@@ -1060,6 +1157,7 @@ Throughout the first **30 days**, I have practiced SQL concepts related to:
 - 🏙️ City Data
 - 🌍 Country-Based Filtering
 - 👥 Population Analysis
+- 🌐 Latitude and Longitude Analysis
 - 🔺 Conditional Classification
 - 🧠 Logical Thinking
 - ⚡ Query Writing
@@ -1136,6 +1234,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**30 Days Completed ✅ | 70 Days Remaining ⏳ | 100 Days Goal 🎯**
+**31 Days Completed ✅ | 69 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊**
