@@ -178,6 +178,10 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
     │   ├── Weather Observation Station 14.sql
     │   └── Screenshot 2026-08-28 224036.png
     │
+    ├── Day34-SQL/
+    │   ├── Weather Observation Station 15.sql
+    │   └── Screenshot 2026-08-29 205609.png
+    │
     └── README.md
 
 ---
@@ -219,7 +223,8 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 | ✅ Day 31 | Weather Observation Station 2 | Completed |
 | ✅ Day 32 | Weather Observation Station 13 | Completed 🎉 |
 | ✅ Day 33 | Weather Observation Station 14 | Completed 🎉🔥 |
-| ⏳ Day 34 | Coming Soon | Pending |
+| ✅ Day 34 | Weather Observation Station 15 | Completed 🎉🔥 |
+| ⏳ Day 35 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -324,43 +329,97 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 - ✅ Longitude Analysis
 - ✅ SUM()
 - ✅ MAX()
+- ✅ MIN()
 - ✅ ROUND()
 - ✅ Geographic Data Processing
 - ✅ Decimal Precision
 - ✅ Aggregate Calculations
 - ✅ Latitude-Based Filtering
 - ✅ Maximum Latitude Selection
+- ✅ Longitude Retrieval
 - ✅ Rounding Results
 - ✅ Truncation Concepts
+- ✅ Subqueries
 
 ---
 
-# 🧠 Skills I'm Building
+# 🆕 Day 34 – Weather Observation Station 15
 
-- 🗄️ SQL Query Writing
-- 🗃️ Database Fundamentals
-- 🔍 Data Filtering
-- 📊 Data Analysis
-- 📑 Data Sorting
-- 🔠 String Manipulation
-- 🔎 Pattern Matching
-- 🔤 Regular Expressions
-- 🧮 Aggregate Functions
-- 👥 Grouping Records
-- 💡 Problem Solving
-- 🧠 Logical Thinking
-- ⚡ Query Optimization
-- 📈 Analytical Thinking
-- 🏙️ Population Data Analysis
-- 👨‍💼 Employee Data Handling
-- 💰 Salary-Based Analysis
-- 🌍 Geographic Data Analysis
-- 🎯 Technical Interview Preparation
-- 🔄 Data Transformation
-- 🔢 Numerical Operations
-- 📐 Decimal Precision
-- 🔼 Maximum Value Analysis
-- 🗺️ Latitude & Longitude Processing
+### 🎯 Challenge
+
+**Weather Observation Station 15**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 MAX()
+- 🔹 WHERE
+- 🔹 Subquery
+- 🔹 ROUND()
+- 🔹 LAT_N
+- 🔹 LONG_W
+- 🔹 Latitude Analysis
+- 🔹 Longitude Retrieval
+- 🔹 Decimal Precision
+- 🔹 DB2 SQL
+- 🔹 Geographic Data Analysis
+
+### 💡 Key Concept
+
+The **Weather Observation Station 15** challenge focuses on finding the **Western Longitude (`LONG_W`)** corresponding to the **largest Northern Latitude (`LAT_N`)** that satisfies the given condition.
+
+The result must be rounded to the required number of decimal places.
+
+### 🧠 Problem-Solving Approach
+
+1. Filter the `STATION` table using the required `LAT_N` condition.
+2. Find the largest qualifying `LAT_N` using `MAX()`.
+3. Retrieve the corresponding `LONG_W`.
+4. Round the longitude value to the required decimal places.
+5. Return the final result.
+
+### 🔑 SQL Concepts Used
+
+    SELECT
+    MAX()
+    WHERE
+    Subquery
+    ROUND()
+    LAT_N
+    LONG_W
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Find the maximum value from filtered data.
+- Retrieve another column associated with the maximum value.
+- Use subqueries in SQL.
+- Apply numerical filtering.
+- Work with latitude and longitude data.
+- Round decimal values.
+- Perform geographic data analysis.
+- Write SQL queries in a DB2 environment.
+
+### 📂 Files Added
+
+    Day34-SQL/
+    ├── Weather Observation Station 15.sql
+    └── Screenshot 2026-08-29 205609.png
+
+### ✅ Status
+
+**Completed 🎉🔥**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -393,41 +452,20 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 14** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that is less than the given limit.
+The **Weather Observation Station 14** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that satisfies the given condition.
 
-The resulting value needs to be **rounded to 4 decimal places**.
-
-### 🔑 SQL Concepts Used
-
-    MAX()
-    WHERE
-    ROUND()
-    SELECT
-
-### 🧠 How the Query Works
-
-1. `WHERE LAT_N < 137.2345` filters the latitude values below the given limit.
-2. `MAX(LAT_N)` finds the greatest latitude among the filtered values.
-3. `ROUND(..., 4)` rounds the result to four decimal places.
-4. The final result is returned as a single value.
-
-### 🔑 DB2 SQL Query
-
-    SELECT ROUND(MAX(LAT_N), 4)
-    FROM STATION
-    WHERE LAT_N < 137.2345;
+The resulting value is rounded to the required decimal places.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+Through this challenge, I practiced:
 
-- Find the maximum value using `MAX()`.
-- Filter numerical data using `WHERE`.
-- Round decimal values using `ROUND()`.
-- Work with latitude data.
-- Combine aggregate functions with filtering.
-- Write SQL queries in a DB2 environment.
-- Improve numerical data analysis skills.
+- Finding maximum values.
+- Filtering numerical data.
+- Using aggregate functions.
+- Working with latitude data.
+- Rounding decimal values.
+- Solving SQL problems using DB2.
 
 ### 📂 Files Added
 
@@ -438,8 +476,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -472,37 +508,18 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 13** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that is less than `137.2345`.
-
-The answer must be **truncated to 4 decimal places**.
-
-### 🧠 How the Query Works
-
-1. The `WHERE` clause filters values of `LAT_N` that are less than `137.2345`.
-2. `MAX(LAT_N)` finds the greatest value among the filtered records.
-3. The result is truncated to four decimal places.
-4. The final value is returned as the answer.
-
-### 🔑 SQL Concepts Used
-
-    SELECT
-    MAX()
-    WHERE
-    LAT_N
-    Decimal Truncation
-    Numerical Filtering
+The **Weather Observation Station 13** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that satisfies the specified condition and truncating the result to the required decimal places.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced:
 
-- Find the maximum value from filtered data.
-- Apply conditions using `WHERE`.
-- Work with decimal values.
-- Handle latitude data.
-- Understand truncation of decimal values.
-- Perform numerical analysis using SQL.
-- Solve SQL challenges using DB2.
+- Maximum value analysis.
+- Numerical filtering.
+- Latitude analysis.
+- Decimal truncation.
+- Aggregate functions.
+- DB2 SQL query writing.
 
 ### 📂 Files Added
 
@@ -513,8 +530,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -530,7 +545,7 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 ### 🗄️ Language
 
-**SQL**
+**DB2 SQL**
 
 ### 📚 Concepts Practiced
 
@@ -546,33 +561,23 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 2** challenge focuses on calculating the total sum of the `LAT_N` and `LONG_W` values from the `STATION` table.
+The challenge focuses on calculating the total `LAT_N` and `LONG_W` values from the `STATION` table and rounding both results to the required decimal places.
 
-Both results must be rounded to **2 decimal places**.
+### 🔑 SQL Concept
 
-### 🔑 SQL Query Concept
-
-    SELECT ROUND(SUM(LAT_N), 2), ROUND(SUM(LONG_W), 2)
+    SELECT ROUND(SUM(LAT_N), 2),
+           ROUND(SUM(LONG_W), 2)
     FROM STATION;
-
-### 🧠 How the Query Works
-
-- `SUM(LAT_N)` calculates the total of all northern latitude values.
-- `SUM(LONG_W)` calculates the total of all western longitude values.
-- `ROUND(..., 2)` rounds each result to two decimal places.
-- The query returns both values on the same line.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+I practiced:
 
-- Calculate totals using `SUM()`.
-- Round numerical results using `ROUND()`.
-- Work with latitude and longitude data.
-- Apply aggregate functions.
-- Handle decimal precision.
-- Perform geographic data analysis.
-- Write concise SQL queries.
+- Calculating totals using `SUM()`.
+- Rounding numerical values.
+- Working with geographic data.
+- Handling decimal precision.
+- Applying aggregate functions.
 
 ### 📂 Files Added
 
@@ -613,31 +618,20 @@ Through this challenge, I practiced how to:
 - 🔹 Maximum Earnings
 - 🔹 Subqueries
 - 🔹 Query Writing
-- 🔹 Problem Solving
 
 ### 💡 Key Concept
 
 The **Top Earners** challenge focuses on finding the maximum total earnings of an employee and determining how many employees have the same maximum total earnings.
 
-Total earnings are calculated as:
-
     Total Earnings = Months × Salary
-
-### 🧠 How the Query Works
-
-- `months * salary` calculates total earnings.
-- `MAX()` finds the highest total earnings.
-- A subquery identifies the maximum earning value.
-- `WHERE` selects employees having that maximum earning.
-- `COUNT(*)` counts the employees with maximum earnings.
 
 ### 🎯 Learning Outcome
 
 I practiced:
 
 - Arithmetic expressions.
-- `MAX()`.
-- `COUNT()`.
+- MAX().
+- COUNT().
 - Subqueries.
 - Employee salary analysis.
 - Aggregate functions.
@@ -683,13 +677,7 @@ I practiced:
 
 ### 💡 Key Concept
 
-The **The Blunder** challenge focuses on calculating the difference between the actual average salary and the incorrect average salary obtained after removing zeros from salary values.
-
-### 🔑 SQL Functions Used
-
-    AVG()
-    REPLACE()
-    CEIL()
+The challenge focuses on calculating the difference between the actual average salary and the incorrect average salary obtained after removing zeros from salary values.
 
 ### 🎯 Learning Outcome
 
@@ -699,7 +687,7 @@ I practiced:
 - Manipulating salary data.
 - Removing characters from values.
 - Applying mathematical operations.
-- Using `CEIL()`.
+- Using CEIL().
 - Combining multiple SQL functions.
 
 ### 📂 Files Added
@@ -747,8 +735,8 @@ I practiced:
 
 I practiced:
 
-- Using `MAX()`.
-- Using `MIN()`.
+- Using MAX().
+- Using MIN().
 - Combining aggregate functions.
 - Performing arithmetic operations.
 - Analyzing numerical data.
@@ -803,7 +791,7 @@ I practiced:
 - Filtering data.
 - Country-specific analysis.
 - Population analysis.
-- Combining `SUM()` and `WHERE`.
+- Combining SUM() and WHERE.
 
 ### 📂 Files Added
 
@@ -1059,50 +1047,45 @@ I practiced:
     FROM STATION
     WHERE LAT_N < 137.2345;
 
+## 🔹 Maximum Latitude and Corresponding Longitude
+
+    SELECT LONG_W
+    FROM STATION
+    WHERE LAT_N = (
+        SELECT MAX(LAT_N)
+        FROM STATION
+        WHERE LAT_N < 137.2345
+    );
+
 ---
 
-# 📖 Topics Learned So Far
+# 🧠 Skills I'm Building
 
-Throughout the first **33 days**, I have practiced SQL concepts related to:
-
-- 🗄️ Data Retrieval
+- 🗄️ SQL Query Writing
+- 🗃️ Database Fundamentals
 - 🔍 Data Filtering
-- 📊 Data Sorting
-- 🔤 String Manipulation
-- 🔎 Pattern Matching
-- 🧮 Aggregate Functions
-- 👥 GROUP BY
-- 🔢 COUNT()
-- 📈 AVG()
-- ➕ SUM()
-- 🔼 MAX()
-- 🔽 MIN()
-- 🔽 FLOOR()
-- 🔝 CEIL()
-- 🔄 REPLACE()
-- 🔗 CONCAT()
-- 🔄 ROUND()
-- 📋 Subqueries
-- 🏷️ Occupation-Based Queries
-- 👨‍💼 Employee Data
-- 💰 Salary Filtering
-- 💵 Salary Analysis
-- 🏆 Maximum Earnings
-- 🏙️ City Data
-- 🌍 Country-Based Filtering
-- 👥 Population Analysis
-- 🌐 Latitude and Longitude Analysis
-- 🔺 Conditional Classification
-- 🧠 Logical Thinking
-- ⚡ Query Writing
 - 📊 Data Analysis
-- 🧩 Problem Solving
-- ➗ Arithmetic Operations
-- 🔄 Data Transformation
-- 🔢 Numerical Processing
-- 📐 Rounding Operations
-- ✂️ Decimal Truncation
+- 📑 Data Sorting
+- 🔠 String Manipulation
+- 🔎 Pattern Matching
+- 🔤 Regular Expressions
+- 🧮 Aggregate Functions
+- 👥 Grouping Records
+- 💡 Problem Solving
+- 🧠 Logical Thinking
+- ⚡ Query Optimization
+- 📈 Analytical Thinking
+- 🏙️ Population Data Analysis
+- 👨‍💼 Employee Data Handling
+- 💰 Salary-Based Analysis
+- 🌍 Geographic Data Analysis
 - 🎯 Technical Interview Preparation
+- 🔄 Data Transformation
+- 🔢 Numerical Operations
+- 📐 Decimal Precision
+- 🔼 Maximum Value Analysis
+- 🗺️ Latitude & Longitude Processing
+- 🔗 Subquery-Based Analysis
 
 ---
 
@@ -1110,7 +1093,7 @@ Throughout the first **33 days**, I have practiced SQL concepts related to:
 
 During this challenge, I am also practicing SQL queries in a **DB2 environment** on HackerRank.
 
-This helps me understand that SQL syntax can vary slightly between database systems and improves my ability to adapt queries according to the database engine.
+This helps me understand that SQL syntax can vary between database systems and improves my ability to adapt queries according to the database engine.
 
 ### DB2 Concepts Practiced
 
@@ -1121,9 +1104,11 @@ This helps me understand that SQL syntax can vary slightly between database syst
 - 🔍 WHERE Conditions
 - 🔼 MAX()
 - 📍 Latitude Filtering
+- 🌐 Longitude Retrieval
 - 🔢 Decimal Precision
 - ✂️ Truncation
 - 🧮 Mathematical Operations
+- 🔗 Subqueries
 
 ---
 
@@ -1162,6 +1147,7 @@ This helps me understand that SQL syntax can vary slightly between database syst
 - ✅ Day 31 Completed 🎉🔥
 - ✅ Day 32 Completed 🎉🔥
 - ✅ Day 33 Completed 🎉🔥
+- ✅ Day 34 Completed 🎉🔥
 - ⏳ Continuing every day...
 
 ---
@@ -1170,23 +1156,23 @@ This helps me understand that SQL syntax can vary slightly between database syst
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **33 / 100** |
-| 💻 Challenges Solved | **33** |
+| 📅 Days Completed | **34 / 100** |
+| 💻 Challenges Solved | **34** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **33% Complete** 🚀 |
-| 🔥 Current Streak | **33 Days** |
-| ⏳ Days Remaining | **67 Days** |
+| 📈 Progress | **34% Complete** 🚀 |
+| 🔥 Current Streak | **34 Days** |
+| ⏳ Days Remaining | **66 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **33 Days of SQL Practice Completed! 🎉🔥**
+## **34 Days of SQL Practice Completed! 🎉🔥**
 
-> **33 days down, 67 more to go! 🚀**
+> **34 days down, 66 more to go! 🚀**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, and problem-solving approach.
 
@@ -1206,6 +1192,7 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 31 | ✅ Completed 🎉 |
 | 🎯 Day 32 | ✅ Completed 🎉 |
 | 🎯 Day 33 | ✅ Completed 🎉🔥 |
+| 🎯 Day 34 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1220,22 +1207,20 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
     Day 15    ████████████████████ 100% ✅
     Day 20    ████████████████████ 100% ✅
     Day 25    ████████████████████ 100% ✅
-    Day 27    ████████████████████ 100% ✅
-    Day 28    ████████████████████ 100% ✅
-    Day 29    ████████████████████ 100% ✅
     Day 30    ████████████████████ 100% ✅
     Day 31    ████████████████████ 100% ✅
     Day 32    ████████████████████ 100% ✅
     Day 33    ████████████████████ 100% ✅
-    Day 50    █████████████░░░░░░░  66% ⏳
-    Day 75    █████████░░░░░░░░░░░  44% ⏳
-    Day 100   ███████░░░░░░░░░░░░░  33% ⏳
+    Day 34    ████████████████████ 100% ✅
+    Day 50    █████████████░░░░░░░  68% ⏳
+    Day 75    █████████░░░░░░░░░░░  45% ⏳
+    Day 100   ███████░░░░░░░░░░░░░  34% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 33%
+    [███████░░░░░░░░░░░] 34%
 
-    33 / 100 Days Completed
+    34 / 100 Days Completed
 
 ---
 
@@ -1362,7 +1347,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#MySQL` `#DB2SQL` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#OpenToWork`
 
 ---
 
@@ -1372,6 +1357,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**33 Days Completed ✅ | 67 Days Remaining ⏳ | 100 Days Goal 🎯**
+**34 Days Completed ✅ | 66 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
