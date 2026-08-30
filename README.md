@@ -39,6 +39,7 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 - 🔹 Rounding & Truncation
 - 🔹 Subqueries
 - 🔹 Data Analysis
+- 🔹 Geographic Data Analysis
 
 ---
 
@@ -182,6 +183,10 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
     │   ├── Weather Observation Station 15.sql
     │   └── Screenshot 2026-08-29 205609.png
     │
+    ├── Day35-SQL/
+    │   ├── Weather Observation Station 16.sql
+    │   └── Screenshot 2026-08-30 221312.png
+    │
     └── README.md
 
 ---
@@ -224,7 +229,8 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 | ✅ Day 32 | Weather Observation Station 13 | Completed 🎉 |
 | ✅ Day 33 | Weather Observation Station 14 | Completed 🎉🔥 |
 | ✅ Day 34 | Weather Observation Station 15 | Completed 🎉🔥 |
-| ⏳ Day 35 | Coming Soon | Pending |
+| ✅ Day 35 | Weather Observation Station 16 | Completed 🎉🔥 |
+| ⏳ Day 36 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
@@ -336,10 +342,88 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 - ✅ Aggregate Calculations
 - ✅ Latitude-Based Filtering
 - ✅ Maximum Latitude Selection
+- ✅ Minimum Latitude Selection
 - ✅ Longitude Retrieval
 - ✅ Rounding Results
 - ✅ Truncation Concepts
 - ✅ Subqueries
+
+---
+
+# 🆕 Day 35 – Weather Observation Station 16
+
+### 🎯 Challenge
+
+**Weather Observation Station 16**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 MIN()
+- 🔹 WHERE
+- 🔹 ROUND()
+- 🔹 Aggregate Functions
+- 🔹 Latitude Analysis
+- 🔹 Numerical Filtering
+- 🔹 Decimal Precision
+- 🔹 DB2 SQL
+- 🔹 Geographic Data Analysis
+
+### 💡 Key Concept
+
+The **Weather Observation Station 16** challenge focuses on finding the **smallest Northern Latitude (`LAT_N`)** from the `STATION` table that is greater than the specified latitude value.
+
+The result must be rounded to the required number of decimal places.
+
+### 🧠 Problem-Solving Approach
+
+1. Filter the `STATION` table using the condition on `LAT_N`.
+2. Select only latitude values greater than the specified value.
+3. Use `MIN()` to find the smallest qualifying `LAT_N`.
+4. Round the result to the required decimal places.
+5. Return the final result.
+
+### 🔑 SQL Concepts Used
+
+    SELECT
+    MIN()
+    WHERE
+    ROUND()
+    LAT_N
+    Aggregate Functions
+    Decimal Precision
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Find the minimum value from filtered data.
+- Apply numerical filtering conditions.
+- Use aggregate functions.
+- Work with latitude and geographic data.
+- Round numerical results.
+- Handle decimal precision.
+- Write SQL queries in a DB2 environment.
+
+### 📂 Files Added
+
+    Day35-SQL/
+    ├── Weather Observation Station 16.sql
+    └── Screenshot 2026-08-30 221312.png
+
+### ✅ Status
+
+**Completed 🎉🔥**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -418,8 +502,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -1057,6 +1139,18 @@ I practiced:
         WHERE LAT_N < 137.2345
     );
 
+## 🔹 Minimum Latitude with Filtering
+
+    SELECT MIN(LAT_N)
+    FROM STATION
+    WHERE LAT_N > 38.7780;
+
+## 🔹 Minimum Latitude with Rounding
+
+    SELECT ROUND(MIN(LAT_N), 4)
+    FROM STATION
+    WHERE LAT_N > 38.7780;
+
 ---
 
 # 🧠 Skills I'm Building
@@ -1084,6 +1178,7 @@ I practiced:
 - 🔢 Numerical Operations
 - 📐 Decimal Precision
 - 🔼 Maximum Value Analysis
+- 🔽 Minimum Value Analysis
 - 🗺️ Latitude & Longitude Processing
 - 🔗 Subquery-Based Analysis
 
@@ -1103,6 +1198,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 📊 Aggregate Functions
 - 🔍 WHERE Conditions
 - 🔼 MAX()
+- 🔽 MIN()
 - 📍 Latitude Filtering
 - 🌐 Longitude Retrieval
 - 🔢 Decimal Precision
@@ -1148,6 +1244,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 32 Completed 🎉🔥
 - ✅ Day 33 Completed 🎉🔥
 - ✅ Day 34 Completed 🎉🔥
+- ✅ Day 35 Completed 🎉🔥
 - ⏳ Continuing every day...
 
 ---
@@ -1156,23 +1253,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **34 / 100** |
-| 💻 Challenges Solved | **34** |
+| 📅 Days Completed | **35 / 100** |
+| 💻 Challenges Solved | **35** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **34% Complete** 🚀 |
-| 🔥 Current Streak | **34 Days** |
-| ⏳ Days Remaining | **66 Days** |
+| 📈 Progress | **35% Complete** 🚀 |
+| 🔥 Current Streak | **35 Days** |
+| ⏳ Days Remaining | **65 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **34 Days of SQL Practice Completed! 🎉🔥**
+## **35 Days of SQL Practice Completed! 🎉🔥**
 
-> **34 days down, 66 more to go! 🚀**
+> **35 days down, 65 more to go! 🚀**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, and problem-solving approach.
 
@@ -1193,6 +1290,7 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 32 | ✅ Completed 🎉 |
 | 🎯 Day 33 | ✅ Completed 🎉🔥 |
 | 🎯 Day 34 | ✅ Completed 🎉🔥 |
+| 🎯 Day 35 | ✅ Completed 🎉🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -1212,15 +1310,16 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
     Day 32    ████████████████████ 100% ✅
     Day 33    ████████████████████ 100% ✅
     Day 34    ████████████████████ 100% ✅
-    Day 50    █████████████░░░░░░░  68% ⏳
-    Day 75    █████████░░░░░░░░░░░  45% ⏳
-    Day 100   ███████░░░░░░░░░░░░░  34% ⏳
+    Day 35    ████████████████████ 100% ✅
+    Day 50    ███████░░░░░░░░░░░░░  35% ⏳
+    Day 75    █████████░░░░░░░░░░░  47% ⏳
+    Day 100   ███████░░░░░░░░░░░░░  35% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 34%
+    [███████░░░░░░░░░░░] 35%
 
-    34 / 100 Days Completed
+    35 / 100 Days Completed
 
 ---
 
@@ -1357,6 +1456,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**34 Days Completed ✅ | 66 Days Remaining ⏳ | 100 Days Goal 🎯**
+**35 Days Completed ✅ | 65 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
