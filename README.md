@@ -2,9 +2,9 @@
 
 Welcome to my **#100DaysOfCode SQL Challenge** repository! 🚀
 
-This repository contains my daily SQL practice solutions from **HackerRank**, where I solve SQL challenges to strengthen my database knowledge, query-writing skills, logical thinking, problem-solving abilities, and data analysis skills.
+This repository documents my daily SQL practice journey through **HackerRank**, where I solve SQL challenges to strengthen my database knowledge, query-writing skills, logical thinking, problem-solving abilities, and data analysis skills.
 
-The goal is to solve **one SQL challenge every day for 100 days** and continuously improve my SQL, database, and analytical skills. 💻🗄️📊
+The goal is simple: **solve one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL and database skills. 💻🗄️📊
 
 ---
 
@@ -12,7 +12,7 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 
 - 🗄️ Practice SQL every day for 100 days.
 - 📚 Strengthen SQL and Database Management concepts.
-- 🧩 Improve problem-solving and logical thinking.
+- 🧩 Improve logical thinking and problem-solving skills.
 - 📊 Develop data analysis skills.
 - ⚡ Learn to write efficient SQL queries.
 - 🧠 Understand database functions and operations.
@@ -195,6 +195,10 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
     │   ├── Weather Observation Station 17.sql
     │   └── HackerRank Submission Screenshot
     │
+    ├── Day37-SQL/
+    │   ├── Weather Observation Station 18.sql
+    │   └── Screenshot 2026-09-01 125035.png
+    │
     └── README.md
 
 ---
@@ -239,13 +243,14 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 | ✅ Day 34 | Weather Observation Station 15 | Completed 🎉🔥 |
 | ✅ Day 35 | Weather Observation Station 16 | Completed 🎉🔥 |
 | ✅ Day 36 | Weather Observation Station 17 | Completed 🎉🔥🚀 |
-| ⏳ Day 37 | Coming Soon | Pending |
+| ✅ Day 37 | Weather Observation Station 18 | Completed 🎉🔥🚀 |
+| ⏳ Day 38 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
 ---
 
-# 📖 Topics Covered
+# 📚 Topics Covered
 
 ## 🔹 SQL Fundamentals
 
@@ -358,6 +363,97 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 - ✅ Truncation Concepts
 - ✅ Subqueries
 - ✅ Related Data Retrieval
+- ✅ Manhattan Distance Calculation
+
+---
+
+# 🆕 Day 37 – Weather Observation Station 18
+
+### 🎯 Challenge
+
+**Weather Observation Station 18**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 MIN()
+- 🔹 MAX()
+- 🔹 ABS()
+- 🔹 Mathematical Expressions
+- 🔹 Aggregate Functions
+- 🔹 Latitude Analysis
+- 🔹 Longitude Analysis
+- 🔹 Manhattan Distance
+- 🔹 Numerical Data Processing
+- 🔹 Geographic Data Analysis
+- 🔹 DB2 SQL
+- 🔹 Decimal Precision
+
+### 💡 Key Concept
+
+The **Weather Observation Station 18** challenge focuses on calculating the **Manhattan Distance** between the minimum and maximum values of the Northern Latitude (`LAT_N`) and Western Longitude (`LONG_W`) from the `STATION` table.
+
+The Manhattan Distance is calculated using the absolute differences between the latitude and longitude values.
+
+### 🧠 Problem-Solving Approach
+
+1. Find the minimum `LAT_N` value.
+2. Find the maximum `LAT_N` value.
+3. Find the minimum `LONG_W` value.
+4. Find the maximum `LONG_W` value.
+5. Calculate the absolute difference between the latitude values.
+6. Calculate the absolute difference between the longitude values.
+7. Add both differences to obtain the Manhattan Distance.
+8. Apply the required decimal precision.
+9. Return the final result.
+
+### 🔑 SQL Concepts Used
+
+    SELECT
+    MIN()
+    MAX()
+    ABS()
+    LAT_N
+    LONG_W
+    Aggregate Functions
+    Mathematical Expressions
+    Manhattan Distance
+    Decimal Precision
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Find minimum and maximum values from a dataset.
+- Apply aggregate functions to geographic data.
+- Calculate absolute differences.
+- Perform mathematical calculations in SQL.
+- Work with latitude and longitude values.
+- Understand Manhattan Distance calculations.
+- Handle decimal precision.
+- Strengthen SQL query-writing skills.
+- Improve logical and analytical thinking.
+- Write SQL queries in a DB2 environment.
+
+### 📂 Files Added
+
+    Day37-SQL/
+    ├── Weather Observation Station 18.sql
+    └── Screenshot 2026-09-01 125035.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -377,12 +473,13 @@ The goal is to solve **one SQL challenge every day for 100 days** and continuous
 
 ### 📚 Concepts Practiced
 
-- 🔹 `MIN()`
-- 🔹 `WHERE`
+- 🔹 SELECT
+- 🔹 MIN()
+- 🔹 WHERE
 - 🔹 Subqueries
-- 🔹 `LAT_N`
-- 🔹 `LONG_W`
-- 🔹 `ROUND()`
+- 🔹 LAT_N
+- 🔹 LONG_W
+- 🔹 ROUND()
 - 🔹 Decimal Precision
 - 🔹 Aggregate Functions
 - 🔹 Data Filtering
@@ -397,8 +494,6 @@ The **Weather Observation Station 17** challenge focuses on finding the **Wester
 
 The result is rounded to the required number of decimal places.
 
-This challenge provides practice in combining **aggregate functions, filtering, subqueries, and related column retrieval** from the `STATION` table.
-
 ### 🧠 Problem-Solving Approach
 
 1. Filter the `STATION` table using the required `LAT_N` condition.
@@ -407,18 +502,6 @@ This challenge provides practice in combining **aggregate functions, filtering, 
 4. Retrieve the corresponding `LONG_W`.
 5. Apply `ROUND()` to the longitude value when required.
 6. Return the final result.
-
-### 🔑 SQL Concepts Used
-
-    SELECT
-    MIN()
-    WHERE
-    Subquery
-    ROUND()
-    LAT_N
-    LONG_W
-    Aggregate Functions
-    Decimal Precision
 
 ### 🎯 Learning Outcome
 
@@ -432,7 +515,6 @@ Through this challenge, I practiced how to:
 - Apply decimal rounding.
 - Improve SQL query-writing skills.
 - Strengthen logical and analytical thinking.
-- Write SQL queries in a DB2 environment.
 
 ### 📂 Files Added
 
@@ -443,8 +525,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -480,14 +560,6 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 The **Weather Observation Station 16** challenge focuses on finding the smallest Northern Latitude (`LAT_N`) from the `STATION` table that satisfies the specified latitude condition.
 
 The result must be rounded to the required number of decimal places.
-
-### 🧠 Problem-Solving Approach
-
-1. Filter the `STATION` table using the required `LAT_N` condition.
-2. Select latitude values greater than the specified value.
-3. Use `MIN()` to find the smallest qualifying latitude.
-4. Round the result using `ROUND()`.
-5. Return the final result.
 
 ### 🎯 Learning Outcome
 
@@ -546,14 +618,6 @@ Through this challenge, I practiced:
 The **Weather Observation Station 15** challenge focuses on finding the Western Longitude (`LONG_W`) corresponding to the largest Northern Latitude (`LAT_N`) that satisfies the specified condition.
 
 The result must be rounded to the required decimal places.
-
-### 🧠 Problem-Solving Approach
-
-1. Filter the `STATION` table using the required `LAT_N` condition.
-2. Find the largest qualifying `LAT_N` using `MAX()`.
-3. Retrieve the corresponding `LONG_W`.
-4. Round the longitude value.
-5. Return the final result.
 
 ### 🎯 Learning Outcome
 
@@ -769,6 +833,7 @@ I practiced:
 - 🗺️ Latitude & Longitude Processing
 - 🔗 Subquery-Based Analysis
 - 🧩 Related Data Retrieval
+- 📏 Distance Calculation
 - 🛠️ SQL Debugging
 
 ---
@@ -788,6 +853,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🔍 WHERE Conditions
 - 🔼 MAX()
 - 🔽 MIN()
+- ➕ SUM()
 - 📍 Latitude Filtering
 - 🌐 Longitude Retrieval
 - 🔢 Decimal Precision
@@ -795,6 +861,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🧮 Mathematical Operations
 - 🔗 Subqueries
 - 🧩 Related Data Retrieval
+- 📏 Manhattan Distance
 
 ---
 
@@ -836,7 +903,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 34 Completed 🎉🔥
 - ✅ Day 35 Completed 🎉🔥
 - ✅ Day 36 Completed 🎉🔥🚀
-- ⏳ Continuing every day...
+- ✅ Day 37 Completed 🎉🔥🚀
+- ⏳ Day 38 → Day 100 Continuing...
 
 ---
 
@@ -844,23 +912,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **36 / 100** |
-| 💻 Challenges Solved | **36** |
+| 📅 Days Completed | **37 / 100** |
+| 💻 Challenges Solved | **37** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **36% Complete** 🚀 |
-| 🔥 Current Streak | **36 Days** |
-| ⏳ Days Remaining | **64 Days** |
+| 📈 Progress | **37% Complete** 🚀 |
+| 🔥 Current Streak | **37 Days** |
+| ⏳ Days Remaining | **63 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **36 Days of SQL Practice Completed! 🎉🔥**
+## **37 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **36 days down, 64 more to go! 🚀**
+> **37 days down, 63 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -873,9 +941,6 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 10 | ✅ Completed |
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 27 | ✅ Completed |
-| 🎯 Day 28 | ✅ Completed |
-| 🎯 Day 29 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
 | 🎯 Day 31 | ✅ Completed 🎉 |
 | 🎯 Day 32 | ✅ Completed 🎉 |
@@ -883,6 +948,7 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 34 | ✅ Completed 🎉🔥 |
 | 🎯 Day 35 | ✅ Completed 🎉🔥 |
 | 🎯 Day 36 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -891,32 +957,30 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 
 # 📊 Progress Tracker
 
-    Day 1     ████████████████████ 100% ✅
-    Day 5     ████████████████████ 100% ✅
-    Day 10    ████████████████████ 100% ✅
-    Day 15    ████████████████████ 100% ✅
-    Day 20    ████████████████████ 100% ✅
-    Day 25    ████████████████████ 100% ✅
-    Day 30    ████████████████████ 100% ✅
-    Day 31    ████████████████████ 100% ✅
-    Day 32    ████████████████████ 100% ✅
-    Day 33    ████████████████████ 100% ✅
-    Day 34    ████████████████████ 100% ✅
-    Day 35    ████████████████████ 100% ✅
-    Day 36    ████████████████████ 100% ✅
-    Day 50    ███████░░░░░░░░░░░░░  36% ⏳
-    Day 75    █████████░░░░░░░░░░░  48% ⏳
-    Day 100   ███████░░░░░░░░░░░░░  36% ⏳
+    Day 1      ████████████████████ 100% ✅
+    Day 10     ████████████████████ 100% ✅
+    Day 20     ████████████████████ 100% ✅
+    Day 30     ████████████████████ 100% ✅
+    Day 31     ████████████████████ 100% ✅
+    Day 32     ████████████████████ 100% ✅
+    Day 33     ████████████████████ 100% ✅
+    Day 34     ████████████████████ 100% ✅
+    Day 35     ████████████████████ 100% ✅
+    Day 36     ████████████████████ 100% ✅
+    Day 37     ████████████████████ 100% ✅
+    Day 50     ███████░░░░░░░░░░░░░  37% ⏳
+    Day 75     █████████░░░░░░░░░░░  37% ⏳
+    Day 100    ███████░░░░░░░░░░░░░  37% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 36%
+    [███████░░░░░░░░░░░] 37%
 
-    36 / 100 Days Completed
+    37 / 100 Days Completed
 
 ---
 
-# 📚 Learning Approach
+# 📖 Learning Approach
 
 My daily learning process includes:
 
@@ -987,6 +1051,7 @@ Every challenge helps me improve my:
 - 🎯 Technical Interview Preparation
 - 🔗 Subquery-Based Problem Solving
 - 🗺️ Geographic Data Analysis
+- 📏 Mathematical Data Processing
 
 ---
 
@@ -1051,6 +1116,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**36 Days Completed ✅ | 64 Days Remaining ⏳ | 100 Days Goal 🎯**
+**37 Days Completed ✅ | 63 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
