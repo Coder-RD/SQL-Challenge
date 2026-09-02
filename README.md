@@ -1,6 +1,6 @@
 # 🗄️ 100 Days of SQL Challenge
 
-Welcome to my **#100DaysOfCode SQL Challenge** repository! 🚀
+Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
 This repository documents my daily SQL practice journey through **HackerRank**, where I solve SQL challenges to strengthen my database knowledge, query-writing skills, logical thinking, problem-solving abilities, and data analysis skills.
 
@@ -44,6 +44,7 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔹 Geographic Data Analysis
 - 🔹 Latitude & Longitude Processing
 - 🔹 Decimal Precision
+- 🔹 Distance Calculations
 
 ---
 
@@ -199,6 +200,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── Weather Observation Station 18.sql
     │   └── Screenshot 2026-09-01 125035.png
     │
+    ├── Day38-SQL/
+    │   ├── Weather Observation Station 19.sql
+    │   └── Screenshot 2026-09-02 110638.png
+    │
     └── README.md
 
 ---
@@ -244,126 +249,109 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 35 | Weather Observation Station 16 | Completed 🎉🔥 |
 | ✅ Day 36 | Weather Observation Station 17 | Completed 🎉🔥🚀 |
 | ✅ Day 37 | Weather Observation Station 18 | Completed 🎉🔥🚀 |
-| ⏳ Day 38 | Coming Soon | Pending |
+| ✅ Day 38 | Weather Observation Station 19 | Completed 🎉🔥🚀 |
+| ⏳ Day 39 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
 
 ---
 
-# 📚 Topics Covered
+# 🆕 Day 38 – Weather Observation Station 19
 
-## 🔹 SQL Fundamentals
+### 🎯 Challenge
 
-- ✅ SELECT Statement
-- ✅ SELECT *
-- ✅ WHERE Clause
-- ✅ DISTINCT Keyword
-- ✅ Comparison Operators
-- ✅ AND / OR Conditions
-- ✅ Data Filtering
-- ✅ Data Retrieval
-- ✅ Query Writing
-- ✅ Arithmetic Operations
+**Weather Observation Station 19**
 
-## 🔹 Sorting & Filtering
+### 💻 Platform
 
-- ✅ ORDER BY
-- ✅ LIMIT
-- ✅ Alphabetical Sorting
-- ✅ Multiple Column Sorting
-- ✅ ID-Based Sorting
-- ✅ Salary Filtering
-- ✅ Marks Filtering
-- ✅ Employee Data Filtering
-- ✅ Country-Based Filtering
-- ✅ Numerical Conditions
-- ✅ Conditional Filtering
+**HackerRank**
 
-## 🔹 String Functions
+### 🗄️ Language
 
-- ✅ String Manipulation
-- ✅ LENGTH()
-- ✅ CONCAT()
-- ✅ REPLACE()
-- ✅ LIKE
-- ✅ Wildcards
-- ✅ String Formatting
-- ✅ Pattern Matching
-- ✅ Vowel Filtering
+**DB2 SQL**
 
-## 🔹 Regular Expressions
+### 📚 Concepts Practiced
 
-- ✅ REGEXP
-- ✅ Pattern Matching
-- ✅ Beginning & Ending Pattern Matching
-- ✅ Character Matching
-- ✅ DISTINCT with REGEXP
+- 🔹 SELECT
+- 🔹 MIN()
+- 🔹 MAX()
+- 🔹 Mathematical Expressions
+- 🔹 SQRT()
+- 🔹 Aggregate Functions
+- 🔹 Latitude Analysis
+- 🔹 Longitude Analysis
+- 🔹 Euclidean Distance
+- 🔹 Geographic Data Analysis
+- 🔹 Numerical Data Processing
+- 🔹 Decimal Precision
+- 🔹 DB2 SQL
 
-## 🔹 Conditional Logic
+### 💡 Key Concept
 
-- ✅ CASE Statements
-- ✅ Conditional Classification
-- ✅ Triangle Classification
-- ✅ Equilateral Triangle
-- ✅ Isosceles Triangle
-- ✅ Scalene Triangle
-- ✅ Triangle Validation
+The **Weather Observation Station 19** challenge focuses on calculating the **Euclidean Distance** between two points using the minimum and maximum values of `LAT_N` and `LONG_W` from the `STATION` table.
 
-## 🔹 Aggregate Functions
+The two points are formed using:
 
-- ✅ COUNT()
-- ✅ AVG()
-- ✅ SUM()
-- ✅ MAX()
-- ✅ MIN()
-- ✅ FLOOR()
-- ✅ CEIL()
-- ✅ ROUND()
-- ✅ Aggregate Data Analysis
-- ✅ Average Calculation
-- ✅ Population Analysis
-- ✅ Numerical Data Processing
-- ✅ Difference Calculation
+- Minimum `LAT_N`
+- Maximum `LAT_N`
+- Minimum `LONG_W`
+- Maximum `LONG_W`
 
-## 🔹 Grouping
+The Euclidean Distance is then calculated using the differences between the latitude and longitude coordinates.
 
-- ✅ GROUP BY
-- ✅ Occupation-Based Queries
-- ✅ Counting Records
-- ✅ Sorting Aggregated Results
+### 🧠 Problem-Solving Approach
 
-## 🔹 Employee Data Analysis
+1. Find the minimum `LAT_N`.
+2. Find the maximum `LAT_N`.
+3. Find the minimum `LONG_W`.
+4. Find the maximum `LONG_W`.
+5. Calculate the difference between maximum and minimum latitude.
+6. Calculate the difference between maximum and minimum longitude.
+7. Square both differences.
+8. Add the squared values.
+9. Calculate the square root to obtain the Euclidean Distance.
+10. Format the final result to the required decimal precision.
 
-- ✅ Employee Table
-- ✅ Monthly Salary
-- ✅ Total Earnings
-- ✅ Maximum Earnings
-- ✅ Salary Analysis
-- ✅ COUNT()
-- ✅ MAX()
-- ✅ Arithmetic Operations
-- ✅ Aggregate Analysis
+### 🔑 SQL Concepts Used
 
-## 🔹 Location & Weather Data Analysis
+    SELECT
+    MIN()
+    MAX()
+    SQRT()
+    LAT_N
+    LONG_W
+    Aggregate Functions
+    Mathematical Expressions
+    Euclidean Distance
+    Decimal Precision
 
-- ✅ Latitude Analysis
-- ✅ Longitude Analysis
-- ✅ SUM()
-- ✅ MAX()
-- ✅ MIN()
-- ✅ ROUND()
-- ✅ Geographic Data Processing
-- ✅ Decimal Precision
-- ✅ Aggregate Calculations
-- ✅ Latitude-Based Filtering
-- ✅ Maximum Latitude Selection
-- ✅ Minimum Latitude Selection
-- ✅ Longitude Retrieval
-- ✅ Rounding Results
-- ✅ Truncation Concepts
-- ✅ Subqueries
-- ✅ Related Data Retrieval
-- ✅ Manhattan Distance Calculation
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- Find minimum and maximum values from a dataset.
+- Apply aggregate functions to geographic data.
+- Work with latitude and longitude values.
+- Perform mathematical calculations in SQL.
+- Calculate Euclidean Distance.
+- Use square root calculations.
+- Handle decimal precision.
+- Analyze numerical geographic data.
+- Strengthen SQL query-writing skills.
+- Improve logical and analytical thinking.
+- Write SQL queries in a DB2 environment.
+
+### 📂 Files Added
+
+    Day38-SQL/
+    ├── Weather Observation Station 19.sql
+    └── Screenshot 2026-09-02 110638.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -399,34 +387,21 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 18** challenge focuses on calculating the **Manhattan Distance** between the minimum and maximum values of the Northern Latitude (`LAT_N`) and Western Longitude (`LONG_W`) from the `STATION` table.
+The **Weather Observation Station 18** challenge focuses on calculating the **Manhattan Distance** between the minimum and maximum values of `LAT_N` and `LONG_W` from the `STATION` table.
 
 The Manhattan Distance is calculated using the absolute differences between the latitude and longitude values.
 
 ### 🧠 Problem-Solving Approach
 
-1. Find the minimum `LAT_N` value.
-2. Find the maximum `LAT_N` value.
-3. Find the minimum `LONG_W` value.
-4. Find the maximum `LONG_W` value.
+1. Find the minimum `LAT_N`.
+2. Find the maximum `LAT_N`.
+3. Find the minimum `LONG_W`.
+4. Find the maximum `LONG_W`.
 5. Calculate the absolute difference between the latitude values.
 6. Calculate the absolute difference between the longitude values.
 7. Add both differences to obtain the Manhattan Distance.
 8. Apply the required decimal precision.
 9. Return the final result.
-
-### 🔑 SQL Concepts Used
-
-    SELECT
-    MIN()
-    MAX()
-    ABS()
-    LAT_N
-    LONG_W
-    Aggregate Functions
-    Mathematical Expressions
-    Manhattan Distance
-    Decimal Precision
 
 ### 🎯 Learning Outcome
 
@@ -452,8 +427,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -580,7 +553,7 @@ Through this challenge, I practiced:
 
 ### ✅ Status
 
-**Completed 🎉🔥**
+**Completed 🎉🔥🚀**
 
 ---
 
@@ -861,7 +834,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🧮 Mathematical Operations
 - 🔗 Subqueries
 - 🧩 Related Data Retrieval
-- 📏 Manhattan Distance
+- 📏 Distance Calculations
 
 ---
 
@@ -904,7 +877,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 35 Completed 🎉🔥
 - ✅ Day 36 Completed 🎉🔥🚀
 - ✅ Day 37 Completed 🎉🔥🚀
-- ⏳ Day 38 → Day 100 Continuing...
+- ✅ Day 38 Completed 🎉🔥🚀
+- ⏳ Day 39 → Day 100 Continuing...
 
 ---
 
@@ -912,23 +886,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **37 / 100** |
-| 💻 Challenges Solved | **37** |
+| 📅 Days Completed | **38 / 100** |
+| 💻 Challenges Solved | **38** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **37% Complete** 🚀 |
-| 🔥 Current Streak | **37 Days** |
-| ⏳ Days Remaining | **63 Days** |
+| 📈 Progress | **38% Complete** 🚀 |
+| 🔥 Current Streak | **38 Days** |
+| ⏳ Days Remaining | **62 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **37 Days of SQL Practice Completed! 🎉🔥🚀**
+## **38 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **37 days down, 63 more to go!**
+> **38 days down, 62 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -949,6 +923,7 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 35 | ✅ Completed 🎉🔥 |
 | 🎯 Day 36 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 38 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -968,15 +943,16 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
     Day 35     ████████████████████ 100% ✅
     Day 36     ████████████████████ 100% ✅
     Day 37     ████████████████████ 100% ✅
-    Day 50     ███████░░░░░░░░░░░░░  37% ⏳
-    Day 75     █████████░░░░░░░░░░░  37% ⏳
-    Day 100    ███████░░░░░░░░░░░░░  37% ⏳
+    Day 38     ████████████████████ 100% ✅
+    Day 50     ███████░░░░░░░░░░░░░  38% ⏳
+    Day 75     ███████░░░░░░░░░░░░░  38% ⏳
+    Day 100    ████████░░░░░░░░░░░░  38% ⏳
 
 ## 🚀 Overall Progress
 
-    [███████░░░░░░░░░░░] 37%
+    [████████░░░░░░░░░░] 38%
 
-    37 / 100 Days Completed
+    38 / 100 Days Completed
 
 ---
 
@@ -1116,6 +1092,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**37 Days Completed ✅ | 63 Days Remaining ⏳ | 100 Days Goal 🎯**
+**38 Days Completed ✅ | 62 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
