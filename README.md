@@ -45,6 +45,8 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔹 Latitude & Longitude Processing
 - 🔹 Decimal Precision
 - 🔹 Distance Calculations
+- 🔹 JOIN Operations
+- 🔹 Relational Data Analysis
 
 ---
 
@@ -204,6 +206,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── Weather Observation Station 19.sql
     │   └── Screenshot 2026-09-02 110638.png
     │
+    ├── Day39-SQL/
+    │   ├── Population Census.sql
+    │   └── Screenshot 2026-09-03 130536.png
+    │
     └── README.md
 
 ---
@@ -250,9 +256,103 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 36 | Weather Observation Station 17 | Completed 🎉🔥🚀 |
 | ✅ Day 37 | Weather Observation Station 18 | Completed 🎉🔥🚀 |
 | ✅ Day 38 | Weather Observation Station 19 | Completed 🎉🔥🚀 |
-| ⏳ Day 39 | Coming Soon | Pending |
+| ✅ Day 39 | Population Census | Completed 🎉🔥🚀 |
+| ⏳ Day 40 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
+
+---
+
+# 🆕 Day 39 – Population Census
+
+### 🎯 Challenge
+
+**Population Census**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 INNER JOIN
+- 🔹 JOIN Conditions
+- 🔹 SUM()
+- 🔹 WHERE
+- 🔹 Aggregate Functions
+- 🔹 Relational Tables
+- 🔹 Primary Key / Foreign Key Relationship
+- 🔹 Country and City Data Analysis
+- 🔹 Population Analysis
+- 🔹 Geographic Data Analysis
+- 🔹 DB2 SQL
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Population Census** challenge focuses on calculating the total population of cities belonging to countries located in the **Asia** continent.
+
+The `CITY` and `COUNTRY` tables are connected using their related country code columns.
+
+The query combines both tables, filters countries by the continent **Asia**, and calculates the total city population using `SUM()`.
+
+### 🧠 Problem-Solving Approach
+
+1. Identify the relationship between the `CITY` and `COUNTRY` tables.
+2. Match `CITY.CountryCode` with `COUNTRY.Code`.
+3. Use an `INNER JOIN` to combine related records.
+4. Filter countries using `COUNTRY.Continent = 'Asia'`.
+5. Select the population values of matching cities.
+6. Use `SUM()` to calculate the total population.
+7. Return the final aggregated result.
+
+### 🔑 SQL Concepts Used
+
+    SELECT
+    INNER JOIN
+    ON
+    WHERE
+    SUM()
+    CITY.CountryCode
+    COUNTRY.Code
+    COUNTRY.Continent
+    CITY.Population
+    Aggregate Functions
+    Relational Data
+    Geographic Data Analysis
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- 🔗 Combine data from multiple relational tables.
+- 🗄️ Understand relationships between `CITY` and `COUNTRY`.
+- 🔍 Filter records based on continent.
+- 🧮 Calculate total population using `SUM()`.
+- 🌍 Perform geographic data analysis.
+- 📊 Work with population-related datasets.
+- 🧠 Strengthen JOIN concepts.
+- ⚡ Improve SQL query-writing skills.
+- 🛠️ Solve relational database problems.
+- 🚀 Improve analytical and problem-solving skills.
+- 💼 Practice SQL concepts useful for technical interviews.
+
+### 📂 Files Added
+
+    Day39-SQL/
+    ├── Population Census.sql
+    └── Screenshot 2026-09-03 130536.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -290,14 +390,7 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 
 The **Weather Observation Station 19** challenge focuses on calculating the **Euclidean Distance** between two points using the minimum and maximum values of `LAT_N` and `LONG_W` from the `STATION` table.
 
-The two points are formed using:
-
-- Minimum `LAT_N`
-- Maximum `LAT_N`
-- Minimum `LONG_W`
-- Maximum `LONG_W`
-
-The Euclidean Distance is then calculated using the differences between the latitude and longitude coordinates.
+The two points are formed using the minimum and maximum latitude and longitude values.
 
 ### 🧠 Problem-Solving Approach
 
@@ -309,37 +402,23 @@ The Euclidean Distance is then calculated using the differences between the lati
 6. Calculate the difference between maximum and minimum longitude.
 7. Square both differences.
 8. Add the squared values.
-9. Calculate the square root to obtain the Euclidean Distance.
+9. Apply `SQRT()` to calculate Euclidean Distance.
 10. Format the final result to the required decimal precision.
-
-### 🔑 SQL Concepts Used
-
-    SELECT
-    MIN()
-    MAX()
-    SQRT()
-    LAT_N
-    LONG_W
-    Aggregate Functions
-    Mathematical Expressions
-    Euclidean Distance
-    Decimal Precision
 
 ### 🎯 Learning Outcome
 
 Through this challenge, I practiced how to:
 
-- Find minimum and maximum values from a dataset.
-- Apply aggregate functions to geographic data.
-- Work with latitude and longitude values.
+- Find minimum and maximum values.
+- Apply aggregate functions.
+- Work with latitude and longitude.
 - Perform mathematical calculations in SQL.
 - Calculate Euclidean Distance.
 - Use square root calculations.
 - Handle decimal precision.
-- Analyze numerical geographic data.
+- Analyze geographic data.
 - Strengthen SQL query-writing skills.
 - Improve logical and analytical thinking.
-- Write SQL queries in a DB2 environment.
 
 ### 📂 Files Added
 
@@ -350,8 +429,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -399,24 +476,23 @@ The Manhattan Distance is calculated using the absolute differences between the 
 4. Find the maximum `LONG_W`.
 5. Calculate the absolute difference between the latitude values.
 6. Calculate the absolute difference between the longitude values.
-7. Add both differences to obtain the Manhattan Distance.
+7. Add both differences.
 8. Apply the required decimal precision.
 9. Return the final result.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced how to:
+Through this challenge, I practiced:
 
-- Find minimum and maximum values from a dataset.
-- Apply aggregate functions to geographic data.
-- Calculate absolute differences.
-- Perform mathematical calculations in SQL.
-- Work with latitude and longitude values.
-- Understand Manhattan Distance calculations.
-- Handle decimal precision.
-- Strengthen SQL query-writing skills.
-- Improve logical and analytical thinking.
-- Write SQL queries in a DB2 environment.
+- Finding minimum and maximum values.
+- Applying aggregate functions.
+- Calculating absolute differences.
+- Performing mathematical calculations.
+- Working with latitude and longitude.
+- Understanding Manhattan Distance.
+- Handling decimal precision.
+- Strengthening SQL query-writing skills.
+- Improving logical and analytical thinking.
 
 ### 📂 Files Added
 
@@ -458,8 +534,6 @@ Through this challenge, I practiced how to:
 - 🔹 Data Filtering
 - 🔹 Geographic Data Analysis
 - 🔹 DB2 SQL
-- 🔹 Logical Thinking
-- 🔹 Problem Solving
 
 ### 💡 Key Concept
 
@@ -480,14 +554,13 @@ The result is rounded to the required number of decimal places.
 
 Through this challenge, I practiced how to:
 
-- Find the minimum value from filtered data.
-- Use `MIN()` with a `WHERE` condition.
-- Apply subqueries to retrieve related data.
-- Retrieve longitude corresponding to a specific latitude.
-- Work with geographic data.
+- Find minimum values from filtered data.
+- Use `MIN()` with `WHERE`.
+- Apply subqueries.
+- Retrieve related geographic values.
+- Work with latitude and longitude.
 - Apply decimal rounding.
-- Improve SQL query-writing skills.
-- Strengthen logical and analytical thinking.
+- Improve SQL query-writing and problem-solving skills.
 
 ### 📂 Files Added
 
@@ -525,25 +598,22 @@ Through this challenge, I practiced how to:
 - 🔹 Latitude Analysis
 - 🔹 Numerical Filtering
 - 🔹 Decimal Precision
-- 🔹 DB2 SQL
 - 🔹 Geographic Data Analysis
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 16** challenge focuses on finding the smallest Northern Latitude (`LAT_N`) from the `STATION` table that satisfies the specified latitude condition.
-
-The result must be rounded to the required number of decimal places.
+The **Weather Observation Station 16** challenge focuses on finding the smallest Northern Latitude (`LAT_N`) that satisfies the specified condition and rounding the result to the required decimal places.
 
 ### 🎯 Learning Outcome
 
-Through this challenge, I practiced:
+I practiced:
 
 - Finding minimum values from filtered data.
-- Applying numerical filtering conditions.
+- Applying numerical filtering.
 - Using aggregate functions.
 - Working with latitude and geographic data.
 - Applying decimal precision.
-- Writing SQL queries in DB2.
+- Writing DB2 SQL queries.
 
 ### 📂 Files Added
 
@@ -583,14 +653,11 @@ Through this challenge, I practiced:
 - 🔹 Latitude Analysis
 - 🔹 Longitude Retrieval
 - 🔹 Decimal Precision
-- 🔹 DB2 SQL
 - 🔹 Geographic Data Analysis
 
 ### 💡 Key Concept
 
 The **Weather Observation Station 15** challenge focuses on finding the Western Longitude (`LONG_W`) corresponding to the largest Northern Latitude (`LAT_N`) that satisfies the specified condition.
-
-The result must be rounded to the required decimal places.
 
 ### 🎯 Learning Outcome
 
@@ -600,7 +667,7 @@ I practiced:
 - Retrieving related column values.
 - Using subqueries.
 - Applying numerical filtering.
-- Working with latitude and longitude data.
+- Working with latitude and longitude.
 - Rounding decimal values.
 - Geographic data analysis.
 
@@ -644,9 +711,7 @@ I practiced:
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 14** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that satisfies the required condition.
-
-The resulting value is rounded to the required decimal places.
+The **Weather Observation Station 14** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that satisfies the required condition and rounding the result to the required decimal places.
 
 ### 🎯 Learning Outcome
 
@@ -700,7 +765,7 @@ Through this challenge, I practiced:
 
 ### 💡 Key Concept
 
-The **Weather Observation Station 13** challenge focuses on finding the greatest value of `LAT_N` from the `STATION` table that satisfies the specified condition and truncating the result to the required decimal places.
+The **Weather Observation Station 13** challenge focuses on finding the greatest value of `LAT_N` that satisfies the specified condition and truncating the result to the required decimal places.
 
 ### 🎯 Learning Outcome
 
@@ -789,6 +854,7 @@ I practiced:
 - 🔤 Regular Expressions
 - 🧮 Aggregate Functions
 - 👥 Grouping Records
+- 🔗 JOIN Operations
 - 💡 Problem Solving
 - 🧠 Logical Thinking
 - ⚡ Query Optimization
@@ -808,6 +874,7 @@ I practiced:
 - 🧩 Related Data Retrieval
 - 📏 Distance Calculation
 - 🛠️ SQL Debugging
+- 📋 Relational Data Analysis
 
 ---
 
@@ -834,6 +901,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🧮 Mathematical Operations
 - 🔗 Subqueries
 - 🧩 Related Data Retrieval
+- 🔗 JOIN Operations
 - 📏 Distance Calculations
 
 ---
@@ -878,7 +946,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 36 Completed 🎉🔥🚀
 - ✅ Day 37 Completed 🎉🔥🚀
 - ✅ Day 38 Completed 🎉🔥🚀
-- ⏳ Day 39 → Day 100 Continuing...
+- ✅ Day 39 Completed 🎉🔥🚀
+- ⏳ Day 40 → Day 100 Continuing...
 
 ---
 
@@ -886,23 +955,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **38 / 100** |
-| 💻 Challenges Solved | **38** |
+| 📅 Days Completed | **39 / 100** |
+| 💻 Challenges Solved | **39** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **38% Complete** 🚀 |
-| 🔥 Current Streak | **38 Days** |
-| ⏳ Days Remaining | **62 Days** |
+| 📈 Progress | **39% Complete** 🚀 |
+| 🔥 Current Streak | **39 Days** |
+| ⏳ Days Remaining | **61 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **38 Days of SQL Practice Completed! 🎉🔥🚀**
+## **39 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **38 days down, 62 more to go!**
+> **39 days down, 61 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -924,6 +993,8 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 36 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 37 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 38 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 39 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 40 | ⏳ Upcoming |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -944,15 +1015,16 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
     Day 36     ████████████████████ 100% ✅
     Day 37     ████████████████████ 100% ✅
     Day 38     ████████████████████ 100% ✅
-    Day 50     ███████░░░░░░░░░░░░░  38% ⏳
-    Day 75     ███████░░░░░░░░░░░░░  38% ⏳
-    Day 100    ████████░░░░░░░░░░░░  38% ⏳
+    Day 39     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  39% ⏳
+    Day 75     ████████░░░░░░░░░░░░  39% ⏳
+    Day 100    ████████░░░░░░░░░░░░  39% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░] 38%
+    [████████░░░░░░░░░░] 39%
 
-    38 / 100 Days Completed
+    39 / 100 Days Completed
 
 ---
 
@@ -1003,6 +1075,7 @@ It is also about:
 - 💼 Preparing for technical interviews
 - 📈 Improving analytical skills
 - 🛠️ Learning to debug database queries
+- 🔗 Understanding relationships between tables
 
 ---
 
@@ -1028,6 +1101,8 @@ Every challenge helps me improve my:
 - 🔗 Subquery-Based Problem Solving
 - 🗺️ Geographic Data Analysis
 - 📏 Mathematical Data Processing
+- 🔗 Relational Data Analysis
+- 🧮 Aggregate Data Processing
 
 ---
 
@@ -1082,7 +1157,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#Subqueries` `#DataAnalysis` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#Joins` `#Subqueries` `#DataAnalysis` `#OpenToWork`
 
 ---
 
@@ -1092,6 +1167,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**38 Days Completed ✅ | 62 Days Remaining ⏳ | 100 Days Goal 🎯**
+**39 Days Completed ✅ | 61 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
