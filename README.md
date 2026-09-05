@@ -214,6 +214,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── African Cities.sql
     │   └── Screenshot 2026-09-04 175134.png
     │
+    ├── Day41-SQL/
+    │   ├── Average Population of Each Continent.sql
+    │   └── Screenshot 2026-09-05 210236.png
+    │
     └── README.md
 
 ---
@@ -262,9 +266,110 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 38 | Weather Observation Station 19 | Completed 🎉🔥🚀 |
 | ✅ Day 39 | Population Census | Completed 🎉🔥🚀 |
 | ✅ Day 40 | African Cities | Completed 🎉🔥🚀 |
-| ⏳ Day 41 | Coming Soon | Pending |
+| ✅ Day 41 | Average Population of Each Continent | Completed 🎉🔥🚀 |
+| ⏳ Day 42 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
+
+---
+
+# 🆕 Day 41 – Average Population of Each Continent
+
+### 🎯 Challenge
+
+**Average Population of Each Continent**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 INNER JOIN
+- 🔹 JOIN Conditions
+- 🔹 AVG()
+- 🔹 FLOOR()
+- 🔹 GROUP BY
+- 🔹 Aggregate Functions
+- 🔹 Relational Tables
+- 🔹 CITY and COUNTRY Table Relationship
+- 🔹 Country Code Matching
+- 🔹 Geographic Data Analysis
+- 🔹 Population Analysis
+- 🔹 Data Aggregation
+- 🔹 DB2 SQL
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Average Population of Each Continent** challenge focuses on calculating the average population of cities for each continent.
+
+The `CITY` and `COUNTRY` tables are connected using their related country code columns:
+
+- `CITY.CountryCode`
+- `COUNTRY.Code`
+
+The query joins both tables, groups the cities by continent, and calculates the average city population using `AVG()`.
+
+The result is rounded down using the `FLOOR()` function as required by the challenge.
+
+### 🧠 Problem-Solving Approach
+
+1. Identify the relationship between the `CITY` and `COUNTRY` tables.
+2. Match `CITY.CountryCode` with `COUNTRY.Code`.
+3. Use an `INNER JOIN` to combine related records.
+4. Group the records using `COUNTRY.Continent`.
+5. Calculate the average city population using `AVG(CITY.Population)`.
+6. Apply `FLOOR()` to round the average population down.
+7. Return the average population for each continent.
+
+### 🔑 SQL Concepts Used
+
+- SELECT
+- INNER JOIN
+- ON
+- GROUP BY
+- AVG()
+- FLOOR()
+- CITY.CountryCode
+- COUNTRY.Code
+- COUNTRY.Continent
+- CITY.Population
+- Aggregate Functions
+- Relational Data Analysis
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- 🔗 Combine data from multiple relational tables.
+- 🗄️ Understand relationships between `CITY` and `COUNTRY`.
+- 🌍 Group data based on continents.
+- 🧮 Calculate averages using `AVG()`.
+- 🔢 Apply mathematical functions using `FLOOR()`.
+- 📊 Perform population-based data analysis.
+- 🧠 Strengthen JOIN and GROUP BY concepts.
+- ⚡ Improve SQL query-writing skills.
+- 🛠️ Solve relational database problems.
+- 📈 Strengthen analytical and problem-solving skills.
+- 💼 Practice SQL concepts useful for technical interviews.
+
+### 📂 Files Added
+
+    Day41-SQL/
+    ├── Average Population of Each Continent.sql
+    └── Screenshot 2026-09-05 210236.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -354,8 +459,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -496,6 +599,9 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🧩 Related Data Retrieval
 - 🔗 JOIN Operations
 - 📏 Distance Calculations
+- 📊 GROUP BY
+- 🧮 AVG()
+- 🔢 FLOOR()
 
 ---
 
@@ -541,7 +647,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 38 Completed 🎉🔥🚀
 - ✅ Day 39 Completed 🎉🔥🚀
 - ✅ Day 40 Completed 🎉🔥🚀
-- ⏳ Day 41 → Day 100 Continuing...
+- ✅ Day 41 Completed 🎉🔥🚀
+- ⏳ Day 42 → Day 100 Continuing...
 
 ---
 
@@ -549,25 +656,27 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **40 / 100** |
-| 💻 Challenges Solved | **40** |
+| 📅 Days Completed | **41 / 100** |
+| 💻 Challenges Solved | **41** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **40% Complete** 🚀 |
-| 🔥 Current Streak | **40 Days** |
-| ⏳ Days Remaining | **60 Days** |
+| 📈 Progress | **41% Complete** 🚀 |
+| 🔥 Current Streak | **41 Days** |
+| ⏳ Days Remaining | **59 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **40 Days of SQL Practice Completed! 🎉🔥🚀**
+## **41 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **40 days down, 60 more to go!**
+> **41 days down, 59 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
+
+The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
 
 ---
 
@@ -589,6 +698,7 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
 | 🎯 Day 38 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 39 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 40 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 41 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -611,15 +721,16 @@ Every query I solve is helping me improve my SQL knowledge, database skills, dat
     Day 38     ████████████████████ 100% ✅
     Day 39     ████████████████████ 100% ✅
     Day 40     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  40% ⏳
-    Day 75     ████████░░░░░░░░░░░░  40% ⏳
-    Day 100    ████████░░░░░░░░░░░░  40% ⏳
+    Day 41     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  41% ⏳
+    Day 75     ████████░░░░░░░░░░░░  41% ⏳
+    Day 100    ████████░░░░░░░░░░░░  41% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░] 40%
+    [████████░░░░░░░░░░] 41%
 
-### **40 / 100 Days Completed**
+### **41 / 100 Days Completed**
 
 ---
 
@@ -762,6 +873,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**40 Days Completed ✅ | 60 Days Remaining ⏳ | 100 Days Goal 🎯**
+**41 Days Completed ✅ | 59 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
