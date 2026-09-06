@@ -218,6 +218,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── Average Population of Each Continent.sql
     │   └── Screenshot 2026-09-05 210236.png
     │
+    ├── Day42-SQL/
+    │   ├── Weather Observation Station 5.sql
+    │   └── Screenshot 2026-09-06 140404.png
+    │
     └── README.md
 
 ---
@@ -267,9 +271,113 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 39 | Population Census | Completed 🎉🔥🚀 |
 | ✅ Day 40 | African Cities | Completed 🎉🔥🚀 |
 | ✅ Day 41 | Average Population of Each Continent | Completed 🎉🔥🚀 |
-| ⏳ Day 42 | Coming Soon | Pending |
+| ✅ Day 42 | Weather Observation Station 5 | Completed 🎉🔥🚀 |
+| ⏳ Day 43 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
+
+---
+
+# 🆕 Day 42 – Weather Observation Station 5
+
+### 🎯 Challenge
+
+**Weather Observation Station 5**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 LENGTH()
+- 🔹 ORDER BY
+- 🔹 ASC
+- 🔹 DESC
+- 🔹 LIMIT
+- 🔹 String Functions
+- 🔹 Aggregate / Sorting Concepts
+- 🔹 Alphabetical Sorting
+- 🔹 Tie-Breaking
+- 🔹 CITY Data Analysis
+- 🔹 Query Optimization
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Weather Observation Station 5** challenge focuses on finding:
+
+1. The city with the **shortest name**.
+2. The city with the **longest name**.
+3. The length of each city name.
+
+If multiple cities have the same length, the city that comes first alphabetically must be selected.
+
+The `LENGTH()` function is used to determine the number of characters in the city name.
+
+The results are sorted using `ORDER BY`:
+
+- `LENGTH(CITY) ASC` → shortest city name.
+- `LENGTH(CITY) DESC` → longest city name.
+- `CITY ASC` → alphabetical tie-breaking.
+
+### 🧠 Problem-Solving Approach
+
+1. Identify that the `CITY` column contains the required city names.
+2. Use `LENGTH(CITY)` to calculate the length of each city name.
+3. Sort the cities by name length in ascending order to find the shortest city.
+4. Sort the cities by name length in descending order to find the longest city.
+5. Use alphabetical ordering with `CITY ASC` when multiple cities have the same length.
+6. Use `LIMIT 1` to return only the required city.
+7. Return the city name together with its length.
+
+### 🔑 SQL Concepts Used
+
+- SELECT
+- LENGTH()
+- ORDER BY
+- ASC
+- DESC
+- LIMIT
+- String Manipulation
+- Alphabetical Ordering
+- Sorting
+- Tie-Breaking
+- Data Analysis
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- 🔠 Work with string-length functions.
+- 📏 Calculate the length of text values.
+- 🔼 Sort records in ascending order.
+- 🔽 Sort records in descending order.
+- 🔤 Perform alphabetical sorting.
+- 🎯 Handle tie-breaking conditions.
+- 🧠 Build SQL queries using multiple sorting conditions.
+- ⚡ Retrieve only the required records using `LIMIT`.
+- 🗄️ Strengthen SQL query-writing skills.
+- 📊 Improve data analysis abilities.
+- 🛠️ Solve practical database problems.
+- 💼 Practice SQL concepts useful for technical interviews.
+
+### 📂 Files Added
+
+    Day42-SQL/
+    ├── Weather Observation Station 5.sql
+    └── Screenshot 2026-09-06 140404.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -602,6 +710,11 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 📊 GROUP BY
 - 🧮 AVG()
 - 🔢 FLOOR()
+- 🔠 LENGTH()
+- 🔼 Ascending Sorting
+- 🔽 Descending Sorting
+- 🔤 Alphabetical Ordering
+- 🎯 Tie-Breaking
 
 ---
 
@@ -648,7 +761,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 39 Completed 🎉🔥🚀
 - ✅ Day 40 Completed 🎉🔥🚀
 - ✅ Day 41 Completed 🎉🔥🚀
-- ⏳ Day 42 → Day 100 Continuing...
+- ✅ Day 42 Completed 🎉🔥🚀
+- ⏳ Day 43 → Day 100 Continuing...
 
 ---
 
@@ -656,23 +770,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **41 / 100** |
-| 💻 Challenges Solved | **41** |
+| 📅 Days Completed | **42 / 100** |
+| 💻 Challenges Solved | **42** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **41% Complete** 🚀 |
-| 🔥 Current Streak | **41 Days** |
-| ⏳ Days Remaining | **59 Days** |
+| 📈 Progress | **42% Complete** 🚀 |
+| 🔥 Current Streak | **42 Days** |
+| ⏳ Days Remaining | **58 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **41 Days of SQL Practice Completed! 🎉🔥🚀**
+## **42 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **41 days down, 59 more to go!**
+> **42 days down, 58 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -699,6 +813,7 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
 | 🎯 Day 39 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 40 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 41 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 42 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -722,15 +837,16 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
     Day 39     ████████████████████ 100% ✅
     Day 40     ████████████████████ 100% ✅
     Day 41     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  41% ⏳
-    Day 75     ████████░░░░░░░░░░░░  41% ⏳
-    Day 100    ████████░░░░░░░░░░░░  41% ⏳
+    Day 42     ████████████████████ 100% ✅
+    Day 50     ████████░░░░░░░░░░░░  42% ⏳
+    Day 75     ████████░░░░░░░░░░░░  42% ⏳
+    Day 100    ████████░░░░░░░░░░░░  42% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░] 41%
+    [████████░░░░░░░░░░] 42%
 
-### **41 / 100 Days Completed**
+### **42 / 100 Days Completed**
 
 ---
 
@@ -782,6 +898,8 @@ It is also about:
 - 📈 Improving analytical skills
 - 🛠️ Learning to debug database queries
 - 🔗 Understanding relationships between tables
+- 🔠 Improving string and text data processing
+- 📏 Working with numerical and mathematical data
 
 ---
 
@@ -809,6 +927,9 @@ Every challenge helps me improve my:
 - 📏 Mathematical Data Processing
 - 🔗 Relational Data Analysis
 - 🧮 Aggregate Data Processing
+- 🔠 String Manipulation
+- 📑 Data Sorting
+- 🎯 Query Optimization
 
 ---
 
@@ -873,6 +994,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**41 Days Completed ✅ | 59 Days Remaining ⏳ | 100 Days Goal 🎯**
+**42 Days Completed ✅ | 58 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
