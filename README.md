@@ -40,12 +40,13 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔹 Mathematical Functions
 - 🔹 Rounding & Truncation
 - 🔹 Subqueries
+- 🔹 JOIN Operations
+- 🔹 CASE Statements
 - 🔹 Data Analysis
 - 🔹 Geographic Data Analysis
 - 🔹 Latitude & Longitude Processing
 - 🔹 Decimal Precision
 - 🔹 Distance Calculations
-- 🔹 JOIN Operations
 - 🔹 Relational Data Analysis
 
 ---
@@ -222,6 +223,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── Weather Observation Station 5.sql
     │   └── Screenshot 2026-09-06 140404.png
     │
+    ├── Day43-SQL/
+    │   ├── Binary Tree Nodes.sql
+    │   └── Screenshot 2026-09-07 091105.png
+    │
     └── README.md
 
 ---
@@ -272,9 +277,108 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 40 | African Cities | Completed 🎉🔥🚀 |
 | ✅ Day 41 | Average Population of Each Continent | Completed 🎉🔥🚀 |
 | ✅ Day 42 | Weather Observation Station 5 | Completed 🎉🔥🚀 |
-| ⏳ Day 43 | Coming Soon | Pending |
+| ✅ Day 43 | Binary Tree Nodes | Completed 🎉🔥🚀 |
+| ⏳ Day 44 | Coming Soon | Pending |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
+
+---
+
+# 🆕 Day 43 – Binary Tree Nodes
+
+### 🎯 Challenge
+
+**Binary Tree Nodes**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 CASE Statement
+- 🔹 IS NULL
+- 🔹 Subqueries
+- 🔹 IN Operator
+- 🔹 Parent-Child Relationships
+- 🔹 Binary Tree Concepts
+- 🔹 Root Node Identification
+- 🔹 Inner Node Identification
+- 🔹 Leaf Node Identification
+- 🔹 ORDER BY
+- 🔹 Ascending Sorting
+- 🔹 Conditional Logic
+- 🔹 Problem Solving
+
+### 💡 Key Concept
+
+The **Binary Tree Nodes** challenge focuses on identifying the type of each node in a Binary Tree.
+
+Each node contains:
+
+- `N` → Value of the node
+- `P` → Parent of the node
+
+The node can be classified into three categories:
+
+- 🌳 **Root** → Node whose parent is `NULL`.
+- 🌿 **Inner** → Node that is a parent of another node.
+- 🍃 **Leaf** → Node that is neither a root nor a parent of another node.
+
+### 🧠 Problem-Solving Approach
+
+1. Identify the `N` and `P` columns in the `BST` table.
+2. Check whether `P IS NULL`.
+3. If `P IS NULL`, classify the node as **Root**.
+4. Check whether the node value exists in the `P` column.
+5. If it exists as a parent, classify the node as **Inner**.
+6. Otherwise, classify the node as **Leaf**.
+7. Use `ORDER BY N` to display the nodes in ascending order.
+
+### 🔑 SQL Concepts Used
+
+- `SELECT`
+- `CASE`
+- `WHEN`
+- `IS NULL`
+- `IN`
+- Subquery
+- `ORDER BY`
+- Parent-Child Relationships
+- Conditional Logic
+- Binary Tree Data Analysis
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- 🌳 Understand Binary Tree structures.
+- 🔍 Identify Root, Inner, and Leaf nodes.
+- 🧠 Use conditional logic with `CASE`.
+- 🔎 Work with `NULL` values.
+- 🧩 Use subqueries for relational analysis.
+- 🔗 Understand parent-child relationships.
+- 📊 Sort query results using `ORDER BY`.
+- ⚡ Build logical SQL conditions.
+- 🛠️ Solve database problems using structured queries.
+- 💼 Strengthen SQL concepts useful for technical interviews.
+
+### 📂 Files Added
+
+    Day43-SQL/
+    ├── Binary Tree Nodes.sql
+    └── Screenshot 2026-09-07 091105.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -301,7 +405,7 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔹 DESC
 - 🔹 LIMIT
 - 🔹 String Functions
-- 🔹 Aggregate / Sorting Concepts
+- 🔹 Sorting
 - 🔹 Alphabetical Sorting
 - 🔹 Tie-Breaking
 - 🔹 CITY Data Analysis
@@ -320,7 +424,7 @@ If multiple cities have the same length, the city that comes first alphabeticall
 
 The `LENGTH()` function is used to determine the number of characters in the city name.
 
-The results are sorted using `ORDER BY`:
+The results are sorted using:
 
 - `LENGTH(CITY) ASC` → shortest city name.
 - `LENGTH(CITY) DESC` → longest city name.
@@ -328,22 +432,22 @@ The results are sorted using `ORDER BY`:
 
 ### 🧠 Problem-Solving Approach
 
-1. Identify that the `CITY` column contains the required city names.
-2. Use `LENGTH(CITY)` to calculate the length of each city name.
-3. Sort the cities by name length in ascending order to find the shortest city.
-4. Sort the cities by name length in descending order to find the longest city.
-5. Use alphabetical ordering with `CITY ASC` when multiple cities have the same length.
-6. Use `LIMIT 1` to return only the required city.
+1. Identify the `CITY` column.
+2. Use `LENGTH(CITY)` to calculate city-name length.
+3. Sort cities by length in ascending order to find the shortest city.
+4. Sort cities by length in descending order to find the longest city.
+5. Use alphabetical ordering with `CITY ASC` for tie-breaking.
+6. Use `LIMIT 1` to return the required city.
 7. Return the city name together with its length.
 
 ### 🔑 SQL Concepts Used
 
-- SELECT
-- LENGTH()
-- ORDER BY
-- ASC
-- DESC
-- LIMIT
+- `SELECT`
+- `LENGTH()`
+- `ORDER BY`
+- `ASC`
+- `DESC`
+- `LIMIT`
 - String Manipulation
 - Alphabetical Ordering
 - Sorting
@@ -361,10 +465,9 @@ Through this challenge, I practiced how to:
 - 🔤 Perform alphabetical sorting.
 - 🎯 Handle tie-breaking conditions.
 - 🧠 Build SQL queries using multiple sorting conditions.
-- ⚡ Retrieve only the required records using `LIMIT`.
+- ⚡ Retrieve only the required records.
 - 🗄️ Strengthen SQL query-writing skills.
 - 📊 Improve data analysis abilities.
-- 🛠️ Solve practical database problems.
 - 💼 Practice SQL concepts useful for technical interviews.
 
 ### 📂 Files Added
@@ -376,8 +479,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -417,7 +518,7 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 The **Average Population of Each Continent** challenge focuses on calculating the average population of cities for each continent.
 
-The `CITY` and `COUNTRY` tables are connected using their related country code columns:
+The `CITY` and `COUNTRY` tables are connected using:
 
 - `CITY.CountryCode`
 - `COUNTRY.Code`
@@ -428,26 +529,26 @@ The result is rounded down using the `FLOOR()` function as required by the chall
 
 ### 🧠 Problem-Solving Approach
 
-1. Identify the relationship between the `CITY` and `COUNTRY` tables.
+1. Identify the relationship between `CITY` and `COUNTRY`.
 2. Match `CITY.CountryCode` with `COUNTRY.Code`.
-3. Use an `INNER JOIN` to combine related records.
+3. Use an `INNER JOIN`.
 4. Group the records using `COUNTRY.Continent`.
-5. Calculate the average city population using `AVG(CITY.Population)`.
-6. Apply `FLOOR()` to round the average population down.
-7. Return the average population for each continent.
+5. Calculate average population using `AVG(CITY.Population)`.
+6. Apply `FLOOR()` to round the average down.
+7. Return the result for each continent.
 
 ### 🔑 SQL Concepts Used
 
-- SELECT
-- INNER JOIN
-- ON
-- GROUP BY
-- AVG()
-- FLOOR()
-- CITY.CountryCode
-- COUNTRY.Code
-- COUNTRY.Continent
-- CITY.Population
+- `SELECT`
+- `INNER JOIN`
+- `ON`
+- `GROUP BY`
+- `AVG()`
+- `FLOOR()`
+- `CITY.CountryCode`
+- `COUNTRY.Code`
+- `COUNTRY.Continent`
+- `CITY.Population`
 - Aggregate Functions
 - Relational Data Analysis
 
@@ -461,10 +562,9 @@ Through this challenge, I practiced how to:
 - 🧮 Calculate averages using `AVG()`.
 - 🔢 Apply mathematical functions using `FLOOR()`.
 - 📊 Perform population-based data analysis.
-- 🧠 Strengthen JOIN and GROUP BY concepts.
+- 🧠 Strengthen `JOIN` and `GROUP BY` concepts.
 - ⚡ Improve SQL query-writing skills.
 - 🛠️ Solve relational database problems.
-- 📈 Strengthen analytical and problem-solving skills.
 - 💼 Practice SQL concepts useful for technical interviews.
 
 ### 📂 Files Added
@@ -476,8 +576,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -514,7 +612,7 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 
 The **African Cities** challenge focuses on retrieving the names of all cities located in countries belonging to the **Africa** continent.
 
-The `CITY` and `COUNTRY` tables are connected using the matching country code columns:
+The `CITY` and `COUNTRY` tables are connected using:
 
 - `CITY.CountryCode`
 - `COUNTRY.Code`
@@ -525,22 +623,22 @@ The query combines both tables using an `INNER JOIN` and filters the results usi
 
 ### 🧠 Problem-Solving Approach
 
-1. Identify the relationship between the `CITY` and `COUNTRY` tables.
+1. Identify the relationship between `CITY` and `COUNTRY`.
 2. Match `CITY.CountryCode` with `COUNTRY.Code`.
-3. Use an `INNER JOIN` to combine related records.
+3. Use an `INNER JOIN`.
 4. Filter countries using `COUNTRY.Continent = 'Africa'`.
-5. Select the city names from the matching records.
+5. Select the city names.
 6. Return the required city names.
 
 ### 🔑 SQL Concepts Used
 
-- SELECT
-- INNER JOIN
-- ON
-- WHERE
-- CITY.CountryCode
-- COUNTRY.Code
-- COUNTRY.Continent
+- `SELECT`
+- `INNER JOIN`
+- `ON`
+- `WHERE`
+- `CITY.CountryCode`
+- `COUNTRY.Code`
+- `COUNTRY.Continent`
 - Relational Data
 - Geographic Data Analysis
 
@@ -604,18 +702,18 @@ Through this challenge, I practiced how to:
 
 The **Population Census** challenge focuses on calculating the total population of cities belonging to countries located in the **Asia** continent.
 
-The `CITY` and `COUNTRY` tables are connected using their related country code columns.
+The `CITY` and `COUNTRY` tables are connected using their country code columns.
 
 The query combines both tables, filters countries by the continent **Asia**, and calculates the total city population using `SUM()`.
 
 ### 🧠 Problem-Solving Approach
 
-1. Identify the relationship between the `CITY` and `COUNTRY` tables.
+1. Identify the relationship between `CITY` and `COUNTRY`.
 2. Match `CITY.CountryCode` with `COUNTRY.Code`.
-3. Use an `INNER JOIN` to combine related records.
+3. Use an `INNER JOIN`.
 4. Filter countries using `COUNTRY.Continent = 'Asia'`.
 5. Select the population values of matching cities.
-6. Use `SUM()` to calculate the total population.
+6. Use `SUM()` to calculate total population.
 7. Return the final aggregated result.
 
 ### 🎯 Learning Outcome
@@ -679,6 +777,9 @@ Through this challenge, I practiced how to:
 - 📏 Distance Calculation
 - 🛠️ SQL Debugging
 - 📋 Relational Data Analysis
+- 🌳 Tree Data Analysis
+- 🔀 Conditional Logic
+- 🍃 Root / Inner / Leaf Classification
 
 ---
 
@@ -715,6 +816,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🔽 Descending Sorting
 - 🔤 Alphabetical Ordering
 - 🎯 Tie-Breaking
+- 🔀 CASE Statements
+- 🌳 Binary Tree Analysis
 
 ---
 
@@ -762,7 +865,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 40 Completed 🎉🔥🚀
 - ✅ Day 41 Completed 🎉🔥🚀
 - ✅ Day 42 Completed 🎉🔥🚀
-- ⏳ Day 43 → Day 100 Continuing...
+- ✅ Day 43 Completed 🎉🔥🚀
+- ⏳ Day 44 → Day 100 Continuing...
 
 ---
 
@@ -770,23 +874,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **42 / 100** |
-| 💻 Challenges Solved | **42** |
+| 📅 Days Completed | **43 / 100** |
+| 💻 Challenges Solved | **43** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **42% Complete** 🚀 |
-| 🔥 Current Streak | **42 Days** |
-| ⏳ Days Remaining | **58 Days** |
+| 📈 Progress | **43% Complete** 🚀 |
+| 🔥 Current Streak | **43 Days** |
+| ⏳ Days Remaining | **57 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **42 Days of SQL Practice Completed! 🎉🔥🚀**
+## **43 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **42 days down, 58 more to go!**
+> **43 days down, 57 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -814,6 +918,7 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
 | 🎯 Day 40 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 41 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 42 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 43 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -838,15 +943,16 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
     Day 40     ████████████████████ 100% ✅
     Day 41     ████████████████████ 100% ✅
     Day 42     ████████████████████ 100% ✅
-    Day 50     ████████░░░░░░░░░░░░  42% ⏳
-    Day 75     ████████░░░░░░░░░░░░  42% ⏳
-    Day 100    ████████░░░░░░░░░░░░  42% ⏳
+    Day 43     ████████████████████ 100% ✅
+    Day 50     █████████░░░░░░░░░░░  43% ⏳
+    Day 75     █████████░░░░░░░░░░░  43% ⏳
+    Day 100    █████████░░░░░░░░░░░  43% ⏳
 
 ## 🚀 Overall Progress
 
-    [████████░░░░░░░░░░] 42%
+    [█████████░░░░░░░░░░░] 43%
 
-### **42 / 100 Days Completed**
+### **43 / 100 Days Completed**
 
 ---
 
@@ -900,6 +1006,7 @@ It is also about:
 - 🔗 Understanding relationships between tables
 - 🔠 Improving string and text data processing
 - 📏 Working with numerical and mathematical data
+- 🌳 Understanding hierarchical and tree-based data
 
 ---
 
@@ -930,6 +1037,8 @@ Every challenge helps me improve my:
 - 🔠 String Manipulation
 - 📑 Data Sorting
 - 🎯 Query Optimization
+- 🌳 Hierarchical Data Analysis
+- 🔀 Conditional Query Logic
 
 ---
 
@@ -994,6 +1103,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**42 Days Completed ✅ | 58 Days Remaining ⏳ | 100 Days Goal 🎯**
+**43 Days Completed ✅ | 57 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
