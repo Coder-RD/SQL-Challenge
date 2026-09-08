@@ -42,12 +42,15 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔹 Subqueries
 - 🔹 JOIN Operations
 - 🔹 CASE Statements
+- 🔹 DISTINCT
+- 🔹 GROUP BY
 - 🔹 Data Analysis
 - 🔹 Geographic Data Analysis
 - 🔹 Latitude & Longitude Processing
 - 🔹 Decimal Precision
 - 🔹 Distance Calculations
 - 🔹 Relational Data Analysis
+- 🔹 Hierarchical Data Analysis
 
 ---
 
@@ -227,6 +230,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── Binary Tree Nodes.sql
     │   └── Screenshot 2026-09-07 091105.png
     │
+    ├── Day44-SQL/
+    │   ├── New Companies.sql
+    │   └── Screenshot 2026-09-08 130013.png
+    │
     └── README.md
 
 ---
@@ -278,9 +285,115 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 41 | Average Population of Each Continent | Completed 🎉🔥🚀 |
 | ✅ Day 42 | Weather Observation Station 5 | Completed 🎉🔥🚀 |
 | ✅ Day 43 | Binary Tree Nodes | Completed 🎉🔥🚀 |
-| ⏳ Day 44 | Coming Soon | Pending |
+| ✅ Day 44 | New Companies | Completed 🎉🔥🚀 |
 | ... | ... | ... |
 | 🎯 Day 100 | Goal | Pending |
+
+---
+
+# 🆕 Day 44 – New Companies
+
+### 🎯 Challenge
+
+**New Companies**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 LEFT JOIN
+- 🔹 COUNT()
+- 🔹 COUNT(DISTINCT ...)
+- 🔹 GROUP BY
+- 🔹 ORDER BY
+- 🔹 Relational Data Analysis
+- 🔹 Company Hierarchy
+- 🔹 Employee Hierarchy
+- 🔹 Duplicate Record Handling
+- 🔹 Aggregate Functions
+- 🔹 Multiple Table Joins
+- 🔹 Data Aggregation
+- 🔹 Organizational Structure Analysis
+- 🔹 SQL Problem Solving
+
+### 💡 Key Concept
+
+The **New Companies** challenge focuses on generating organizational statistics for each company.
+
+The database contains hierarchical information about:
+
+- 🏢 Companies
+- 👨‍💼 Lead Managers
+- 👨‍💼 Senior Managers
+- 👨‍💼 Managers
+- 👨‍💻 Employees
+
+The goal is to calculate the number of **distinct Lead Managers, Senior Managers, Managers, and Employees** belonging to each company.
+
+Since multiple tables are connected through `company_code`, the query uses `LEFT JOIN` operations to combine the organizational hierarchy.
+
+`COUNT(DISTINCT ...)` is used to avoid counting duplicate records caused by multiple joins.
+
+### 🧠 Problem-Solving Approach
+
+1. Start with the `Company` table.
+2. Join the `Lead_Manager` table using `company_code`.
+3. Join the `Senior_Manager` table using `company_code`.
+4. Join the `Manager` table using `company_code`.
+5. Join the `Employee` table using `company_code`.
+6. Count distinct manager and employee codes.
+7. Group the results by company code and founder.
+8. Sort the final output by `company_code`.
+
+### 🔑 SQL Concepts Used
+
+- `SELECT`
+- `LEFT JOIN`
+- `ON`
+- `COUNT()`
+- `COUNT(DISTINCT ...)`
+- `GROUP BY`
+- `ORDER BY`
+- Aggregate Functions
+- Multiple Table Relationships
+- Duplicate Handling
+- Hierarchical Data Analysis
+- Relational Data Analysis
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- 🏢 Analyze organizational hierarchy data.
+- 🔗 Combine multiple relational tables.
+- 📊 Use aggregate functions for data analysis.
+- 🔢 Count unique records using `COUNT(DISTINCT ...)`.
+- 🧩 Handle duplicate records created by multiple joins.
+- 🔍 Understand relationships between companies and employees.
+- 🧠 Strengthen JOIN and GROUP BY concepts.
+- 📋 Generate consolidated company-level statistics.
+- ⚡ Improve SQL query-writing skills.
+- 🛠️ Solve complex relational database problems.
+- 💼 Practice SQL concepts useful for technical interviews.
+
+### 📂 Files Added
+
+    Day44-SQL/
+    ├── New Companies.sql
+    └── Screenshot 2026-09-08 130013.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -378,8 +491,6 @@ Through this challenge, I practiced how to:
 
 **Completed 🎉🔥🚀**
 
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
-
 ---
 
 # 🆕 Day 42 – Weather Observation Station 5
@@ -403,7 +514,6 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 - 🔹 ORDER BY
 - 🔹 ASC
 - 🔹 DESC
-- 🔹 LIMIT
 - 🔹 String Functions
 - 🔹 Sorting
 - 🔹 Alphabetical Sorting
@@ -668,82 +778,6 @@ Through this challenge, I practiced how to:
 
 ---
 
-# 🆕 Day 39 – Population Census
-
-### 🎯 Challenge
-
-**Population Census**
-
-### 💻 Platform
-
-**HackerRank**
-
-### 🗄️ Language
-
-**DB2 SQL**
-
-### 📚 Concepts Practiced
-
-- 🔹 SELECT
-- 🔹 INNER JOIN
-- 🔹 JOIN Conditions
-- 🔹 SUM()
-- 🔹 WHERE
-- 🔹 Aggregate Functions
-- 🔹 Relational Tables
-- 🔹 Primary Key / Foreign Key Relationship
-- 🔹 Country and City Data Analysis
-- 🔹 Population Analysis
-- 🔹 Geographic Data Analysis
-- 🔹 DB2 SQL
-- 🔹 Problem Solving
-
-### 💡 Key Concept
-
-The **Population Census** challenge focuses on calculating the total population of cities belonging to countries located in the **Asia** continent.
-
-The `CITY` and `COUNTRY` tables are connected using their country code columns.
-
-The query combines both tables, filters countries by the continent **Asia**, and calculates the total city population using `SUM()`.
-
-### 🧠 Problem-Solving Approach
-
-1. Identify the relationship between `CITY` and `COUNTRY`.
-2. Match `CITY.CountryCode` with `COUNTRY.Code`.
-3. Use an `INNER JOIN`.
-4. Filter countries using `COUNTRY.Continent = 'Asia'`.
-5. Select the population values of matching cities.
-6. Use `SUM()` to calculate total population.
-7. Return the final aggregated result.
-
-### 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- 🔗 Combine data from multiple relational tables.
-- 🗄️ Understand relationships between `CITY` and `COUNTRY`.
-- 🔍 Filter records based on continent.
-- 🧮 Calculate total population using `SUM()`.
-- 🌍 Perform geographic data analysis.
-- 📊 Work with population-related datasets.
-- 🧠 Strengthen JOIN concepts.
-- ⚡ Improve SQL query-writing skills.
-- 🛠️ Solve relational database problems.
-- 🚀 Improve analytical and problem-solving skills.
-- 💼 Practice SQL concepts useful for technical interviews.
-
-### 📂 Files Added
-
-    Day39-SQL/
-    ├── Population Census.sql
-    └── Screenshot 2026-09-03 130536.png
-
-### ✅ Status
-
-**Completed 🎉🔥🚀**
-
----
-
 # 🧠 Skills I'm Building
 
 - 🗄️ SQL Query Writing
@@ -780,6 +814,10 @@ Through this challenge, I practiced how to:
 - 🌳 Tree Data Analysis
 - 🔀 Conditional Logic
 - 🍃 Root / Inner / Leaf Classification
+- 🏢 Organizational Hierarchy Analysis
+- 🔢 Distinct Record Counting
+- 🧩 Duplicate Record Handling
+- 👥 Employee Hierarchy Analysis
 
 ---
 
@@ -818,6 +856,10 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🎯 Tie-Breaking
 - 🔀 CASE Statements
 - 🌳 Binary Tree Analysis
+- 🏢 Company Hierarchy Analysis
+- 🔢 COUNT(DISTINCT ...)
+- 🧩 Duplicate Handling
+- 👨‍💼 Employee Data Analysis
 
 ---
 
@@ -866,7 +908,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 41 Completed 🎉🔥🚀
 - ✅ Day 42 Completed 🎉🔥🚀
 - ✅ Day 43 Completed 🎉🔥🚀
-- ⏳ Day 44 → Day 100 Continuing...
+- ✅ Day 44 Completed 🎉🔥🚀
+- ⏳ Day 45 → Day 100 Continuing...
 
 ---
 
@@ -874,23 +917,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **43 / 100** |
-| 💻 Challenges Solved | **43** |
+| 📅 Days Completed | **44 / 100** |
+| 💻 Challenges Solved | **44** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **43% Complete** 🚀 |
-| 🔥 Current Streak | **43 Days** |
-| ⏳ Days Remaining | **57 Days** |
+| 📈 Progress | **44% Complete** 🚀 |
+| 🔥 Current Streak | **44 Days** |
+| ⏳ Days Remaining | **56 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **43 Days of SQL Practice Completed! 🎉🔥🚀**
+## **44 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **43 days down, 57 more to go!**
+> **44 days down, 56 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -919,6 +962,7 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
 | 🎯 Day 41 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 42 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 43 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 44 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -944,15 +988,16 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
     Day 41     ████████████████████ 100% ✅
     Day 42     ████████████████████ 100% ✅
     Day 43     ████████████████████ 100% ✅
-    Day 50     █████████░░░░░░░░░░░  43% ⏳
-    Day 75     █████████░░░░░░░░░░░  43% ⏳
-    Day 100    █████████░░░░░░░░░░░  43% ⏳
+    Day 44     ████████████████████ 100% ✅
+    Day 50     █████████░░░░░░░░░░░  44% ⏳
+    Day 75     █████████░░░░░░░░░░░  44% ⏳
+    Day 100    █████████░░░░░░░░░░░  44% ⏳
 
 ## 🚀 Overall Progress
 
-    [█████████░░░░░░░░░░░] 43%
+    [█████████░░░░░░░░░░░] 44%
 
-### **43 / 100 Days Completed**
+### **44 / 100 Days Completed**
 
 ---
 
@@ -1007,6 +1052,9 @@ It is also about:
 - 🔠 Improving string and text data processing
 - 📏 Working with numerical and mathematical data
 - 🌳 Understanding hierarchical and tree-based data
+- 🏢 Analyzing organizational structures
+- 👥 Working with employee and manager hierarchies
+- 🔢 Handling duplicate records and distinct values
 
 ---
 
@@ -1039,6 +1087,9 @@ Every challenge helps me improve my:
 - 🎯 Query Optimization
 - 🌳 Hierarchical Data Analysis
 - 🔀 Conditional Query Logic
+- 🏢 Organizational Data Analysis
+- 👥 Employee Hierarchy Analysis
+- 🔢 Distinct Data Aggregation
 
 ---
 
@@ -1093,7 +1144,7 @@ https://github.com/Coder-RD
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#Joins` `#Subqueries` `#DataAnalysis` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#Joins` `#Subqueries` `#DataAnalysis` `#Distinct` `#AggregateFunctions` `#SQLQueries` `#OpenToWork`
 
 ---
 
@@ -1103,6 +1154,6 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**43 Days Completed ✅ | 57 Days Remaining ⏳ | 100 Days Goal 🎯**
+**44 Days Completed ✅ | 56 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
