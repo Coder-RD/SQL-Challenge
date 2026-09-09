@@ -1,3 +1,4 @@
+```markdown
 # 🗄️ 100 Days of SQL Challenge
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
@@ -19,7 +20,7 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔍 Improve query-writing and debugging skills.
 - 🌍 Practice geographic and numerical data analysis.
 - 💼 Prepare for technical interviews.
-- 🚀 Build consistency through the **#100DaysOfCode** challenge.
+- 🚀 Build consistency through the #100DaysOfCode challenge.
 - 🎯 Build a strong technical portfolio.
 - 🌱 Learn and improve through consistent daily practice.
 
@@ -51,6 +52,7 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 - 🔹 Distance Calculations
 - 🔹 Relational Data Analysis
 - 🔹 Hierarchical Data Analysis
+- 🔹 Median Calculation
 
 ---
 
@@ -234,6 +236,10 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
     │   ├── New Companies.sql
     │   └── Screenshot 2026-09-08 130013.png
     │
+    ├── Day45-SQL/
+    │   ├── Weather Observation Station 20.sql
+    │   └── Screenshot 2026-09-09 100733.png
+    │
     └── README.md
 
 ---
@@ -286,8 +292,97 @@ The goal is simple: **solve one SQL challenge every day for 100 days**, build co
 | ✅ Day 42 | Weather Observation Station 5 | Completed 🎉🔥🚀 |
 | ✅ Day 43 | Binary Tree Nodes | Completed 🎉🔥🚀 |
 | ✅ Day 44 | New Companies | Completed 🎉🔥🚀 |
-| ... | ... | ... |
+| ✅ Day 45 | Weather Observation Station 20 | Completed 🎉🔥🚀 |
+| ⏳ Day 46 → Day 100 | Continuing | Pending |
 | 🎯 Day 100 | Goal | Pending |
+
+---
+
+# 🆕 Day 45 – Weather Observation Station 20
+
+### 🎯 SQL Challenge
+
+**Weather Observation Station 20**
+
+### 💻 Platform
+
+**HackerRank**
+
+### 🗄️ Language
+
+**DB2 SQL**
+
+### 📚 Concepts Practiced
+
+- 🔹 SELECT
+- 🔹 ORDER BY
+- 🔹 COUNT()
+- 🔹 AVG()
+- 🔹 ROUND()
+- 🔹 Subqueries
+- 🔹 Median Calculation
+- 🔹 Latitude Data Analysis
+- 🔹 Statistical Data Analysis
+- 🔹 Decimal Precision
+- 🔹 Data Aggregation
+- 🔹 SQL Problem Solving
+
+### 💡 Key Concept
+
+The **Weather Observation Station 20** challenge focuses on finding the **median value of the `LAT_N` column** from the `STATION` table and rounding the result to **4 decimal places**.
+
+The median represents the middle value of an ordered dataset. When the number of values is even, the median is calculated using the two middle values.
+
+### 🧠 Problem-Solving Approach
+
+1. Select the `LAT_N` values from the `STATION` table.
+2. Sort the latitude values in ascending order.
+3. Determine the total number of records using `COUNT()`.
+4. Identify the middle position or two middle positions.
+5. Calculate the median using the required SQL approach.
+6. Round the final result to 4 decimal places using `ROUND()`.
+7. Return the final median latitude value.
+
+### 🔑 SQL Concepts Used
+
+- `SELECT`
+- `ORDER BY`
+- `COUNT()`
+- `AVG()`
+- `ROUND()`
+- Subqueries
+- Median Calculation
+- Sorting
+- Aggregate Functions
+- Numerical Data Analysis
+- Decimal Precision
+
+### 🎯 Learning Outcome
+
+Through this challenge, I practiced how to:
+
+- 📊 Calculate the median of a dataset.
+- 🔢 Work with numerical values in SQL.
+- 🔼 Sort data using `ORDER BY`.
+- 🧮 Use aggregate functions for statistical analysis.
+- 🔍 Work with subqueries.
+- 📐 Handle decimal precision and rounding.
+- 🌍 Analyze latitude data.
+- 🧠 Strengthen SQL problem-solving skills.
+- ⚡ Improve query-writing skills.
+- 💼 Practice SQL concepts useful for technical interviews.
+
+### 📂 Files Added
+
+    Day45-SQL/
+    ├── Weather Observation Station 20.sql
+    └── Screenshot 2026-09-09 100733.png
+
+### ✅ Status
+
+**Completed 🎉🔥🚀**
+
+Another **SQL Challenge** successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -337,7 +432,7 @@ The database contains hierarchical information about:
 
 The goal is to calculate the number of **distinct Lead Managers, Senior Managers, Managers, and Employees** belonging to each company.
 
-Since multiple tables are connected through `company_code`, the query uses `LEFT JOIN` operations to combine the organizational hierarchy.
+Since multiple tables are connected through `company_code`, `LEFT JOIN` operations are used to combine the organizational hierarchy.
 
 `COUNT(DISTINCT ...)` is used to avoid counting duplicate records caused by multiple joins.
 
@@ -365,7 +460,6 @@ Since multiple tables are connected through `company_code`, the query uses `LEFT
 - Multiple Table Relationships
 - Duplicate Handling
 - Hierarchical Data Analysis
-- Relational Data Analysis
 
 ### 🎯 Learning Outcome
 
@@ -380,7 +474,6 @@ Through this challenge, I practiced how to:
 - 🧠 Strengthen JOIN and GROUP BY concepts.
 - 📋 Generate consolidated company-level statistics.
 - ⚡ Improve SQL query-writing skills.
-- 🛠️ Solve complex relational database problems.
 - 💼 Practice SQL concepts useful for technical interviews.
 
 ### 📂 Files Added
@@ -392,8 +485,6 @@ Through this challenge, I practiced how to:
 ### ✅ Status
 
 **Completed 🎉🔥🚀**
-
-Another SQL challenge successfully completed as part of my **100 Days of SQL Challenge**.
 
 ---
 
@@ -424,7 +515,6 @@ Another SQL challenge successfully completed as part of my **100 Days of SQL Cha
 - 🔹 Inner Node Identification
 - 🔹 Leaf Node Identification
 - 🔹 ORDER BY
-- 🔹 Ascending Sorting
 - 🔹 Conditional Logic
 - 🔹 Problem Solving
 
@@ -493,291 +583,6 @@ Through this challenge, I practiced how to:
 
 ---
 
-# 🆕 Day 42 – Weather Observation Station 5
-
-### 🎯 Challenge
-
-**Weather Observation Station 5**
-
-### 💻 Platform
-
-**HackerRank**
-
-### 🗄️ Language
-
-**DB2 SQL**
-
-### 📚 Concepts Practiced
-
-- 🔹 SELECT
-- 🔹 LENGTH()
-- 🔹 ORDER BY
-- 🔹 ASC
-- 🔹 DESC
-- 🔹 String Functions
-- 🔹 Sorting
-- 🔹 Alphabetical Sorting
-- 🔹 Tie-Breaking
-- 🔹 CITY Data Analysis
-- 🔹 Query Optimization
-- 🔹 Problem Solving
-
-### 💡 Key Concept
-
-The **Weather Observation Station 5** challenge focuses on finding:
-
-1. The city with the **shortest name**.
-2. The city with the **longest name**.
-3. The length of each city name.
-
-If multiple cities have the same length, the city that comes first alphabetically must be selected.
-
-The `LENGTH()` function is used to determine the number of characters in the city name.
-
-The results are sorted using:
-
-- `LENGTH(CITY) ASC` → shortest city name.
-- `LENGTH(CITY) DESC` → longest city name.
-- `CITY ASC` → alphabetical tie-breaking.
-
-### 🧠 Problem-Solving Approach
-
-1. Identify the `CITY` column.
-2. Use `LENGTH(CITY)` to calculate city-name length.
-3. Sort cities by length in ascending order to find the shortest city.
-4. Sort cities by length in descending order to find the longest city.
-5. Use alphabetical ordering with `CITY ASC` for tie-breaking.
-6. Use `LIMIT 1` to return the required city.
-7. Return the city name together with its length.
-
-### 🔑 SQL Concepts Used
-
-- `SELECT`
-- `LENGTH()`
-- `ORDER BY`
-- `ASC`
-- `DESC`
-- `LIMIT`
-- String Manipulation
-- Alphabetical Ordering
-- Sorting
-- Tie-Breaking
-- Data Analysis
-
-### 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- 🔠 Work with string-length functions.
-- 📏 Calculate the length of text values.
-- 🔼 Sort records in ascending order.
-- 🔽 Sort records in descending order.
-- 🔤 Perform alphabetical sorting.
-- 🎯 Handle tie-breaking conditions.
-- 🧠 Build SQL queries using multiple sorting conditions.
-- ⚡ Retrieve only the required records.
-- 🗄️ Strengthen SQL query-writing skills.
-- 📊 Improve data analysis abilities.
-- 💼 Practice SQL concepts useful for technical interviews.
-
-### 📂 Files Added
-
-    Day42-SQL/
-    ├── Weather Observation Station 5.sql
-    └── Screenshot 2026-09-06 140404.png
-
-### ✅ Status
-
-**Completed 🎉🔥🚀**
-
----
-
-# 🆕 Day 41 – Average Population of Each Continent
-
-### 🎯 Challenge
-
-**Average Population of Each Continent**
-
-### 💻 Platform
-
-**HackerRank**
-
-### 🗄️ Language
-
-**DB2 SQL**
-
-### 📚 Concepts Practiced
-
-- 🔹 SELECT
-- 🔹 INNER JOIN
-- 🔹 JOIN Conditions
-- 🔹 AVG()
-- 🔹 FLOOR()
-- 🔹 GROUP BY
-- 🔹 Aggregate Functions
-- 🔹 Relational Tables
-- 🔹 CITY and COUNTRY Table Relationship
-- 🔹 Country Code Matching
-- 🔹 Geographic Data Analysis
-- 🔹 Population Analysis
-- 🔹 Data Aggregation
-- 🔹 DB2 SQL
-- 🔹 Problem Solving
-
-### 💡 Key Concept
-
-The **Average Population of Each Continent** challenge focuses on calculating the average population of cities for each continent.
-
-The `CITY` and `COUNTRY` tables are connected using:
-
-- `CITY.CountryCode`
-- `COUNTRY.Code`
-
-The query joins both tables, groups the cities by continent, and calculates the average city population using `AVG()`.
-
-The result is rounded down using the `FLOOR()` function as required by the challenge.
-
-### 🧠 Problem-Solving Approach
-
-1. Identify the relationship between `CITY` and `COUNTRY`.
-2. Match `CITY.CountryCode` with `COUNTRY.Code`.
-3. Use an `INNER JOIN`.
-4. Group the records using `COUNTRY.Continent`.
-5. Calculate average population using `AVG(CITY.Population)`.
-6. Apply `FLOOR()` to round the average down.
-7. Return the result for each continent.
-
-### 🔑 SQL Concepts Used
-
-- `SELECT`
-- `INNER JOIN`
-- `ON`
-- `GROUP BY`
-- `AVG()`
-- `FLOOR()`
-- `CITY.CountryCode`
-- `COUNTRY.Code`
-- `COUNTRY.Continent`
-- `CITY.Population`
-- Aggregate Functions
-- Relational Data Analysis
-
-### 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- 🔗 Combine data from multiple relational tables.
-- 🗄️ Understand relationships between `CITY` and `COUNTRY`.
-- 🌍 Group data based on continents.
-- 🧮 Calculate averages using `AVG()`.
-- 🔢 Apply mathematical functions using `FLOOR()`.
-- 📊 Perform population-based data analysis.
-- 🧠 Strengthen `JOIN` and `GROUP BY` concepts.
-- ⚡ Improve SQL query-writing skills.
-- 🛠️ Solve relational database problems.
-- 💼 Practice SQL concepts useful for technical interviews.
-
-### 📂 Files Added
-
-    Day41-SQL/
-    ├── Average Population of Each Continent.sql
-    └── Screenshot 2026-09-05 210236.png
-
-### ✅ Status
-
-**Completed 🎉🔥🚀**
-
----
-
-# 🆕 Day 40 – African Cities
-
-### 🎯 Challenge
-
-**African Cities**
-
-### 💻 Platform
-
-**HackerRank**
-
-### 🗄️ Language
-
-**DB2 SQL**
-
-### 📚 Concepts Practiced
-
-- 🔹 SELECT
-- 🔹 INNER JOIN
-- 🔹 JOIN Conditions
-- 🔹 WHERE
-- 🔹 Relational Tables
-- 🔹 Primary Key / Foreign Key Relationship
-- 🔹 CITY and COUNTRY Table Relationship
-- 🔹 Country Code Matching
-- 🔹 Geographic Data Analysis
-- 🔹 Data Filtering
-- 🔹 DB2 SQL
-- 🔹 Problem Solving
-
-### 💡 Key Concept
-
-The **African Cities** challenge focuses on retrieving the names of all cities located in countries belonging to the **Africa** continent.
-
-The `CITY` and `COUNTRY` tables are connected using:
-
-- `CITY.CountryCode`
-- `COUNTRY.Code`
-
-The query combines both tables using an `INNER JOIN` and filters the results using:
-
-`COUNTRY.Continent = 'Africa'`
-
-### 🧠 Problem-Solving Approach
-
-1. Identify the relationship between `CITY` and `COUNTRY`.
-2. Match `CITY.CountryCode` with `COUNTRY.Code`.
-3. Use an `INNER JOIN`.
-4. Filter countries using `COUNTRY.Continent = 'Africa'`.
-5. Select the city names.
-6. Return the required city names.
-
-### 🔑 SQL Concepts Used
-
-- `SELECT`
-- `INNER JOIN`
-- `ON`
-- `WHERE`
-- `CITY.CountryCode`
-- `COUNTRY.Code`
-- `COUNTRY.Continent`
-- Relational Data
-- Geographic Data Analysis
-
-### 🎯 Learning Outcome
-
-Through this challenge, I practiced how to:
-
-- 🔗 Combine data from multiple relational tables.
-- 🗄️ Understand relationships between `CITY` and `COUNTRY`.
-- 🔍 Filter records based on continent.
-- 🌍 Analyze geographic data.
-- 🧠 Strengthen JOIN concepts.
-- ⚡ Improve SQL query-writing skills.
-- 🛠️ Solve relational database problems.
-- 📊 Work with data distributed across multiple tables.
-- 💼 Practice SQL concepts useful for technical interviews.
-
-### 📂 Files Added
-
-    Day40-SQL/
-    ├── African Cities.sql
-    └── Screenshot 2026-09-04 175134.png
-
-### ✅ Status
-
-**Completed 🎉🔥🚀**
-
----
-
 # 🧠 Skills I'm Building
 
 - 🗄️ SQL Query Writing
@@ -818,6 +623,7 @@ Through this challenge, I practiced how to:
 - 🔢 Distinct Record Counting
 - 🧩 Duplicate Record Handling
 - 👥 Employee Hierarchy Analysis
+- 📊 Median Calculation
 
 ---
 
@@ -860,6 +666,7 @@ This helps me understand that SQL syntax can vary between database systems and i
 - 🔢 COUNT(DISTINCT ...)
 - 🧩 Duplicate Handling
 - 👨‍💼 Employee Data Analysis
+- 📊 Median Calculation
 
 ---
 
@@ -909,7 +716,8 @@ This helps me understand that SQL syntax can vary between database systems and i
 - ✅ Day 42 Completed 🎉🔥🚀
 - ✅ Day 43 Completed 🎉🔥🚀
 - ✅ Day 44 Completed 🎉🔥🚀
-- ⏳ Day 45 → Day 100 Continuing...
+- ✅ Day 45 Completed 🎉🔥🚀
+- ⏳ Day 46 → Day 100 Continuing...
 
 ---
 
@@ -917,23 +725,23 @@ This helps me understand that SQL syntax can vary between database systems and i
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **44 / 100** |
-| 💻 Challenges Solved | **44** |
+| 📅 Days Completed | **45 / 100** |
+| 💻 Challenges Solved | **45** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🗃️ Database | **DB2 SQL** |
 | 📚 Level | **Basic → Intermediate → Advanced** |
-| 📈 Progress | **44% Complete** 🚀 |
-| 🔥 Current Streak | **44 Days** |
-| ⏳ Days Remaining | **56 Days** |
+| 📈 Progress | **45% Complete** 🚀 |
+| 🔥 Current Streak | **45 Days** |
+| ⏳ Days Remaining | **55 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **44 Days of SQL Practice Completed! 🎉🔥🚀**
+## **45 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **44 days down, 56 more to go!**
+> **45 days down, 55 more to go!**
 
 Every query I solve is helping me improve my SQL knowledge, database skills, data analysis abilities, logical thinking, and problem-solving approach.
 
@@ -963,6 +771,7 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
 | 🎯 Day 42 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 43 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 44 | ✅ Completed 🎉🔥🚀 |
+| 🎯 Day 45 | ✅ Completed 🎉🔥🚀 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Goal |
@@ -989,15 +798,16 @@ The journey continues toward the ultimate **100 Days of SQL** goal! 🎯
     Day 42     ████████████████████ 100% ✅
     Day 43     ████████████████████ 100% ✅
     Day 44     ████████████████████ 100% ✅
-    Day 50     █████████░░░░░░░░░░░  44% ⏳
-    Day 75     █████████░░░░░░░░░░░  44% ⏳
-    Day 100    █████████░░░░░░░░░░░  44% ⏳
+    Day 45     ████████████████████ 100% ✅
+    Day 50     █████████░░░░░░░░░░░  45% ⏳
+    Day 75     █████████░░░░░░░░░░░  45% ⏳
+    Day 100    █████████░░░░░░░░░░░  45% ⏳
 
 ## 🚀 Overall Progress
 
-    [█████████░░░░░░░░░░░] 44%
+    [█████████░░░░░░░░░░░] 45%
 
-### **44 / 100 Days Completed**
+### **45 / 100 Days Completed**
 
 ---
 
@@ -1055,6 +865,7 @@ It is also about:
 - 🏢 Analyzing organizational structures
 - 👥 Working with employee and manager hierarchies
 - 🔢 Handling duplicate records and distinct values
+- 📊 Performing statistical calculations such as median
 
 ---
 
@@ -1090,6 +901,7 @@ Every challenge helps me improve my:
 - 🏢 Organizational Data Analysis
 - 👥 Employee Hierarchy Analysis
 - 🔢 Distinct Data Aggregation
+- 📊 Statistical Data Analysis
 
 ---
 
@@ -1136,15 +948,13 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 Let's learn, build, and grow together! 🌱
 
-📌 **GitHub:**
-
-https://github.com/Coder-RD
+📌 **GitHub:** **Coder-RD**
 
 ---
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#Joins` `#Subqueries` `#DataAnalysis` `#Distinct` `#AggregateFunctions` `#SQLQueries` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#HackerRank` `#Database` `#DB2` `#SQLChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalytics` `#SQLLearning` `#DatabaseManagement` `#DB2SQL` `#Joins` `#Subqueries` `#DataAnalysis` `#Distinct` `#AggregateFunctions` `#SQLQueries` `#Median` `#WeatherObservationStation20` `#OpenToWork`
 
 ---
 
@@ -1154,6 +964,7 @@ https://github.com/Coder-RD
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**44 Days Completed ✅ | 56 Days Remaining ⏳ | 100 Days Goal 🎯**
+**45 Days Completed ✅ | 55 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 **Let's keep coding! 🚀🗄️💻📊🔥**
+```
