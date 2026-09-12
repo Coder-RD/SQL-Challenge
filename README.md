@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-47%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-48%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my **SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational/hierarchical data analysis, and leaderboard analysis**.
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my **SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, and leaderboard analysis**.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
 
@@ -131,6 +131,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day47-SQL/  
 │   ├── 📄 Top Competitors.sql  
 │   └── 📸 Screenshot 2026-09-11 153810.png  
+├── 📁 Day48-SQL/  
+│   ├── 📄 Ollivander's Inventory.sql  
+│   └── 📸 Screenshot 2026-09-12 142045.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -187,7 +190,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 45 | Weather Observation Station 20 | Completed 🎉 |
 | ✅ Day 46 | The Report | Completed 🎉🔥 |
 | ✅ Day 47 | Top Competitors | Completed 🎉🏆 |
-| ⏳ Day 48–99 | Upcoming Challenges | Pending |
+| ✅ Day 48 | Ollivander's Inventory | Completed 🎉🪄🔥 |
+| ⏳ Day 49–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -267,6 +271,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 - ✅ JOIN Operations
 - ✅ INNER JOIN
+- ✅ Multiple Table JOINs
 - ✅ Relational Data Analysis
 - ✅ Combining Multiple Tables
 - ✅ Table Relationships
@@ -326,15 +331,16 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
-# 🆕 Day 47 – Top Competitors
+# 🆕 Day 48 – Ollivander's Inventory
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** HackerRank
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Top Competitors
-- 📅 **Day:** 47
+- 🏆 **Challenge:** Ollivander's Inventory
+- 📅 **Day:** 48
 - ✅ **Status:** Completed
+- 🧠 **SQL Dialect:** DB2 SQL
 
 ---
 
@@ -342,63 +348,70 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 - ✅ INNER JOIN
 - ✅ Multiple Table JOINs
+- ✅ Subqueries
+- ✅ MIN()
 - ✅ WHERE Clause
-- ✅ GROUP BY
-- ✅ HAVING
-- ✅ COUNT()
-- ✅ Full Score Identification
-- ✅ Aggregate Functions
-- ✅ Sorting Results
+- ✅ Filtering Non-Evil Wands
+- ✅ Matching Age and Power
+- ✅ Finding Minimum Cost
 - ✅ ORDER BY
-- ✅ Multiple Sorting Conditions
+- ✅ Descending Sorting
 - ✅ Relational Data Analysis
-- ✅ Leaderboard Analysis
+- ✅ Query-Based Filtering
+- ✅ Advanced SQL Problem Solving
 
 ---
 
 ## 📖 Problem-Solving Approach
 
-The **Top Competitors** challenge focuses on identifying hackers who achieved **full scores in more than one challenge**.
+The **Ollivander's Inventory** challenge focuses on finding the **non-evil wands with the minimum number of coins needed for each combination of wand age and power**.
 
-The solution requires combining data from the **Hackers**, **Submissions**, **Challenges**, and **Difficulty** tables.
+The solution uses the **Wands** and **Wands_Property** tables.
 
-The `JOIN` operations connect the hacker information with their submissions, challenge details, and the maximum score available for each difficulty level.
+The tables are connected using the `code` column through a `JOIN` operation.
 
 The condition:
 
-**`submission score = maximum challenge score`**
+**`is_evil = 0`**
 
-is used to identify submissions where the hacker achieved a full score.
+is used to select only non-evil wands.
 
-The results are then grouped by hacker using `GROUP BY`, and `HAVING` is used to select hackers who achieved full scores in more than one challenge.
+A subquery is then used to find the **minimum coins needed** for wands having the same **age and power**.
 
-Finally, the result is sorted by the **total number of full-score challenges in descending order**. If multiple hackers have the same number of full-score challenges, their `hacker_id` is sorted in ascending order.
+The query matches each wand with the minimum cost found for its corresponding age and power combination.
 
-This challenge helped strengthen my understanding of **JOINs, GROUP BY, HAVING, COUNT(), aggregate filtering, leaderboard analysis, and multi-table relational queries**.
+Finally, the results are sorted using:
+
+**`ORDER BY power DESC, age DESC`**
+
+This places higher-powered wands first and, for the same power, higher-aged wands first.
+
+This challenge helped strengthen my understanding of **JOINs, subqueries, MIN(), filtering, relational data analysis, and multi-condition sorting**.
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Top Competitors.sql`
-- 📸 `Screenshot 2026-09-11 153810.png`
+- 💻 `Ollivander's Inventory.sql`
+- 📸 `Screenshot 2026-09-12 142045.png`
 
 ---
 
 ## 🎯 Learning Outcome
 
-Day 47 improved my understanding of:
+Day 48 improved my understanding of:
 
-- 🔗 Joining multiple related tables
+- 🔗 Joining related tables
 - 🧠 Understanding table relationships
-- 🏆 Identifying full-score submissions
-- 📊 Using COUNT() for aggregation
-- 📌 Grouping records using GROUP BY
-- 🔍 Filtering grouped results using HAVING
-- 📈 Sorting aggregated results
-- 🧩 Solving multi-table SQL problems
-- 🏆 Performing leaderboard-based analysis
-- 💻 Writing structured SQL queries
+- 🔍 Filtering records using WHERE
+- 🪄 Working with wand properties
+- 💰 Finding minimum values using MIN()
+- 🧩 Using subqueries for advanced filtering
+- 📊 Comparing related records
+- 📌 Matching records based on multiple conditions
+- 📈 Sorting results using ORDER BY
+- 🗄️ Solving relational database problems
+- 💻 Writing structured and optimized SQL queries
 
 ---
 
@@ -424,6 +437,7 @@ Day 47 improved my understanding of:
 - 🔢 Decimal Precision
 - 🧩 Relational Data Analysis
 - 🏆 Leaderboard Analysis
+- 🪄 Advanced SQL Filtering
 - 🧠 Problem Solving
 - 🎯 Analytical Thinking
 - 🚀 Query Optimization Thinking
@@ -482,10 +496,11 @@ Day 47 improved my understanding of:
 - ✅ Day 45 🎉
 - ✅ Day 46 🎉🔥
 - ✅ Day 47 🎉🏆🔥
+- ✅ Day 48 🎉🪄🔥
 
 ### ⏳ Remaining
 
-- ⏳ Day 48 → Day 99
+- ⏳ Day 49 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -494,8 +509,8 @@ Day 47 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **47 / 100** |
-| 💻 Challenges Solved | **47** |
+| 📅 Days Completed | **48 / 100** |
+| 💻 Challenges Solved | **48** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -505,17 +520,18 @@ Day 47 improved my understanding of:
 | 🔢 Numerical Processing | **Rounding, Truncation & Decimal Precision** |
 | 🔗 Relational Concepts | **JOINs, Relationships & Relational Data Analysis** |
 | 🏆 Leaderboard Concepts | **Full Scores, COUNT(), GROUP BY, HAVING & Sorting** |
-| 📈 Progress | **47% Complete** 🚀 |
-| 🔥 Current Streak | **47 Days** |
-| ⏳ Days Remaining | **53 Days** |
+| 🪄 Advanced Query Concepts | **Subqueries, MIN(), Multi-Condition Filtering & Sorting** |
+| 📈 Progress | **48% Complete** 🚀 |
+| 🔥 Current Streak | **48 Days** |
+| ⏳ Days Remaining | **52 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **47 Days of SQL Practice Completed! 🎉🔥🚀**
+## **48 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **47 days down, 53 more to go!**
+> **48 days down, 52 more to go!**
 
 Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, leaderboard analysis, and problem-solving abilities**.
 
@@ -540,6 +556,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 45 | ✅ Completed 🎉🔥 |
 | 🎯 Day 46 | ✅ Completed 🎉🔥🗄️ |
 | 🎯 Day 47 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 48 | ✅ Completed 🎉🪄🔥 |
 | 🎯 Day 50 | ⏳ Upcoming |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -572,20 +589,23 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 47**  
 ████████████████████ 100% ✅
 
+**Day 48**  
+████████████████████ 100% ✅
+
 **Day 50**  
-███████████████████░ 47% ⏳
+█████████░░░░░░░░░░░ 48% ⏳
 
 **Day 75**  
-█████████░░░░░░░░░░░ 47% ⏳
+█████████░░░░░░░░░░░ 48% ⏳
 
 **Day 100**  
-█████████░░░░░░░░░░░ 47% ⏳
+█████████░░░░░░░░░░░ 48% ⏳
 
 ## 🚀 Overall Progress
 
-█████████░░░░░░░░░░░ **47%**
+█████████░░░░░░░░░░░ **48%**
 
-### **47 / 100 Days Completed**
+### **48 / 100 Days Completed**
 
 ---
 
@@ -664,8 +684,9 @@ Every challenge helps me improve my:
 - 🔢 Decimal Precision
 - 📈 Statistical Analysis
 - 🏆 Leaderboard Analysis
-- 🧠 Relational Data Understanding
+- 🧩 Relational Data Understanding
 - 🌳 Hierarchical Data Analysis
+- 🪄 Advanced SQL Querying
 - 🚀 Coding Confidence
 - 💼 Technical Interview Preparation
 
@@ -740,10 +761,10 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**47 Days Completed ✅ | 53 Days Remaining ⏳ | 100 Days Goal 🎯**
+**48 Days Completed ✅ | 52 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 🏆 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 🏆 🪄 🚀
 </p>
 
 <p align="center">
