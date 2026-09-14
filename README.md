@@ -1,9 +1,10 @@
+```markdown
 # 🗄️ 100 Days of SQL Challenge
 
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-49%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-50%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -137,6 +138,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day49-SQL/  
 │   ├── 📄 Challenges.sql  
 │   └── 📸 Screenshot 2026-09-13 085302.png  
+├── 📁 Day50-SQL/  
+│   ├── 📄 Contest Leaderboard.sql  
+│   └── 📸 Screenshot 2026-09-14 085728.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -192,10 +196,11 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 44 | New Companies | Completed |
 | ✅ Day 45 | Weather Observation Station 20 | Completed 🎉 |
 | ✅ Day 46 | The Report | Completed 🎉🔥 |
-| ✅ Day 47 | Top Competitors | Completed 🎉🏆 |
+| ✅ Day 47 | Top Competitors | Completed 🎉🏆🔥 |
 | ✅ Day 48 | Ollivander's Inventory | Completed 🎉🪄🔥 |
 | ✅ Day 49 | Challenges | Completed 🎉🏆🔥 |
-| ⏳ Day 50–99 | Upcoming Challenges | Pending |
+| ✅ Day 50 | Contest Leaderboard | Completed 🎉🏆🔥 |
+| ⏳ Day 51–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -335,14 +340,14 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
-# 🆕 Day 49 – Challenges
+# 🆕 Day 50 – Contest Leaderboard
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** HackerRank
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Challenges
-- 📅 **Day:** 49
+- 🏆 **Challenge:** Contest Leaderboard
+- 📅 **Day:** 50
 - ✅ **Status:** Completed
 - 🧠 **SQL Dialect:** DB2 SQL
 
@@ -350,20 +355,22 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 🧠 Concepts Practiced
 
-- ✅ COUNT()
-- ✅ GROUP BY
-- ✅ HAVING
 - ✅ JOIN Operations
+- ✅ INNER JOIN
 - ✅ Subqueries
 - ✅ MAX()
-- ✅ Counting Challenges
-- ✅ Finding Maximum Challenge Count
-- ✅ Identifying Unique Challenge Counts
-- ✅ Filtering Grouped Results
+- ✅ SUM()
+- ✅ GROUP BY
+- ✅ HAVING
 - ✅ ORDER BY
-- ✅ Descending Sorting
+- ✅ Aggregate Functions
+- ✅ Finding Maximum Scores
+- ✅ Calculating Total Scores
+- ✅ Grouping Scores by Hacker
+- ✅ Leaderboard Analysis
+- ✅ Filtering Zero Scores
+- ✅ Descending Score Sorting
 - ✅ Hacker ID Sorting
-- ✅ Aggregate Data Analysis
 - ✅ Relational Data Analysis
 - ✅ Advanced SQL Problem Solving
 
@@ -371,61 +378,55 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 📖 Problem-Solving Approach
 
-The **Challenges** problem focuses on finding the **hacker ID, name, and total number of challenges created by each student**.
+The **Contest Leaderboard** problem focuses on calculating the total score achieved by each hacker.
 
-The solution uses the **Hackers** and **Challenges** tables.
+For every hacker and challenge combination, the highest score obtained by that hacker is considered.
 
-The tables are connected using the `hacker_id` column through a `JOIN` operation.
+The solution first finds the **maximum score for each hacker for each challenge**.
 
-The `COUNT()` function is used to calculate the total number of challenges created by each hacker.
+The maximum scores are then combined and summed for every hacker to calculate the **total score**.
 
-The `GROUP BY` clause groups the results by:
+The `Hackers` table is joined with the calculated results so that the hacker's **ID and name** can be displayed.
 
-**`hacker_id` and `name`**
+The solution uses:
 
-The `HAVING` clause is used to apply the required filtering condition.
+- `MAX()` to find the highest score for each challenge.
+- `SUM()` to calculate the total score.
+- `GROUP BY` to group scores by hacker.
+- `HAVING` to remove hackers whose total score is zero.
+- `ORDER BY` to sort the leaderboard.
 
-Hackers who created the **maximum number of challenges** are included in the result.
+The final result is ordered by:
 
-Hackers whose challenge count is **unique** are also included.
+**`total_score DESC, hacker_id ASC`**
 
-If multiple hackers have the same number of challenges and that count is less than the maximum, those hackers are excluded.
-
-Finally, the results are sorted using:
-
-**`ORDER BY total_challenges DESC, hacker_id`**
-
-This places hackers with the highest number of challenges first. If multiple hackers have the same number of challenges, they are sorted by `hacker_id`.
-
-This challenge helped strengthen my understanding of **COUNT(), GROUP BY, HAVING, JOINs, subqueries, MAX(), filtering, and multi-condition sorting**.
-
----
-
-## 📂 Files Added
-
-- 💻 `Challenges.sql`
-- 📸 `Screenshot 2026-09-13 085302.png`
+This means hackers with higher total scores appear first. If two hackers have the same total score, the hacker with the smaller `hacker_id` appears first.
 
 ---
 
 ## 🎯 Learning Outcome
 
-Day 49 improved my understanding of:
+Day 50 improved my understanding of:
 
-- 🔢 Counting records using COUNT()
-- 📊 Grouping data using GROUP BY
-- 🔍 Filtering grouped results using HAVING
-- 🧠 Using subqueries for advanced filtering
-- 📈 Finding maximum values using MAX()
-- 🏆 Identifying maximum challenge counts
-- 📌 Identifying unique challenge counts
-- 🔗 Working with related tables
-- 🔢 Performing aggregate calculations
-- 📊 Analyzing grouped data
-- 🔀 Sorting results using ORDER BY
-- 🧩 Solving complex SQL conditions
-- 🗄️ Working with relational database data
-- 💻 Writing structured SQL queries
+- 🏆 Leaderboard-based SQL problems
+- 🔢 Using `MAX()` for maximum scores
+- 📊 Using `SUM()` for total scores
+- 🔗 Joining related data
+- 🧠 Writing subqueries
+- 📌 Grouping data with `GROUP BY`
+- 🔍 Filtering grouped results with `HAVING`
+- 📈 Sorting aggregated results
+- 🧩 Combining multiple SQL concepts
+- 🗄️ Relational database analysis
+- 💻 Writing structured and efficient SQL queries
+- 🧠 Improving logical and analytical thinking
+
+---
+
+## 📂 Files Added
+
+- 💻 `Contest Leaderboard.sql`
+- 📸 `Screenshot 2026-09-14 085728.png`
 
 ---
 
@@ -512,10 +513,11 @@ Day 49 improved my understanding of:
 - ✅ Day 47 🎉🏆🔥
 - ✅ Day 48 🎉🪄🔥
 - ✅ Day 49 🎉🏆🔥
+- ✅ Day 50 🎉🏆🔥
 
 ### ⏳ Remaining
 
-- ⏳ Day 50 → Day 99
+- ⏳ Day 51 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -524,8 +526,8 @@ Day 49 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **49 / 100** |
-| 💻 Challenges Solved | **49** |
+| 📅 Days Completed | **50 / 100** |
+| 💻 Challenges Solved | **50** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -534,19 +536,19 @@ Day 49 improved my understanding of:
 | 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
 | 🔢 Numerical Processing | **Rounding, Truncation & Decimal Precision** |
 | 🔗 Relational Concepts | **JOINs, Relationships & Relational Data Analysis** |
-| 🏆 Leaderboard Concepts | **Full Scores, COUNT(), GROUP BY, HAVING & Sorting** |
+| 🏆 Leaderboard Concepts | **Maximum Scores, SUM(), GROUP BY, HAVING & Sorting** |
 | 🪄 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
-| 📈 Progress | **49% Complete** 🚀 |
-| 🔥 Current Streak | **49 Days** |
-| ⏳ Days Remaining | **51 Days** |
+| 📈 Progress | **50% Complete** 🚀 |
+| 🔥 Current Streak | **50 Days** |
+| ⏳ Days Remaining | **50 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **49 Days of SQL Practice Completed! 🎉🔥🚀**
+## **50 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **49 days down, 51 more to go!**
+> **50 days down, 50 more to go!**
 
 Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, leaderboard analysis, and problem-solving abilities**.
 
@@ -573,7 +575,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 47 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 48 | ✅ Completed 🎉🪄🔥 |
 | 🎯 Day 49 | ✅ Completed 🎉🏆🔥 |
-| 🎯 Day 50 | ⏳ Upcoming |
+| 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -612,19 +614,19 @@ The journey continues with **consistency, discipline, practice, and continuous l
 ████████████████████ 100% ✅
 
 **Day 50**  
-█████████░░░░░░░░░░░ 49% ⏳
+████████████████████ 100% ✅
 
 **Day 75**  
-█████████░░░░░░░░░░░ 49% ⏳
+██████████░░░░░░░░░░ 50% ⏳
 
 **Day 100**  
-█████████░░░░░░░░░░░ 49% ⏳
+██████████░░░░░░░░░░ 50% ⏳
 
 ## 🚀 Overall Progress
 
-█████████░░░░░░░░░░░ **49%**
+██████████░░░░░░░░░░ **50%**
 
-### **49 / 100 Days Completed**
+### **50 / 100 Days Completed**
 
 ---
 
@@ -678,7 +680,7 @@ It is also about:
 
 This repository documents my **SQL learning journey** and showcases my daily progress while solving HackerRank SQL challenges.
 
-It serves as a portfolio of my **SQL and database skills** and demonstrates my commitment to continuous learning through the **#100DaysOfCode** challenge.
+It serves as a portfolio of my **SQL and database skills** and demonstrates my commitment to continuous learning through the **#100DaysOfSQL** challenge.
 
 Every challenge helps me improve my:
 
@@ -766,6 +768,8 @@ Let's learn, build, and grow together! 🌱
 
 **Coder-RD**
 
+🔗 https://github.com/Coder-RD
+
 ---
 
 # 🔖 Hashtags
@@ -780,7 +784,7 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**49 Days Completed ✅ | 51 Days Remaining ⏳ | 100 Days Goal 🎯**
+**50 Days Completed ✅ | 50 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 🏆 🪄 🚀
@@ -789,3 +793,4 @@ Let's learn, build, and grow together! 🌱
 <p align="center">
   <strong>🔥 Let's keep coding and keep growing! 🔥</strong>
 </p>
+```
