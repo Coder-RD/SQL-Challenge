@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-50%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-51%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -140,6 +140,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day50-SQL/  
 │   ├── 📄 Contest Leaderboard.sql  
 │   └── 📸 Screenshot 2026-09-14 085728.png  
+├── 📁 Day51-SQL/  
+│   ├── 📄 SQL Project Planning.sql  
+│   └── 📸 Screenshot 2026-09-15 180330.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -199,7 +202,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 48 | Ollivander's Inventory | Completed 🎉🪄🔥 |
 | ✅ Day 49 | Challenges | Completed 🎉🏆🔥 |
 | ✅ Day 50 | Contest Leaderboard | Completed 🎉🏆🔥 |
-| ⏳ Day 51–99 | Upcoming Challenges | Pending |
+| ✅ Day 51 | SQL Project Planning | Completed 🎉🏆🔥 |
+| ⏳ Day 52–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -422,10 +426,62 @@ Day 50 improved my understanding of:
 
 ---
 
+# 🆕 Day 51 – SQL Project Planning
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 🏆 **Challenge:** SQL Project Planning
+- 📅 **Day:** 51
+- ✅ **Status:** Completed
+- 🧠 **SQL Dialect:** DB2 SQL
+
+---
+
+## 🧠 Concepts Practiced
+
+- ✅ SQL Project Planning
+- ✅ Working with project-related data
+- ✅ Date-based SQL analysis
+- ✅ Grouping related records
+- ✅ Identifying project start and end dates
+- ✅ Query logic and problem solving
+- ✅ Data analysis using SQL
+- ✅ Sorting query results
+- ✅ HackerRank SQL problem solving
+
+---
+
+## 📖 Problem-Solving Approach
+
+The **SQL Project Planning** challenge focuses on analyzing project-related records using SQL.
+
+The solution requires identifying project information from the available data and applying SQL query logic to organize and analyze the project records.
+
+This challenge helped me practice working with project data, date-related information, grouping, sorting, and logical SQL query construction.
+
+---
+
+## 🎯 Learning Outcome
+
+Day 51 improved my understanding of:
+
+- 🗄️ SQL project-based problem solving
+- 📅 Working with date-related data
+- 📊 Analyzing project records
+- 🔍 Filtering and organizing data
+- 📌 Grouping related records
+- 📈 Sorting SQL results
+- 🧠 Logical and analytical SQL thinking
+- 💻 Writing structured SQL queries
+
+---
+
 ## 📂 Files Added
 
-- 💻 `Contest Leaderboard.sql`
-- 📸 `Screenshot 2026-09-14 085728.png`
+- 💻 `SQL Project Planning.sql`
+- 📸 `Screenshot 2026-09-15 180330.png`
 
 ---
 
@@ -513,10 +569,11 @@ Day 50 improved my understanding of:
 - ✅ Day 48 🎉🪄🔥
 - ✅ Day 49 🎉🏆🔥
 - ✅ Day 50 🎉🏆🔥
+- ✅ Day 51 🎉🏆🔥
 
 ### ⏳ Remaining
 
-- ⏳ Day 51 → Day 99
+- ⏳ Day 52 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -525,8 +582,8 @@ Day 50 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **50 / 100** |
-| 💻 Challenges Solved | **50** |
+| 📅 Days Completed | **51 / 100** |
+| 💻 Challenges Solved | **51** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -537,17 +594,17 @@ Day 50 improved my understanding of:
 | 🔗 Relational Concepts | **JOINs, Relationships & Relational Data Analysis** |
 | 🏆 Leaderboard Concepts | **Maximum Scores, SUM(), GROUP BY, HAVING & Sorting** |
 | 🪄 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
-| 📈 Progress | **50% Complete** 🚀 |
-| 🔥 Current Streak | **50 Days** |
-| ⏳ Days Remaining | **50 Days** |
+| 📈 Progress | **51% Complete** 🚀 |
+| 🔥 Current Streak | **51 Days** |
+| ⏳ Days Remaining | **49 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **50 Days of SQL Practice Completed! 🎉🔥🚀**
+## **51 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **50 days down, 50 more to go!**
+> **51 days down, 49 more to go!**
 
 Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, leaderboard analysis, and problem-solving abilities**.
 
@@ -575,6 +632,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 48 | ✅ Completed 🎉🪄🔥 |
 | 🎯 Day 49 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 51 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -615,6 +673,9 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 50**  
 ████████████████████ 100% ✅
 
+**Day 51**  
+████████████████████ 100% ✅
+
 **Day 75**  
 ██████████░░░░░░░░░░ 50% ⏳
 
@@ -623,9 +684,9 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ## 🚀 Overall Progress
 
-██████████░░░░░░░░░░ **50%**
+██████████░░░░░░░░░░ **51%**
 
-### **50 / 100 Days Completed**
+### **51 / 100 Days Completed**
 
 ---
 
@@ -783,7 +844,7 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**50 Days Completed ✅ | 50 Days Remaining ⏳ | 100 Days Goal 🎯**
+**51 Days Completed ✅ | 49 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 🏆 🪄 🚀
