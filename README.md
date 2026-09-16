@@ -1,9 +1,10 @@
+```markdown
 # 🗄️ 100 Days of SQL Challenge
 
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-51%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-52%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -16,7 +17,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my **SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, and leaderboard analysis**.
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my **SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, and multi-table relational queries**.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
 
@@ -43,6 +44,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🔀 Use CASE statements for conditional analysis
 - 📌 Practice DISTINCT, GROUP BY, and aggregation
 - 🏆 Analyze leaderboard and ranking-based SQL problems
+- 🔗 Practice multi-table relational queries
+- 💰 Compare and analyze related data across tables
 - 📈 Develop statistical thinking using SQL
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
@@ -65,9 +68,12 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🧠 Advanced Queries | Subqueries |
 | 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY |
+| 🔍 Group Filtering | HAVING |
 | 📍 Geographic Data | Latitude & Longitude |
 | 🔢 Numerical Processing | ROUND(), Decimal Precision |
 | 🏆 Leaderboard Analysis | Full Scores, COUNT(), GROUP BY, HAVING |
+| 🔗 Multi-Table Analysis | Students, Friends & Packages |
+| 💰 Salary Comparison | Related Record Analysis |
 | 📈 Analysis | Statistical & Data Analysis |
 
 ---
@@ -143,6 +149,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day51-SQL/  
 │   ├── 📄 SQL Project Planning.sql  
 │   └── 📸 Screenshot 2026-09-15 180330.png  
+├── 📁 Day52-SQL/  
+│   ├── 📄 Placements.sql  
+│   └── 📸 Screenshot 2026-09-16 095852.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -203,7 +212,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 49 | Challenges | Completed 🎉🏆🔥 |
 | ✅ Day 50 | Contest Leaderboard | Completed 🎉🏆🔥 |
 | ✅ Day 51 | SQL Project Planning | Completed 🎉🏆🔥 |
-| ⏳ Day 52–99 | Upcoming Challenges | Pending |
+| ✅ Day 52 | Placements | Completed 🎉🏆🔥🔗 |
+| ⏳ Day 53–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -220,6 +230,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Sorting Data
 - ✅ DISTINCT
 - ✅ GROUP BY
+- ✅ HAVING
 - ✅ Aggregate Functions
 - ✅ Data Analysis
 - ✅ Problem Solving
@@ -240,6 +251,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Statistical Analysis
 - ✅ Data Summarization
 - ✅ Counting Records
+- ✅ Maximum Value Analysis
+- ✅ Total Score Calculation
 
 ---
 
@@ -290,6 +303,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Matching Records
 - ✅ Working with Related Data
 - ✅ Relational Database Concepts
+- ✅ Comparing Related Records
+- ✅ Multi-Table Data Analysis
 
 ---
 
@@ -302,6 +317,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Query-Based Filtering
 - ✅ Derived Results
 - ✅ Advanced SQL Problem Solving
+- ✅ Maximum Value Subqueries
 
 ---
 
@@ -343,14 +359,27 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
-# 🆕 Day 50 – Contest Leaderboard
+## 💰 Relational Comparison & Analysis
+
+- ✅ Comparing Values Across Tables
+- ✅ Salary Comparison
+- ✅ Student and Friend Relationships
+- ✅ Multi-Table JOIN Analysis
+- ✅ Related Record Analysis
+- ✅ Filtering Based on Related Records
+- ✅ Sorting Based on Related Data
+- ✅ Relational Database Problem Solving
+
+---
+
+# 🆕 Day 52 – Placements
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** HackerRank
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Contest Leaderboard
-- 📅 **Day:** 50
+- 🏆 **Challenge:** Placements
+- 📅 **Day:** 52
 - ✅ **Status:** Completed
 - 🧠 **SQL Dialect:** DB2 SQL
 
@@ -358,130 +387,76 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 🧠 Concepts Practiced
 
-- ✅ JOIN Operations
 - ✅ INNER JOIN
-- ✅ Subqueries
-- ✅ MAX()
-- ✅ SUM()
-- ✅ GROUP BY
-- ✅ HAVING
-- ✅ ORDER BY
-- ✅ Aggregate Functions
-- ✅ Finding Maximum Scores
-- ✅ Calculating Total Scores
-- ✅ Grouping Scores by Hacker
-- ✅ Leaderboard Analysis
-- ✅ Filtering Zero Scores
-- ✅ Descending Score Sorting
-- ✅ Hacker ID Sorting
+- ✅ Multiple Table JOINs
+- ✅ Students Table
+- ✅ Friends Table
+- ✅ Packages Table
 - ✅ Relational Data Analysis
-- ✅ Advanced SQL Problem Solving
+- ✅ Salary Comparison
+- ✅ Comparing Student and Friend Salaries
+- ✅ Joining Related Records
+- ✅ WHERE Condition
+- ✅ ORDER BY
+- ✅ Ascending Salary Sorting
+- ✅ Multi-Table Query Construction
+- ✅ Filtering Based on Related Data
+- ✅ Database Relationships
+- ✅ Logical SQL Problem Solving
 
 ---
 
 ## 📖 Problem-Solving Approach
 
-The **Contest Leaderboard** problem focuses on calculating the total score achieved by each hacker.
+The **Placements** challenge focuses on comparing the salaries of students with the salaries of their best friends.
 
-For every hacker and challenge combination, the highest score obtained by that hacker is considered.
+The problem uses three related tables:
 
-The solution first finds the **maximum score for each hacker for each challenge**.
+- **Students** – Contains student information.
+- **Friends** – Contains the relationship between a student and their best friend.
+- **Packages** – Contains salary information.
 
-The maximum scores are then combined and summed for every hacker to calculate the **total score**.
+The solution connects these tables using `JOIN` operations.
 
-The `Hackers` table is joined with the calculated results so that the hacker's **ID and name** can be displayed.
+The student's package information is compared with the package information of their best friend.
+
+Only those students are selected whose **best friend's salary is higher than their own salary**.
+
+The result is then sorted according to the friend's salary.
 
 The solution uses:
 
-- `MAX()` to find the highest score for each challenge.
-- `SUM()` to calculate the total score.
-- `GROUP BY` to group scores by hacker.
-- `HAVING` to remove hackers whose total score is zero.
-- `ORDER BY` to sort the leaderboard.
+- `JOIN` to connect Students, Friends, and Packages.
+- Multiple aliases of the Packages table to compare two salary values.
+- `WHERE` to filter students based on salary comparison.
+- `ORDER BY` to sort the final result.
 
-The final result is ordered by:
-
-**`total_score DESC, hacker_id ASC`**
-
-This means hackers with higher total scores appear first. If two hackers have the same total score, the hacker with the smaller `hacker_id` appears first.
+This challenge helped strengthen my understanding of **relational databases, multiple-table JOINs, table aliases, and comparison-based filtering**.
 
 ---
 
 ## 🎯 Learning Outcome
 
-Day 50 improved my understanding of:
+Day 52 improved my understanding of:
 
-- 🏆 Leaderboard-based SQL problems
-- 🔢 Using `MAX()` for maximum scores
-- 📊 Using `SUM()` for total scores
-- 🔗 Joining related data
-- 🧠 Writing subqueries
-- 📌 Grouping data with `GROUP BY`
-- 🔍 Filtering grouped results with `HAVING`
-- 📈 Sorting aggregated results
-- 🧩 Combining multiple SQL concepts
-- 🗄️ Relational database analysis
-- 💻 Writing structured and efficient SQL queries
-- 🧠 Improving logical and analytical thinking
-
----
-
-# 🆕 Day 51 – SQL Project Planning
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- 🗄️ **Language:** SQL
-- 🏆 **Challenge:** SQL Project Planning
-- 📅 **Day:** 51
-- ✅ **Status:** Completed
-- 🧠 **SQL Dialect:** DB2 SQL
-
----
-
-## 🧠 Concepts Practiced
-
-- ✅ SQL Project Planning
-- ✅ Working with project-related data
-- ✅ Date-based SQL analysis
-- ✅ Grouping related records
-- ✅ Identifying project start and end dates
-- ✅ Query logic and problem solving
-- ✅ Data analysis using SQL
-- ✅ Sorting query results
-- ✅ HackerRank SQL problem solving
-
----
-
-## 📖 Problem-Solving Approach
-
-The **SQL Project Planning** challenge focuses on analyzing project-related records using SQL.
-
-The solution requires identifying project information from the available data and applying SQL query logic to organize and analyze the project records.
-
-This challenge helped me practice working with project data, date-related information, grouping, sorting, and logical SQL query construction.
-
----
-
-## 🎯 Learning Outcome
-
-Day 51 improved my understanding of:
-
-- 🗄️ SQL project-based problem solving
-- 📅 Working with date-related data
-- 📊 Analyzing project records
-- 🔍 Filtering and organizing data
-- 📌 Grouping related records
-- 📈 Sorting SQL results
-- 🧠 Logical and analytical SQL thinking
-- 💻 Writing structured SQL queries
+- 🔗 Joining multiple related tables
+- 🗄️ Understanding table relationships
+- 💰 Comparing values between related records
+- 👥 Working with student and friend relationships
+- 📊 Analyzing salary information
+- 🔍 Filtering records using conditions
+- 📌 Using table aliases
+- 📈 Sorting results
+- 🧩 Building multi-table SQL queries
+- 🧠 Improving logical thinking
+- 💻 Strengthening SQL problem-solving skills
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `SQL Project Planning.sql`
-- 📸 `Screenshot 2026-09-15 180330.png`
+- 💻 `Placements.sql`
+- 📸 `Screenshot 2026-09-16 095852.png`
 
 ---
 
@@ -499,19 +474,21 @@ Day 51 improved my understanding of:
 - 🔀 Conditional Logic
 - 📌 DISTINCT
 - 📊 GROUP BY
-- 📊 HAVING
+- 📌 HAVING
 - 📈 Statistical Analysis
 - 📍 Geographic Data Analysis
 - 🌎 Latitude & Longitude Processing
 - 📏 Distance Calculation
 - 🔢 Decimal Precision
 - 🧩 Relational Data Analysis
+- 💰 Salary Comparison
+- 👥 Relationship-Based Data Analysis
 - 🏆 Leaderboard Analysis
-- 🪄 Advanced SQL Filtering
-- 🧠 Problem Solving
-- 🎯 Analytical Thinking
-- 🚀 Query Optimization Thinking
-- 💼 Technical Interview Preparation
+- 🧠 Multi-Table Querying
+- 🔗 Table Relationships
+- 🎯 Technical Interview Preparation
+- 🚀 Problem Solving
+- 💼 Database Skills
 
 ---
 
@@ -570,10 +547,11 @@ Day 51 improved my understanding of:
 - ✅ Day 49 🎉🏆🔥
 - ✅ Day 50 🎉🏆🔥
 - ✅ Day 51 🎉🏆🔥
+- ✅ Day 52 🎉🏆🔥🔗
 
 ### ⏳ Remaining
 
-- ⏳ Day 52 → Day 99
+- ⏳ Day 53 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -582,8 +560,8 @@ Day 51 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **51 / 100** |
-| 💻 Challenges Solved | **51** |
+| 📅 Days Completed | **52 / 100** |
+| 💻 Challenges Solved | **52** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -592,21 +570,22 @@ Day 51 improved my understanding of:
 | 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
 | 🔢 Numerical Processing | **Rounding, Truncation & Decimal Precision** |
 | 🔗 Relational Concepts | **JOINs, Relationships & Relational Data Analysis** |
+| 💰 Comparison Analysis | **Salary Comparison & Related Record Analysis** |
 | 🏆 Leaderboard Concepts | **Maximum Scores, SUM(), GROUP BY, HAVING & Sorting** |
-| 🪄 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
-| 📈 Progress | **51% Complete** 🚀 |
-| 🔥 Current Streak | **51 Days** |
-| ⏳ Days Remaining | **49 Days** |
+| 🧠 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
+| 📈 Progress | **52% Complete** 🚀 |
+| 🔥 Current Streak | **52 Days** |
+| ⏳ Days Remaining | **48 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **51 Days of SQL Practice Completed! 🎉🔥🚀**
+## **52 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **51 days down, 49 more to go!**
+> **52 days down, 48 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, leaderboard analysis, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -633,6 +612,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 49 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 51 | ✅ Completed 🎉🏆🔥 |
+| 🎯 Day 52 | ✅ Completed 🎉🏆🔥🔗 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -676,6 +656,9 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 51**  
 ████████████████████ 100% ✅
 
+**Day 52**  
+████████████████████ 100% ✅
+
 **Day 75**  
 ██████████░░░░░░░░░░ 50% ⏳
 
@@ -684,9 +667,9 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ## 🚀 Overall Progress
 
-██████████░░░░░░░░░░ **51%**
+██████████░░░░░░░░░░ **52%**
 
-### **51 / 100 Days Completed**
+### **52 / 100 Days Completed**
 
 ---
 
@@ -697,15 +680,16 @@ My daily learning process includes:
 1. 📖 Understand the SQL problem statement
 2. 🧠 Analyze the required output
 3. 🔍 Identify the required tables and columns
-4. ✍️ Write the SQL query
-5. 🧪 Test the query on HackerRank
-6. 🔍 Understand the result
-7. 🛠️ Debug errors when required
-8. 📊 Analyze the data and query logic
-9. 📂 Save the SQL solution in this repository
-10. 📸 Add the successful submission screenshot
-11. 📝 Review the SQL concepts used
-12. 🚀 Continue to the next challenge
+4. 🔗 Understand relationships between tables
+5. ✍️ Write the SQL query
+6. 🧪 Test the query on HackerRank
+7. 🔍 Understand the result
+8. 🛠️ Debug errors when required
+9. 📊 Analyze the data and query logic
+10. 📂 Save the SQL solution in this repository
+11. 📸 Add the successful submission screenshot
+12. 📝 Review the SQL concepts used
+13. 🚀 Continue to the next challenge
 
 ---
 
@@ -730,6 +714,7 @@ It is also about:
 - 🔀 Using conditional SQL logic
 - 📊 Understanding aggregation
 - 🏆 Analyzing leaderboard data
+- 💰 Comparing related data
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -764,6 +749,8 @@ Every challenge helps me improve my:
 - 📏 Distance Calculation
 - 🔢 Decimal Precision
 - 📈 Statistical Analysis
+- 💰 Salary Comparison
+- 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
 - 🧩 Relational Data Understanding
 - 🌳 Hierarchical Data Analysis
@@ -793,6 +780,8 @@ The upcoming days will focus on more SQL concepts, including:
 - 🔹 Geographic Data Analysis
 - 🔹 Relational Data Analysis
 - 🔹 Hierarchical Data Analysis
+- 🔹 Advanced Multi-Table Queries
+- 🔹 Complex Data Comparisons
 - 🔹 Advanced Data Processing
 - 🔹 Complex Problem Solving
 - 🔹 Advanced Database Concepts
@@ -834,7 +823,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#LeaderboardAnalysis` `#DatabaseProgramming` `#Coding` `#Programming` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#LeaderboardAnalysis` `#SalaryComparison` `#DatabaseProgramming` `#Coding` `#Programming` `#OpenToWork`
 
 ---
 
@@ -844,12 +833,13 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**51 Days Completed ✅ | 49 Days Remaining ⏳ | 100 Days Goal 🎯**
+**52 Days Completed ✅ | 48 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 🏆 🪄 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 💰 🏆 🚀
 </p>
 
 <p align="center">
   <strong>🔥 Let's keep coding and keep growing! 🔥</strong>
 </p>
+```
