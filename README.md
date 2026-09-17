@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-52%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-53%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my **SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, and multi-table relational queries**.
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, and multi-table relational queries.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
 
@@ -43,6 +43,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🔀 Use CASE statements for conditional analysis
 - 📌 Practice DISTINCT, GROUP BY, and aggregation
 - 🏆 Analyze leaderboard and ranking-based SQL problems
+- 🔄 Identify and analyze symmetric pairs
 - 🔗 Practice multi-table relational queries
 - 💰 Compare and analyze related data across tables
 - 📈 Develop statistical thinking using SQL
@@ -64,6 +65,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🔤 String Operations | String Handling & Text Processing |
 | 🔎 Pattern Matching | Regular Expressions |
 | 🔗 Relational Operations | JOINs |
+| 🔄 Pair Analysis | Symmetric Pair Matching |
 | 🧠 Advanced Queries | Subqueries |
 | 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY |
@@ -151,7 +153,10 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day52-SQL/  
 │   ├── 📄 Placements.sql  
 │   └── 📸 Screenshot 2026-09-16 095852.png  
-├── 📄 README.md  
+├── 📁 Day53-SQL/  
+│   ├── 📄 Symmetric Pairs.sql  
+│   └── 📸 Screenshot 2026-09-17 163143.png  
+├── 📄 README.md
 └── 📄 LICENSE
 
 ---
@@ -212,7 +217,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 50 | Contest Leaderboard | Completed 🎉🏆🔥 |
 | ✅ Day 51 | SQL Project Planning | Completed 🎉🏆🔥 |
 | ✅ Day 52 | Placements | Completed 🎉🏆🔥🔗 |
-| ⏳ Day 53–99 | Upcoming Challenges | Pending |
+| ✅ Day 53 | Symmetric Pairs | Completed 🎉🔄🔥 |
+| ⏳ Day 54–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -295,6 +301,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 - ✅ JOIN Operations
 - ✅ INNER JOIN
+- ✅ Self JOIN
 - ✅ Multiple Table JOINs
 - ✅ Relational Data Analysis
 - ✅ Combining Multiple Tables
@@ -304,6 +311,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Relational Database Concepts
 - ✅ Comparing Related Records
 - ✅ Multi-Table Data Analysis
+- ✅ Symmetric Pair Matching
 
 ---
 
@@ -371,14 +379,14 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
-# 🆕 Day 52 – Placements
+# 🆕 Day 53 – Symmetric Pairs
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** HackerRank
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Placements
-- 📅 **Day:** 52
+- 🏆 **Challenge:** Symmetric Pairs
+- 📅 **Day:** 53
 - ✅ **Status:** Completed
 - 🧠 **SQL Dialect:** DB2 SQL
 
@@ -386,76 +394,73 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 🧠 Concepts Practiced
 
-- ✅ INNER JOIN
-- ✅ Multiple Table JOINs
-- ✅ Students Table
-- ✅ Friends Table
-- ✅ Packages Table
-- ✅ Relational Data Analysis
-- ✅ Salary Comparison
-- ✅ Comparing Student and Friend Salaries
-- ✅ Joining Related Records
+- ✅ Symmetric Pairs
+- ✅ Reversed Pair Matching
+- ✅ Self-Symmetric Pairs
+- ✅ Self JOIN
+- ✅ JOIN Conditions
+- ✅ Matching `(X, Y)` with `(Y, X)`
 - ✅ WHERE Condition
+- ✅ GROUP BY
+- ✅ HAVING
 - ✅ ORDER BY
-- ✅ Ascending Salary Sorting
-- ✅ Multi-Table Query Construction
-- ✅ Filtering Based on Related Data
-- ✅ Database Relationships
+- ✅ Ascending Result Sorting
+- ✅ Duplicate Handling
+- ✅ Relational Data Analysis
 - ✅ Logical SQL Problem Solving
 
 ---
 
 ## 📖 Problem-Solving Approach
 
-The **Placements** challenge focuses on comparing the salaries of students with the salaries of their best friends.
+The **Symmetric Pairs** challenge focuses on finding pairs `(X, Y)` from the `Functions` table where a corresponding reversed pair `(Y, X)` also exists.
 
-The problem uses three related tables:
+The `Functions` table contains two columns:
 
-- **Students** – Contains student information.
-- **Friends** – Contains the relationship between a student and their best friend.
-- **Packages** – Contains salary information.
+- **X** – First value of the pair.
+- **Y** – Second value of the pair.
 
-The solution connects these tables using `JOIN` operations.
+Two pairs `(X1, Y1)` and `(X2, Y2)` are considered symmetric when:
 
-The student's package information is compared with the package information of their best friend.
+- `X1 = Y2`
+- `X2 = Y1`
 
-Only those students are selected whose **best friend's salary is higher than their own salary**.
+The solution identifies these relationships by comparing records from the same table.
 
-The result is then sorted according to the friend's salary.
+A **Self JOIN** can be used to compare one row with another row in the same table and find matching reversed pairs.
 
-The solution uses:
+The query also ensures that:
 
-- `JOIN` to connect Students, Friends, and Packages.
-- Multiple aliases of the Packages table to compare two salary values.
-- `WHERE` to filter students based on salary comparison.
-- `ORDER BY` to sort the final result.
+- The output follows the required `X ≤ Y` condition.
+- Self-symmetric pairs such as `(20, 20)` are handled correctly.
+- Results are displayed in ascending order.
+- Duplicate results are avoided where required.
 
-This challenge helped strengthen my understanding of **relational databases, multiple-table JOINs, table aliases, and comparison-based filtering**.
+This challenge helped strengthen my understanding of **self joins, table relationships, pair matching, filtering conditions, duplicate handling, and relational SQL logic**.
 
 ---
 
 ## 🎯 Learning Outcome
 
-Day 52 improved my understanding of:
+Day 53 improved my understanding of:
 
-- 🔗 Joining multiple related tables
-- 🗄️ Understanding table relationships
-- 💰 Comparing values between related records
-- 👥 Working with student and friend relationships
-- 📊 Analyzing salary information
+- 🔄 Symmetric pair relationships
+- 🔗 Self JOIN operations
+- 🗄️ Comparing records within the same table
+- 🧩 Matching reversed pairs
+- 📌 Handling self-symmetric records
 - 🔍 Filtering records using conditions
-- 📌 Using table aliases
-- 📈 Sorting results
-- 🧩 Building multi-table SQL queries
-- 🧠 Improving logical thinking
-- 💻 Strengthening SQL problem-solving skills
+- 📊 GROUP BY and HAVING
+- 📈 Sorting query results
+- 🧠 Building relational SQL logic
+- 💻 Improving SQL problem-solving skills
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Placements.sql`
-- 📸 `Screenshot 2026-09-16 095852.png`
+- 💻 `Symmetric Pairs.sql`
+- 📸 `Screenshot 2026-09-17 163143.png`
 
 ---
 
@@ -469,6 +474,7 @@ Day 52 improved my understanding of:
 - 🔤 String Handling
 - 🔍 Regular Expressions
 - 🔗 JOIN Operations
+- 🔄 Self JOIN Operations
 - 🧠 Subqueries
 - 🔀 Conditional Logic
 - 📌 DISTINCT
@@ -480,6 +486,7 @@ Day 52 improved my understanding of:
 - 📏 Distance Calculation
 - 🔢 Decimal Precision
 - 🧩 Relational Data Analysis
+- 🔄 Symmetric Pair Analysis
 - 💰 Salary Comparison
 - 👥 Relationship-Based Data Analysis
 - 🏆 Leaderboard Analysis
@@ -493,7 +500,7 @@ Day 52 improved my understanding of:
 
 # 📅 Challenge Progress
 
-### 🎯 Completed Days
+## 🎯 Completed Days
 
 - ✅ Day 1
 - ✅ Day 2
@@ -547,10 +554,11 @@ Day 52 improved my understanding of:
 - ✅ Day 50 🎉🏆🔥
 - ✅ Day 51 🎉🏆🔥
 - ✅ Day 52 🎉🏆🔥🔗
+- ✅ Day 53 🎉🔄🔥
 
-### ⏳ Remaining
+## ⏳ Remaining
 
-- ⏳ Day 53 → Day 99
+- ⏳ Day 54 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -559,8 +567,8 @@ Day 52 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **52 / 100** |
-| 💻 Challenges Solved | **52** |
+| 📅 Days Completed | **53 / 100** |
+| 💻 Challenges Solved | **53** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -568,23 +576,24 @@ Day 52 improved my understanding of:
 | 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
 | 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
 | 🔢 Numerical Processing | **Rounding, Truncation & Decimal Precision** |
-| 🔗 Relational Concepts | **JOINs, Relationships & Relational Data Analysis** |
+| 🔗 Relational Concepts | **JOINs, Self JOINs, Relationships & Relational Data Analysis** |
+| 🔄 Pair Analysis | **Symmetric Pairs & Reversed Pair Matching** |
 | 💰 Comparison Analysis | **Salary Comparison & Related Record Analysis** |
 | 🏆 Leaderboard Concepts | **Maximum Scores, SUM(), GROUP BY, HAVING & Sorting** |
 | 🧠 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
-| 📈 Progress | **52% Complete** 🚀 |
-| 🔥 Current Streak | **52 Days** |
-| ⏳ Days Remaining | **48 Days** |
+| 📈 Progress | **53% Complete** 🚀 |
+| 🔥 Current Streak | **53 Days** |
+| ⏳ Days Remaining | **47 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **52 Days of SQL Practice Completed! 🎉🔥🚀**
+## **53 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **52 days down, 48 more to go!**
+> **53 days down, 47 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -612,6 +621,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 51 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 52 | ✅ Completed 🎉🏆🔥🔗 |
+| 🎯 Day 53 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -658,17 +668,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 52**  
 ████████████████████ 100% ✅
 
-**Day 75**  
-██████████░░░░░░░░░░ 50% ⏳
-
-**Day 100**  
-██████████░░░░░░░░░░ 50% ⏳
+**Day 53**  
+████████████████████ 100% ✅
 
 ## 🚀 Overall Progress
 
-██████████░░░░░░░░░░ **52%**
+███████████░░░░░░░░░ **53%**
 
-### **52 / 100 Days Completed**
+### **53 / 100 Days Completed**
 
 ---
 
@@ -680,15 +687,16 @@ My daily learning process includes:
 2. 🧠 Analyze the required output
 3. 🔍 Identify the required tables and columns
 4. 🔗 Understand relationships between tables
-5. ✍️ Write the SQL query
-6. 🧪 Test the query on HackerRank
-7. 🔍 Understand the result
-8. 🛠️ Debug errors when required
-9. 📊 Analyze the data and query logic
-10. 📂 Save the SQL solution in this repository
-11. 📸 Add the successful submission screenshot
-12. 📝 Review the SQL concepts used
-13. 🚀 Continue to the next challenge
+5. 🔄 Identify matching and related records
+6. ✍️ Write the SQL query
+7. 🧪 Test the query on HackerRank
+8. 🔍 Understand the result
+9. 🛠️ Debug errors when required
+10. 📊 Analyze the data and query logic
+11. 📂 Save the SQL solution in this repository
+12. 📸 Add the successful submission screenshot
+13. 📝 Review the SQL concepts used
+14. 🚀 Continue to the next challenge
 
 ---
 
@@ -709,6 +717,7 @@ It is also about:
 - 🔢 Working with numerical data
 - 📍 Working with geographic data
 - 🔗 Understanding relational data
+- 🔄 Understanding symmetric relationships
 - 🧠 Practicing subqueries
 - 🔀 Using conditional SQL logic
 - 📊 Understanding aggregation
@@ -739,6 +748,7 @@ Every challenge helps me improve my:
 - 🔍 Regular Expressions
 - 🧠 Subquery Skills
 - 🔗 JOIN Operations
+- 🔄 Self JOIN Operations
 - 🔀 Conditional Logic
 - 📌 DISTINCT
 - 📊 GROUP BY
@@ -749,6 +759,7 @@ Every challenge helps me improve my:
 - 🔢 Decimal Precision
 - 📈 Statistical Analysis
 - 💰 Salary Comparison
+- 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
 - 🧩 Relational Data Understanding
@@ -822,7 +833,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#LeaderboardAnalysis` `#SalaryComparison` `#DatabaseProgramming` `#Coding` `#Programming` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#DatabaseProgramming` `#Coding` `#Programming` `#OpenToWork`
 
 ---
 
@@ -832,10 +843,10 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**52 Days Completed ✅ | 48 Days Remaining ⏳ | 100 Days Goal 🎯**
+**53 Days Completed ✅ | 47 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🧠 📍 📈 💰 🏆 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 🚀
 </p>
 
 <p align="center">
