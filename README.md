@@ -1,9 +1,10 @@
+```markdown
 # 🗄️ 100 Days of SQL Challenge
 
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-53%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-54%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -156,6 +157,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day53-SQL/  
 │   ├── 📄 Symmetric Pairs.sql  
 │   └── 📸 Screenshot 2026-09-17 163143.png  
+├── 📁 Day54-SQL/  
+│   ├── 📄 Interviews.sql  
+│   └── 📸 Screenshot 2026-09-18 103142.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -218,7 +222,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 51 | SQL Project Planning | Completed 🎉🏆🔥 |
 | ✅ Day 52 | Placements | Completed 🎉🏆🔥🔗 |
 | ✅ Day 53 | Symmetric Pairs | Completed 🎉🔄🔥 |
-| ⏳ Day 54–99 | Upcoming Challenges | Pending |
+| ✅ Day 54 | Interviews | Completed 🎉💻🔥 |
+| ⏳ Day 55–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -379,14 +384,14 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
-# 🆕 Day 53 – Symmetric Pairs
+# 🆕 Day 54 – Interviews
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** HackerRank
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Symmetric Pairs
-- 📅 **Day:** 53
+- 🏆 **Challenge:** Interviews
+- 📅 **Day:** 54
 - ✅ **Status:** Completed
 - 🧠 **SQL Dialect:** DB2 SQL
 
@@ -394,73 +399,116 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 🧠 Concepts Practiced
 
-- ✅ Symmetric Pairs
-- ✅ Reversed Pair Matching
-- ✅ Self-Symmetric Pairs
-- ✅ Self JOIN
-- ✅ JOIN Conditions
-- ✅ Matching `(X, Y)` with `(Y, X)`
-- ✅ WHERE Condition
+- ✅ Multiple Table JOINs
+- ✅ INNER JOIN
+- ✅ LEFT JOIN
+- ✅ Aggregation using SUM()
 - ✅ GROUP BY
 - ✅ HAVING
-- ✅ ORDER BY
-- ✅ Ascending Result Sorting
-- ✅ Duplicate Handling
+- ✅ COALESCE()
+- ✅ Subqueries
+- ✅ Pre-Aggregation
+- ✅ Submission Statistics
+- ✅ View Statistics
+- ✅ Total Submissions
+- ✅ Total Accepted Submissions
+- ✅ Total Views
+- ✅ Total Unique Views
+- ✅ Contest-Based Analysis
 - ✅ Relational Data Analysis
-- ✅ Logical SQL Problem Solving
+- ✅ Filtering Aggregated Results
+- ✅ Sorting Results
+- ✅ Multi-Table SQL Problem Solving
 
 ---
 
 ## 📖 Problem-Solving Approach
 
-The **Symmetric Pairs** challenge focuses on finding pairs `(X, Y)` from the `Functions` table where a corresponding reversed pair `(Y, X)` also exists.
+The **Interviews** challenge focuses on combining contest information with related college, challenge, submission, and view statistics.
 
-The `Functions` table contains two columns:
+The query works with multiple related tables and calculates the total statistics associated with each contest.
 
-- **X** – First value of the pair.
-- **Y** – Second value of the pair.
+The solution involves:
 
-Two pairs `(X1, Y1)` and `(X2, Y2)` are considered symmetric when:
+### 1. 🔗 Connecting Related Tables
 
-- `X1 = Y2`
-- `X2 = Y1`
+The contest information is connected with college and challenge information using JOIN operations.
 
-The solution identifies these relationships by comparing records from the same table.
+This allows the query to identify which challenges belong to each contest.
 
-A **Self JOIN** can be used to compare one row with another row in the same table and find matching reversed pairs.
+### 2. 📊 Calculating Submission Statistics
 
-The query also ensures that:
+Submission statistics are aggregated to calculate:
 
-- The output follows the required `X ≤ Y` condition.
-- Self-symmetric pairs such as `(20, 20)` are handled correctly.
-- Results are displayed in ascending order.
-- Duplicate results are avoided where required.
+- Total submissions
+- Total accepted submissions
 
-This challenge helped strengthen my understanding of **self joins, table relationships, pair matching, filtering conditions, duplicate handling, and relational SQL logic**.
+The statistics are grouped by `challenge_id` before being joined with the main query.
+
+### 3. 👁️ Calculating View Statistics
+
+View statistics are separately aggregated to calculate:
+
+- Total views
+- Total unique views
+
+This aggregation is also performed by `challenge_id`.
+
+### 4. 🧩 Avoiding Incorrect Aggregation
+
+Submission and view statistics are pre-aggregated before joining them with the contest data.
+
+This approach helps prevent incorrect totals that can occur when multiple statistical tables are joined together before aggregation.
+
+### 5. 🔢 Handling Missing Values
+
+`COALESCE()` is used so that missing statistics are treated as `0`.
+
+This ensures that NULL values do not interfere with the final calculations.
+
+### 6. 📌 GROUP BY
+
+The final result is grouped by:
+
+- `contest_id`
+- `hacker_id`
+- `name`
+
+This produces one aggregated result for each contest.
+
+### 7. 🔍 HAVING
+
+The `HAVING` condition is used to exclude contests where all four calculated statistics are zero.
+
+### 8. 📈 Sorting
+
+The final results are ordered by `contest_id` to produce the required output order.
 
 ---
 
 ## 🎯 Learning Outcome
 
-Day 53 improved my understanding of:
+Day 54 improved my understanding of:
 
-- 🔄 Symmetric pair relationships
-- 🔗 Self JOIN operations
-- 🗄️ Comparing records within the same table
-- 🧩 Matching reversed pairs
-- 📌 Handling self-symmetric records
-- 🔍 Filtering records using conditions
-- 📊 GROUP BY and HAVING
-- 📈 Sorting query results
-- 🧠 Building relational SQL logic
-- 💻 Improving SQL problem-solving skills
+- 🔗 Joining multiple related tables
+- 📊 Aggregating data using SUM()
+- 🧠 Using subqueries for pre-aggregation
+- 🔢 Handling NULL values using COALESCE()
+- 📌 GROUP BY with multiple columns
+- 🔍 Filtering grouped results using HAVING
+- 📈 Sorting aggregated results
+- 📊 Analyzing submission statistics
+- 👁️ Analyzing view statistics
+- 🧩 Preventing incorrect aggregation caused by row multiplication
+- 🗄️ Working with relational database structures
+- 🧠 Solving complex multi-table SQL problems
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Symmetric Pairs.sql`
-- 📸 `Screenshot 2026-09-17 163143.png`
+- 💻 `Interviews.sql`
+- 📸 `Screenshot 2026-09-18 103142.png`
 
 ---
 
@@ -492,6 +540,8 @@ Day 53 improved my understanding of:
 - 🏆 Leaderboard Analysis
 - 🧠 Multi-Table Querying
 - 🔗 Table Relationships
+- 📊 Submission Statistics
+- 👁️ View Statistics
 - 🎯 Technical Interview Preparation
 - 🚀 Problem Solving
 - 💼 Database Skills
@@ -555,10 +605,11 @@ Day 53 improved my understanding of:
 - ✅ Day 51 🎉🏆🔥
 - ✅ Day 52 🎉🏆🔥🔗
 - ✅ Day 53 🎉🔄🔥
+- ✅ Day 54 🎉💻🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 54 → Day 99
+- ⏳ Day 55 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -567,8 +618,8 @@ Day 53 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **53 / 100** |
-| 💻 Challenges Solved | **53** |
+| 📅 Days Completed | **54 / 100** |
+| 💻 Challenges Solved | **54** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -581,19 +632,20 @@ Day 53 improved my understanding of:
 | 💰 Comparison Analysis | **Salary Comparison & Related Record Analysis** |
 | 🏆 Leaderboard Concepts | **Maximum Scores, SUM(), GROUP BY, HAVING & Sorting** |
 | 🧠 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
-| 📈 Progress | **53% Complete** 🚀 |
-| 🔥 Current Streak | **53 Days** |
-| ⏳ Days Remaining | **47 Days** |
+| 📊 Interview Analysis | **Contest, College, Challenge, Submission & View Statistics** |
+| 📈 Progress | **54% Complete** 🚀 |
+| 🔥 Current Streak | **54 Days** |
+| ⏳ Days Remaining | **46 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **53 Days of SQL Practice Completed! 🎉🔥🚀**
+## **54 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **53 days down, 47 more to go!**
+> **54 days down, 46 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -622,6 +674,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 51 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 52 | ✅ Completed 🎉🏆🔥🔗 |
 | 🎯 Day 53 | ✅ Completed 🎉🔄🔥 |
+| 🎯 Day 54 | ✅ Completed 🎉💻🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -671,11 +724,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 53**  
 ████████████████████ 100% ✅
 
+**Day 54**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████░░░░░░░░░ **53%**
+███████████░░░░░░░░░ **54%**
 
-### **53 / 100 Days Completed**
+### **54 / 100 Days Completed**
 
 ---
 
@@ -723,6 +779,7 @@ It is also about:
 - 📊 Understanding aggregation
 - 🏆 Analyzing leaderboard data
 - 💰 Comparing related data
+- 📊 Analyzing submission and view statistics
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -762,6 +819,8 @@ Every challenge helps me improve my:
 - 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
+- 📊 Submission Statistics
+- 👁️ View Statistics
 - 🧩 Relational Data Understanding
 - 🌳 Hierarchical Data Analysis
 - 🪄 Advanced SQL Querying
@@ -833,7 +892,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#DatabaseProgramming` `#Coding` `#Programming` `#OpenToWork`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -843,7 +902,7 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**53 Days Completed ✅ | 47 Days Remaining ⏳ | 100 Days Goal 🎯**
+**54 Days Completed ✅ | 46 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 🚀
@@ -852,3 +911,4 @@ Let's learn, build, and grow together! 🌱
 <p align="center">
   <strong>🔥 Let's keep coding and keep growing! 🔥</strong>
 </p>
+```
