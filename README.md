@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-54%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-55%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, and multi-table relational queries.
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, and mathematical problem solving using SQL.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
 
@@ -47,6 +47,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🔗 Practice multi-table relational queries
 - 💰 Compare and analyze related data across tables
 - 📈 Develop statistical thinking using SQL
+- 🔢 Apply mathematical and divisibility logic using SQL
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
 - 🌱 Learn and improve through consistent daily practice
@@ -71,11 +72,12 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 📌 Data Grouping | GROUP BY |
 | 🔍 Group Filtering | HAVING |
 | 📍 Geographic Data | Latitude & Longitude |
-| 🔢 Numerical Processing | ROUND(), Decimal Precision |
+| 🔢 Numerical Processing | ROUND(), Decimal Precision, MOD() |
 | 🏆 Leaderboard Analysis | Full Scores, COUNT(), GROUP BY, HAVING |
 | 🔗 Multi-Table Analysis | Students, Friends & Packages |
 | 💰 Salary Comparison | Related Record Analysis |
 | 📈 Analysis | Statistical & Data Analysis |
+| 🔢 Mathematical Logic | Prime Number Identification |
 
 ---
 
@@ -159,6 +161,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day54-SQL/  
 │   ├── 📄 Interviews.sql  
 │   └── 📸 Screenshot 2026-09-18 103142.png  
+├── 📁 Day55-SQL/  
+│   ├── 📄 Print Prime Numbers.sql  
+│   └── 📸 Screenshot 2026-09-19 201219.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -222,7 +227,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 52 | Placements | Completed 🎉🏆🔥🔗 |
 | ✅ Day 53 | Symmetric Pairs | Completed 🎉🔄🔥 |
 | ✅ Day 54 | Interviews | Completed 🎉💻🔥 |
-| ⏳ Day 55–99 | Upcoming Challenges | Pending |
+| ✅ Day 55 | Print Prime Numbers | Completed 🎉🔢🔥 |
+| ⏳ Day 56–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -272,9 +278,12 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Decimal Precision
 - ✅ Rounding Values
 - ✅ Truncation
+- ✅ MOD()
 - ✅ Numerical Data Processing
 - ✅ Mathematical Aggregation
 - ✅ Precision-Based Analysis
+- ✅ Divisibility Checking
+- ✅ Prime Number Identification
 
 ---
 
@@ -287,6 +296,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ String Functions
 - ✅ Text-Based Analysis
 - ✅ Regular Expressions
+- ✅ String Concatenation
+- ✅ Output Formatting
 
 ---
 
@@ -329,6 +340,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Derived Results
 - ✅ Advanced SQL Problem Solving
 - ✅ Maximum Value Subqueries
+- ✅ NOT EXISTS
+- ✅ Divisibility-Based Filtering
 
 ---
 
@@ -380,6 +393,136 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Filtering Based on Related Records
 - ✅ Sorting Based on Related Data
 - ✅ Relational Database Problem Solving
+
+---
+
+# 🆕 Day 55 – Print Prime Numbers
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 🏆 **Challenge:** Print Prime Numbers
+- 📅 **Day:** 55
+- ✅ **Status:** Completed
+- 🧠 **SQL Dialect:** DB2 SQL
+
+---
+
+## 🎯 Challenge Objective
+
+The **Print Prime Numbers** challenge requires printing all prime numbers less than or equal to **1000**.
+
+The output must be printed on a **single line**, with the ampersand (`&`) character used as the separator instead of spaces.
+
+Example:
+
+`2&3&5&7`
+
+---
+
+## 🧠 Concepts Practiced
+
+- ✅ Prime Number Identification
+- ✅ Number Generation
+- ✅ Mathematical Logic
+- ✅ Divisibility Checking
+- ✅ MOD() Function
+- ✅ NOT EXISTS
+- ✅ Filtering Numbers
+- ✅ Recursive Number Generation
+- ✅ LISTAGG()
+- ✅ RTRIM()
+- ✅ Sorting Numbers
+- ✅ Single-Line Output Formatting
+- ✅ Custom Output Separator
+- ✅ DB2 SQL
+- ✅ Mathematical Problem Solving
+
+---
+
+## 📖 Problem-Solving Approach
+
+The **Print Prime Numbers** challenge focuses on using SQL to identify prime numbers and format the final result according to the required output.
+
+### 1. 🔢 Generate Numbers
+
+A sequence of numbers from **2 to 1000** is generated for checking.
+
+### 2. 🧮 Check Divisibility
+
+Each number is checked to determine whether it can be divided evenly by another number.
+
+The `MOD()` function is used to check the remainder after division.
+
+A number is considered prime when it has no divisor other than `1` and itself.
+
+### 3. 🔍 Filter Prime Numbers
+
+`NOT EXISTS` is used to exclude numbers that have another divisor.
+
+This leaves only the prime numbers.
+
+### 4. 📈 Sort the Results
+
+The prime numbers are ordered in ascending order.
+
+### 5. 🔗 Combine the Results
+
+`LISTAGG()` is used to combine all prime numbers into a single line.
+
+The required separator is:
+
+`&`
+
+### 6. 🧹 Remove Unwanted Spaces
+
+DB2's `CHAR()` conversion can introduce trailing spaces.
+
+`RTRIM()` is used to remove these unwanted spaces so that the output follows the exact required format.
+
+### 7. 🎯 Final Output
+
+The final result follows this format:
+
+`2&3&5&7&11&13&17&19&23&29...`
+
+---
+
+## 💡 Key SQL Functions Used
+
+| Function / Concept | Purpose |
+|---|---|
+| `MOD()` | Checks divisibility and remainder |
+| `NOT EXISTS` | Filters numbers having divisors |
+| `LISTAGG()` | Combines multiple rows into one line |
+| `RTRIM()` | Removes unwanted trailing spaces |
+| `ORDER BY` | Sorts prime numbers |
+| Recursive Number Generation | Generates numbers for processing |
+
+---
+
+## 🎓 Learning Outcome
+
+Day 55 improved my understanding of:
+
+- 🔢 Implementing mathematical logic using SQL
+- 🧮 Checking divisibility with `MOD()`
+- 🔍 Filtering records using `NOT EXISTS`
+- 📊 Processing a generated range of numbers
+- 🔗 Combining multiple rows using `LISTAGG()`
+- 🧹 Handling unwanted spaces using `RTRIM()`
+- 📈 Sorting numerical results
+- 🗄️ Working with DB2 SQL syntax
+- 🎯 Formatting SQL output according to exact requirements
+- 🧠 Solving mathematical programming problems using SQL
+
+---
+
+## 📂 Files Added
+
+- 💻 `Print Prime Numbers.sql`
+- 📸 `Screenshot 2026-09-19 201219.png`
 
 ---
 
@@ -541,6 +684,8 @@ Day 54 improved my understanding of:
 - 🔗 Table Relationships
 - 📊 Submission Statistics
 - 👁️ View Statistics
+- 🔢 Prime Number Identification
+- 🧮 Divisibility Logic
 - 🎯 Technical Interview Preparation
 - 🚀 Problem Solving
 - 💼 Database Skills
@@ -605,10 +750,11 @@ Day 54 improved my understanding of:
 - ✅ Day 52 🎉🏆🔥🔗
 - ✅ Day 53 🎉🔄🔥
 - ✅ Day 54 🎉💻🔥
+- ✅ Day 55 🎉🔢🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 55 → Day 99
+- ⏳ Day 56 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -617,34 +763,35 @@ Day 54 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **54 / 100** |
-| 💻 Challenges Solved | **54** |
+| 📅 Days Completed | **55 / 100** |
+| 💻 Challenges Solved | **55** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
 | 📊 Focus | **SQL Fundamentals, Aggregation, Filtering, Sorting, Strings, Regex, Subqueries, JOINs, CASE, GROUP BY, HAVING & Data Analysis** |
 | 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
 | 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
-| 🔢 Numerical Processing | **Rounding, Truncation & Decimal Precision** |
+| 🔢 Numerical Processing | **Rounding, Truncation, Decimal Precision & Divisibility** |
 | 🔗 Relational Concepts | **JOINs, Self JOINs, Relationships & Relational Data Analysis** |
 | 🔄 Pair Analysis | **Symmetric Pairs & Reversed Pair Matching** |
 | 💰 Comparison Analysis | **Salary Comparison & Related Record Analysis** |
 | 🏆 Leaderboard Concepts | **Maximum Scores, SUM(), GROUP BY, HAVING & Sorting** |
 | 🧠 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
 | 📊 Interview Analysis | **Contest, College, Challenge, Submission & View Statistics** |
-| 📈 Progress | **54% Complete** 🚀 |
-| 🔥 Current Streak | **54 Days** |
-| ⏳ Days Remaining | **46 Days** |
+| 🔢 Mathematical SQL | **Prime Number Identification, MOD(), NOT EXISTS & Number Generation** |
+| 📈 Progress | **55% Complete** 🚀 |
+| 🔥 Current Streak | **55 Days** |
+| ⏳ Days Remaining | **45 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **54 Days of SQL Practice Completed! 🎉🔥🚀**
+## **55 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **54 days down, 46 more to go!**
+> **55 days down, 45 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -674,6 +821,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 52 | ✅ Completed 🎉🏆🔥🔗 |
 | 🎯 Day 53 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 54 | ✅ Completed 🎉💻🔥 |
+| 🎯 Day 55 | ✅ Completed 🎉🔢🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -726,11 +874,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 54**  
 ████████████████████ 100% ✅
 
+**Day 55**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████░░░░░░░░░ **54%**
+███████████░░░░░░░░░ **55%**
 
-### **54 / 100 Days Completed**
+### **55 / 100 Days Completed**
 
 ---
 
@@ -779,6 +930,8 @@ It is also about:
 - 🏆 Analyzing leaderboard data
 - 💰 Comparing related data
 - 📊 Analyzing submission and view statistics
+- 🔢 Applying mathematical logic
+- 🧮 Identifying prime numbers using SQL
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -820,6 +973,8 @@ Every challenge helps me improve my:
 - 🏆 Leaderboard Analysis
 - 📊 Submission Statistics
 - 👁️ View Statistics
+- 🔢 Prime Number Identification
+- 🧮 Divisibility Logic
 - 🧩 Relational Data Understanding
 - 🌳 Hierarchical Data Analysis
 - 🪄 Advanced SQL Querying
@@ -891,7 +1046,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#DatabaseProgramming` `#Coding` `#Programming`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -901,10 +1056,10 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**54 Days Completed ✅ | 46 Days Remaining ⏳ | 100 Days Goal 🎯**
+**55 Days Completed ✅ | 45 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 🔢 🚀
 </p>
 
 <p align="center">
