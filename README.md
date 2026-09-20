@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
-  <img src="https://img.shields.io/badge/Progress-55%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
+  <img src="https://img.shields.io/badge/Progress-56%25-orange?style=for-the-badge" alt="100 Days SQL Challenge Progress">
 </p>
 
 <p align="center">
@@ -16,7 +16,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, and mathematical problem solving using SQL.
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, mathematical problem solving, window functions, and SQL pivoting.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
 
@@ -48,6 +48,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 💰 Compare and analyze related data across tables
 - 📈 Develop statistical thinking using SQL
 - 🔢 Apply mathematical and divisibility logic using SQL
+- 🔢 Practice window functions and row numbering
+- 🔄 Understand SQL pivoting techniques
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
 - 🌱 Learn and improve through consistent daily practice
@@ -76,6 +78,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🏆 Leaderboard Analysis | Full Scores, COUNT(), GROUP BY, HAVING |
 | 🔗 Multi-Table Analysis | Students, Friends & Packages |
 | 💰 Salary Comparison | Related Record Analysis |
+| 🔢 Window Functions | ROW_NUMBER() |
+| 🔄 SQL Pivoting | Conditional Aggregation & Row Alignment |
 | 📈 Analysis | Statistical & Data Analysis |
 | 🔢 Mathematical Logic | Prime Number Identification |
 
@@ -164,6 +168,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day55-SQL/  
 │   ├── 📄 Print Prime Numbers.sql  
 │   └── 📸 Screenshot 2026-09-19 201219.png  
+├── 📁 Day56-SQL/  
+│   ├── 📄 Occupations.sql  
+│   └── 📸 Screenshot 2026-09-20 085257.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -228,7 +235,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 53 | Symmetric Pairs | Completed 🎉🔄🔥 |
 | ✅ Day 54 | Interviews | Completed 🎉💻🔥 |
 | ✅ Day 55 | Print Prime Numbers | Completed 🎉🔢🔥 |
-| ⏳ Day 56–99 | Upcoming Challenges | Pending |
+| ✅ Day 56 | Occupations | Completed 🎉🔄📊🔥 |
+| ⏳ Day 57–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
@@ -316,6 +324,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 - ✅ JOIN Operations
 - ✅ INNER JOIN
+- ✅ LEFT JOIN
 - ✅ Self JOIN
 - ✅ Multiple Table JOINs
 - ✅ Relational Data Analysis
@@ -356,6 +365,31 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
+## 🔢 Window Functions
+
+- ✅ Window Functions
+- ✅ ROW_NUMBER()
+- ✅ PARTITION BY
+- ✅ Window-Based Ranking
+- ✅ Alphabetical Ranking
+- ✅ Position-Based Data Alignment
+- ✅ Ranking Records Within Groups
+
+---
+
+## 🔄 SQL Pivoting
+
+- ✅ SQL Pivoting
+- ✅ Row-to-Column Transformation
+- ✅ Conditional Aggregation
+- ✅ CASE with MAX()
+- ✅ Occupation-Based Pivoting
+- ✅ Alphabetical Name Arrangement
+- ✅ NULL Handling
+- ✅ Aligning Records Using Row Numbers
+
+---
+
 ## 📍 Geographic Data Analysis
 
 - ✅ Geographic Data
@@ -393,6 +427,159 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - ✅ Filtering Based on Related Records
 - ✅ Sorting Based on Related Data
 - ✅ Relational Database Problem Solving
+
+---
+
+# 🆕 Day 56 – Occupations
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** HackerRank
+- 🗄️ **Language:** SQL
+- 🏆 **Challenge:** Occupations
+- 📅 **Day:** 56
+- ✅ **Status:** Completed
+- 🧠 **SQL Dialect:** DB2 SQL
+
+---
+
+## 🎯 Challenge Objective
+
+The **Occupations** challenge requires pivoting the `Occupation` column in the `OCCUPATIONS` table so that each name is displayed under the corresponding occupation.
+
+The output must contain four columns in this specific order:
+
+1. 👨‍⚕️ Doctor
+2. 👨‍🏫 Professor
+3. 🎤 Singer
+4. 🎭 Actor
+
+Names must be arranged in **alphabetical order within each occupation**.
+
+When an occupation has fewer names than another occupation, the remaining positions must contain **NULL** values.
+
+---
+
+## 🧠 Concepts Practiced
+
+- ✅ SQL Pivoting
+- ✅ Row-to-Column Transformation
+- ✅ Window Functions
+- ✅ ROW_NUMBER()
+- ✅ PARTITION BY
+- ✅ ORDER BY
+- ✅ CASE Statements
+- ✅ Conditional Aggregation
+- ✅ MAX()
+- ✅ GROUP BY
+- ✅ NULL Handling
+- ✅ Alphabetical Sorting
+- ✅ Data Transformation
+- ✅ Output Formatting
+- ✅ DB2 SQL
+- ✅ SQL Problem Solving
+
+---
+
+## 📖 Problem-Solving Approach
+
+The **Occupations** challenge focuses on transforming occupation-based rows into separate columns while keeping names alphabetically ordered.
+
+### 1. 🔍 Read the Occupation Data
+
+The `OCCUPATIONS` table contains names and their corresponding occupations.
+
+The occupation can be one of:
+
+- 👨‍⚕️ Doctor
+- 👨‍🏫 Professor
+- 🎤 Singer
+- 🎭 Actor
+
+### 2. 🔤 Sort Names Alphabetically
+
+Names need to be arranged alphabetically within each occupation.
+
+`ORDER BY Name` is used to achieve the required alphabetical ordering.
+
+### 3. 🔢 Assign Row Numbers
+
+`ROW_NUMBER()` is used with:
+
+`PARTITION BY Occupation`
+
+This creates a separate sequence for each occupation.
+
+For example, the first Doctor, first Professor, first Singer, and first Actor receive row number `1`.
+
+The second names receive row number `2`, and so on.
+
+### 4. 🔀 Pivot the Data
+
+`CASE` statements identify the occupation of each record.
+
+`MAX()` is then used with the conditional expressions to place each name into the correct occupation column.
+
+### 5. 📊 Group Matching Positions
+
+`GROUP BY rn` combines names that have the same row number.
+
+This aligns the first name from every occupation into the first output row, the second name into the second row, and so on.
+
+### 6. 🧩 Handle Missing Names
+
+If an occupation does not have a name for a particular row number, the result remains `NULL`.
+
+This follows the exact requirement of the HackerRank problem.
+
+### 7. 🎯 Final Output
+
+The final result contains:
+
+- Doctor names in the first column
+- Professor names in the second column
+- Singer names in the third column
+- Actor names in the fourth column
+
+---
+
+## 💡 Key SQL Functions & Concepts Used
+
+| Function / Concept | Purpose |
+|---|---|
+| `ROW_NUMBER()` | Assigns a sequential number to names |
+| `PARTITION BY` | Creates separate numbering for each occupation |
+| `ORDER BY` | Sorts names alphabetically |
+| `CASE` | Performs conditional occupation-based selection |
+| `MAX()` | Performs conditional aggregation |
+| `GROUP BY` | Aligns records using row numbers |
+| `NULL` | Represents missing occupation entries |
+
+---
+
+## 🎓 Learning Outcome
+
+Day 56 improved my understanding of:
+
+- 🔢 Using `ROW_NUMBER()` for ranking
+- 🧠 Using `PARTITION BY` with window functions
+- 🔤 Sorting data alphabetically
+- 🔀 Transforming rows into columns
+- 📊 Using conditional aggregation
+- 🧩 Working with `CASE` statements
+- 📌 Using `GROUP BY` with generated row numbers
+- 🗄️ Handling NULL values
+- 🔄 Performing SQL pivot operations
+- 💻 Writing DB2-compatible SQL
+- 🎯 Formatting SQL output according to exact requirements
+- 🧠 Solving data transformation problems using SQL
+
+---
+
+## 📂 Files Added
+
+- 💻 `Occupations.sql`
+- 📸 `Screenshot 2026-09-20 085257.png`
 
 ---
 
@@ -526,134 +713,6 @@ Day 55 improved my understanding of:
 
 ---
 
-# 🆕 Day 54 – Interviews
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Interviews
-- 📅 **Day:** 54
-- ✅ **Status:** Completed
-- 🧠 **SQL Dialect:** DB2 SQL
-
----
-
-## 🧠 Concepts Practiced
-
-- ✅ Multiple Table JOINs
-- ✅ INNER JOIN
-- ✅ LEFT JOIN
-- ✅ Aggregation using SUM()
-- ✅ GROUP BY
-- ✅ HAVING
-- ✅ COALESCE()
-- ✅ Subqueries
-- ✅ Pre-Aggregation
-- ✅ Submission Statistics
-- ✅ View Statistics
-- ✅ Total Submissions
-- ✅ Total Accepted Submissions
-- ✅ Total Views
-- ✅ Total Unique Views
-- ✅ Contest-Based Analysis
-- ✅ Relational Data Analysis
-- ✅ Filtering Aggregated Results
-- ✅ Sorting Results
-- ✅ Multi-Table SQL Problem Solving
-
----
-
-## 📖 Problem-Solving Approach
-
-The **Interviews** challenge focuses on combining contest information with related college, challenge, submission, and view statistics.
-
-The query works with multiple related tables and calculates the total statistics associated with each contest.
-
-The solution involves:
-
-### 1. 🔗 Connecting Related Tables
-
-The contest information is connected with college and challenge information using JOIN operations.
-
-This allows the query to identify which challenges belong to each contest.
-
-### 2. 📊 Calculating Submission Statistics
-
-Submission statistics are aggregated to calculate:
-
-- Total submissions
-- Total accepted submissions
-
-The statistics are grouped by `challenge_id` before being joined with the main query.
-
-### 3. 👁️ Calculating View Statistics
-
-View statistics are separately aggregated to calculate:
-
-- Total views
-- Total unique views
-
-This aggregation is also performed by `challenge_id`.
-
-### 4. 🧩 Avoiding Incorrect Aggregation
-
-Submission and view statistics are pre-aggregated before joining them with the contest data.
-
-This approach helps prevent incorrect totals that can occur when multiple statistical tables are joined together before aggregation.
-
-### 5. 🔢 Handling Missing Values
-
-`COALESCE()` is used so that missing statistics are treated as `0`.
-
-This ensures that NULL values do not interfere with the final calculations.
-
-### 6. 📌 GROUP BY
-
-The final result is grouped by:
-
-- `contest_id`
-- `hacker_id`
-- `name`
-
-This produces one aggregated result for each contest.
-
-### 7. 🔍 HAVING
-
-The `HAVING` condition is used to exclude contests where all four calculated statistics are zero.
-
-### 8. 📈 Sorting
-
-The final results are ordered by `contest_id` to produce the required output order.
-
----
-
-## 🎯 Learning Outcome
-
-Day 54 improved my understanding of:
-
-- 🔗 Joining multiple related tables
-- 📊 Aggregating data using SUM()
-- 🧠 Using subqueries for pre-aggregation
-- 🔢 Handling NULL values using COALESCE()
-- 📌 GROUP BY with multiple columns
-- 🔍 Filtering grouped results using HAVING
-- 📈 Sorting aggregated results
-- 📊 Analyzing submission statistics
-- 👁️ Analyzing view statistics
-- 🧩 Preventing incorrect aggregation caused by row multiplication
-- 🗄️ Working with relational database structures
-- 🧠 Solving complex multi-table SQL problems
-
----
-
-## 📂 Files Added
-
-- 💻 `Interviews.sql`
-- 📸 `Screenshot 2026-09-18 103142.png`
-
----
-
 # 🧠 SQL Skills I'm Building
 
 - 🗄️ SQL Fundamentals
@@ -686,6 +745,8 @@ Day 54 improved my understanding of:
 - 👁️ View Statistics
 - 🔢 Prime Number Identification
 - 🧮 Divisibility Logic
+- 🔢 Window Functions
+- 🔄 SQL Pivoting
 - 🎯 Technical Interview Preparation
 - 🚀 Problem Solving
 - 💼 Database Skills
@@ -751,10 +812,11 @@ Day 54 improved my understanding of:
 - ✅ Day 53 🎉🔄🔥
 - ✅ Day 54 🎉💻🔥
 - ✅ Day 55 🎉🔢🔥
+- ✅ Day 56 🎉🔄📊🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 56 → Day 99
+- ⏳ Day 57 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -763,8 +825,8 @@ Day 54 improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **55 / 100** |
-| 💻 Challenges Solved | **55** |
+| 📅 Days Completed | **56 / 100** |
+| 💻 Challenges Solved | **56** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
@@ -779,19 +841,20 @@ Day 54 improved my understanding of:
 | 🧠 Advanced Query Concepts | **Subqueries, MIN(), MAX(), Multi-Condition Filtering & Sorting** |
 | 📊 Interview Analysis | **Contest, College, Challenge, Submission & View Statistics** |
 | 🔢 Mathematical SQL | **Prime Number Identification, MOD(), NOT EXISTS & Number Generation** |
-| 📈 Progress | **55% Complete** 🚀 |
-| 🔥 Current Streak | **55 Days** |
-| ⏳ Days Remaining | **45 Days** |
+| 🔄 Pivoting Concepts | **ROW_NUMBER(), PARTITION BY, CASE, MAX() & Conditional Aggregation** |
+| 📈 Progress | **56% Complete** 🚀 |
+| 🔥 Current Streak | **56 Days** |
+| ⏳ Days Remaining | **44 Days** |
 
 ---
 
 # 🔥 Current Streak
 
-## **55 Days of SQL Practice Completed! 🎉🔥🚀**
+## **56 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **55 days down, 45 more to go!**
+> **56 days down, 44 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -822,6 +885,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 53 | ✅ Completed 🎉🔄🔥 |
 | 🎯 Day 54 | ✅ Completed 🎉💻🔥 |
 | 🎯 Day 55 | ✅ Completed 🎉🔢🔥 |
+| 🎯 Day 56 | ✅ Completed 🎉🔄📊🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -877,11 +941,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 55**  
 ████████████████████ 100% ✅
 
+**Day 56**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████░░░░░░░░░ **55%**
+███████████░░░░░░░░░ **56%**
 
-### **55 / 100 Days Completed**
+### **56 / 100 Days Completed**
 
 ---
 
@@ -932,6 +999,8 @@ It is also about:
 - 📊 Analyzing submission and view statistics
 - 🔢 Applying mathematical logic
 - 🧮 Identifying prime numbers using SQL
+- 🔢 Practicing window functions
+- 🔄 Learning SQL pivoting
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -977,6 +1046,8 @@ Every challenge helps me improve my:
 - 🧮 Divisibility Logic
 - 🧩 Relational Data Understanding
 - 🌳 Hierarchical Data Analysis
+- 🔢 Window Functions
+- 🔄 SQL Pivoting
 - 🪄 Advanced SQL Querying
 - 🚀 Coding Confidence
 - 💼 Technical Interview Preparation
@@ -1046,7 +1117,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#DatabaseProgramming` `#Coding` `#Programming`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -1056,10 +1127,10 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**55 Days Completed ✅ | 45 Days Remaining ⏳ | 100 Days Goal 🎯**
+**56 Days Completed ✅ | 44 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 🔢 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 🔢 🔄 🚀
 </p>
 
 <p align="center">
