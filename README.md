@@ -4,7 +4,7 @@
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/DB2-SQL-orange?style=for-the-badge" alt="DB2 SQL">
-  <img src="https://img.shields.io/badge/Progress-57%25-success?style=for-the-badge" alt="57% Progress">
+  <img src="https://img.shields.io/badge/Progress-58%25-success?style=for-the-badge" alt="58% Progress">
 </p>
 
 <p align="center">
@@ -17,7 +17,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, mathematical problem solving, window functions, SQL pivoting, date-based analysis, and advanced SQL querying.
+This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving skills, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, mathematical problem solving, window functions, SQL pivoting, date-based analysis, submission analysis, activity tracking, pattern generation, and advanced SQL querying.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
 
@@ -54,6 +54,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 📅 Analyze date-based submission data
 - 👥 Analyze user activity and consistency
 - 🏆 Identify daily maximum contributors
+- 🔤 Generate patterns using SQL
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
 - 🌱 Learn and improve through consistent daily practice
@@ -87,6 +88,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 📅 Date Analysis | Date Filtering & Date-Based Analysis |
 | 👥 Activity Analysis | Daily Submission Tracking |
 | 🏆 Ranking | Daily Maximum Submission Analysis |
+| 🔤 Pattern Generation | REPEAT(), String Construction |
 | 📈 Analysis | Statistical & Data Analysis |
 
 ---
@@ -180,6 +182,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day57-SQL/  
 │   ├── 📄 15 Days of Learning SQL.sql  
 │   └── 📸 Screenshot 2026-09-21 074740.png  
+├── 📁 Day58-SQL/  
+│   ├── 📄 Draw The Triangle 1.sql  
+│   └── 📸 Screenshot 2026-09-22 133011.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -246,134 +251,87 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 55 | Print Prime Numbers | Completed 🎉🔢🔥 |
 | ✅ Day 56 | Occupations | Completed 🎉🔄📊🔥 |
 | ✅ Day 57 | 15 Days of Learning SQL | Completed 🎉📅🏆🔥 |
-| ⏳ Day 58–99 | Upcoming Challenges | Pending |
+| ✅ Day 58 | Draw The Triangle 1 | Completed 🎉🔺🔥 |
+| ⏳ Day 59–99 | Upcoming Challenges | Pending |
 | 🎯 Day 100 | Final Goal | Pending |
 
 ---
 
-# 🆕 Day 57 – 15 Days of Learning SQL
+# 🆕 Day 58 – Draw The Triangle 1
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** HackerRank
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** 15 Days of Learning SQL
-- 📅 **Day:** 57
-- 📆 **Contest Period:** March 01, 2016 – March 15, 2016
+- 🏆 **Challenge:** Draw The Triangle 1
+- 📅 **Day:** 58
 - 🧠 **SQL Dialect:** DB2 SQL
+- 🔺 **Pattern:** P(20)
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **15 Days of Learning SQL** challenge requires analyzing hacker submissions during a SQL contest.
+The **Draw The Triangle 1** challenge requires generating a triangular star pattern using SQL.
 
-For each day of the contest, the query determines:
+The pattern is represented as **P(R)**, where `R` represents the number of rows.
 
-- 👥 The total number of unique hackers who submitted at least once on every day starting from the first day of the contest.
-- 🏆 The hacker who made the maximum number of submissions on that particular day.
-- 🔢 If multiple hackers made the same maximum number of submissions, the hacker with the lowest `hacker_id` is selected.
-- 👤 The selected hacker's `hacker_id` and `name` are displayed.
-- 📅 Results are ordered by submission date.
+For this challenge, the objective is to generate **P(20)**, where the pattern contains 20 rows and the number of stars decreases by one on each successive row.
+
+The pattern follows this structure:
+
+- ⭐ Row 1 → 20 stars
+- ⭐ Row 2 → 19 stars
+- ⭐ Row 3 → 18 stars
+- ⭐ Continue decreasing by one star
+- ⭐ Final row → 1 star
 
 ---
 
 ## 🧠 Concepts Practiced
 
-- ✅ Date-based SQL analysis
-- ✅ Date filtering
-- ✅ `COUNT(DISTINCT ...)`
-- ✅ `COUNT(*)`
-- ✅ `GROUP BY`
-- ✅ `JOIN`
-- ✅ Common Table Expressions
-- ✅ `WITH` clause
-- ✅ Window Functions
-- ✅ `ROW_NUMBER()`
-- ✅ `PARTITION BY`
-- ✅ `ORDER BY`
-- ✅ Tie-breaking logic
-- ✅ Maximum submission analysis
-- ✅ Daily submission analysis
-- ✅ Consistent hacker identification
-- ✅ Hacker activity tracking
-- ✅ Relational data analysis
-- ✅ DB2 date functions
-- ✅ `DAYS()`
-- ✅ Conditional filtering
-- ✅ Multi-level query processing
-- ✅ Sorting results by date
+- ✅ SQL Pattern Generation
+- ✅ String Functions
+- ✅ `REPEAT()`
+- ✅ `RTRIM()`
+- ✅ Number Sequence Generation
+- ✅ Recursive Query Concepts
+- ✅ Row-Based Processing
+- ✅ String Construction
+- ✅ Output Formatting
+- ✅ Query Structuring
+- ✅ SQL Logic
+- ✅ DB2 SQL
+- ✅ Problem Solving
 
 ---
 
 ## 📖 Problem-Solving Approach
 
-### 1. 📅 Filter Contest Dates
+### 1. 🔢 Generate the Required Row Values
 
-The `Submissions` table is filtered to include only records from:
+The query works with a sequence of values representing the 20 rows of the triangle.
 
-**March 01, 2016 to March 15, 2016**
+### 2. ⭐ Generate the Star Pattern
 
-This ensures that only submissions made during the contest period are considered.
+The `REPEAT()` string function is used to generate the required number of stars for every row.
 
-### 2. 👥 Calculate Daily Submission Counts
+### 3. 🔄 Decrease the Number of Stars
 
-The submission data is grouped by:
+The number of stars decreases by one for every new row.
 
-- `submission_date`
-- `hacker_id`
+The sequence follows:
 
-The number of submissions made by each hacker on each day is calculated using `COUNT(*)`.
+**20 → 19 → 18 → ... → 2 → 1**
 
-This allows the query to identify the daily submission activity of every hacker.
+### 4. 🧹 Format the Output
 
-### 3. 🏆 Identify the Daily Top Hacker
+String trimming is applied where required so that unnecessary trailing spaces are removed from the generated pattern.
 
-A window function using `ROW_NUMBER()` is applied separately for every submission date.
+### 5. 📊 Produce the Final Pattern
 
-The records are ordered by:
-
-1. Highest number of submissions
-2. Lowest `hacker_id` when submission counts are tied
-
-This ensures that exactly the required hacker is selected for each day.
-
-### 4. 👥 Identify Consistent Hackers
-
-For each date, the query checks how many distinct dates each hacker submitted from the beginning of the contest up to that date.
-
-The hacker is considered consistent when the number of submission dates matches the number of contest days elapsed.
-
-For example:
-
-- March 01 → hacker must have submitted on 1 day
-- March 02 → hacker must have submitted on 2 consecutive days
-- March 03 → hacker must have submitted on 3 consecutive days
-- March 04 → hacker must have submitted on 4 consecutive days
-
-The same logic continues throughout the contest.
-
-### 5. 🔢 Count Unique Consistent Hackers
-
-After identifying the hackers who submitted every day from the contest start, `COUNT(DISTINCT hacker_id)` is used to determine the total number of such hackers for each date.
-
-### 6. 🔗 Join With Hacker Information
-
-The selected daily hacker is joined with the `Hackers` table using `hacker_id`.
-
-This retrieves the hacker's corresponding name.
-
-### 7. 📊 Produce the Final Result
-
-The final output contains:
-
-- 📅 Submission date
-- 👥 Number of consistent hackers
-- 🆔 Hacker ID of the daily maximum contributor
-- 👤 Hacker name
-
-The final result is sorted by `submission_date`.
+The rows are returned in descending star-count order to create the required triangular pattern.
 
 ---
 
@@ -381,218 +339,48 @@ The final result is sorted by `submission_date`.
 
 | SQL Function / Concept | Purpose |
 |---|---|
-| `COUNT(*)` | Counts submissions |
-| `COUNT(DISTINCT ...)` | Counts unique hackers/dates |
-| `GROUP BY` | Groups submission records |
-| `ROW_NUMBER()` | Assigns ranking within each date |
-| `PARTITION BY` | Separates ranking by submission date |
-| `ORDER BY` | Sorts submission counts and hacker IDs |
-| `JOIN` | Connects submission data with hacker details |
-| `WITH` | Creates Common Table Expressions |
-| `DAYS()` | Calculates date differences in DB2 |
-| `DISTINCT` | Removes duplicate values |
-| `WHERE` | Filters contest-period records |
+| `REPEAT()` | Generates repeated star characters |
+| `RTRIM()` | Removes unwanted trailing spaces |
+| `SELECT` | Retrieves generated pattern values |
+| Recursive Query | Helps generate sequential row values |
+| String Processing | Creates the required visual pattern |
+| Ordering | Produces rows in the required sequence |
 
 ---
 
 ## 🎓 Learning Outcome
 
-Day 57 improved my understanding of:
+Day 58 improved my understanding of:
 
-- 📅 Date-based SQL analysis
-- 👥 Tracking user activity across multiple days
-- 🔢 Counting distinct records
-- 🏆 Finding maximum values within groups
-- 🪟 Using window functions
-- 🔢 Using `ROW_NUMBER()` for ranking
-- 📌 Using `PARTITION BY`
-- 🔀 Implementing tie-breaking conditions
-- 🧩 Using Common Table Expressions
-- 🔗 Combining multiple tables using JOIN
-- 🧠 Writing multi-level SQL queries
-- 📊 Performing daily data analysis
-- 🗄️ Working with DB2 date functions
-- 🎯 Solving complex HackerRank SQL problems
+- 🔤 SQL string manipulation
+- ⭐ Pattern generation using SQL
+- 🔢 Number sequence processing
+- 🧠 Logical query construction
+- 🧩 Recursive query concepts
+- 🧹 Output formatting
+- 💻 Using SQL for non-traditional data-processing tasks
+- 🎯 Converting a programming-style pattern problem into SQL logic
+
+This challenge demonstrated how SQL can also be used for **string manipulation and structured pattern generation**, not only for traditional data retrieval and analysis.
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `15 Days of Learning SQL.sql`
-- 📸 `Screenshot 2026-09-21 074740.png`
+- 💻 `Draw The Triangle 1.sql`
+- 📸 `Screenshot 2026-09-22 133011.png`
 
 ---
 
-# 🆕 Day 56 – Occupations
+# 🆕 Recent Challenges
 
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Occupations
-- 📅 **Day:** 56
-- ✅ **Status:** Completed
-- 🧠 **SQL Dialect:** DB2 SQL
-
----
-
-## 🎯 Challenge Objective
-
-The **Occupations** challenge requires pivoting the `Occupation` column in the `OCCUPATIONS` table so that each name is displayed under the corresponding occupation.
-
-The output must contain four columns in this specific order:
-
-1. 👨‍⚕️ Doctor
-2. 👨‍🏫 Professor
-3. 🎤 Singer
-4. 🎭 Actor
-
-Names must be arranged in **alphabetical order within each occupation**.
-
-When an occupation has fewer names than another occupation, the remaining positions contain `NULL` values.
-
----
-
-## 🧠 Concepts Practiced
-
-- ✅ SQL Pivoting
-- ✅ Row-to-Column Transformation
-- ✅ Window Functions
-- ✅ `ROW_NUMBER()`
-- ✅ `PARTITION BY`
-- ✅ `ORDER BY`
-- ✅ CASE Statements
-- ✅ Conditional Aggregation
-- ✅ `MAX()`
-- ✅ `GROUP BY`
-- ✅ NULL Handling
-- ✅ Alphabetical Sorting
-- ✅ Data Transformation
-- ✅ Output Formatting
-- ✅ DB2 SQL
-
----
-
-## 📖 Problem-Solving Approach
-
-### 1. 🔍 Read Occupation Data
-
-The `OCCUPATIONS` table contains names and their corresponding occupations.
-
-The occupation can be:
-
-- 👨‍⚕️ Doctor
-- 👨‍🏫 Professor
-- 🎤 Singer
-- 🎭 Actor
-
-### 2. 🔤 Sort Names Alphabetically
-
-Names are arranged alphabetically within each occupation using `ORDER BY Name`.
-
-### 3. 🔢 Assign Row Numbers
-
-`ROW_NUMBER()` is used with `PARTITION BY Occupation`.
-
-This creates an independent sequence for each occupation.
-
-### 4. 🔀 Pivot the Data
-
-`CASE` statements identify the occupation, while conditional aggregation places names into the correct columns.
-
-### 5. 📊 Group Matching Positions
-
-`GROUP BY` combines records with the same generated row number.
-
-### 6. 🧩 Handle Missing Values
-
-If an occupation does not have a name for a particular position, the corresponding output remains `NULL`.
-
----
-
-## 📂 Files Added
-
-- 💻 `Occupations.sql`
-- 📸 `Screenshot 2026-09-20 085257.png`
-
----
-
-# 🆕 Day 55 – Print Prime Numbers
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** HackerRank
-- 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Print Prime Numbers
-- 📅 **Day:** 55
-- ✅ **Status:** Completed
-- 🧠 **SQL Dialect:** DB2 SQL
-
----
-
-## 🎯 Challenge Objective
-
-The **Print Prime Numbers** challenge requires printing all prime numbers less than or equal to **1000**.
-
-The numbers must be printed on a **single line**, separated by the ampersand (`&`) character.
-
-Example format:
-
-`2&3&5&7&11&13`
-
----
-
-## 🧠 Concepts Practiced
-
-- ✅ Prime Number Identification
-- ✅ Number Generation
-- ✅ Mathematical Logic
-- ✅ Divisibility Checking
-- ✅ `MOD()`
-- ✅ `NOT EXISTS`
-- ✅ Filtering Numbers
-- ✅ Recursive Number Generation
-- ✅ `LISTAGG()`
-- ✅ `RTRIM()`
-- ✅ Sorting Numbers
-- ✅ Single-Line Output Formatting
-- ✅ Custom Separators
-- ✅ DB2 SQL
-
----
-
-## 📖 Problem-Solving Approach
-
-### 1. 🔢 Generate Numbers
-
-Numbers from **2 to 1000** are generated for analysis.
-
-### 2. 🧮 Check Divisibility
-
-`MOD()` is used to determine whether a number is divisible by another number.
-
-### 3. 🔍 Identify Prime Numbers
-
-`NOT EXISTS` is used to exclude numbers having divisors other than 1 and themselves.
-
-### 4. 📈 Sort the Prime Numbers
-
-The identified prime numbers are ordered in ascending order.
-
-### 5. 🔗 Combine the Results
-
-`LISTAGG()` combines all prime numbers into a single output line using `&` as the separator.
-
-### 6. 🧹 Format the Output
-
-`RTRIM()` is used where required to remove unwanted trailing spaces.
-
----
-
-## 📂 Files Added
-
-- 💻 `Print Prime Numbers.sql`
-- 📸 `Screenshot 2026-09-19 201219.png`
+| Day | Challenge | Key Concepts |
+|---|---|---|
+| Day 54 | Interviews | JOINs, Aggregation, Subqueries, Statistics |
+| Day 55 | Print Prime Numbers | MOD(), Prime Logic, LISTAGG() |
+| Day 56 | Occupations | Pivoting, ROW_NUMBER(), CASE, Aggregation |
+| Day 57 | 15 Days of Learning SQL | CTEs, Window Functions, Date Analysis |
+| Day 58 | Draw The Triangle 1 | REPEAT(), RTRIM(), Pattern Generation |
 
 ---
 
@@ -633,6 +421,9 @@ The identified prime numbers are ordered in ascending order.
 - 👥 Daily Activity Analysis
 - 🏆 Ranking & Tie-Breaking
 - 🧩 Common Table Expressions
+- ⭐ Pattern Generation
+- 🔤 String Repetition
+- 🧹 Output Formatting
 - 🚀 Advanced SQL Querying
 - 🎯 Technical Interview Preparation
 
@@ -699,10 +490,11 @@ The identified prime numbers are ordered in ascending order.
 - ✅ Day 55 🎉🔢🔥
 - ✅ Day 56 🎉🔄📊🔥
 - ✅ Day 57 🎉📅🏆🔥
+- ✅ Day 58 🎉🔺🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 58 → Day 99
+- ⏳ Day 59 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -711,14 +503,14 @@ The identified prime numbers are ordered in ascending order.
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **57 / 100** |
-| 💻 Challenges Solved | **57** |
+| 📅 Days Completed | **58 / 100** |
+| 💻 Challenges Solved | **58** |
 | 🗄️ Language | **SQL** |
 | 🏆 Platform | **HackerRank** |
 | 🧠 SQL Dialect | **DB2 SQL** |
-| 📈 Progress | **57% Complete** 🚀 |
-| 🔥 Current Streak | **57 Days** |
-| ⏳ Days Remaining | **43 Days** |
+| 📈 Progress | **58% Complete** 🚀 |
+| 🔥 Current Streak | **58 Days** |
+| ⏳ Days Remaining | **42 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
 | 🔢 Numerical Processing | **ROUND(), MOD(), Decimal Precision & Divisibility** |
 | 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
@@ -730,17 +522,19 @@ The identified prime numbers are ordered in ascending order.
 | 📊 Submission Analysis | **Daily Submissions, Consistent Hackers & Maximum Contributors** |
 | 🔢 Mathematical SQL | **Prime Number Identification & Divisibility Logic** |
 | 🔄 Pivoting Concepts | **ROW_NUMBER(), PARTITION BY, CASE, MAX() & Conditional Aggregation** |
+| 📅 Date Analysis | **Date Filtering, Date Differences & Activity Tracking** |
+| ⭐ Pattern Processing | **REPEAT(), String Construction & Output Formatting** |
 | 🧩 Advanced Queries | **CTEs, Window Functions, Subqueries & Multi-Level Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **57 Days of SQL Practice Completed! 🎉🔥🚀**
+## **58 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **57 days down, 43 more to go!**
+> **58 days down, 42 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -773,6 +567,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 55 | ✅ Completed 🎉🔢🔥 |
 | 🎯 Day 56 | ✅ Completed 🎉🔄📊🔥 |
 | 🎯 Day 57 | ✅ Completed 🎉📅🏆🔥 |
+| 🎯 Day 58 | ✅ Completed 🎉🔺🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -834,11 +629,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 57**  
 ████████████████████ 100% ✅
 
+**Day 58**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████░░░░░░░░░ **57%**
+███████████░░░░░░░░░ **58%**
 
-### **57 / 100 Days Completed**
+### **58 / 100 Days Completed**
 
 ---
 
@@ -895,6 +693,8 @@ It is also about:
 - 👥 Tracking daily user activity
 - 🏆 Applying ranking and tie-breaking logic
 - 🧩 Using Common Table Expressions
+- ⭐ Generating structured patterns
+- 🔤 Practicing SQL string manipulation
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -946,8 +746,10 @@ Every challenge helps me improve my:
 - 👥 Daily Activity Tracking
 - 🏆 Ranking and Tie-Breaking
 - 🧩 Common Table Expressions
-- 🪄 Advanced SQL Querying
-- 🚀 Coding Confidence
+- ⭐ Pattern Generation
+- 🔤 String Repetition
+- 🧹 Output Formatting
+- 🚀 Advanced SQL Querying
 - 💼 Technical Interview Preparation
 
 ---
@@ -975,6 +777,7 @@ The upcoming days will focus on more SQL concepts, including:
 - 🔹 Advanced Multi-Table Queries
 - 🔹 Complex Data Comparisons
 - 🔹 Advanced Data Processing
+- 🔹 Pattern Generation
 - 🔹 Complex Problem Solving
 - 🔹 Advanced Database Concepts
 
@@ -1015,7 +818,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#DateAnalysis` `#DatabaseProgramming` `#Coding` `#Programming`
+`#100DaysOfCode` `#100DaysOfSQL` `#SQL` `#SQLChallenge` `#SQLProgramming` `#HackerRank` `#DB2` `#DB2SQL` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#Round` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#DateAnalysis` `#PatternGeneration` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -1025,12 +828,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**57 Days Completed ✅ | 43 Days Remaining ⏳ | 100 Days Goal 🎯**
+**58 Days Completed ✅ | 42 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 🧩 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 57 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 58 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
