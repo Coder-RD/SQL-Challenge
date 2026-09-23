@@ -1,0 +1,10 @@
+WITH RECURSIVE P(R) AS (
+    SELECT 1
+    UNION ALL
+    SELECT R + 1
+    FROM P
+    WHERE R < 20
+)
+SELECT REPEAT('* ', R)
+FROM P
+ORDER BY R;
