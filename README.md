@@ -3,8 +3,9 @@
 <p align="center">
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
+  <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-59%25-success?style=for-the-badge" alt="59% Progress">
+  <img src="https://img.shields.io/badge/Progress-60%25-success?style=for-the-badge" alt="60% Progress">
 </p>
 
 <p align="center">
@@ -17,9 +18,11 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank**, where I solve SQL challenges to strengthen my SQL fundamentals, problem-solving skills, logical thinking, data analysis, aggregation, filtering, sorting, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, GROUP BY, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, mathematical problem solving, window functions, SQL pivoting, date-based analysis, submission analysis, activity tracking, pattern generation, recursive queries, and advanced SQL querying.
+This repository documents my daily SQL programming journey through **HackerRank and CodeChef**, where I solve SQL challenges to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities.
 
-The goal is to solve **one SQL challenge every day for 100 days**, build consistency, and continuously improve my SQL, database, analytical, and problem-solving abilities. 💻🗄️🔥
+Throughout this challenge, I am practicing concepts such as filtering, sorting, aggregation, grouping, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, window functions, SQL pivoting, date-based analysis, submission analysis, activity tracking, pattern generation, recursive queries, and advanced SQL querying.
+
+The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
 ---
 
@@ -30,6 +33,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🧠 Improve logical and analytical thinking
 - 🧩 Improve problem-solving skills
 - 💻 Solve SQL challenges on HackerRank
+- 👨‍💻 Solve SQL challenges on CodeChef
 - 📊 Learn data analysis using SQL
 - 🔢 Practice aggregate functions
 - 🔍 Improve filtering and sorting skills
@@ -62,11 +66,11 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ---
 
-# 🛠️ Platform & Technologies
+# 🛠️ Platforms & Technologies
 
 | 🛠️ Category | Details |
 |---|---|
-| 💻 Platform | HackerRank |
+| 💻 Practice Platforms | HackerRank & CodeChef |
 | 🗄️ Language | SQL |
 | 🧠 SQL Dialect | MySQL |
 | 🔍 Filtering | WHERE, Conditional Filtering |
@@ -190,6 +194,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day59-SQL/  
 │   ├── 📄 Draw The Triangle 2.sql  
 │   └── 📸 Screenshot 2026-09-23 183950.png  
+├── 📁 Day60-SQL/  
+│   ├── 📄 CodeChef1.sql  
+│   └── 📸 Screenshot 2026-09-24 204328.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -197,198 +204,167 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 # ✅ Progress
 
-| Day | Challenge | Status |
-|---|---|---|
-| ✅ Day 1 | SQL Challenge | Completed |
-| ✅ Day 2 | SQL Challenge | Completed |
-| ✅ Day 3 | SQL Challenge | Completed |
-| ✅ Day 4 | SQL Challenge | Completed |
-| ✅ Day 5 | SQL Challenge | Completed |
-| ✅ Day 6 | SQL Challenge | Completed |
-| ✅ Day 7 | SQL Challenge | Completed |
-| ✅ Day 8 | SQL Challenge | Completed |
-| ✅ Day 9 | SQL Challenge | Completed |
-| ✅ Day 10 | SQL Challenge | Completed |
-| ✅ Day 11 | SQL Challenge | Completed |
-| ✅ Day 12 | SQL Challenge | Completed |
-| ✅ Day 13 | SQL Challenge | Completed |
-| ✅ Day 14 | SQL Challenge | Completed |
-| ✅ Day 15 | SQL Challenge | Completed |
-| ✅ Day 16 | SQL Challenge | Completed |
-| ✅ Day 17 | SQL Challenge | Completed |
-| ✅ Day 18 | SQL Challenge | Completed |
-| ✅ Day 19 | SQL Challenge | Completed |
-| ✅ Day 20 | SQL Challenge | Completed |
-| ✅ Day 21 | SQL Challenge | Completed |
-| ✅ Day 22 | SQL Challenge | Completed |
-| ✅ Day 23 | SQL Challenge | Completed |
-| ✅ Day 24 | SQL Challenge | Completed |
-| ✅ Day 25 | SQL Challenge | Completed |
-| ✅ Day 26 | SQL Challenge | Completed |
-| ✅ Day 27 | SQL Challenge | Completed |
-| ✅ Day 28 | SQL Challenge | Completed |
-| ✅ Day 29 | SQL Challenge | Completed |
-| ✅ Day 30 | SQL Challenge | Completed |
-| ✅ Day 31 | SQL Challenge | Completed |
-| ✅ Day 32 | SQL Challenge | Completed |
-| ✅ Day 33 | SQL Challenge | Completed |
-| ✅ Day 34 | SQL Challenge | Completed |
-| ✅ Day 35 | SQL Challenge | Completed |
-| ✅ Day 36 | SQL Challenge | Completed |
-| ✅ Day 37 | SQL Challenge | Completed |
-| ✅ Day 38 | SQL Challenge | Completed |
-| ✅ Day 39 | SQL Challenge | Completed |
-| ✅ Day 40 | SQL Challenge | Completed |
-| ✅ Day 41 | SQL Challenge | Completed |
-| ✅ Day 42 | SQL Challenge | Completed |
-| ✅ Day 43 | SQL Challenge | Completed |
-| ✅ Day 44 | New Companies | Completed |
-| ✅ Day 45 | Weather Observation Station 20 | Completed 🎉 |
-| ✅ Day 46 | The Report | Completed 🎉🔥 |
-| ✅ Day 47 | Top Competitors | Completed 🎉🏆🔥 |
-| ✅ Day 48 | Ollivander's Inventory | Completed 🎉🪄🔥 |
-| ✅ Day 49 | Challenges | Completed 🎉🏆🔥 |
-| ✅ Day 50 | Contest Leaderboard | Completed 🎉🏆🔥 |
-| ✅ Day 51 | SQL Project Planning | Completed 🎉🏆🔥 |
-| ✅ Day 52 | Placements | Completed 🎉🏆🔥🔗 |
-| ✅ Day 53 | Symmetric Pairs | Completed 🎉🔄🔥 |
-| ✅ Day 54 | Interviews | Completed 🎉💻🔥 |
-| ✅ Day 55 | Print Prime Numbers | Completed 🎉🔢🔥 |
-| ✅ Day 56 | Occupations | Completed 🎉🔄📊🔥 |
-| ✅ Day 57 | 15 Days of Learning SQL | Completed 🎉📅🏆🔥 |
-| ✅ Day 58 | Draw The Triangle 1 | Completed 🎉🔺🔥 |
-| ✅ Day 59 | Draw The Triangle 2 | Completed 🎉🔺🔥 |
-| ⏳ Day 60–99 | Upcoming Challenges | Pending |
-| 🎯 Day 100 | Final Goal | Pending |
+| Day | Challenge | Platform | Status |
+|---|---|---|---|
+| ✅ Day 1 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 2 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 3 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 4 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 5 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 6 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 7 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 8 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 9 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 10 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 11 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 12 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 13 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 14 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 15 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 16 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 17 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 18 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 19 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 20 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 21 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 22 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 23 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 24 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 25 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 26 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 27 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 28 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 29 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 30 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 31 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 32 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 33 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 34 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 35 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 36 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 37 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 38 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 39 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 40 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 41 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 42 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 43 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 44 | New Companies | HackerRank | Completed |
+| ✅ Day 45 | Weather Observation Station 20 | HackerRank | Completed 🎉 |
+| ✅ Day 46 | The Report | HackerRank | Completed 🎉🔥 |
+| ✅ Day 47 | Top Competitors | HackerRank | Completed 🎉🏆🔥 |
+| ✅ Day 48 | Ollivander's Inventory | HackerRank | Completed 🎉🪄🔥 |
+| ✅ Day 49 | Challenges | HackerRank | Completed 🎉🏆🔥 |
+| ✅ Day 50 | Contest Leaderboard | HackerRank | Completed 🎉🏆🔥 |
+| ✅ Day 51 | SQL Project Planning | HackerRank | Completed 🎉🏆🔥 |
+| ✅ Day 52 | Placements | HackerRank | Completed 🎉🏆🔥🔗 |
+| ✅ Day 53 | Symmetric Pairs | HackerRank | Completed 🎉🔄🔥 |
+| ✅ Day 54 | Interviews | HackerRank | Completed 🎉💻🔥 |
+| ✅ Day 55 | Print Prime Numbers | HackerRank | Completed 🎉🔢🔥 |
+| ✅ Day 56 | Occupations | HackerRank | Completed 🎉🔄📊🔥 |
+| ✅ Day 57 | 15 Days of Learning SQL | HackerRank | Completed 🎉📅🏆🔥 |
+| ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed 🎉🔺🔥 |
+| ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed 🎉🔺🔥 |
+| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🎉🔥 |
+| ⏳ Day 61–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
+| 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 59 – Draw The Triangle 2
+# 🆕 Day 60 – SELECT Statement Challenge
 
 ## 📌 Challenge Information
 
-- 💻 **Platform:** HackerRank
+- 💻 **Platform:** CodeChef
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Draw The Triangle 2
-- 📅 **Day:** 59
+- 🏆 **Challenge:** SELECT Statement Challenge
+- 📅 **Day:** 60
 - 🧠 **SQL Dialect:** MySQL
-- 🔺 **Pattern:** P(20)
+- 🔍 **Topic:** SELECT Statement
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The **Draw The Triangle 2** challenge requires generating a triangular star pattern using SQL.
+The Day 60 challenge focuses on the fundamental **SELECT statement** in SQL.
 
-The pattern is represented as **P(R)**, where `R` represents the number of rows.
+The objective is to retrieve the required information from the given database table according to the problem requirements.
 
-For this challenge, the objective is to generate **P(20)**, where the pattern contains 20 rows and the number of stars increases by one on each successive row.
+This challenge strengthens the basic concept of selecting data from a database and understanding how SQL retrieves specific columns and records.
 
-The pattern follows this structure:
+---
 
-- ⭐ Row 1 → 1 star
-- ⭐ Row 2 → 2 stars
-- ⭐ Row 3 → 3 stars
-- ⭐ Continue increasing by one star
-- ⭐ Final row → 20 stars
+## 💡 What I Did
+
+- 🔍 Analyzed the given SQL problem
+- 📋 Identified the required table and columns
+- 🔎 Used the `SELECT` statement to retrieve the required data
+- 🧠 Applied SQL query logic according to the problem requirements
+- 🧪 Tested the query on CodeChef
+- ✅ Verified the result against the expected output
+- 📂 Added the final SQL solution to this repository
+- 📸 Added the successful solution screenshot
 
 ---
 
 ## 🧠 Concepts Practiced
 
-- ✅ SQL Pattern Generation
-- ✅ String Functions
-- ✅ `REPEAT()`
-- ✅ Recursive CTE
-- ✅ `WITH RECURSIVE`
-- ✅ Number Sequence Generation
-- ✅ Row-Based Processing
-- ✅ String Construction
-- ✅ Output Formatting
-- ✅ SQL Logic
+- ✅ `SELECT`
+- ✅ Column Selection
+- ✅ Data Retrieval
+- ✅ SQL Query Structure
+- ✅ Basic Database Querying
 - ✅ MySQL
-- ✅ Problem Solving
+- ✅ Problem Analysis
+- ✅ Query Testing
+- ✅ Output Verification
 
 ---
 
-## 📖 Problem-Solving Approach
+## 💻 Key SQL Concept
 
-### 1. 🔢 Generate the Row Sequence
+The `SELECT` statement is one of the fundamental SQL commands used to retrieve data from database tables.
 
-A recursive Common Table Expression is used to generate the row numbers from **1 to 20**.
+It allows us to specify which columns we want to retrieve from the available data.
 
-### 2. ⭐ Generate the Star Pattern
-
-The `REPEAT()` function is used to repeat the `*` character according to the current row number.
-
-### 3. 🔄 Increase the Number of Stars
-
-The number of stars increases by one for every new row.
-
-The sequence follows:
-
-**1 → 2 → 3 → ... → 19 → 20**
-
-### 4. 📊 Order the Rows
-
-The generated rows are ordered in ascending order so that the pattern starts with one star and ends with twenty stars.
-
-### 5. 🎯 Produce the Required Pattern
-
-The final SQL query generates the complete triangular pattern using SQL string manipulation and recursive query logic.
-
----
-
-## 💡 Key SQL Functions & Techniques Used
-
-| SQL Function / Concept | Purpose |
-|---|---|
-| `WITH RECURSIVE` | Generates the required number sequence |
-| `REPEAT()` | Generates repeated star characters |
-| `SELECT` | Retrieves generated pattern values |
-| `UNION ALL` | Continues recursive row generation |
-| `ORDER BY` | Arranges the rows in the required order |
-| String Processing | Creates the triangular pattern |
-| Recursive CTE | Handles sequential row generation |
+Through this challenge, I practiced building a clear and correct `SELECT` query based on the required output.
 
 ---
 
 ## 🎓 Learning Outcome
 
-Day 59 improved my understanding of:
+Day 60 strengthened my understanding of:
 
-- 🔤 SQL string manipulation
-- ⭐ Pattern generation using SQL
-- 🔢 Number sequence generation
-- 🧩 Recursive Common Table Expressions
-- 🧠 Logical query construction
-- 📊 Row-based processing
-- 💻 Using MySQL for pattern-generation problems
-- 🎯 Converting programming-style pattern problems into SQL logic
-- 🚀 Writing structured and reusable SQL queries
-
-This challenge demonstrated how **MySQL recursive CTEs and string functions** can be combined to solve pattern-generation problems efficiently.
+- 🗄️ Basic SQL querying
+- 🔍 Data retrieval
+- 📋 Selecting specific columns
+- 🧠 Query analysis
+- 💻 SQL syntax
+- 🧩 Problem-solving using SQL
+- 🎯 Writing clean SQL queries
+- 🚀 Practicing SQL on multiple competitive programming platforms
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `Draw The Triangle 2.sql`
-- 📸 `Screenshot 2026-09-23 183950.png`
+- 💻 `CodeChef1.sql`
+- 📸 `Screenshot 2026-09-24 204328.png`
 
 ---
 
 # 🆕 Recent Challenges
 
-| Day | Challenge | Key Concepts |
-|---|---|---|
-| Day 54 | Interviews | JOINs, Aggregation, Subqueries, Statistics |
-| Day 55 | Print Prime Numbers | MOD(), Prime Logic, String Aggregation |
-| Day 56 | Occupations | Pivoting, ROW_NUMBER(), CASE, Aggregation |
-| Day 57 | 15 Days of Learning SQL | CTEs, Window Functions, Date Analysis |
-| Day 58 | Draw The Triangle 1 | Pattern Generation, String Functions |
-| Day 59 | Draw The Triangle 2 | WITH RECURSIVE, REPEAT(), Pattern Generation |
+| Day | Challenge | Platform | Key Concepts |
+|---|---|---|---|
+| Day 54 | Interviews | HackerRank | JOINs, Aggregation, Subqueries, Statistics |
+| Day 55 | Print Prime Numbers | HackerRank | MOD(), Prime Logic, String Aggregation |
+| Day 56 | Occupations | HackerRank | Pivoting, ROW_NUMBER(), CASE, Aggregation |
+| Day 57 | 15 Days of Learning SQL | HackerRank | CTEs, Window Functions, Date Analysis |
+| Day 58 | Draw The Triangle 1 | HackerRank | Pattern Generation, String Functions |
+| Day 59 | Draw The Triangle 2 | HackerRank | WITH RECURSIVE, REPEAT(), Pattern Generation |
+| Day 60 | SELECT Statement Challenge | CodeChef | SELECT, Data Retrieval, Query Fundamentals |
 
 ---
 
@@ -432,6 +408,8 @@ This challenge demonstrated how **MySQL recursive CTEs and string functions** ca
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
 - 🔤 String Repetition
+- 📋 SELECT Statements
+- 🔎 Data Retrieval
 - 🧹 Output Formatting
 - 🚀 Advanced SQL Querying
 - 🎯 Technical Interview Preparation
@@ -501,10 +479,11 @@ This challenge demonstrated how **MySQL recursive CTEs and string functions** ca
 - ✅ Day 57 🎉📅🏆🔥
 - ✅ Day 58 🎉🔺🔥
 - ✅ Day 59 🎉🔺🔥
+- ✅ Day 60 🎉🔍🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 60 → Day 99
+- ⏳ Day 61 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -513,14 +492,14 @@ This challenge demonstrated how **MySQL recursive CTEs and string functions** ca
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **59 / 100** |
-| 💻 Challenges Solved | **59** |
+| 📅 Days Completed | **60 / 100** |
+| 💻 Challenges Solved | **60** |
 | 🗄️ Language | **SQL** |
-| 🏆 Platform | **HackerRank** |
+| 🏆 Practice Platforms | **HackerRank & CodeChef** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **59% Complete** 🚀 |
-| 🔥 Current Streak | **59 Days** |
-| ⏳ Days Remaining | **41 Days** |
+| 📈 Progress | **60% Complete** 🚀 |
+| 🔥 Current Streak | **60 Days** |
+| ⏳ Days Remaining | **40 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
 | 🔢 Numerical Processing | **ROUND(), MOD(), Decimal Precision & Divisibility** |
 | 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
@@ -535,17 +514,18 @@ This challenge demonstrated how **MySQL recursive CTEs and string functions** ca
 | 📅 Date Analysis | **Date Filtering, Date Differences & Activity Tracking** |
 | ⭐ Pattern Processing | **REPEAT(), String Construction & Output Formatting** |
 | 🔁 Recursive SQL | **WITH RECURSIVE & Sequence Generation** |
+| 📋 SELECT Fundamentals | **SELECT, Column Selection & Data Retrieval** |
 | 🧩 Advanced Queries | **CTEs, Window Functions, Subqueries & Multi-Level Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **59 Days of SQL Practice Completed! 🎉🔥🚀**
+## **60 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **59 days down, 41 more to go!**
+> **60 days down, 40 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, SELECT statements, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -580,6 +560,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 57 | ✅ Completed 🎉📅🏆🔥 |
 | 🎯 Day 58 | ✅ Completed 🎉🔺🔥 |
 | 🎯 Day 59 | ✅ Completed 🎉🔺🔥 |
+| 🎯 Day 60 | ✅ Completed 🎉🔍🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -602,14 +583,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 50**  
 ████████████████████ 100% ✅
 
-**Day 59**  
+**Day 60**  
 ████████████████████ 100% ✅
 
 ## 🚀 Overall Progress
 
-███████████▊░░░░░░░░ **59%**
+████████████░░░░░░░░ **60%**
 
-### **59 / 100 Days Completed**
+### **60 / 100 Days Completed**
 
 ---
 
@@ -623,7 +604,7 @@ My daily learning process includes:
 4. 🔗 Understand relationships between tables
 5. 🔄 Identify matching and related records
 6. ✍️ Write the SQL query
-7. 🧪 Test the query on HackerRank
+7. 🧪 Test the query on HackerRank or CodeChef
 8. 🔍 Understand the result
 9. 🛠️ Debug errors when required
 10. 📊 Analyze the data and query logic
@@ -669,6 +650,7 @@ It is also about:
 - 🔁 Practicing recursive queries
 - ⭐ Generating structured patterns
 - 🔤 Practicing SQL string manipulation
+- 📋 Practicing SELECT statements
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -677,7 +659,7 @@ It is also about:
 
 # 🎯 Why This Repository?
 
-This repository documents my **SQL learning journey** and showcases my daily progress while solving HackerRank SQL challenges.
+This repository documents my **SQL learning journey** and showcases my daily progress while solving SQL challenges on **HackerRank and CodeChef**.
 
 It serves as a portfolio of my **SQL and database skills** and demonstrates my commitment to continuous learning through the **#100DaysOfSQL** challenge.
 
@@ -723,6 +705,8 @@ Every challenge helps me improve my:
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
 - 🔤 String Repetition
+- 📋 SELECT Statements
+- 🔎 Data Retrieval
 - 🧹 Output Formatting
 - 🚀 Advanced SQL Querying
 - 💼 Technical Interview Preparation
@@ -766,7 +750,7 @@ Every day, I solve a new SQL problem and add the solution to this repository.
 Each day's folder may contain:
 
 - 💻 SQL Solution
-- 📸 HackerRank Submission Screenshot
+- 📸 HackerRank or CodeChef Submission Screenshot
 
 This repository serves as a complete record of my **100 Days of SQL learning journey**.
 
@@ -794,7 +778,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#DatabaseProgramming` `#Coding` `#Programming`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -804,12 +788,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**59 Days Completed ✅ | 41 Days Remaining ⏳ | 100 Days Goal 🎯**
+**60 Days Completed ✅ | 40 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 59 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 60 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
