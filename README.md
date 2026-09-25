@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-60%25-success?style=for-the-badge" alt="60% Progress">
+  <img src="https://img.shields.io/badge/Progress-61%25-success?style=for-the-badge" alt="61% Progress">
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@ Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
 This repository documents my daily SQL programming journey through **HackerRank and CodeChef**, where I solve SQL challenges to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities.
 
-Throughout this challenge, I am practicing concepts such as filtering, sorting, aggregation, grouping, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, window functions, SQL pivoting, date-based analysis, submission analysis, activity tracking, pattern generation, recursive queries, and advanced SQL querying.
+Throughout this challenge, I am practicing concepts such as filtering, sorting, aggregation, grouping, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, window functions, SQL pivoting, date-based analysis, submission analysis, activity tracking, pattern generation, recursive queries, SELECT statements, product analysis, and price-based filtering.
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -60,6 +60,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🏆 Identify daily maximum contributors
 - 🔤 Generate patterns using SQL
 - 🔁 Practice recursive query concepts
+- 📋 Practice SELECT statements and data retrieval
+- 💰 Analyze product prices and price-based conditions
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
 - 🌱 Learn and improve through consistent daily practice
@@ -95,6 +97,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🏆 Ranking | Maximum Submission & Tie-Breaking |
 | 🔤 Pattern Generation | REPEAT(), String Construction |
 | 🔁 Recursive Queries | WITH RECURSIVE |
+| 📋 Data Retrieval | SELECT Statements & Column Selection |
+| 💰 Product Analysis | Price Filtering & Comparison |
 | 📈 Analysis | Statistical & Data Analysis |
 
 ---
@@ -197,6 +201,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day60-SQL/  
 │   ├── 📄 CodeChef1.sql  
 │   └── 📸 Screenshot 2026-09-24 204328.png  
+├── 📁 Day61-SQL/  
+│   ├── 📄 High Price of Products.sql  
+│   └── 📸 Screenshot 2026-09-25 075055.png  
 ├── 📄 README.md
 └── 📄 LICENSE
 
@@ -265,33 +272,34 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 57 | 15 Days of Learning SQL | HackerRank | Completed 🎉📅🏆🔥 |
 | ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed 🎉🔺🔥 |
 | ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed 🎉🔺🔥 |
-| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🎉🔥 |
-| ⏳ Day 61–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
+| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🎉🔍🔥 |
+| ✅ Day 61 | High Price of Products | SQL Challenge | Completed 🎉💰🔥 |
+| ⏳ Day 62–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 60 – SELECT Statement Challenge
+# 🆕 Day 61 – High Price of Products
 
 ## 📌 Challenge Information
 
-- 💻 **Platform:** CodeChef
+- 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** SELECT Statement Challenge
-- 📅 **Day:** 60
+- 🏆 **Challenge:** High Price of Products
+- 📅 **Day:** 61
 - 🧠 **SQL Dialect:** MySQL
-- 🔍 **Topic:** SELECT Statement
+- 🔍 **Topic:** Product Price Analysis & Filtering
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The Day 60 challenge focuses on the fundamental **SELECT statement** in SQL.
+The Day 61 challenge focuses on analyzing product data based on **price-related conditions**.
 
-The objective is to retrieve the required information from the given database table according to the problem requirements.
+The objective is to write an SQL query that identifies the required products according to the problem statement and applies the appropriate filtering logic to the product price data.
 
-This challenge strengthens the basic concept of selecting data from a database and understanding how SQL retrieves specific columns and records.
+This challenge strengthens my understanding of filtering records using SQL conditions and working with numerical product data.
 
 ---
 
@@ -299,10 +307,11 @@ This challenge strengthens the basic concept of selecting data from a database a
 
 - 🔍 Analyzed the given SQL problem
 - 📋 Identified the required table and columns
-- 🔎 Used the `SELECT` statement to retrieve the required data
-- 🧠 Applied SQL query logic according to the problem requirements
-- 🧪 Tested the query on CodeChef
-- ✅ Verified the result against the expected output
+- 💰 Examined the product price information
+- 🔎 Applied the required price-based filtering conditions
+- 🧠 Built the SQL query according to the problem requirements
+- 🧪 Tested the query using MySQL
+- 🔍 Verified the query output
 - 📂 Added the final SQL solution to this repository
 - 📸 Added the successful solution screenshot
 
@@ -310,13 +319,14 @@ This challenge strengthens the basic concept of selecting data from a database a
 
 ## 🧠 Concepts Practiced
 
-- ✅ `SELECT`
-- ✅ Column Selection
-- ✅ Data Retrieval
-- ✅ SQL Query Structure
-- ✅ Basic Database Querying
+- ✅ SELECT
+- ✅ WHERE
+- ✅ Conditional Filtering
+- ✅ Product Data Analysis
+- ✅ Price-Based Filtering
+- ✅ Numerical Data
+- ✅ Comparison Operators
 - ✅ MySQL
-- ✅ Problem Analysis
 - ✅ Query Testing
 - ✅ Output Verification
 
@@ -324,37 +334,38 @@ This challenge strengthens the basic concept of selecting data from a database a
 
 ## 💻 Key SQL Concept
 
-The `SELECT` statement is one of the fundamental SQL commands used to retrieve data from database tables.
+SQL filtering allows us to retrieve only those records that satisfy a specific condition.
 
-It allows us to specify which columns we want to retrieve from the available data.
+For product-related data, price conditions can be used to identify products that meet the required criteria.
 
-Through this challenge, I practiced building a clear and correct `SELECT` query based on the required output.
+Through this challenge, I practiced applying SQL conditions to numerical product data and retrieving the required records.
 
 ---
 
 ## 🎓 Learning Outcome
 
-Day 60 strengthened my understanding of:
+Day 61 strengthened my understanding of:
 
-- 🗄️ Basic SQL querying
-- 🔍 Data retrieval
-- 📋 Selecting specific columns
-- 🧠 Query analysis
-- 💻 SQL syntax
-- 🧩 Problem-solving using SQL
-- 🎯 Writing clean SQL queries
-- 🚀 Practicing SQL on multiple competitive programming platforms
+- 🗄️ SQL fundamentals
+- 🔍 Filtering records
+- 💰 Working with product prices
+- 📊 Analyzing numerical data
+- 🧠 Applying comparison logic
+- ✍️ Writing clear SQL queries
+- 🧪 Testing SQL solutions
+- 🎯 Solving database problems
+- 🚀 Improving SQL problem-solving skills
 
 ---
 
 ## 📂 Files Added
 
-- 💻 `CodeChef1.sql`
-- 📸 `Screenshot 2026-09-24 204328.png`
+- 💻 `High Price of Products.sql`
+- 📸 `Screenshot 2026-09-25 075055.png`
 
 ---
 
-# 🆕 Recent Challenges
+# 🧠 Recent SQL Challenges
 
 | Day | Challenge | Platform | Key Concepts |
 |---|---|---|---|
@@ -365,6 +376,7 @@ Day 60 strengthened my understanding of:
 | Day 58 | Draw The Triangle 1 | HackerRank | Pattern Generation, String Functions |
 | Day 59 | Draw The Triangle 2 | HackerRank | WITH RECURSIVE, REPEAT(), Pattern Generation |
 | Day 60 | SELECT Statement Challenge | CodeChef | SELECT, Data Retrieval, Query Fundamentals |
+| Day 61 | High Price of Products | SQL Challenge | Product Prices, WHERE, Filtering, Comparison |
 
 ---
 
@@ -410,6 +422,8 @@ Day 60 strengthened my understanding of:
 - 🔤 String Repetition
 - 📋 SELECT Statements
 - 🔎 Data Retrieval
+- 💰 Product Price Analysis
+- ⚖️ Comparison Operators
 - 🧹 Output Formatting
 - 🚀 Advanced SQL Querying
 - 🎯 Technical Interview Preparation
@@ -480,10 +494,11 @@ Day 60 strengthened my understanding of:
 - ✅ Day 58 🎉🔺🔥
 - ✅ Day 59 🎉🔺🔥
 - ✅ Day 60 🎉🔍🔥
+- ✅ Day 61 🎉💰🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 61 → Day 99
+- ⏳ Day 62 → Day 99
 - 🎯 Day 100 → Final Goal
 
 ---
@@ -492,21 +507,21 @@ Day 60 strengthened my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **60 / 100** |
-| 💻 Challenges Solved | **60** |
+| 📅 Days Completed | **61 / 100** |
+| 💻 Challenges Solved | **61** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank & CodeChef** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **60% Complete** 🚀 |
-| 🔥 Current Streak | **60 Days** |
-| ⏳ Days Remaining | **40 Days** |
+| 📈 Progress | **61% Complete** 🚀 |
+| 🔥 Current Streak | **61 Days** |
+| ⏳ Days Remaining | **39 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
 | 🔢 Numerical Processing | **ROUND(), MOD(), Decimal Precision & Divisibility** |
 | 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
 | 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
 | 🔗 Relational Concepts | **JOINs, Self JOINs, Relationships & Relational Analysis** |
 | 🔄 Pair Analysis | **Symmetric Pairs & Reversed Pair Matching** |
-| 💰 Comparison Analysis | **Salary Comparison & Related Record Analysis** |
+| 💰 Comparison Analysis | **Salary Comparison, Product Prices & Related Record Analysis** |
 | 🏆 Leaderboard Concepts | **Maximum Scores, GROUP BY, HAVING & Sorting** |
 | 📊 Submission Analysis | **Daily Submissions, Consistent Hackers & Maximum Contributors** |
 | 🔢 Mathematical SQL | **Prime Number Identification & Divisibility Logic** |
@@ -515,17 +530,18 @@ Day 60 strengthened my understanding of:
 | ⭐ Pattern Processing | **REPEAT(), String Construction & Output Formatting** |
 | 🔁 Recursive SQL | **WITH RECURSIVE & Sequence Generation** |
 | 📋 SELECT Fundamentals | **SELECT, Column Selection & Data Retrieval** |
+| 💰 Product Analysis | **Price Filtering, Comparison & Numerical Conditions** |
 | 🧩 Advanced Queries | **CTEs, Window Functions, Subqueries & Multi-Level Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **60 Days of SQL Practice Completed! 🎉🔥🚀**
+## **61 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **60 days down, 40 more to go!**
+> **61 days down, 39 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, SELECT statements, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product price analysis, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, SELECT statements, and problem-solving abilities**.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -561,6 +577,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 58 | ✅ Completed 🎉🔺🔥 |
 | 🎯 Day 59 | ✅ Completed 🎉🔺🔥 |
 | 🎯 Day 60 | ✅ Completed 🎉🔍🔥 |
+| 🎯 Day 61 | ✅ Completed 🎉💰🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -586,11 +603,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 60**  
 ████████████████████ 100% ✅
 
+**Day 61**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **60%**
+████████████░░░░░░░░ **61%**
 
-### **60 / 100 Days Completed**
+### **61 / 100 Days Completed**
 
 ---
 
@@ -638,6 +658,7 @@ It is also about:
 - 📊 Understanding aggregation
 - 🏆 Analyzing leaderboard data
 - 💰 Comparing related data
+- 💰 Analyzing product prices
 - 📊 Analyzing submission and view statistics
 - 🔢 Applying mathematical logic
 - 🧮 Identifying prime numbers using SQL
@@ -651,6 +672,7 @@ It is also about:
 - ⭐ Generating structured patterns
 - 🔤 Practicing SQL string manipulation
 - 📋 Practicing SELECT statements
+- 🔍 Applying filtering conditions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 - 💼 Preparing for software and data-related opportunities
@@ -687,6 +709,7 @@ Every challenge helps me improve my:
 - 🔢 Decimal Precision
 - 📈 Statistical Analysis
 - 💰 Salary Comparison
+- 💰 Product Price Analysis
 - 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
@@ -707,6 +730,7 @@ Every challenge helps me improve my:
 - 🔤 String Repetition
 - 📋 SELECT Statements
 - 🔎 Data Retrieval
+- ⚖️ Comparison Operators
 - 🧹 Output Formatting
 - 🚀 Advanced SQL Querying
 - 💼 Technical Interview Preparation
@@ -778,7 +802,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#DatabaseProgramming` `#Coding` `#Programming`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#MathematicalFunctions` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding` `#Programming`
 
 ---
 
@@ -788,12 +812,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**60 Days Completed ✅ | 40 Days Remaining ⏳ | 100 Days Goal 🎯**
+**61 Days Completed ✅ | 39 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 60 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 61 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
