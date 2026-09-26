@@ -277,10 +277,70 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed 🎉🔺🔥 |
 | ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed 🎉🔺🔥 |
 | ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🎉🔍🔥 |
-| ✅ Day 61 | High Price of Products | SQL Challenge | Completed 🎉💰🔥 |
-| ✅ Day 62 | Average Salary | SQL Challenge | Completed 🎉📊💰🔥 |
+| ✅ Day 61 | High Price of Products | CodeChef | Completed 🎉💰🔥 |
+| ✅ Day 62 | Average Salary | CodeChef | Completed 🎉📊💰🔥 |
 | ⏳ Day 63–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 60 – SELECT Statement Challenge
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** CodeChef
+- 🗄️ **Language:** SQL
+- 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 60
+- 🔍 **Topic:** SELECT Statement & Data Retrieval
+- ✅ **Status:** Completed
+
+### 🧠 Concepts Practiced
+
+- SELECT statement
+- Column selection
+- Data retrieval
+- SQL fundamentals
+- MySQL query writing
+
+### 📂 Files
+
+- `CodeChef1.sql`
+- `Screenshot 2026-09-24 204328.png`
+
+---
+
+# 🆕 Day 61 – High Price of Products
+
+## 📌 Challenge Information
+
+- 💻 **Platform:** CodeChef
+- 🗄️ **Language:** SQL
+- 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 61
+- 🔍 **Topic:** Product Price Analysis
+- 💰 **Focus:** Price Filtering & Comparison
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+The Day 61 challenge focuses on analyzing product information and working with price-based conditions using SQL.
+
+### 🧠 Concepts Practiced
+
+- SELECT
+- WHERE
+- Filtering
+- Comparison operators
+- Product price analysis
+- Numerical conditions
+- MySQL query writing
+- Data analysis
+
+### 📂 Files
+
+- `High Price of Products.sql`
+- `Screenshot 2026-09-25 075055.png`
 
 ---
 
@@ -288,85 +348,44 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 📌 Challenge Information
 
-- 💻 **Platform:** SQL Challenge
+- 💻 **Platform:** CodeChef
 - 🗄️ **Language:** SQL
-- 🏆 **Challenge:** Average Salary
-- 📅 **Day:** 62
 - 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 62
+- 🏆 **Challenge:** Average Salary
 - 🔍 **Topic:** Aggregate Functions & Salary Analysis
 - 📋 **Table:** `Works`
 - 📊 **Aggregate Function:** `AVG()`
 - ✅ **Status:** Completed
 
----
-
-## 🎯 Challenge Objective
+### 🎯 Challenge Objective
 
 The Day 62 challenge focuses on calculating the **average salary across all companies combined**.
 
 The objective is to use the SQL `AVG()` aggregate function on the salary column of the `Works` table and rename the resulting column as `avg_salary`.
 
-This challenge strengthens my understanding of aggregate functions and numerical data analysis using SQL.
+### 💡 Concepts Practiced
 
----
+- SELECT
+- AVG()
+- Aggregate Functions
+- Column Aliasing
+- Numerical Data Analysis
+- Salary Analysis
+- MySQL
+- Query Testing
+- Output Verification
 
-## 💡 What I Did
+### 📂 Files
 
-- 🔍 Analyzed the SQL problem statement
-- 📋 Identified the `Works` table
-- 💰 Identified the salary column
-- 📊 Applied the `AVG()` aggregate function
-- 🏷️ Used column aliasing with `AS`
-- 🧠 Calculated the average salary across all records
-- 🧪 Tested the query using MySQL
-- 🔍 Verified the output
-- 📂 Added the SQL solution to this repository
-- 📸 Added the successful solution screenshot
+- `Average Salary.sql`
+- `Screenshot 2026-09-26 180340.png`
 
----
+### 🎓 Learning Outcome
 
-## 🧠 Concepts Practiced
+Day 62 strengthened my understanding of SQL aggregate functions and numerical data analysis.
 
-- ✅ SELECT
-- ✅ AVG()
-- ✅ Aggregate Functions
-- ✅ Column Aliasing
-- ✅ Numerical Data Analysis
-- ✅ Salary Analysis
-- ✅ MySQL
-- ✅ Query Testing
-- ✅ Output Verification
-
----
-
-## 💻 SQL Concept Practiced
-
-The `AVG()` aggregate function is used to calculate the arithmetic mean of numeric values in a column.
-
-For this challenge, the salary values from the `Works` table are used to calculate the average salary, and the result is returned using the required alias `avg_salary`.
-
----
-
-## 🎓 Learning Outcome
-
-Day 62 strengthened my understanding of:
-
-- 🗄️ SQL fundamentals
-- 📊 Aggregate functions
-- 💰 Salary analysis
-- 🔢 Numerical data processing
-- 🏷️ Column aliases
-- 🧠 Data analysis using SQL
-- ✍️ Writing concise SQL queries
-- 🧪 Testing and verifying SQL solutions
-- 🎯 Solving database problems
-
----
-
-## 📂 Files Added
-
-- 💻 `Average Salary.sql`
-- 📸 `Screenshot 2026-09-26 180340.png`
+By solving this challenge, I practiced calculating averages from table data and using aliases to provide meaningful output column names.
 
 ---
 
@@ -381,8 +400,8 @@ Day 62 strengthened my understanding of:
 | Day 58 | Draw The Triangle 1 | HackerRank | Pattern Generation, String Functions |
 | Day 59 | Draw The Triangle 2 | HackerRank | WITH RECURSIVE, REPEAT(), Pattern Generation |
 | Day 60 | SELECT Statement Challenge | CodeChef | SELECT, Data Retrieval, Query Fundamentals |
-| Day 61 | High Price of Products | SQL Challenge | Product Prices, WHERE, Filtering, Comparison |
-| Day 62 | Average Salary | SQL Challenge | AVG(), Aggregate Functions, Salary Analysis |
+| Day 61 | High Price of Products | CodeChef | Product Prices, Filtering, Comparison |
+| Day 62 | Average Salary | CodeChef | AVG(), Aggregate Functions, Salary Analysis |
 
 ---
 
@@ -526,23 +545,9 @@ Day 62 strengthened my understanding of:
 | 🔥 Current Streak | **62 Days** |
 | ⏳ Days Remaining | **38 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 🔢 Numerical Processing | **ROUND(), MOD(), Decimal Precision & Divisibility** |
-| 📍 Geographic Analysis | **Latitude, Longitude, Coordinates & Distance** |
-| 📈 Statistical Concepts | **Average, Median, Count & Numerical Analysis** |
-| 🔗 Relational Concepts | **JOINs, Self JOINs, Relationships & Relational Analysis** |
-| 🔄 Pair Analysis | **Symmetric Pairs & Reversed Pair Matching** |
-| 💰 Comparison Analysis | **Salary Comparison, Product Prices & Related Record Analysis** |
-| 🏆 Leaderboard Concepts | **Maximum Scores, GROUP BY, HAVING & Sorting** |
-| 📊 Submission Analysis | **Daily Submissions, Consistent Hackers & Maximum Contributors** |
-| 🔢 Mathematical SQL | **Prime Number Identification & Divisibility Logic** |
-| 🔄 Pivoting Concepts | **ROW_NUMBER(), PARTITION BY, CASE, MAX() & Conditional Aggregation** |
-| 📅 Date Analysis | **Date Filtering, Date Differences & Activity Tracking** |
-| ⭐ Pattern Processing | **REPEAT(), String Construction & Output Formatting** |
-| 🔁 Recursive SQL | **WITH RECURSIVE & Sequence Generation** |
-| 📋 SELECT Fundamentals | **SELECT, Column Selection & Data Retrieval** |
-| 💰 Product Analysis | **Price Filtering, Comparison & Numerical Conditions** |
-| 📊 Salary Analysis | **AVG() & Aggregate Salary Analysis** |
-| 🧩 Advanced Queries | **CTEs, Window Functions, Subqueries & Multi-Level Analysis** |
+| 📋 Latest Challenge | **Average Salary** |
+| 🏆 Latest Platform | **CodeChef** |
+| 💰 Latest Topic | **Salary & Aggregate Analysis** |
 
 ---
 
@@ -552,7 +557,7 @@ Day 62 strengthened my understanding of:
 
 > **62 days down, 38 more to go!**
 
-Every SQL challenge helps me strengthen my **database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product price analysis, average salary calculation, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, SELECT statements, and problem-solving abilities**.
+Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product price analysis, average salary calculation, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -566,22 +571,8 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 20 | ✅ Completed |
 | 🎯 Day 25 | ✅ Completed |
 | 🎯 Day 30 | ✅ Completed 🎉 |
-| 🎯 Day 35 | ✅ Completed 🎉🔥 |
 | 🎯 Day 40 | ✅ Completed 🎉🔥 |
-| 🎯 Day 41 | ✅ Completed 🎉🔥 |
-| 🎯 Day 42 | ✅ Completed 🎉🔥 |
-| 🎯 Day 43 | ✅ Completed 🎉🔥 |
-| 🎯 Day 44 | ✅ Completed 🎉🔥 |
-| 🎯 Day 45 | ✅ Completed 🎉🔥 |
-| 🎯 Day 46 | ✅ Completed 🎉🔥🗄️ |
-| 🎯 Day 47 | ✅ Completed 🎉🏆🔥 |
-| 🎯 Day 48 | ✅ Completed 🎉🪄🔥 |
-| 🎯 Day 49 | ✅ Completed 🎉🏆🔥 |
 | 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
-| 🎯 Day 51 | ✅ Completed 🎉🏆🔥 |
-| 🎯 Day 52 | ✅ Completed 🎉🏆🔥🔗 |
-| 🎯 Day 53 | ✅ Completed 🎉🔄🔥 |
-| 🎯 Day 54 | ✅ Completed 🎉💻🔥 |
 | 🎯 Day 55 | ✅ Completed 🎉🔢🔥 |
 | 🎯 Day 56 | ✅ Completed 🎉🔄📊🔥 |
 | 🎯 Day 57 | ✅ Completed 🎉📅🏆🔥 |
@@ -591,6 +582,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 61 | ✅ Completed 🎉💰🔥 |
 | 🎯 Day 62 | ✅ Completed 🎉📊💰🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
+| 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
 ---
