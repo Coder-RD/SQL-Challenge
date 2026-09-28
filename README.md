@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-63%25-success?style=for-the-badge" alt="63% Progress">
+  <img src="https://img.shields.io/badge/Progress-64%25-success?style=for-the-badge" alt="64% Progress">
 </p>
 
 <p align="center">
@@ -18,9 +18,43 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank and CodeChef**, where I solve SQL challenges to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities.
+This repository documents my daily SQL programming journey through **HackerRank, CodeChef, and SQL practice challenges**, where I solve SQL problems to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities.
 
-Throughout this challenge, I am practicing concepts such as filtering, sorting, aggregation, grouping, string operations, regular expressions, mathematical functions, rounding, truncation, subqueries, JOINs, CASE statements, DISTINCT, geographic data analysis, latitude/longitude handling, decimal precision, distance calculation, relational data analysis, hierarchical data analysis, leaderboard analysis, salary comparison, symmetric pair matching, multi-table relational queries, window functions, SQL pivoting, date-based analysis, submission analysis, activity tracking, pattern generation, recursive queries, SELECT statements, product analysis, price-based filtering, average salary calculation, and pattern matching.
+Throughout this challenge, I am practicing concepts such as:
+
+- SQL fundamentals
+- SELECT statements
+- WHERE conditions
+- DISTINCT
+- GROUP BY
+- HAVING
+- ORDER BY
+- Aggregate functions
+- String operations
+- Pattern matching
+- Regular expressions
+- Mathematical functions
+- ROUND() and MOD()
+- Decimal precision
+- Subqueries
+- JOINs
+- Self JOINs
+- CASE statements
+- Common Table Expressions
+- Window functions
+- SQL pivoting
+- Recursive queries
+- Date-based analysis
+- Geographic data analysis
+- Latitude and longitude
+- Distance calculation
+- Salary analysis
+- Product analysis
+- Leaderboard analysis
+- Submission statistics
+- Activity tracking
+- Symmetric pairs
+- Pattern generation
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -37,36 +71,22 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 📊 Learn data analysis using SQL
 - 🔢 Practice aggregate functions
 - 🔍 Improve filtering and sorting skills
-- 🔤 Practice string and text operations
+- 🔤 Practice string operations
 - 🧮 Practice mathematical functions
 - 📐 Understand rounding and truncation
-- 📍 Work with geographic and location-based data
-- 🌎 Analyze latitude and longitude values
-- 🔢 Improve decimal precision handling
+- 📍 Work with geographic data
+- 🌎 Analyze latitude and longitude
 - 🔗 Understand relational data and JOIN operations
-- 🧠 Practice subqueries and nested queries
-- 🔀 Use CASE statements for conditional analysis
-- 📌 Practice DISTINCT, GROUP BY, and aggregation
-- 🏆 Analyze leaderboard and ranking-based SQL problems
-- 🔄 Identify and analyze symmetric pairs
-- 🔗 Practice multi-table relational queries
-- 💰 Compare and analyze related data across tables
-- 📈 Develop statistical thinking using SQL
-- 🔢 Apply mathematical and divisibility logic using SQL
-- 🪟 Practice window functions and row numbering
-- 🔄 Understand SQL pivoting techniques
-- 📅 Analyze date-based submission data
-- 👥 Analyze user activity and consistency
-- 🏆 Identify daily maximum contributors
-- 🔤 Generate patterns using SQL
-- 🔁 Practice recursive query concepts
-- 📋 Practice SELECT statements and data retrieval
-- 💰 Analyze product prices and price-based conditions
-- 📊 Calculate averages and analyze salary data
-- 🔎 Practice pattern matching with LIKE and wildcards
+- 🧠 Practice subqueries and CTEs
+- 🔀 Use CASE statements
+- 📌 Practice DISTINCT, GROUP BY, and HAVING
+- 🏆 Analyze leaderboard and ranking problems
+- 🔄 Analyze symmetric pairs
+- 🪟 Practice window functions
+- 🔁 Practice recursive SQL queries
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
-- 🌱 Learn and improve through consistent daily practice
+- 🌱 Learn consistently through daily practice
 
 ---
 
@@ -74,34 +94,26 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 | 🛠️ Category | Details |
 |---|---|
-| 💻 Practice Platforms | HackerRank & CodeChef |
+| 💻 Practice Platforms | HackerRank, CodeChef & SQL Challenges |
 | 🗄️ Language | SQL |
 | 🧠 SQL Dialect | MySQL |
-| 🔍 Filtering | WHERE, Conditional Filtering |
+| 🔍 Filtering | WHERE |
 | 📊 Aggregation | COUNT(), SUM(), AVG(), MIN(), MAX() |
 | 🔤 String Operations | String Handling & Text Processing |
 | 🔎 Pattern Matching | LIKE, Wildcards & Regular Expressions |
-| 🔗 Relational Operations | JOINs |
-| 🔄 Pair Analysis | Symmetric Pair Matching |
+| 🔗 Relational Operations | JOINs & Self JOINs |
 | 🧠 Advanced Queries | Subqueries & CTEs |
 | 🔀 Conditional Logic | CASE Statements |
-| 📌 Data Grouping | GROUP BY |
-| 🔍 Group Filtering | HAVING |
+| 📌 Data Grouping | GROUP BY & HAVING |
 | 📍 Geographic Data | Latitude & Longitude |
 | 🔢 Numerical Processing | ROUND(), MOD(), Decimal Precision |
-| 🏆 Leaderboard Analysis | Scores, COUNT(), GROUP BY, HAVING |
-| 🔗 Multi-Table Analysis | Relational Queries & JOINs |
-| 💰 Salary Comparison | Related Record Analysis |
+| 🏆 Leaderboard Analysis | Ranking, GROUP BY & HAVING |
 | 🪟 Window Functions | ROW_NUMBER(), Ranking & Partitioning |
-| 🔄 SQL Pivoting | Conditional Aggregation & Row Alignment |
-| 📅 Date Analysis | Date Filtering & Date-Based Analysis |
+| 🔄 SQL Pivoting | CASE & Conditional Aggregation |
+| 📅 Date Analysis | Date Filtering & Date Functions |
 | 👥 Activity Analysis | Daily Submission Tracking |
-| 🏆 Ranking | Maximum Submission & Tie-Breaking |
-| 🔤 Pattern Generation | REPEAT(), String Construction |
 | 🔁 Recursive Queries | WITH RECURSIVE |
-| 📋 Data Retrieval | SELECT Statements & Column Selection |
-| 💰 Product Analysis | Price Filtering & Comparison |
-| 📈 Statistical Analysis | Average, Median & Numerical Analysis |
+| ⭐ Pattern Generation | REPEAT() & String Construction |
 
 ---
 
@@ -153,66 +165,29 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day42-SQL/  
 ├── 📁 Day43-SQL/  
 ├── 📁 Day44-SQL/  
-│   ├── 📄 New Companies.sql  
-│   └── 📸 Screenshot 2026-09-08 130013.png  
 ├── 📁 Day45-SQL/  
-│   ├── 📄 Weather Observation Station 20.sql  
-│   └── 📸 Screenshot 2026-09-09 100733.png  
 ├── 📁 Day46-SQL/  
-│   ├── 📄 The Report.sql  
-│   └── 📸 Screenshot 2026-09-10 181832.png  
 ├── 📁 Day47-SQL/  
-│   ├── 📄 Top Competitors.sql  
-│   └── 📸 Screenshot 2026-09-11 153810.png  
 ├── 📁 Day48-SQL/  
-│   ├── 📄 Ollivander's Inventory.sql  
-│   └── 📸 Screenshot 2026-09-12 142045.png  
 ├── 📁 Day49-SQL/  
-│   ├── 📄 Challenges.sql  
-│   └── 📸 Screenshot 2026-09-13 085302.png  
 ├── 📁 Day50-SQL/  
-│   ├── 📄 Contest Leaderboard.sql  
-│   └── 📸 Screenshot 2026-09-14 085728.png  
 ├── 📁 Day51-SQL/  
-│   ├── 📄 SQL Project Planning.sql  
-│   └── 📸 Screenshot 2026-09-15 180330.png  
 ├── 📁 Day52-SQL/  
-│   ├── 📄 Placements.sql  
-│   └── 📸 Screenshot 2026-09-16 095852.png  
 ├── 📁 Day53-SQL/  
-│   ├── 📄 Symmetric Pairs.sql  
-│   └── 📸 Screenshot 2026-09-17 163143.png  
 ├── 📁 Day54-SQL/  
-│   ├── 📄 Interviews.sql  
-│   └── 📸 Screenshot 2026-09-18 103142.png  
 ├── 📁 Day55-SQL/  
-│   ├── 📄 Print Prime Numbers.sql  
-│   └── 📸 Screenshot 2026-09-19 201219.png  
 ├── 📁 Day56-SQL/  
-│   ├── 📄 Occupations.sql  
-│   └── 📸 Screenshot 2026-09-20 085257.png  
 ├── 📁 Day57-SQL/  
-│   ├── 📄 15 Days of Learning SQL.sql  
-│   └── 📸 Screenshot 2026-09-21 074740.png  
 ├── 📁 Day58-SQL/  
-│   ├── 📄 Draw The Triangle 1.sql  
-│   └── 📸 Screenshot 2026-09-22 133011.png  
 ├── 📁 Day59-SQL/  
-│   ├── 📄 Draw The Triangle 2.sql  
-│   └── 📸 Screenshot 2026-09-23 183950.png  
 ├── 📁 Day60-SQL/  
-│   ├── 📄 CodeChef1.sql  
-│   └── 📸 Screenshot 2026-09-24 204328.png  
 ├── 📁 Day61-SQL/  
-│   ├── 📄 High Price of Products.sql  
-│   └── 📸 Screenshot 2026-09-25 075055.png  
 ├── 📁 Day62-SQL/  
-│   ├── 📄 Average Salary.sql  
-│   └── 📸 Screenshot 2026-09-26 180340.png  
 ├── 📁 Day63-SQL/  
-│   ├── 📄 Locate People.sql  
-│   └── 📸 Screenshot 2026-09-27 094836.png  
-├── 📄 README.md
+├── 📁 Day64-SQL/  
+│   ├── 📄 Distinct Companies.sql  
+│   └── 📸 Screenshot 2026-09-28 072120.png  
+├── 📄 README.md  
 └── 📄 LICENSE
 
 ---
@@ -250,7 +225,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 27 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 28 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 29 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 30 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 30 | SQL Challenge | HackerRank | Completed 🎉 |
 | ✅ Day 31 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 32 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 33 | SQL Challenge | HackerRank | Completed |
@@ -260,197 +235,76 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 37 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 38 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 39 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 40 | SQL Challenge | HackerRank | Completed |
+| ✅ Day 40 | SQL Challenge | HackerRank | Completed 🎉🔥 |
 | ✅ Day 41 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 42 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 43 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 44 | New Companies | HackerRank | Completed |
-| ✅ Day 45 | Weather Observation Station 20 | HackerRank | Completed 🎉 |
+| ✅ Day 44 | New Companies | HackerRank | Completed 🎉 |
+| ✅ Day 45 | Weather Observation Station 20 | HackerRank | Completed 🎉🔥 |
 | ✅ Day 46 | The Report | HackerRank | Completed 🎉🔥 |
-| ✅ Day 47 | Top Competitors | HackerRank | Completed 🎉🏆🔥 |
-| ✅ Day 48 | Ollivander's Inventory | HackerRank | Completed 🎉🪄🔥 |
-| ✅ Day 49 | Challenges | HackerRank | Completed 🎉🏆🔥 |
-| ✅ Day 50 | Contest Leaderboard | HackerRank | Completed 🎉🏆🔥 |
-| ✅ Day 51 | SQL Project Planning | HackerRank | Completed 🎉🏆🔥 |
-| ✅ Day 52 | Placements | HackerRank | Completed 🎉🏆🔥🔗 |
-| ✅ Day 53 | Symmetric Pairs | HackerRank | Completed 🎉🔄🔥 |
-| ✅ Day 54 | Interviews | HackerRank | Completed 🎉💻🔥 |
-| ✅ Day 55 | Print Prime Numbers | HackerRank | Completed 🎉🔢🔥 |
-| ✅ Day 56 | Occupations | HackerRank | Completed 🎉🔄📊🔥 |
-| ✅ Day 57 | 15 Days of Learning SQL | HackerRank | Completed 🎉📅🏆🔥 |
-| ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed 🎉🔺🔥 |
-| ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed 🎉🔺🔥 |
-| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🎉🔍🔥 |
-| ✅ Day 61 | High Price of Products | CodeChef | Completed 🎉💰🔥 |
-| ✅ Day 62 | Average Salary | CodeChef | Completed 🎉📊💰🔥 |
-| ✅ Day 63 | Locate People | SQL Challenge | Completed 🎉📍🔍🔥 |
-| ⏳ Day 64–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
+| ✅ Day 47 | Top Competitors | HackerRank | Completed 🏆🔥 |
+| ✅ Day 48 | Ollivander's Inventory | HackerRank | Completed 🪄🔥 |
+| ✅ Day 49 | Challenges | HackerRank | Completed 🏆🔥 |
+| ✅ Day 50 | Contest Leaderboard | HackerRank | Completed 🏆🔥 |
+| ✅ Day 51 | SQL Project Planning | HackerRank | Completed 🏆🔥 |
+| ✅ Day 52 | Placements | HackerRank | Completed 🔗🔥 |
+| ✅ Day 53 | Symmetric Pairs | HackerRank | Completed 🔄🔥 |
+| ✅ Day 54 | Interviews | HackerRank | Completed 💻🔥 |
+| ✅ Day 55 | Print Prime Numbers | HackerRank | Completed 🔢🔥 |
+| ✅ Day 56 | Occupations | HackerRank | Completed 🔄📊🔥 |
+| ✅ Day 57 | 15 Days of Learning SQL | HackerRank | Completed 📅🏆🔥 |
+| ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed 🔺🔥 |
+| ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed 🔺🔥 |
+| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🔍🔥 |
+| ✅ Day 61 | High Price of Products | CodeChef | Completed 💰🔥 |
+| ✅ Day 62 | Average Salary | CodeChef | Completed 📊💰🔥 |
+| ✅ Day 63 | Locate People | SQL Challenge | Completed 📍🔍🔥 |
+| ✅ Day 64 | Distinct Companies | SQL Challenge | Completed 🏢🔍🔥 |
+| ⏳ Day 65–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 60 – SELECT Statement Challenge
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** CodeChef
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 60
-- 🔍 **Topic:** SELECT Statement & Data Retrieval
-- ✅ **Status:** Completed
-
-### 🧠 Concepts Practiced
-
-- SELECT statement
-- Column selection
-- Data retrieval
-- SQL fundamentals
-- MySQL query writing
-
-### 📂 Files
-
-- `CodeChef1.sql`
-- `Screenshot 2026-09-24 204328.png`
-
----
-
-# 🆕 Day 61 – High Price of Products
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** CodeChef
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 61
-- 🔍 **Topic:** Product Price Analysis
-- 💰 **Focus:** Price Filtering & Comparison
-- ✅ **Status:** Completed
-
-### 🎯 Challenge Objective
-
-The Day 61 challenge focuses on analyzing product information and working with price-based conditions using SQL.
-
-### 🧠 Concepts Practiced
-
-- SELECT
-- WHERE
-- Filtering
-- Comparison operators
-- Product price analysis
-- Numerical conditions
-- MySQL query writing
-- Data analysis
-
-### 📂 Files
-
-- `High Price of Products.sql`
-- `Screenshot 2026-09-25 075055.png`
-
----
-
-# 🆕 Day 62 – Average Salary
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** CodeChef
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 62
-- 🏆 **Challenge:** Average Salary
-- 🔍 **Topic:** Aggregate Functions & Salary Analysis
-- 📋 **Table:** `Works`
-- 📊 **Aggregate Function:** `AVG()`
-- ✅ **Status:** Completed
-
-### 🎯 Challenge Objective
-
-The Day 62 challenge focuses on calculating the **average salary across all companies combined**.
-
-The objective is to use the SQL `AVG()` aggregate function on the salary column of the `Works` table and rename the resulting column as `avg_salary`.
-
-### 💡 Concepts Practiced
-
-- SELECT
-- AVG()
-- Aggregate Functions
-- Column Aliasing
-- Numerical Data Analysis
-- Salary Analysis
-- MySQL
-- Query Testing
-- Output Verification
-
-### 📂 Files
-
-- `Average Salary.sql`
-- `Screenshot 2026-09-26 180340.png`
-
-### 🎓 Learning Outcome
-
-Day 62 strengthened my understanding of SQL aggregate functions and numerical data analysis.
-
-By solving this challenge, I practiced calculating averages from table data and using aliases to provide meaningful output column names.
-
----
-
-# 🆕 Day 63 – Locate People
+# 🆕 Day 64 – Distinct Companies
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 63
-- 📍 **Challenge:** Locate People
-- 🔍 **Topic:** Pattern Matching & Data Filtering
-- 🔤 **SQL Operator:** LIKE
+- 📅 **Day:** 64
+- 🏢 **Challenge:** Distinct Companies
+- 🔍 **Topic:** Unique Records & Duplicate Removal
+- 📌 **SQL Keyword:** DISTINCT
 - ✅ **Status:** Completed
 
 ### 🎯 Challenge Objective
 
-The Day 63 challenge focuses on retrieving the `department_name` and `location` of departments where the city name starts with the letter **S**.
+The Day 64 challenge focuses on retrieving **unique company records** from the available data.
 
-### 💡 SQL Concept Practiced
+This challenge strengthens my understanding of the `DISTINCT` keyword, which is used to eliminate duplicate values from SQL query results and return unique records.
 
-The `LIKE` operator is used with the `%` wildcard to identify locations beginning with a specific character.
-
-Query:
-
-SELECT department_name, location
-FROM departments
-WHERE location LIKE 'S%';
-
-### 📊 Expected Result
-
-| Department Name | Location |
-|---|---|
-| Research and Development | San Francisco |
-| IT Support | Seattle |
-| Product Management | San Francisco |
-
-### 🧠 Concepts Practiced
+### 💡 Concepts Practiced
 
 - SELECT
-- WHERE
-- LIKE
-- Wildcard `%`
-- Pattern Matching
-- Text Filtering
-- Column Selection
-- Data Retrieval
-- MySQL Query Writing
+- DISTINCT
+- Unique record retrieval
+- Duplicate removal
+- Data filtering
+- Column selection
+- Data retrieval
+- MySQL query writing
 
 ### 📂 Files
 
-- `Locate People.sql`
-- `Screenshot 2026-09-27 094836.png`
+- `Distinct Companies.sql`
+- `Screenshot 2026-09-28 072120.png`
 
 ### 🎓 Learning Outcome
 
-Day 63 strengthened my understanding of SQL pattern matching and text-based filtering.
+Day 64 strengthened my understanding of retrieving unique data using SQL.
 
-This challenge helped me practice using the `LIKE` operator with a wildcard to retrieve records based on the starting character of a location.
+By solving this challenge, I practiced using `DISTINCT` to work with company-related data and avoid duplicate results. This is an important SQL concept for clean data retrieval and database analysis.
 
 ---
 
@@ -464,10 +318,11 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 | Day 57 | 15 Days of Learning SQL | HackerRank | CTEs, Window Functions, Date Analysis |
 | Day 58 | Draw The Triangle 1 | HackerRank | Pattern Generation, String Functions |
 | Day 59 | Draw The Triangle 2 | HackerRank | WITH RECURSIVE, REPEAT(), Pattern Generation |
-| Day 60 | SELECT Statement Challenge | CodeChef | SELECT, Data Retrieval, Query Fundamentals |
+| Day 60 | SELECT Statement Challenge | CodeChef | SELECT, Data Retrieval |
 | Day 61 | High Price of Products | CodeChef | Product Prices, Filtering, Comparison |
 | Day 62 | Average Salary | CodeChef | AVG(), Aggregate Functions, Salary Analysis |
-| Day 63 | Locate People | SQL Challenge | LIKE, Wildcards, Pattern Matching, Filtering |
+| Day 63 | Locate People | SQL Challenge | LIKE, Wildcards, Pattern Matching |
+| Day 64 | Distinct Companies | SQL Challenge | DISTINCT, Unique Records, Duplicate Removal |
 
 ---
 
@@ -479,7 +334,6 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 - 📊 Data Aggregation
 - 🔢 Mathematical Functions
 - 🔤 String Handling
-- 🔍 Regular Expressions
 - 🔎 Pattern Matching
 - 🔗 JOIN Operations
 - 🔄 Self JOIN Operations
@@ -493,7 +347,6 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 - 🌎 Latitude & Longitude Processing
 - 📏 Distance Calculation
 - 🔢 Decimal Precision
-- 📈 Statistical Analysis
 - 💰 Salary Comparison
 - 💰 Product Price Analysis
 - 📊 Average Salary Analysis
@@ -501,10 +354,6 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
 - 📊 Submission Statistics
-- 👁️ View Statistics
-- 🔢 Prime Number Identification
-- 🧮 Divisibility Logic
-- 🌳 Hierarchical Data Analysis
 - 🪟 Window Functions
 - 🔄 SQL Pivoting
 - 📅 Date-Based Analysis
@@ -516,11 +365,8 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 - 🔤 String Repetition
 - 📋 SELECT Statements
 - 🔎 Data Retrieval
-- 💰 Product Analysis
 - ⚖️ Comparison Operators
-- 🧹 Output Formatting
 - 🚀 Advanced SQL Querying
-- 🎯 Technical Interview Preparation
 
 ---
 
@@ -528,74 +374,21 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 
 ## 🎯 Completed Days
 
-- ✅ Day 1
-- ✅ Day 2
-- ✅ Day 3
-- ✅ Day 4
-- ✅ Day 5
-- ✅ Day 6
-- ✅ Day 7
-- ✅ Day 8
-- ✅ Day 9
-- ✅ Day 10
-- ✅ Day 11
-- ✅ Day 12
-- ✅ Day 13
-- ✅ Day 14
-- ✅ Day 15
-- ✅ Day 16
-- ✅ Day 17
-- ✅ Day 18
-- ✅ Day 19
-- ✅ Day 20
-- ✅ Day 21
-- ✅ Day 22
-- ✅ Day 23
-- ✅ Day 24
-- ✅ Day 25
-- ✅ Day 26
-- ✅ Day 27
-- ✅ Day 28
-- ✅ Day 29
-- ✅ Day 30
-- ✅ Day 31
-- ✅ Day 32
-- ✅ Day 33
-- ✅ Day 34
-- ✅ Day 35
-- ✅ Day 36
-- ✅ Day 37
-- ✅ Day 38
-- ✅ Day 39
-- ✅ Day 40
-- ✅ Day 41
-- ✅ Day 42
-- ✅ Day 43
-- ✅ Day 44 🎉
-- ✅ Day 45 🎉🔥
-- ✅ Day 46 🎉🔥
-- ✅ Day 47 🎉🏆🔥
-- ✅ Day 48 🎉🪄🔥
-- ✅ Day 49 🎉🏆🔥
-- ✅ Day 50 🎉🏆🔥
-- ✅ Day 51 🎉🏆🔥
-- ✅ Day 52 🎉🏆🔥🔗
-- ✅ Day 53 🎉🔄🔥
-- ✅ Day 54 🎉💻🔥
-- ✅ Day 55 🎉🔢🔥
-- ✅ Day 56 🎉🔄📊🔥
-- ✅ Day 57 🎉📅🏆🔥
-- ✅ Day 58 🎉🔺🔥
-- ✅ Day 59 🎉🔺🔥
-- ✅ Day 60 🎉🔍🔥
-- ✅ Day 61 🎉💰🔥
-- ✅ Day 62 🎉📊💰🔥
-- ✅ Day 63 🎉📍🔍🔥
+- ✅ Day 1–10
+- ✅ Day 11–20
+- ✅ Day 21–30
+- ✅ Day 31–40
+- ✅ Day 41–50
+- ✅ Day 51–60
+- ✅ Day 61
+- ✅ Day 62
+- ✅ Day 63
+- ✅ Day 64 🏢🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 64 → Day 99
-- 🎯 Day 100 → Final Goal
+- ⏳ Day 65 → Day 99
+- 🏆 Day 100 → Final Goal
 
 ---
 
@@ -603,27 +396,27 @@ This challenge helped me practice using the `LIKE` operator with a wildcard to r
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **63 / 100** |
-| 💻 Challenges Solved | **63** |
+| 📅 Days Completed | **64 / 100** |
+| 💻 Challenges Solved | **64** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank & CodeChef** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **63% Complete** 🚀 |
-| 🔥 Current Streak | **63 Days** |
-| ⏳ Days Remaining | **37 Days** |
+| 📈 Progress | **64% Complete** 🚀 |
+| 🔥 Current Streak | **64 Days** |
+| ⏳ Days Remaining | **36 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Locate People** |
-| 🔍 Latest Topic | **LIKE & Pattern Matching** |
+| 📋 Latest Challenge | **Distinct Companies** |
+| 🔍 Latest Topic | **DISTINCT & Unique Company Data** |
 
 ---
 
 # 🔥 Current Streak
 
-## **63 Days of SQL Practice Completed! 🎉🔥🚀**
+## **64 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **63 days down, 37 more to go!**
+> **64 days down, 36 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, regular expressions, pattern matching, subqueries, JOINs, self joins, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product price analysis, average salary calculation, leaderboard analysis, symmetric pair matching, multi-table querying, mathematical reasoning, window functions, pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -648,6 +441,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 61 | ✅ Completed 🎉💰🔥 |
 | 🎯 Day 62 | ✅ Completed 🎉📊💰🔥 |
 | 🎯 Day 63 | ✅ Completed 🎉📍🔍🔥 |
+| 🎯 Day 64 | ✅ Completed 🎉🏢🔍🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -683,11 +477,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 63**  
 ████████████████████ 100% ✅
 
+**Day 64**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **63%**
+████████████░░░░░░░░ **64%**
 
-### **63 / 100 Days Completed**
+### **64 / 100 Days Completed**
 
 ---
 
@@ -701,10 +498,10 @@ My daily learning process includes:
 4. 🔗 Understand relationships between tables
 5. 🔄 Identify matching and related records
 6. ✍️ Write the SQL query
-7. 🧪 Test the query on HackerRank or CodeChef
+7. 🧪 Test the query
 8. 🔍 Understand the result
 9. 🛠️ Debug errors when required
-10. 📊 Analyze the data and query logic
+10. 📊 Analyze the query logic
 11. 📂 Save the SQL solution in this repository
 12. 📸 Add the successful submission screenshot
 13. 📝 Review the SQL concepts used
@@ -726,40 +523,31 @@ It is also about:
 - 🧩 Improving problem-solving skills
 - 🗄️ Understanding databases
 - 📈 Learning data analysis
-- 🔢 Working with numerical data
-- 📍 Working with geographic data
 - 🔗 Understanding relational data
-- 🔄 Understanding symmetric relationships
+- 🔄 Understanding relationships between records
 - 🧠 Practicing subqueries
-- 🔀 Using conditional SQL logic
 - 📊 Understanding aggregation
 - 🏆 Analyzing leaderboard data
 - 💰 Comparing related data
-- 💰 Analyzing product prices
 - 📊 Calculating averages
-- 📊 Analyzing submission and view statistics
-- 🔢 Applying mathematical logic
-- 🧮 Identifying prime numbers using SQL
 - 🪟 Practicing window functions
 - 🔄 Learning SQL pivoting
 - 📅 Analyzing date-based data
-- 👥 Tracking daily user activity
-- 🏆 Applying ranking and tie-breaking logic
-- 🧩 Using Common Table Expressions
+- 👥 Tracking user activity
+- 🏆 Applying ranking logic
+- 🧩 Using CTEs
 - 🔁 Practicing recursive queries
-- ⭐ Generating structured patterns
-- 🔤 Practicing SQL string manipulation
+- ⭐ Generating patterns
 - 🔎 Practicing pattern matching
-- 📋 Practicing SELECT statements
+- 📌 Practicing DISTINCT
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
-- 💼 Preparing for software and data-related opportunities
 
 ---
 
 # 🎯 Why This Repository?
 
-This repository documents my **SQL learning journey** and showcases my daily progress while solving SQL challenges on **HackerRank and CodeChef**.
+This repository documents my **SQL learning journey** and showcases my daily progress while solving SQL challenges.
 
 It serves as a portfolio of my **SQL and database skills** and demonstrates my commitment to continuous learning through the **#100DaysOfSQL** challenge.
 
@@ -771,49 +559,19 @@ Every challenge helps me improve my:
 - 📊 Data Analysis
 - 🔍 Data Filtering
 - 📈 Data Aggregation
-- 🔢 Mathematical Processing
 - 🔤 String Handling
 - 🔎 Pattern Matching
-- 🔍 Regular Expressions
 - 🧠 Subquery Skills
 - 🔗 JOIN Operations
-- 🔄 Self JOIN Operations
 - 🔀 Conditional Logic
 - 📌 DISTINCT
 - 📊 GROUP BY
 - 📌 HAVING
-- 📍 Geographic Data Analysis
-- 🌎 Latitude & Longitude Processing
-- 📏 Distance Calculation
-- 🔢 Decimal Precision
-- 📈 Statistical Analysis
-- 💰 Salary Comparison
-- 💰 Product Price Analysis
-- 📊 Average Salary Analysis
-- 🔄 Symmetric Pair Analysis
-- 🔗 Multi-Table Analysis
-- 🏆 Leaderboard Analysis
-- 📊 Submission Statistics
-- 👁️ View Statistics
-- 🔢 Prime Number Identification
-- 🧮 Divisibility Logic
-- 🧩 Relational Data Understanding
-- 🌳 Hierarchical Data Analysis
 - 🪟 Window Functions
 - 🔄 SQL Pivoting
 - 📅 Date-Based Analysis
-- 👥 Daily Activity Tracking
-- 🏆 Ranking and Tie-Breaking
-- 🧩 Common Table Expressions
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
-- 🔤 String Repetition
-- 📋 SELECT Statements
-- 🔎 Data Retrieval
-- 💰 Product Analysis
-- ⚖️ Comparison Operators
-- 🧹 Output Formatting
-- 🚀 Advanced SQL Querying
 - 💼 Technical Interview Preparation
 
 ---
@@ -829,7 +587,6 @@ The upcoming days will focus on more SQL concepts, including:
 - 🔹 Correlated Subqueries
 - 🔹 Advanced CASE Statements
 - 🔹 Advanced GROUP BY
-- 🔹 HAVING
 - 🔹 Advanced String Functions
 - 🔹 Regular Expressions
 - 🔹 Date & Time Functions
@@ -841,9 +598,7 @@ The upcoming days will focus on more SQL concepts, including:
 - 🔹 Advanced Multi-Table Queries
 - 🔹 Complex Data Comparisons
 - 🔹 Advanced Data Processing
-- 🔹 Pattern Generation
 - 🔹 Recursive Query Techniques
-- 🔹 Complex Problem Solving
 - 🔹 Advanced Database Concepts
 
 ---
@@ -883,7 +638,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#DecimalPrecision` `#Statistics` `#Median` `#GeographicData` `#Latitude` `#Longitude` `#DistanceCalculation` `#RelationalData` `#HierarchicalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#ViewStatistics` `#PrimeNumbers` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding` `#Programming`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -893,12 +648,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**63 Days Completed ✅ | 37 Days Remaining ⏳ | 100 Days Goal 🎯**
+**64 Days Completed ✅ | 36 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 63 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 64 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
