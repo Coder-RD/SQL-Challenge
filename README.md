@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-64%25-success?style=for-the-badge" alt="64% Progress">
+  <img src="https://img.shields.io/badge/Progress-65%25-success?style=for-the-badge" alt="65% Progress">
 </p>
 
 <p align="center">
@@ -18,7 +18,7 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank, CodeChef, and SQL practice challenges**, where I solve SQL problems to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities.
+This repository documents my daily SQL programming journey through **HackerRank, CodeChef, and SQL practice challenges**. The goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
 Throughout this challenge, I am practicing concepts such as:
 
@@ -55,6 +55,7 @@ Throughout this challenge, I am practicing concepts such as:
 - Activity tracking
 - Symmetric pairs
 - Pattern generation
+- Unique record retrieval
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -114,6 +115,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 👥 Activity Analysis | Daily Submission Tracking |
 | 🔁 Recursive Queries | WITH RECURSIVE |
 | ⭐ Pattern Generation | REPEAT() & String Construction |
+| 🏢 Unique Data | DISTINCT & Duplicate Removal |
 
 ---
 
@@ -185,8 +187,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day62-SQL/  
 ├── 📁 Day63-SQL/  
 ├── 📁 Day64-SQL/  
-│   ├── 📄 Distinct Companies.sql  
-│   └── 📸 Screenshot 2026-09-28 072120.png  
+├── 📁 Day65-SQL/  
+│   ├── 📄 Fiction Collection Size.sql  
+│   └── 📸 Screenshot 2026-09-29 075920.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -260,51 +263,55 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 62 | Average Salary | CodeChef | Completed 📊💰🔥 |
 | ✅ Day 63 | Locate People | SQL Challenge | Completed 📍🔍🔥 |
 | ✅ Day 64 | Distinct Companies | SQL Challenge | Completed 🏢🔍🔥 |
-| ⏳ Day 65–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
+| ✅ Day 65 | Fiction Collection Size | SQL Challenge | Completed 📚🔍🔥 |
+| ⏳ Day 66–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 64 – Distinct Companies
+# 🆕 Day 65 – Fiction Collection Size
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 64
-- 🏢 **Challenge:** Distinct Companies
-- 🔍 **Topic:** Unique Records & Duplicate Removal
-- 📌 **SQL Keyword:** DISTINCT
+- 📅 **Day:** 65
+- 📚 **Challenge:** Fiction Collection Size
+- 🔍 **Topic:** Counting Records with Conditions
+- 📌 **SQL Functions:** COUNT()
+- 📌 **SQL Clause:** WHERE
+- 🏷️ **Column Alias:** fiction_count
 - ✅ **Status:** Completed
 
 ### 🎯 Challenge Objective
 
-The Day 64 challenge focuses on retrieving **unique company records** from the available data.
+The Day 65 challenge focuses on finding the **total number of books belonging to the Fiction genre**.
 
-This challenge strengthens my understanding of the `DISTINCT` keyword, which is used to eliminate duplicate values from SQL query results and return unique records.
+The solution uses the `COUNT()` aggregate function together with the `WHERE` clause to filter books based on their genre.
 
 ### 💡 Concepts Practiced
 
 - SELECT
-- DISTINCT
-- Unique record retrieval
-- Duplicate removal
-- Data filtering
-- Column selection
-- Data retrieval
-- MySQL query writing
+- COUNT()
+- WHERE
+- Aggregate Functions
+- Conditional Filtering
+- Column Aliasing
+- Data Retrieval
+- Record Counting
+- MySQL Query Writing
 
 ### 📂 Files
 
-- `Distinct Companies.sql`
-- `Screenshot 2026-09-28 072120.png`
+- `Fiction Collection Size.sql`
+- `Screenshot 2026-09-29 075920.png`
 
 ### 🎓 Learning Outcome
 
-Day 64 strengthened my understanding of retrieving unique data using SQL.
+Day 65 strengthened my understanding of using aggregate functions with filtering conditions.
 
-By solving this challenge, I practiced using `DISTINCT` to work with company-related data and avoid duplicate results. This is an important SQL concept for clean data retrieval and database analysis.
+By solving this challenge, I practiced counting records that satisfy a specific condition and learned how to return the result using the required column alias `fiction_count`.
 
 ---
 
@@ -323,6 +330,7 @@ By solving this challenge, I practiced using `DISTINCT` to work with company-rel
 | Day 62 | Average Salary | CodeChef | AVG(), Aggregate Functions, Salary Analysis |
 | Day 63 | Locate People | SQL Challenge | LIKE, Wildcards, Pattern Matching |
 | Day 64 | Distinct Companies | SQL Challenge | DISTINCT, Unique Records, Duplicate Removal |
+| Day 65 | Fiction Collection Size | SQL Challenge | COUNT(), WHERE, Conditional Filtering |
 
 ---
 
@@ -366,6 +374,7 @@ By solving this challenge, I practiced using `DISTINCT` to work with company-rel
 - 📋 SELECT Statements
 - 🔎 Data Retrieval
 - ⚖️ Comparison Operators
+- 🔢 Record Counting
 - 🚀 Advanced SQL Querying
 
 ---
@@ -383,11 +392,12 @@ By solving this challenge, I practiced using `DISTINCT` to work with company-rel
 - ✅ Day 61
 - ✅ Day 62
 - ✅ Day 63
-- ✅ Day 64 🏢🔥
+- ✅ Day 64
+- ✅ Day 65 📚🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 65 → Day 99
+- ⏳ Day 66 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -396,25 +406,25 @@ By solving this challenge, I practiced using `DISTINCT` to work with company-rel
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **64 / 100** |
-| 💻 Challenges Solved | **64** |
+| 📅 Days Completed | **65 / 100** |
+| 💻 Challenges Solved | **65** |
 | 🗄️ Language | **SQL** |
-| 🏆 Practice Platforms | **HackerRank & CodeChef** |
+| 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **64% Complete** 🚀 |
-| 🔥 Current Streak | **64 Days** |
-| ⏳ Days Remaining | **36 Days** |
+| 📈 Progress | **65% Complete** 🚀 |
+| 🔥 Current Streak | **65 Days** |
+| ⏳ Days Remaining | **35 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Distinct Companies** |
-| 🔍 Latest Topic | **DISTINCT & Unique Company Data** |
+| 📋 Latest Challenge | **Fiction Collection Size** |
+| 🔍 Latest Topic | **COUNT(), WHERE & Conditional Filtering** |
 
 ---
 
 # 🔥 Current Streak
 
-## **64 Days of SQL Practice Completed! 🎉🔥🚀**
+## **65 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **64 days down, 36 more to go!**
+> **65 days down, 35 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
@@ -442,6 +452,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 62 | ✅ Completed 🎉📊💰🔥 |
 | 🎯 Day 63 | ✅ Completed 🎉📍🔍🔥 |
 | 🎯 Day 64 | ✅ Completed 🎉🏢🔍🔥 |
+| 🎯 Day 65 | ✅ Completed 🎉📚🔍🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -480,11 +491,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 64**  
 ████████████████████ 100% ✅
 
+**Day 65**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-████████████░░░░░░░░ **64%**
+█████████████░░░░░░░ **65%**
 
-### **64 / 100 Days Completed**
+### **65 / 100 Days Completed**
 
 ---
 
@@ -540,6 +554,7 @@ It is also about:
 - ⭐ Generating patterns
 - 🔎 Practicing pattern matching
 - 📌 Practicing DISTINCT
+- 🔢 Counting filtered records
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -572,6 +587,7 @@ Every challenge helps me improve my:
 - 📅 Date-Based Analysis
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
+- 🔢 Record Counting
 - 💼 Technical Interview Preparation
 
 ---
@@ -610,7 +626,7 @@ Every day, I solve a new SQL problem and add the solution to this repository.
 Each day's folder may contain:
 
 - 💻 SQL Solution
-- 📸 HackerRank or CodeChef Submission Screenshot
+- 📸 HackerRank, CodeChef, or SQL Challenge Submission Screenshot
 
 This repository serves as a complete record of my **100 Days of SQL learning journey**.
 
@@ -638,7 +654,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -648,12 +664,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**64 Days Completed ✅ | 36 Days Remaining ⏳ | 100 Days Goal 🎯**
+**65 Days Completed ✅ | 35 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 64 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 65 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
