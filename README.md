@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-65%25-success?style=for-the-badge" alt="65% Progress">
+  <img src="https://img.shields.io/badge/Progress-66%25-success?style=for-the-badge" alt="66% Progress">
 </p>
 
 <p align="center">
@@ -56,6 +56,9 @@ Throughout this challenge, I am practicing concepts such as:
 - Symmetric pairs
 - Pattern generation
 - Unique record retrieval
+- Comparison operators
+- Conditional filtering
+- Record counting
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -188,8 +191,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day63-SQL/  
 ├── 📁 Day64-SQL/  
 ├── 📁 Day65-SQL/  
-│   ├── 📄 Fiction Collection Size.sql  
-│   └── 📸 Screenshot 2026-09-29 075920.png  
+├── 📁 Day66-SQL/  
+│   ├── 📄 List of Movies with Ratings.sql  
+│   └── 📸 Screenshot 2026-09-30 074858.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -264,54 +268,54 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 63 | Locate People | SQL Challenge | Completed 📍🔍🔥 |
 | ✅ Day 64 | Distinct Companies | SQL Challenge | Completed 🏢🔍🔥 |
 | ✅ Day 65 | Fiction Collection Size | SQL Challenge | Completed 📚🔍🔥 |
-| ⏳ Day 66–99 | Upcoming Challenges | HackerRank / CodeChef | Pending |
+| ✅ Day 66 | List of Movies with Ratings | SQL Challenge | Completed 🎬🔍🔥 |
+| ⏳ Day 67–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 65 – Fiction Collection Size
+# 🆕 Day 66 – List of Movies with Ratings
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 65
-- 📚 **Challenge:** Fiction Collection Size
-- 🔍 **Topic:** Counting Records with Conditions
-- 📌 **SQL Functions:** COUNT()
+- 📅 **Day:** 66
+- 🎬 **Challenge:** List of Movies with Ratings
+- 🔍 **Topic:** Filtering Records Using Rating Conditions
 - 📌 **SQL Clause:** WHERE
-- 🏷️ **Column Alias:** fiction_count
+- ⚖️ **Operators:** `>` and `<`
+- 🎯 **Expected Column:** Movie_name
 - ✅ **Status:** Completed
 
 ### 🎯 Challenge Objective
 
-The Day 65 challenge focuses on finding the **total number of books belonging to the Fiction genre**.
+The Day 66 challenge focuses on selecting movie names where the movie rating is **greater than 7 but less than 9**.
 
-The solution uses the `COUNT()` aggregate function together with the `WHERE` clause to filter books based on their genre.
+The solution uses the `WHERE` clause with two comparison conditions to filter the records according to the required rating range.
 
 ### 💡 Concepts Practiced
 
 - SELECT
-- COUNT()
 - WHERE
-- Aggregate Functions
+- Comparison Operators
+- AND Operator
 - Conditional Filtering
-- Column Aliasing
 - Data Retrieval
-- Record Counting
+- Numeric Filtering
 - MySQL Query Writing
 
 ### 📂 Files
 
-- `Fiction Collection Size.sql`
-- `Screenshot 2026-09-29 075920.png`
+- `List of Movies with Ratings.sql`
+- `Screenshot 2026-09-30 074858.png`
 
 ### 🎓 Learning Outcome
 
-Day 65 strengthened my understanding of using aggregate functions with filtering conditions.
+Day 66 strengthened my understanding of filtering records using multiple conditions.
 
-By solving this challenge, I practiced counting records that satisfy a specific condition and learned how to return the result using the required column alias `fiction_count`.
+By solving this challenge, I practiced using comparison operators with the `AND` operator to retrieve only the required movie names based on their ratings.
 
 ---
 
@@ -331,6 +335,7 @@ By solving this challenge, I practiced counting records that satisfy a specific 
 | Day 63 | Locate People | SQL Challenge | LIKE, Wildcards, Pattern Matching |
 | Day 64 | Distinct Companies | SQL Challenge | DISTINCT, Unique Records, Duplicate Removal |
 | Day 65 | Fiction Collection Size | SQL Challenge | COUNT(), WHERE, Conditional Filtering |
+| Day 66 | List of Movies with Ratings | SQL Challenge | WHERE, AND, Comparison Operators, Numeric Filtering |
 
 ---
 
@@ -394,10 +399,11 @@ By solving this challenge, I practiced counting records that satisfy a specific 
 - ✅ Day 63
 - ✅ Day 64
 - ✅ Day 65 📚🔥
+- ✅ Day 66 🎬🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 66 → Day 99
+- ⏳ Day 67 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -406,25 +412,25 @@ By solving this challenge, I practiced counting records that satisfy a specific 
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **65 / 100** |
-| 💻 Challenges Solved | **65** |
+| 📅 Days Completed | **66 / 100** |
+| 💻 Challenges Solved | **66** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **65% Complete** 🚀 |
-| 🔥 Current Streak | **65 Days** |
-| ⏳ Days Remaining | **35 Days** |
+| 📈 Progress | **66% Complete** 🚀 |
+| 🔥 Current Streak | **66 Days** |
+| ⏳ Days Remaining | **34 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Fiction Collection Size** |
-| 🔍 Latest Topic | **COUNT(), WHERE & Conditional Filtering** |
+| 📋 Latest Challenge | **List of Movies with Ratings** |
+| 🔍 Latest Topic | **WHERE, AND & Comparison Operators** |
 
 ---
 
 # 🔥 Current Streak
 
-## **65 Days of SQL Practice Completed! 🎉🔥🚀**
+## **66 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **65 days down, 35 more to go!**
+> **66 days down, 34 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
@@ -453,6 +459,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 63 | ✅ Completed 🎉📍🔍🔥 |
 | 🎯 Day 64 | ✅ Completed 🎉🏢🔍🔥 |
 | 🎯 Day 65 | ✅ Completed 🎉📚🔍🔥 |
+| 🎯 Day 66 | ✅ Completed 🎉🎬🔍🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -494,11 +501,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 65**  
 ████████████████████ 100% ✅
 
+**Day 66**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **65%**
+█████████████░░░░░░░ **66%**
 
-### **65 / 100 Days Completed**
+### **66 / 100 Days Completed**
 
 ---
 
@@ -555,6 +565,8 @@ It is also about:
 - 🔎 Practicing pattern matching
 - 📌 Practicing DISTINCT
 - 🔢 Counting filtered records
+- ⚖️ Applying comparison operators
+- 🎬 Filtering records using numeric conditions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -588,6 +600,7 @@ Every challenge helps me improve my:
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
 - 🔢 Record Counting
+- ⚖️ Comparison-Based Filtering
 - 💼 Technical Interview Preparation
 
 ---
@@ -654,7 +667,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -664,12 +677,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**65 Days Completed ✅ | 35 Days Remaining ⏳ | 100 Days Goal 🎯**
+**66 Days Completed ✅ | 34 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ 🎬 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 65 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 66 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
