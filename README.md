@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-66%25-success?style=for-the-badge" alt="66% Progress">
+  <img src="https://img.shields.io/badge/Progress-67%25-success?style=for-the-badge" alt="67% Progress">
 </p>
 
 <p align="center">
@@ -36,6 +36,7 @@ Throughout this challenge, I am practicing concepts such as:
 - Mathematical functions
 - ROUND() and MOD()
 - Decimal precision
+- NULL value handling
 - Subqueries
 - JOINs
 - Self JOINs
@@ -119,6 +120,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🔁 Recursive Queries | WITH RECURSIVE |
 | ⭐ Pattern Generation | REPEAT() & String Construction |
 | 🏢 Unique Data | DISTINCT & Duplicate Removal |
+| ❌ NULL Handling | IS NULL & IS NOT NULL |
 
 ---
 
@@ -192,8 +194,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day64-SQL/  
 ├── 📁 Day65-SQL/  
 ├── 📁 Day66-SQL/  
-│   ├── 📄 List of Movies with Ratings.sql  
-│   └── 📸 Screenshot 2026-09-30 074858.png  
+├── 📁 Day67-SQL/  
+│   ├── 📄 Handling NULL Values.sql  
+│   └── 📸 Screenshot 2026-10-01 075111.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -269,53 +272,53 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 64 | Distinct Companies | SQL Challenge | Completed 🏢🔍🔥 |
 | ✅ Day 65 | Fiction Collection Size | SQL Challenge | Completed 📚🔍🔥 |
 | ✅ Day 66 | List of Movies with Ratings | SQL Challenge | Completed 🎬🔍🔥 |
-| ⏳ Day 67–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| ✅ Day 67 | Handling NULL Values | SQL Challenge | Completed ❌🔍🔥 |
+| ⏳ Day 68–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 66 – List of Movies with Ratings
+# 🆕 Day 67 – Handling NULL Values
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 66
-- 🎬 **Challenge:** List of Movies with Ratings
-- 🔍 **Topic:** Filtering Records Using Rating Conditions
+- 📅 **Day:** 67
+- 📚 **Challenge:** Handling NULL Values
+- 🔍 **Topic:** Handling NULL Values
 - 📌 **SQL Clause:** WHERE
-- ⚖️ **Operators:** `>` and `<`
-- 🎯 **Expected Column:** Movie_name
+- ❌ **SQL Condition:** IS NULL
+- 🎯 **Expected Columns:** book_id, title, author, published_year
 - ✅ **Status:** Completed
 
 ### 🎯 Challenge Objective
 
-The Day 66 challenge focuses on selecting movie names where the movie rating is **greater than 7 but less than 9**.
+The Day 67 challenge focuses on retrieving books that have a **NULL rating**.
 
-The solution uses the `WHERE` clause with two comparison conditions to filter the records according to the required rating range.
+The solution uses the `WHERE` clause with the `IS NULL` condition to identify records where the rating value is missing.
 
 ### 💡 Concepts Practiced
 
 - SELECT
 - WHERE
-- Comparison Operators
-- AND Operator
+- IS NULL
+- NULL Value Handling
 - Conditional Filtering
 - Data Retrieval
-- Numeric Filtering
 - MySQL Query Writing
 
 ### 📂 Files
 
-- `List of Movies with Ratings.sql`
-- `Screenshot 2026-09-30 074858.png`
+- `Handling NULL Values.sql`
+- `Screenshot 2026-10-01 075111.png`
 
 ### 🎓 Learning Outcome
 
-Day 66 strengthened my understanding of filtering records using multiple conditions.
+Day 67 strengthened my understanding of handling missing values in SQL.
 
-By solving this challenge, I practiced using comparison operators with the `AND` operator to retrieve only the required movie names based on their ratings.
+By solving this challenge, I practiced using `IS NULL` to retrieve records where a specific column does not contain a value.
 
 ---
 
@@ -336,6 +339,7 @@ By solving this challenge, I practiced using comparison operators with the `AND`
 | Day 64 | Distinct Companies | SQL Challenge | DISTINCT, Unique Records, Duplicate Removal |
 | Day 65 | Fiction Collection Size | SQL Challenge | COUNT(), WHERE, Conditional Filtering |
 | Day 66 | List of Movies with Ratings | SQL Challenge | WHERE, AND, Comparison Operators, Numeric Filtering |
+| Day 67 | Handling NULL Values | SQL Challenge | IS NULL, NULL Handling, WHERE, Conditional Filtering |
 
 ---
 
@@ -379,6 +383,7 @@ By solving this challenge, I practiced using comparison operators with the `AND`
 - 📋 SELECT Statements
 - 🔎 Data Retrieval
 - ⚖️ Comparison Operators
+- ❌ NULL Value Handling
 - 🔢 Record Counting
 - 🚀 Advanced SQL Querying
 
@@ -400,10 +405,11 @@ By solving this challenge, I practiced using comparison operators with the `AND`
 - ✅ Day 64
 - ✅ Day 65 📚🔥
 - ✅ Day 66 🎬🔥
+- ✅ Day 67 ❌🔍🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 67 → Day 99
+- ⏳ Day 68 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -412,27 +418,27 @@ By solving this challenge, I practiced using comparison operators with the `AND`
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **66 / 100** |
-| 💻 Challenges Solved | **66** |
+| 📅 Days Completed | **67 / 100** |
+| 💻 Challenges Solved | **67** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **66% Complete** 🚀 |
-| 🔥 Current Streak | **66 Days** |
-| ⏳ Days Remaining | **34 Days** |
+| 📈 Progress | **67% Complete** 🚀 |
+| 🔥 Current Streak | **67 Days** |
+| ⏳ Days Remaining | **33 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **List of Movies with Ratings** |
-| 🔍 Latest Topic | **WHERE, AND & Comparison Operators** |
+| 📋 Latest Challenge | **Handling NULL Values** |
+| 🔍 Latest Topic | **IS NULL & NULL Value Handling** |
 
 ---
 
 # 🔥 Current Streak
 
-## **66 Days of SQL Practice Completed! 🎉🔥🚀**
+## **67 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **66 days down, 34 more to go!**
+> **67 days down, 33 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -460,6 +466,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 64 | ✅ Completed 🎉🏢🔍🔥 |
 | 🎯 Day 65 | ✅ Completed 🎉📚🔍🔥 |
 | 🎯 Day 66 | ✅ Completed 🎉🎬🔍🔥 |
+| 🎯 Day 67 | ✅ Completed 🎉❌🔍🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -504,11 +511,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 66**  
 ████████████████████ 100% ✅
 
+**Day 67**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **66%**
+█████████████░░░░░░░ **67%**
 
-### **66 / 100 Days Completed**
+### **67 / 100 Days Completed**
 
 ---
 
@@ -566,6 +576,7 @@ It is also about:
 - 📌 Practicing DISTINCT
 - 🔢 Counting filtered records
 - ⚖️ Applying comparison operators
+- ❌ Handling NULL values
 - 🎬 Filtering records using numeric conditions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
@@ -599,6 +610,7 @@ Every challenge helps me improve my:
 - 📅 Date-Based Analysis
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
+- ❌ NULL Value Handling
 - 🔢 Record Counting
 - ⚖️ Comparison-Based Filtering
 - 💼 Technical Interview Preparation
@@ -667,7 +679,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -677,12 +689,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**66 Days Completed ✅ | 34 Days Remaining ⏳ | 100 Days Goal 🎯**
+**67 Days Completed ✅ | 33 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ 🎬 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 66 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 67 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
