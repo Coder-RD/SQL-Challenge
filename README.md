@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-67%25-success?style=for-the-badge" alt="67% Progress">
+  <img src="https://img.shields.io/badge/Progress-68%25-success?style=for-the-badge" alt="68% Progress">
 </p>
 
 <p align="center">
@@ -50,6 +50,7 @@ Throughout this challenge, I am practicing concepts such as:
 - Latitude and longitude
 - Distance calculation
 - Salary analysis
+- Employee data analysis
 - Product analysis
 - Leaderboard analysis
 - Submission statistics
@@ -60,6 +61,7 @@ Throughout this challenge, I am practicing concepts such as:
 - Comparison operators
 - Conditional filtering
 - Record counting
+- Sorting and ordering
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -89,6 +91,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🔄 Analyze symmetric pairs
 - 🪟 Practice window functions
 - 🔁 Practice recursive SQL queries
+- 💰 Practice salary and employee data analysis
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
 - 🌱 Learn consistently through daily practice
@@ -121,6 +124,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ⭐ Pattern Generation | REPEAT() & String Construction |
 | 🏢 Unique Data | DISTINCT & Duplicate Removal |
 | ❌ NULL Handling | IS NULL & IS NOT NULL |
+| 💰 Salary Analysis | Salary Filtering & Sorting |
+| 👨‍💼 Employee Analysis | Employee Data Retrieval |
 
 ---
 
@@ -197,6 +202,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day67-SQL/  
 │   ├── 📄 Handling NULL Values.sql  
 │   └── 📸 Screenshot 2026-10-01 075111.png  
+├── 📁 Day68-SQL/  
+│   ├── 📄 Salary of Employees.sql  
+│   └── 📸 Screenshot 2026-10-02 081530.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -273,52 +281,62 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 65 | Fiction Collection Size | SQL Challenge | Completed 📚🔍🔥 |
 | ✅ Day 66 | List of Movies with Ratings | SQL Challenge | Completed 🎬🔍🔥 |
 | ✅ Day 67 | Handling NULL Values | SQL Challenge | Completed ❌🔍🔥 |
-| ⏳ Day 68–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| ✅ Day 68 | Salary of Employees | SQL Challenge | Completed 💰👨‍💼🔥 |
+| ⏳ Day 69–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 67 – Handling NULL Values
+# 🆕 Day 68 – Salary of Employees
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 67
-- 📚 **Challenge:** Handling NULL Values
-- 🔍 **Topic:** Handling NULL Values
-- 📌 **SQL Clause:** WHERE
-- ❌ **SQL Condition:** IS NULL
-- 🎯 **Expected Columns:** book_id, title, author, published_year
+- 📅 **Day:** 68
+- 📚 **Challenge:** Salary of Employees
+- 🔍 **Topic:** Employee Salary Analysis
+- 📌 **SQL Clauses:** WHERE, ORDER BY
+- 👨‍💼 **Category:** Full-Time
+- 📊 **Sorting:** Salary in Descending Order
+- 🎯 **Expected Columns:** employee_name, company, salary
 - ✅ **Status:** Completed
 
 ### 🎯 Challenge Objective
 
-The Day 67 challenge focuses on retrieving books that have a **NULL rating**.
+The Day 68 challenge focuses on retrieving employee information for employees belonging to the **Full-Time** category.
 
-The solution uses the `WHERE` clause with the `IS NULL` condition to identify records where the rating value is missing.
+The query retrieves:
+
+- Employee name
+- Company
+- Salary
+
+The results are filtered using the `WHERE` clause and sorted by salary in **descending order** using `ORDER BY ... DESC`.
 
 ### 💡 Concepts Practiced
 
 - SELECT
 - WHERE
-- IS NULL
-- NULL Value Handling
+- ORDER BY
+- DESC
 - Conditional Filtering
-- Data Retrieval
+- Salary Analysis
+- Employee Data Retrieval
+- Sorting Records
 - MySQL Query Writing
 
 ### 📂 Files
 
-- `Handling NULL Values.sql`
-- `Screenshot 2026-10-01 075111.png`
+- `Salary of Employees.sql`
+- `Screenshot 2026-10-02 081530.png`
 
 ### 🎓 Learning Outcome
 
-Day 67 strengthened my understanding of handling missing values in SQL.
+Day 68 strengthened my understanding of filtering and sorting employee records in SQL.
 
-By solving this challenge, I practiced using `IS NULL` to retrieve records where a specific column does not contain a value.
+By solving this challenge, I practiced selecting specific columns, filtering employees based on their category, and ordering salary values from highest to lowest.
 
 ---
 
@@ -340,6 +358,7 @@ By solving this challenge, I practiced using `IS NULL` to retrieve records where
 | Day 65 | Fiction Collection Size | SQL Challenge | COUNT(), WHERE, Conditional Filtering |
 | Day 66 | List of Movies with Ratings | SQL Challenge | WHERE, AND, Comparison Operators, Numeric Filtering |
 | Day 67 | Handling NULL Values | SQL Challenge | IS NULL, NULL Handling, WHERE, Conditional Filtering |
+| Day 68 | Salary of Employees | SQL Challenge | WHERE, ORDER BY, DESC, Salary Analysis |
 
 ---
 
@@ -367,6 +386,7 @@ By solving this challenge, I practiced using `IS NULL` to retrieve records where
 - 💰 Salary Comparison
 - 💰 Product Price Analysis
 - 📊 Average Salary Analysis
+- 👨‍💼 Employee Data Analysis
 - 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
@@ -385,6 +405,7 @@ By solving this challenge, I practiced using `IS NULL` to retrieve records where
 - ⚖️ Comparison Operators
 - ❌ NULL Value Handling
 - 🔢 Record Counting
+- 📈 Sorting and Ordering
 - 🚀 Advanced SQL Querying
 
 ---
@@ -406,10 +427,11 @@ By solving this challenge, I practiced using `IS NULL` to retrieve records where
 - ✅ Day 65 📚🔥
 - ✅ Day 66 🎬🔥
 - ✅ Day 67 ❌🔍🔥
+- ✅ Day 68 💰👨‍💼🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 68 → Day 99
+- ⏳ Day 69 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -418,27 +440,27 @@ By solving this challenge, I practiced using `IS NULL` to retrieve records where
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **67 / 100** |
-| 💻 Challenges Solved | **67** |
+| 📅 Days Completed | **68 / 100** |
+| 💻 Challenges Solved | **68** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **67% Complete** 🚀 |
-| 🔥 Current Streak | **67 Days** |
-| ⏳ Days Remaining | **33 Days** |
+| 📈 Progress | **68% Complete** 🚀 |
+| 🔥 Current Streak | **68 Days** |
+| ⏳ Days Remaining | **32 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Handling NULL Values** |
-| 🔍 Latest Topic | **IS NULL & NULL Value Handling** |
+| 📋 Latest Challenge | **Salary of Employees** |
+| 🔍 Latest Topic | **WHERE, ORDER BY & Salary Sorting** |
 
 ---
 
 # 🔥 Current Streak
 
-## **67 Days of SQL Practice Completed! 🎉🔥🚀**
+## **68 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **67 days down, 33 more to go!**
+> **68 days down, 32 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -467,6 +489,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 65 | ✅ Completed 🎉📚🔍🔥 |
 | 🎯 Day 66 | ✅ Completed 🎉🎬🔍🔥 |
 | 🎯 Day 67 | ✅ Completed 🎉❌🔍🔥 |
+| 🎯 Day 68 | ✅ Completed 🎉💰👨‍💼🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -514,11 +537,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 67**  
 ████████████████████ 100% ✅
 
+**Day 68**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-█████████████░░░░░░░ **67%**
+██████████████░░░░░░ **68%**
 
-### **67 / 100 Days Completed**
+### **68 / 100 Days Completed**
 
 ---
 
@@ -564,6 +590,7 @@ It is also about:
 - 🏆 Analyzing leaderboard data
 - 💰 Comparing related data
 - 📊 Calculating averages
+- 👨‍💼 Analyzing employee data
 - 🪟 Practicing window functions
 - 🔄 Learning SQL pivoting
 - 📅 Analyzing date-based data
@@ -577,7 +604,7 @@ It is also about:
 - 🔢 Counting filtered records
 - ⚖️ Applying comparison operators
 - ❌ Handling NULL values
-- 🎬 Filtering records using numeric conditions
+- 💰 Filtering and sorting salary data
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -613,6 +640,7 @@ Every challenge helps me improve my:
 - ❌ NULL Value Handling
 - 🔢 Record Counting
 - ⚖️ Comparison-Based Filtering
+- 📈 Sorting and Ordering
 - 💼 Technical Interview Preparation
 
 ---
@@ -679,7 +707,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#SalaryAnalysis` `#EmployeeAnalysis` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#OrderBy` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -689,12 +717,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**67 Days Completed ✅ | 33 Days Remaining ⏳ | 100 Days Goal 🎯**
+**68 Days Completed ✅ | 32 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 67 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 68 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
