@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-68%25-success?style=for-the-badge" alt="68% Progress">
+  <img src="https://img.shields.io/badge/Progress-69%25-success?style=for-the-badge" alt="69% Progress">
 </p>
 
 <p align="center">
@@ -205,6 +205,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day68-SQL/  
 │   ├── 📄 Salary of Employees.sql  
 │   └── 📸 Screenshot 2026-10-02 081530.png  
+├── 📁 Day69-SQL/  
+│   ├── 📄 Department of Each Employee.sql  
+│   └── 📸 Screenshot 2026-10-03 074754.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -282,61 +285,62 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 66 | List of Movies with Ratings | SQL Challenge | Completed 🎬🔍🔥 |
 | ✅ Day 67 | Handling NULL Values | SQL Challenge | Completed ❌🔍🔥 |
 | ✅ Day 68 | Salary of Employees | SQL Challenge | Completed 💰👨‍💼🔥 |
-| ⏳ Day 69–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| ✅ Day 69 | Department of Each Employee | SQL Challenge | Completed 🏢📊🔥 |
+| ⏳ Day 70–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 68 – Salary of Employees
+# 🆕 Day 69 – Department of Each Employee
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 68
-- 📚 **Challenge:** Salary of Employees
-- 🔍 **Topic:** Employee Salary Analysis
-- 📌 **SQL Clauses:** WHERE, ORDER BY
-- 👨‍💼 **Category:** Full-Time
-- 📊 **Sorting:** Salary in Descending Order
-- 🎯 **Expected Columns:** employee_name, company, salary
+- 📅 **Day:** 69
+- 📚 **Challenge:** Department of Each Employee
+- 🔍 **Topic:** Employee Department Analysis
+- 📌 **SQL Clauses:** GROUP BY
+- 🔢 **Aggregate Function:** COUNT()
+- 👨‍💼 **Category:** Employee Data Analysis
+- 📊 **Grouping:** Department
+- 🎯 **Expected Columns:** department, total_employees
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
+## 🎯 Challenge Objective
 
-The Day 68 challenge focuses on retrieving employee information for employees belonging to the **Full-Time** category.
+The Day 69 challenge focuses on grouping employees according to their department and calculating the total number of employees in each department.
 
-The query retrieves:
+The query returns:
 
-- Employee name
-- Company
-- Salary
+- Department
+- Total number of employees
 
-The results are filtered using the `WHERE` clause and sorted by salary in **descending order** using `ORDER BY ... DESC`.
+The `GROUP BY` clause is used to group employees by department, while `COUNT()` is used to calculate the total number of employees in each department.
 
-### 💡 Concepts Practiced
+## 💡 Concepts Practiced
 
 - SELECT
-- WHERE
-- ORDER BY
-- DESC
-- Conditional Filtering
-- Salary Analysis
-- Employee Data Retrieval
-- Sorting Records
+- GROUP BY
+- COUNT()
+- Aggregate Functions
+- Column Aliasing using AS
+- Employee Data Analysis
+- Department-wise Grouping
+- Record Counting
 - MySQL Query Writing
 
-### 📂 Files
+## 📂 Files
 
-- `Salary of Employees.sql`
-- `Screenshot 2026-10-02 081530.png`
+- `Department of Each Employee.sql`
+- `Screenshot 2026-10-03 074754.png`
 
-### 🎓 Learning Outcome
+## 🎓 Learning Outcome
 
-Day 68 strengthened my understanding of filtering and sorting employee records in SQL.
+Day 69 strengthened my understanding of **GROUP BY and aggregate functions** in SQL.
 
-By solving this challenge, I practiced selecting specific columns, filtering employees based on their category, and ordering salary values from highest to lowest.
+By solving this challenge, I practiced grouping employee records based on their department and counting the number of employees in each group.
 
 ---
 
@@ -359,6 +363,7 @@ By solving this challenge, I practiced selecting specific columns, filtering emp
 | Day 66 | List of Movies with Ratings | SQL Challenge | WHERE, AND, Comparison Operators, Numeric Filtering |
 | Day 67 | Handling NULL Values | SQL Challenge | IS NULL, NULL Handling, WHERE, Conditional Filtering |
 | Day 68 | Salary of Employees | SQL Challenge | WHERE, ORDER BY, DESC, Salary Analysis |
+| Day 69 | Department of Each Employee | SQL Challenge | GROUP BY, COUNT(), Aggregation, Employee Analysis |
 
 ---
 
@@ -387,6 +392,7 @@ By solving this challenge, I practiced selecting specific columns, filtering emp
 - 💰 Product Price Analysis
 - 📊 Average Salary Analysis
 - 👨‍💼 Employee Data Analysis
+- 🏢 Department-wise Employee Analysis
 - 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
@@ -428,10 +434,11 @@ By solving this challenge, I practiced selecting specific columns, filtering emp
 - ✅ Day 66 🎬🔥
 - ✅ Day 67 ❌🔍🔥
 - ✅ Day 68 💰👨‍💼🔥
+- ✅ Day 69 🏢📊🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 69 → Day 99
+- ⏳ Day 70 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -440,27 +447,27 @@ By solving this challenge, I practiced selecting specific columns, filtering emp
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **68 / 100** |
-| 💻 Challenges Solved | **68** |
+| 📅 Days Completed | **69 / 100** |
+| 💻 Challenges Solved | **69** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **68% Complete** 🚀 |
-| 🔥 Current Streak | **68 Days** |
-| ⏳ Days Remaining | **32 Days** |
+| 📈 Progress | **69% Complete** 🚀 |
+| 🔥 Current Streak | **69 Days** |
+| ⏳ Days Remaining | **31 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Salary of Employees** |
-| 🔍 Latest Topic | **WHERE, ORDER BY & Salary Sorting** |
+| 📋 Latest Challenge | **Department of Each Employee** |
+| 🔍 Latest Topic | **GROUP BY, COUNT() & Employee Department Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **68 Days of SQL Practice Completed! 🎉🔥🚀**
+## **69 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **68 days down, 32 more to go!**
+> **69 days down, 31 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, department analysis, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -490,6 +497,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 66 | ✅ Completed 🎉🎬🔍🔥 |
 | 🎯 Day 67 | ✅ Completed 🎉❌🔍🔥 |
 | 🎯 Day 68 | ✅ Completed 🎉💰👨‍💼🔥 |
+| 🎯 Day 69 | ✅ Completed 🎉🏢📊🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -540,11 +548,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 68**  
 ████████████████████ 100% ✅
 
+**Day 69**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **68%**
+██████████████░░░░░░ **69%**
 
-### **68 / 100 Days Completed**
+### **69 / 100 Days Completed**
 
 ---
 
@@ -591,6 +602,7 @@ It is also about:
 - 💰 Comparing related data
 - 📊 Calculating averages
 - 👨‍💼 Analyzing employee data
+- 🏢 Analyzing employees by department
 - 🪟 Practicing window functions
 - 🔄 Learning SQL pivoting
 - 📅 Analyzing date-based data
@@ -707,7 +719,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#SalaryAnalysis` `#EmployeeAnalysis` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#OrderBy` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#SalaryAnalysis` `#EmployeeAnalysis` `#DepartmentAnalysis` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#OrderBy` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -717,12 +729,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**68 Days Completed ✅ | 32 Days Remaining ⏳ | 100 Days Goal 🎯**
+**69 Days Completed ✅ | 31 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 68 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 69 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
