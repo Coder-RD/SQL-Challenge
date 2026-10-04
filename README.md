@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-69%25-success?style=for-the-badge" alt="69% Progress">
+  <img src="https://img.shields.io/badge/Progress-70%25-success?style=for-the-badge" alt="70% Progress">
 </p>
 
 <p align="center">
@@ -62,6 +62,8 @@ Throughout this challenge, I am practicing concepts such as:
 - Conditional filtering
 - Record counting
 - Sorting and ordering
+- Article and author data analysis
+- Duplicate record handling
 
 The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -92,6 +94,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🪟 Practice window functions
 - 🔁 Practice recursive SQL queries
 - 💰 Practice salary and employee data analysis
+- 📰 Analyze article and publication data
 - 🎯 Prepare for technical interviews
 - 💼 Build a strong SQL and database portfolio
 - 🌱 Learn consistently through daily practice
@@ -126,6 +129,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ❌ NULL Handling | IS NULL & IS NOT NULL |
 | 💰 Salary Analysis | Salary Filtering & Sorting |
 | 👨‍💼 Employee Analysis | Employee Data Retrieval |
+| 📰 Article Analysis | Author, Publication & View Analysis |
 
 ---
 
@@ -208,6 +212,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day69-SQL/  
 │   ├── 📄 Department of Each Employee.sql  
 │   └── 📸 Screenshot 2026-10-03 074754.png  
+├── 📁 Day70-SQL/  
+│   ├── 📄 Article views.sql  
+│   └── 📸 Screenshot 2026-10-04 132834.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -246,7 +253,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 27 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 28 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 29 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 30 | SQL Challenge | HackerRank | Completed 🎉 |
+| 🎉 Day 30 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 31 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 32 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 33 | SQL Challenge | HackerRank | Completed |
@@ -256,91 +263,116 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 37 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 38 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 39 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 40 | SQL Challenge | HackerRank | Completed 🎉🔥 |
+| 🔥 Day 40 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 41 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 42 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 43 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 44 | New Companies | HackerRank | Completed 🎉 |
-| ✅ Day 45 | Weather Observation Station 20 | HackerRank | Completed 🎉🔥 |
-| ✅ Day 46 | The Report | HackerRank | Completed 🎉🔥 |
-| ✅ Day 47 | Top Competitors | HackerRank | Completed 🏆🔥 |
-| ✅ Day 48 | Ollivander's Inventory | HackerRank | Completed 🪄🔥 |
-| ✅ Day 49 | Challenges | HackerRank | Completed 🏆🔥 |
-| ✅ Day 50 | Contest Leaderboard | HackerRank | Completed 🏆🔥 |
-| ✅ Day 51 | SQL Project Planning | HackerRank | Completed 🏆🔥 |
-| ✅ Day 52 | Placements | HackerRank | Completed 🔗🔥 |
-| ✅ Day 53 | Symmetric Pairs | HackerRank | Completed 🔄🔥 |
-| ✅ Day 54 | Interviews | HackerRank | Completed 💻🔥 |
-| ✅ Day 55 | Print Prime Numbers | HackerRank | Completed 🔢🔥 |
-| ✅ Day 56 | Occupations | HackerRank | Completed 🔄📊🔥 |
-| ✅ Day 57 | 15 Days of Learning SQL | HackerRank | Completed 📅🏆🔥 |
-| ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed 🔺🔥 |
-| ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed 🔺🔥 |
-| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed 🔍🔥 |
-| ✅ Day 61 | High Price of Products | CodeChef | Completed 💰🔥 |
-| ✅ Day 62 | Average Salary | CodeChef | Completed 📊💰🔥 |
-| ✅ Day 63 | Locate People | SQL Challenge | Completed 📍🔍🔥 |
-| ✅ Day 64 | Distinct Companies | SQL Challenge | Completed 🏢🔍🔥 |
-| ✅ Day 65 | Fiction Collection Size | SQL Challenge | Completed 📚🔍🔥 |
-| ✅ Day 66 | List of Movies with Ratings | SQL Challenge | Completed 🎬🔍🔥 |
-| ✅ Day 67 | Handling NULL Values | SQL Challenge | Completed ❌🔍🔥 |
-| ✅ Day 68 | Salary of Employees | SQL Challenge | Completed 💰👨‍💼🔥 |
-| ✅ Day 69 | Department of Each Employee | SQL Challenge | Completed 🏢📊🔥 |
-| ⏳ Day 70–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| 🎉 Day 44 | New Companies | HackerRank | Completed |
+| 🎉 Day 45 | Weather Observation Station 20 | HackerRank | Completed |
+| 🎉 Day 46 | The Report | HackerRank | Completed |
+| 🏆 Day 47 | Top Competitors | HackerRank | Completed |
+| 🪄 Day 48 | Ollivander's Inventory | HackerRank | Completed |
+| 🏆 Day 49 | Challenges | HackerRank | Completed |
+| 🏆 Day 50 | Contest Leaderboard | HackerRank | Completed |
+| 🏆 Day 51 | SQL Project Planning | HackerRank | Completed |
+| 🔗 Day 52 | Placements | HackerRank | Completed |
+| 🔄 Day 53 | Symmetric Pairs | HackerRank | Completed |
+| 💻 Day 54 | Interviews | HackerRank | Completed |
+| 🔢 Day 55 | Print Prime Numbers | HackerRank | Completed |
+| 🔄 Day 56 | Occupations | HackerRank | Completed |
+| 📅 Day 57 | 15 Days of Learning SQL | HackerRank | Completed |
+| 🔺 Day 58 | Draw The Triangle 1 | HackerRank | Completed |
+| 🔺 Day 59 | Draw The Triangle 2 | HackerRank | Completed |
+| 🔍 Day 60 | SELECT Statement Challenge | CodeChef | Completed |
+| 💰 Day 61 | High Price of Products | CodeChef | Completed |
+| 📊 Day 62 | Average Salary | CodeChef | Completed |
+| 📍 Day 63 | Locate People | SQL Challenge | Completed |
+| 🏢 Day 64 | Distinct Companies | SQL Challenge | Completed |
+| 📚 Day 65 | Fiction Collection Size | SQL Challenge | Completed |
+| 🎬 Day 66 | List of Movies with Ratings | SQL Challenge | Completed |
+| ❌ Day 67 | Handling NULL Values | SQL Challenge | Completed |
+| 💰 Day 68 | Salary of Employees | SQL Challenge | Completed |
+| 🏢 Day 69 | Department of Each Employee | SQL Challenge | Completed |
+| 📰 Day 70 | Article Views | SQL Challenge | Completed |
+| ⏳ Day 71–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 69 – Department of Each Employee
+# 🆕 Day 70 – Article Views
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 69
-- 📚 **Challenge:** Department of Each Employee
-- 🔍 **Topic:** Employee Department Analysis
-- 📌 **SQL Clauses:** GROUP BY
-- 🔢 **Aggregate Function:** COUNT()
-- 👨‍💼 **Category:** Employee Data Analysis
-- 📊 **Grouping:** Department
-- 🎯 **Expected Columns:** department, total_employees
+- 📅 **Day:** 70
+- 📚 **Challenge:** Article Views
+- 🔍 **Topic:** Article and Author View Analysis
+- 📌 **SQL Clauses:** WHERE, DISTINCT, ORDER BY
+- 📰 **Category:** Article Data Analysis
+- 👤 **Data:** Author and Publication Information
+- 👁️ **Condition:** Articles with zero views
+- 🔢 **Sorting:** author_id in ascending order
+- 🎯 **Expected Columns:** author_id, author_name, publication_name
 - ✅ **Status:** Completed
 
 ## 🎯 Challenge Objective
 
-The Day 69 challenge focuses on grouping employees according to their department and calculating the total number of employees in each department.
+The Day 70 challenge focuses on retrieving authors whose articles received **zero views**.
 
 The query returns:
 
-- Department
-- Total number of employees
+- Author ID
+- Author Name
+- Publication Name
 
-The `GROUP BY` clause is used to group employees by department, while `COUNT()` is used to calculate the total number of employees in each department.
+The results are sorted by `author_id` in ascending order.
 
-## 💡 Concepts Practiced
+## 💡 SQL Approach
+
+The solution uses:
+
+- `SELECT` to retrieve the required columns.
+- `WHERE view_count = 0` to filter articles with zero views.
+- `DISTINCT` to avoid duplicate author records.
+- `ORDER BY author_id ASC` to sort the final result.
+
+## 💻 SQL Query
+
+SELECT DISTINCT
+    author_id,
+    author_name,
+    publication_name
+FROM Views
+WHERE view_count = 0
+ORDER BY author_id ASC;
+
+## 🧠 Concepts Practiced
 
 - SELECT
-- GROUP BY
-- COUNT()
-- Aggregate Functions
-- Column Aliasing using AS
-- Employee Data Analysis
-- Department-wise Grouping
-- Record Counting
+- WHERE
+- DISTINCT
+- ORDER BY
+- Filtering records
+- Duplicate removal
+- Ascending sorting
+- Conditional filtering
+- Author data analysis
+- Publication data analysis
+- View-count analysis
 - MySQL Query Writing
 
 ## 📂 Files
 
-- `Department of Each Employee.sql`
-- `Screenshot 2026-10-03 074754.png`
+- `Article views.sql`
+- `Screenshot 2026-10-04 132834.png`
 
 ## 🎓 Learning Outcome
 
-Day 69 strengthened my understanding of **GROUP BY and aggregate functions** in SQL.
+Day 70 strengthened my understanding of filtering and sorting data using SQL.
 
-By solving this challenge, I practiced grouping employee records based on their department and counting the number of employees in each group.
+By solving this challenge, I practiced identifying records based on a specific condition, removing duplicate results using `DISTINCT`, and arranging the final output using `ORDER BY`.
 
 ---
 
@@ -364,6 +396,7 @@ By solving this challenge, I practiced grouping employee records based on their 
 | Day 67 | Handling NULL Values | SQL Challenge | IS NULL, NULL Handling, WHERE, Conditional Filtering |
 | Day 68 | Salary of Employees | SQL Challenge | WHERE, ORDER BY, DESC, Salary Analysis |
 | Day 69 | Department of Each Employee | SQL Challenge | GROUP BY, COUNT(), Aggregation, Employee Analysis |
+| Day 70 | Article Views | SQL Challenge | WHERE, DISTINCT, ORDER BY, Filtering, Sorting |
 
 ---
 
@@ -393,6 +426,8 @@ By solving this challenge, I practiced grouping employee records based on their 
 - 📊 Average Salary Analysis
 - 👨‍💼 Employee Data Analysis
 - 🏢 Department-wise Employee Analysis
+- 📰 Article and Publication Analysis
+- 👁️ View Count Analysis
 - 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
@@ -435,10 +470,11 @@ By solving this challenge, I practiced grouping employee records based on their 
 - ✅ Day 67 ❌🔍🔥
 - ✅ Day 68 💰👨‍💼🔥
 - ✅ Day 69 🏢📊🔥
+- ✅ Day 70 📰👁️🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 70 → Day 99
+- ⏳ Day 71 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -447,27 +483,27 @@ By solving this challenge, I practiced grouping employee records based on their 
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **69 / 100** |
-| 💻 Challenges Solved | **69** |
+| 📅 Days Completed | **70 / 100** |
+| 💻 Challenges Solved | **70** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **69% Complete** 🚀 |
-| 🔥 Current Streak | **69 Days** |
-| ⏳ Days Remaining | **31 Days** |
+| 📈 Progress | **70% Complete** 🚀 |
+| 🔥 Current Streak | **70 Days** |
+| ⏳ Days Remaining | **30 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Department of Each Employee** |
-| 🔍 Latest Topic | **GROUP BY, COUNT() & Employee Department Analysis** |
+| 📋 Latest Challenge | **Article Views** |
+| 🔍 Latest Topic | **WHERE, DISTINCT, ORDER BY & Article View Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **69 Days of SQL Practice Completed! 🎉🔥🚀**
+## **70 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **69 days down, 31 more to go!**
+> **70 days down, 30 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, department analysis, product analysis, leaderboard analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, department analysis, product analysis, leaderboard analysis, article analysis, view analysis, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -498,6 +534,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 67 | ✅ Completed 🎉❌🔍🔥 |
 | 🎯 Day 68 | ✅ Completed 🎉💰👨‍💼🔥 |
 | 🎯 Day 69 | ✅ Completed 🎉🏢📊🔥 |
+| 🎯 Day 70 | ✅ Completed 🎉📰👁️🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -551,11 +588,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 69**  
 ████████████████████ 100% ✅
 
+**Day 70**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **69%**
+██████████████░░░░░░ **70%**
 
-### **69 / 100 Days Completed**
+### **70 / 100 Days Completed**
 
 ---
 
@@ -603,6 +643,8 @@ It is also about:
 - 📊 Calculating averages
 - 👨‍💼 Analyzing employee data
 - 🏢 Analyzing employees by department
+- 📰 Analyzing article and publication data
+- 👁️ Analyzing article views
 - 🪟 Practicing window functions
 - 🔄 Learning SQL pivoting
 - 📅 Analyzing date-based data
@@ -653,6 +695,8 @@ Every challenge helps me improve my:
 - 🔢 Record Counting
 - ⚖️ Comparison-Based Filtering
 - 📈 Sorting and Ordering
+- 📰 Article and Publication Analysis
+- 👁️ View Count Analysis
 - 💼 Technical Interview Preparation
 
 ---
@@ -719,7 +763,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#SalaryAnalysis` `#EmployeeAnalysis` `#DepartmentAnalysis` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#OrderBy` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#AverageSalary` `#SalaryAnalysis` `#EmployeeAnalysis` `#DepartmentAnalysis` `#ArticleAnalysis` `#ArticleViews` `#ViewAnalysis` `#GroupBy` `#Having` `#Distinct` `#Count` `#WhereClause` `#OrderBy` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#Coding`
 
 ---
 
@@ -729,12 +773,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**69 Days Completed ✅ | 31 Days Remaining ⏳ | 100 Days Goal 🎯**
+**70 Days Completed ✅ | 30 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 69 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 70 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
