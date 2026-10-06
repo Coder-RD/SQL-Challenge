@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-71%25-success?style=for-the-badge" alt="71% Progress">
+  <img src="https://img.shields.io/badge/Progress-72%25-success?style=for-the-badge" alt="72% Progress">
 </p>
 
 <p align="center">
@@ -225,6 +225,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day71-SQL/  
 │   ├── 📄 Player Performance Insights.sql  
 │   └── 📸 Screenshot 2026-10-05 081925.png  
+├── 📁 Day72-SQL/  
+│   ├── 📄 Player Details.sql  
+│   └── 📸 Screenshot 2026-10-06 070128.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -305,200 +308,100 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🏢 Day 69 | Department of Each Employee | SQL Challenge | Completed |
 | 📰 Day 70 | Article Views | SQL Challenge | Completed |
 | 🏆 Day 71 | Player Performance Insights | SQL Challenge | Completed |
-| ⏳ Day 72–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| 🎯 Day 72 | Player Details | SQL Challenge | Completed |
+| ⏳ Day 73–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 71 – Player Performance Insights
+# 🆕 Day 72 – Player Details
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 71
-- 📚 **Challenge:** Player Performance Insights
-- 🔍 **Topic:** Player Score and Match Winner Analysis
-- 📌 **SQL Clauses:** JOIN, DISTINCT, ORDER BY, DESC, LIMIT
-- 🏆 **Category:** Player Performance Analysis
+- 📅 **Day:** 72
+- 📚 **Challenge:** Player Details
+- 🔍 **Topic:** Player and Match Details Analysis
+- 📌 **SQL Clauses:** JOIN, ORDER BY, DESC, LIMIT
+- 🏆 **Category:** Player and Match Analysis
 - 👥 **Data:** Players and Matches
-- 🎯 **Condition:** Players who have won matches
-- 🔝 **Ranking:** Highest score first
-- 🔢 **Result:** Top 3 distinct players
+- 🎯 **Condition:** Retrieve the last five matches played
+- 🔢 **Expected Columns:** match_id, player_1, player_2, winner, match_date, score
 - ✅ **Status:** Completed
 
 ## 🎯 Challenge Objective
 
-The Day 71 challenge focuses on identifying the **top 3 distinct players by highest score** among players who have won at least one match.
+The Day 72 challenge focuses on retrieving the details of the **last five matches played**.
 
-The query combines information from the `Players` and `Matches` tables.
+The query returns:
 
-The final result returns:
+- Match ID
+- Player 1
+- Player 2
+- Winning Player
+- Match Date
+- Winner's Final Score
 
-- Player Name
-- Score
-
-The players are ordered by their score in descending order, and only the top 3 distinct players are returned.
+The matches are sorted by `match_date` in descending order so that the most recent matches appear first.
 
 ## 💡 SQL Approach
 
 The solution uses:
 
-- `JOIN` to connect the `Players` table with the `Matches` table using the winning player's name.
-- `DISTINCT` to ensure each winning player appears only once.
-- `ORDER BY score DESC` to arrange players from the highest score to the lowest score.
-- `LIMIT 3` to retrieve only the top 3 players.
+- `JOIN` to connect the `Matches` table with the `Players` table and retrieve player names.
+- Multiple joins to identify Player 1, Player 2, and the winning player.
+- `ORDER BY match_date DESC` to display the latest matches first.
+- `LIMIT 5` to retrieve only the last five matches.
 
 ## 📊 Expected Result
 
-| Player Name | Score |
-|---|---:|
-| David | 1600 |
-| Bob | 1500 |
-| Charlie | 1300 |
+| match_id | player_1 | player_2 | winner | match_date | score |
+|---:|---|---|---|---|---:|
+| 106 | Frank | Hank | Frank | 2024-01-29 | 1450 |
+| 101 | Alice | Bob | Bob | 2024-01-25 | 1500 |
+| 110 | David | Eve | David | 2024-01-24 | 1600 |
+| 108 | Jack | Alice | Jack | 2024-01-19 | 1400 |
+| 103 | Eve | Bob | Bob | 2024-01-17 | 1500 |
 
-## 🧠 SQL Query
+## 🔍 Query Logic
 
-SELECT DISTINCT
-    p.player_name,
-    p.score
-FROM Players p
-JOIN Matches m
-    ON p.player_name = m.winner
-ORDER BY p.score DESC
-LIMIT 3;
+The query joins the player records with the match records so that player IDs can be displayed as player names.
 
-## 🔍 Query Explanation
+`ORDER BY match_date DESC` sorts matches from the newest date to the oldest date.
 
-### JOIN
-
-The `JOIN` connects the `Players` table with the `Matches` table.
-
-The condition:
-
-`p.player_name = m.winner`
-
-ensures that only players who appear as match winners are considered.
-
-### DISTINCT
-
-`DISTINCT` prevents the same player from appearing multiple times when a player has won more than one match.
-
-### ORDER BY
-
-`ORDER BY p.score DESC` sorts players from the highest score to the lowest score.
-
-### LIMIT
-
-`LIMIT 3` restricts the final result to the top 3 players.
+`LIMIT 5` restricts the output to the five most recent matches.
 
 ## 📚 Concepts Practiced
 
 - SELECT
 - INNER JOIN
-- DISTINCT
+- Multiple JOINs
+- Table aliases
 - ORDER BY
 - DESC
 - LIMIT
-- Top-N queries
-- Winner filtering
-- Player score analysis
-- Match data analysis
+- Date-based sorting
 - Multi-table analysis
-- Duplicate removal
-- Sorting
+- Player data retrieval
+- Match data analysis
+- Winner identification
+- Top-N queries
 - MySQL Query Writing
 
 ## 📂 Files
 
-- `Player Performance Insights.sql`
-- `Screenshot 2026-10-05 081925.png`
+- `Player Details.sql`
+- `Screenshot 2026-10-06 070128.png`
 
 ## 🎓 Learning Outcome
 
-Day 71 strengthened my understanding of combining multiple tables to analyze player and match data.
+Day 72 strengthened my understanding of retrieving related information from multiple tables using `JOIN`.
 
-By solving this challenge, I practiced using `JOIN` to connect related records, `DISTINCT` to remove duplicate players, `ORDER BY` to rank players by score, and `LIMIT` to retrieve the top 3 results.
+By solving this challenge, I practiced connecting player and match records, identifying the participating and winning players, sorting match records by date, and retrieving the latest five records using `LIMIT`.
 
-This challenge also improved my understanding of **Top-N SQL queries and winner-based filtering**.
-
----
-
-# 📰 Day 70 – Article Views
-
-## 📌 Challenge Information
-
-- 💻 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 70
-- 📚 **Challenge:** Article Views
-- 🔍 **Topic:** Article and Author View Analysis
-- 📌 **SQL Clauses:** WHERE, DISTINCT, ORDER BY
-- 📰 **Category:** Article Data Analysis
-- 👤 **Data:** Author and Publication Information
-- 👁️ **Condition:** Articles with zero views
-- 🔢 **Sorting:** author_id in ascending order
-- 🎯 **Expected Columns:** author_id, author_name, publication_name
-- ✅ **Status:** Completed
-
-## 🎯 Challenge Objective
-
-The Day 70 challenge focuses on retrieving authors whose articles received **zero views**.
-
-The query returns:
-
-- Author ID
-- Author Name
-- Publication Name
-
-The results are sorted by `author_id` in ascending order.
-
-## 💡 SQL Approach
-
-The solution uses:
-
-- `SELECT` to retrieve the required columns.
-- `WHERE view_count = 0` to filter articles with zero views.
-- `DISTINCT` to avoid duplicate author records.
-- `ORDER BY author_id ASC` to sort the final result.
-
-## 🧠 SQL Query
-
-SELECT DISTINCT
-    author_id,
-    author_name,
-    publication_name
-FROM Views
-WHERE view_count = 0
-ORDER BY author_id ASC;
-
-## 🧠 Concepts Practiced
-
-- SELECT
-- WHERE
-- DISTINCT
-- ORDER BY
-- Filtering records
-- Duplicate removal
-- Ascending sorting
-- Conditional filtering
-- Author data analysis
-- Publication data analysis
-- View-count analysis
-- MySQL Query Writing
-
-## 📂 Files
-
-- `Article views.sql`
-- `Screenshot 2026-10-04 132834.png`
-
-## 🎓 Learning Outcome
-
-Day 70 strengthened my understanding of filtering and sorting data using SQL.
-
-By solving this challenge, I practiced identifying records based on a specific condition, removing duplicate results using `DISTINCT`, and arranging the final output using `ORDER BY`.
+This challenge also improved my understanding of **multi-table queries, date-based sorting, and Top-N SQL queries**.
 
 ---
 
@@ -524,6 +427,7 @@ By solving this challenge, I practiced identifying records based on a specific c
 | Day 69 | Department of Each Employee | SQL Challenge | GROUP BY, COUNT(), Aggregation, Employee Analysis |
 | Day 70 | Article Views | SQL Challenge | WHERE, DISTINCT, ORDER BY, Filtering, Sorting |
 | Day 71 | Player Performance Insights | SQL Challenge | JOIN, DISTINCT, ORDER BY, DESC, LIMIT, Top-N Analysis |
+| Day 72 | Player Details | SQL Challenge | JOIN, ORDER BY, DESC, LIMIT, Player & Match Analysis |
 
 ---
 
@@ -602,10 +506,11 @@ By solving this challenge, I practiced identifying records based on a specific c
 - ✅ Day 69 🏢📊🔥
 - ✅ Day 70 📰👁️🔥
 - ✅ Day 71 🏆🎯🔥
+- ✅ Day 72 🏆⚔️📅🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 72 → Day 99
+- ⏳ Day 73 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -614,25 +519,25 @@ By solving this challenge, I practiced identifying records based on a specific c
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **71 / 100** |
-| 💻 Challenges Solved | **71** |
+| 📅 Days Completed | **72 / 100** |
+| 💻 Challenges Solved | **72** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **71% Complete** 🚀 |
-| 🔥 Current Streak | **71 Days** |
-| ⏳ Days Remaining | **29 Days** |
+| 📈 Progress | **72% Complete** 🚀 |
+| 🔥 Current Streak | **72 Days** |
+| ⏳ Days Remaining | **28 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Player Performance Insights** |
-| 🔍 Latest Topic | **JOIN, DISTINCT, ORDER BY, LIMIT & Top-N Player Analysis** |
+| 📋 Latest Challenge | **Player Details** |
+| 🔍 Latest Topic | **JOIN, ORDER BY, LIMIT & Player-Match Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **71 Days of SQL Practice Completed! 🎉🔥🚀**
+## **72 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **71 days down, 29 more to go!**
+> **72 days down, 28 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, department analysis, product analysis, leaderboard analysis, article analysis, view analysis, player performance analysis, match winner analysis, Top-N queries, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
@@ -667,6 +572,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 69 | ✅ Completed 🎉🏢📊🔥 |
 | 🎯 Day 70 | ✅ Completed 🎉📰👁️🔥 |
 | 🎯 Day 71 | ✅ Completed 🎉🏆🎯🔥 |
+| 🎯 Day 72 | ✅ Completed 🎉🏆⚔️🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -726,11 +632,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 71**  
 ████████████████████ 100% ✅
 
+**Day 72**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **71%**
+██████████████░░░░░░ **72%**
 
-### **71 / 100 Days Completed**
+### **72 / 100 Days Completed**
 
 ---
 
@@ -914,12 +823,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**71 Days Completed ✅ | 29 Days Remaining ⏳ | 100 Days Goal 🎯**
+**72 Days Completed ✅ | 28 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 71 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 72 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
