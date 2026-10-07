@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-72%25-success?style=for-the-badge" alt="72% Progress">
+  <img src="https://img.shields.io/badge/Progress-73%25-success?style=for-the-badge" alt="73% Progress">
 </p>
 
 <p align="center">
@@ -18,9 +18,11 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through **HackerRank, CodeChef, and SQL practice challenges**. The goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
+This repository documents my daily SQL programming journey through **HackerRank, CodeChef, and SQL practice challenges**.
 
-Throughout this challenge, I am practicing concepts such as:
+The goal of this challenge is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, query-writing ability, and problem-solving skills through consistent daily practice.
+
+Throughout this journey, I am practicing concepts ranging from basic SQL queries to advanced multi-table analysis, including:
 
 - SQL fundamentals
 - SELECT statements
@@ -29,6 +31,7 @@ Throughout this challenge, I am practicing concepts such as:
 - GROUP BY
 - HAVING
 - ORDER BY
+- LIMIT
 - Aggregate functions
 - String operations
 - Pattern matching
@@ -38,6 +41,7 @@ Throughout this challenge, I am practicing concepts such as:
 - Decimal precision
 - NULL value handling
 - Subqueries
+- Correlated subqueries
 - JOINs
 - Self JOINs
 - CASE statements
@@ -51,25 +55,28 @@ Throughout this challenge, I am practicing concepts such as:
 - Distance calculation
 - Salary analysis
 - Employee data analysis
+- Department analysis
 - Product analysis
+- Article and publication analysis
+- View analysis
+- Player performance analysis
+- Match winner analysis
 - Leaderboard analysis
 - Submission statistics
 - Activity tracking
 - Symmetric pairs
+- Top-N queries
 - Pattern generation
+- Duplicate record handling
 - Unique record retrieval
 - Comparison operators
 - Conditional filtering
 - Record counting
-- Sorting and ordering
-- Article and author data analysis
-- Duplicate record handling
-- Player performance analysis
-- Match winner analysis
-- Top-N queries
-- Multi-table player and match analysis
+- Multi-table analysis
 
-The goal is to solve **one SQL challenge every day for 100 days**, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
+The goal is simple:
+
+> **Solve one SQL challenge every day for 100 days and continuously improve my SQL and database skills.** 💻🗄️🔥
 
 ---
 
@@ -86,7 +93,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🔍 Improve filtering and sorting skills
 - 🔤 Practice string operations
 - 🧮 Practice mathematical functions
-- 📐 Understand rounding and truncation
+- 📐 Understand rounding and decimal precision
 - 📍 Work with geographic data
 - 🌎 Analyze latitude and longitude
 - 🔗 Understand relational data and JOIN operations
@@ -97,8 +104,10 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 - 🔄 Analyze symmetric pairs
 - 🪟 Practice window functions
 - 🔁 Practice recursive SQL queries
-- 💰 Practice salary and employee data analysis
+- 💰 Analyze salary and employee data
+- 🏢 Analyze department-wise data
 - 📰 Analyze article and publication data
+- 👁️ Analyze views and activity
 - 🏆 Analyze player and match performance
 - 🎯 Practice Top-N query problems
 - 💼 Build a strong SQL and database portfolio
@@ -121,7 +130,6 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🧠 Advanced Queries | Subqueries & CTEs |
 | 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY & HAVING |
-| 📍 Geographic Data | Latitude & Longitude |
 | 🔢 Numerical Processing | ROUND(), MOD(), Decimal Precision |
 | 🏆 Leaderboard Analysis | Ranking, GROUP BY & HAVING |
 | 🪟 Window Functions | ROW_NUMBER(), Ranking & Partitioning |
@@ -134,9 +142,11 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ❌ NULL Handling | IS NULL & IS NOT NULL |
 | 💰 Salary Analysis | Salary Filtering & Sorting |
 | 👨‍💼 Employee Analysis | Employee Data Retrieval |
+| 🏢 Department Analysis | Department-wise Data |
 | 📰 Article Analysis | Author, Publication & View Analysis |
 | 🏆 Player Analysis | Player Scores & Match Winners |
 | 🔝 Top-N Analysis | ORDER BY, DISTINCT & LIMIT |
+| 🔗 Multi-Table Analysis | Multiple JOIN Operations |
 
 ---
 
@@ -228,6 +238,9 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day72-SQL/  
 │   ├── 📄 Player Details.sql  
 │   └── 📸 Screenshot 2026-10-06 070128.png  
+├── 📁 Day73-SQL/  
+│   ├── 📄 [Day 73 SQL Challenge].sql  
+│   └── 📸 [Day 73 Submission Screenshot].png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -265,7 +278,7 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | ✅ Day 26 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 27 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 28 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 29 | SQL Challenge | HackerRank | Completed |
+| 🎉 Day 29 | SQL Challenge | HackerRank | Completed |
 | 🎉 Day 30 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 31 | SQL Challenge | HackerRank | Completed |
 | ✅ Day 32 | SQL Challenge | HackerRank | Completed |
@@ -309,99 +322,64 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 📰 Day 70 | Article Views | SQL Challenge | Completed |
 | 🏆 Day 71 | Player Performance Insights | SQL Challenge | Completed |
 | 🎯 Day 72 | Player Details | SQL Challenge | Completed |
-| ⏳ Day 73–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
-| 🎯 Day 100 | Final Goal | — | Pending |
+| 🔥 Day 73 | SQL Challenge | SQL Challenge | Completed |
+| ⏳ Day 74–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| 🏆 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 72 – Player Details
+# 🆕 Day 73 – SQL Challenge
 
 ## 📌 Challenge Information
 
 - 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 72
-- 📚 **Challenge:** Player Details
-- 🔍 **Topic:** Player and Match Details Analysis
-- 📌 **SQL Clauses:** JOIN, ORDER BY, DESC, LIMIT
-- 🏆 **Category:** Player and Match Analysis
-- 👥 **Data:** Players and Matches
-- 🎯 **Condition:** Retrieve the last five matches played
-- 🔢 **Expected Columns:** match_id, player_1, player_2, winner, match_date, score
+- 📅 **Day:** 73
+- 📚 **Challenge:** SQL Challenge
+- 🔍 **Topic:** SQL Query Practice
+- 🏆 **Category:** SQL and Database Analysis
 - ✅ **Status:** Completed
 
 ## 🎯 Challenge Objective
 
-The Day 72 challenge focuses on retrieving the details of the **last five matches played**.
+Day 73 continues the journey with another SQL problem focused on improving practical SQL query-writing and database analysis skills.
 
-The query returns:
-
-- Match ID
-- Player 1
-- Player 2
-- Winning Player
-- Match Date
-- Winner's Final Score
-
-The matches are sorted by `match_date` in descending order so that the most recent matches appear first.
+The challenge helped strengthen the ability to understand a problem statement, identify the required data, construct the SQL query, test the result, and verify the expected output.
 
 ## 💡 SQL Approach
 
-The solution uses:
+The solution follows a structured SQL problem-solving approach:
 
-- `JOIN` to connect the `Matches` table with the `Players` table and retrieve player names.
-- Multiple joins to identify Player 1, Player 2, and the winning player.
-- `ORDER BY match_date DESC` to display the latest matches first.
-- `LIMIT 5` to retrieve only the last five matches.
-
-## 📊 Expected Result
-
-| match_id | player_1 | player_2 | winner | match_date | score |
-|---:|---|---|---|---|---:|
-| 106 | Frank | Hank | Frank | 2024-01-29 | 1450 |
-| 101 | Alice | Bob | Bob | 2024-01-25 | 1500 |
-| 110 | David | Eve | David | 2024-01-24 | 1600 |
-| 108 | Jack | Alice | Jack | 2024-01-19 | 1400 |
-| 103 | Eve | Bob | Bob | 2024-01-17 | 1500 |
-
-## 🔍 Query Logic
-
-The query joins the player records with the match records so that player IDs can be displayed as player names.
-
-`ORDER BY match_date DESC` sorts matches from the newest date to the oldest date.
-
-`LIMIT 5` restricts the output to the five most recent matches.
+- Understand the problem requirements
+- Identify the required table(s)
+- Select the required columns
+- Apply the necessary filtering conditions
+- Use appropriate SQL operations
+- Sort or group the results when required
+- Test the query against the expected output
+- Verify the final result
 
 ## 📚 Concepts Practiced
 
 - SELECT
-- INNER JOIN
-- Multiple JOINs
-- Table aliases
-- ORDER BY
-- DESC
-- LIMIT
-- Date-based sorting
-- Multi-table analysis
-- Player data retrieval
-- Match data analysis
-- Winner identification
-- Top-N queries
-- MySQL Query Writing
+- SQL Query Writing
+- Data Retrieval
+- Filtering
+- Conditional Logic
+- Sorting
+- Relational Data Analysis
+- MySQL Query Execution
+- Problem Solving
 
 ## 📂 Files
 
-- `Player Details.sql`
-- `Screenshot 2026-10-06 070128.png`
+- SQL solution file
+- Successful submission screenshot
 
 ## 🎓 Learning Outcome
 
-Day 72 strengthened my understanding of retrieving related information from multiple tables using `JOIN`.
-
-By solving this challenge, I practiced connecting player and match records, identifying the participating and winning players, sorting match records by date, and retrieving the latest five records using `LIMIT`.
-
-This challenge also improved my understanding of **multi-table queries, date-based sorting, and Top-N SQL queries**.
+Day 73 improved my practical SQL problem-solving skills and reinforced the importance of understanding the data requirements before writing a query.
 
 ---
 
@@ -428,6 +406,7 @@ This challenge also improved my understanding of **multi-table queries, date-bas
 | Day 70 | Article Views | SQL Challenge | WHERE, DISTINCT, ORDER BY, Filtering, Sorting |
 | Day 71 | Player Performance Insights | SQL Challenge | JOIN, DISTINCT, ORDER BY, DESC, LIMIT, Top-N Analysis |
 | Day 72 | Player Details | SQL Challenge | JOIN, ORDER BY, DESC, LIMIT, Player & Match Analysis |
+| Day 73 | SQL Challenge | SQL Challenge | SQL Query Writing, Filtering, Data Retrieval, Problem Solving |
 
 ---
 
@@ -460,7 +439,7 @@ This challenge also improved my understanding of **multi-table queries, date-bas
 - 📰 Article and Publication Analysis
 - 👁️ View Count Analysis
 - 🏆 Player Performance Analysis
-- 🏆 Match Winner Analysis
+- 🏅 Match Winner Analysis
 - 🔝 Top-N Query Analysis
 - 🔄 Symmetric Pair Analysis
 - 🔗 Multi-Table Analysis
@@ -507,10 +486,11 @@ This challenge also improved my understanding of **multi-table queries, date-bas
 - ✅ Day 70 📰👁️🔥
 - ✅ Day 71 🏆🎯🔥
 - ✅ Day 72 🏆⚔️📅🔥
+- ✅ Day 73 🔥🗄️💻
 
 ## ⏳ Remaining
 
-- ⏳ Day 73 → Day 99
+- ⏳ Day 74 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -519,25 +499,25 @@ This challenge also improved my understanding of **multi-table queries, date-bas
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **72 / 100** |
-| 💻 Challenges Solved | **72** |
+| 📅 Days Completed | **73 / 100** |
+| 💻 Challenges Solved | **73** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **72% Complete** 🚀 |
-| 🔥 Current Streak | **72 Days** |
-| ⏳ Days Remaining | **28 Days** |
+| 📈 Progress | **73% Complete** 🚀 |
+| 🔥 Current Streak | **73 Days** |
+| ⏳ Days Remaining | **27 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
-| 📋 Latest Challenge | **Player Details** |
-| 🔍 Latest Topic | **JOIN, ORDER BY, LIMIT & Player-Match Analysis** |
+| 📋 Latest Challenge | **Day 73 SQL Challenge** |
+| 🔍 Latest Focus | **SQL Query Writing & Problem Solving** |
 
 ---
 
 # 🔥 Current Streak
 
-## **72 Days of SQL Practice Completed! 🎉🔥🚀**
+## **73 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **72 days down, 28 more to go!**
+> **73 days down, 27 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, department analysis, product analysis, leaderboard analysis, article analysis, view analysis, player performance analysis, match winner analysis, Top-N queries, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, and problem-solving abilities.
 
@@ -573,6 +553,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 70 | ✅ Completed 🎉📰👁️🔥 |
 | 🎯 Day 71 | ✅ Completed 🎉🏆🎯🔥 |
 | 🎯 Day 72 | ✅ Completed 🎉🏆⚔️🔥 |
+| 🎯 Day 73 | ✅ Completed 🎉🔥🗄️💻 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -635,11 +616,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 72**  
 ████████████████████ 100% ✅
 
+**Day 73**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-██████████████░░░░░░ **72%**
+███████████████░░░░░ **73%**
 
-### **72 / 100 Days Completed**
+### **73 / 100 Days Completed**
 
 ---
 
@@ -823,12 +807,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**72 Days Completed ✅ | 28 Days Remaining ⏳ | 100 Days Goal 🎯**
+**73 Days Completed ✅ | 27 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 72 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 73 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
