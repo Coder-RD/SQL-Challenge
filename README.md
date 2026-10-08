@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-73%25-success?style=for-the-badge" alt="73% Progress">
+  <img src="https://img.shields.io/badge/Progress-74%25-success?style=for-the-badge" alt="74% Progress">
 </p>
 
 <p align="center">
@@ -239,6 +239,8 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 ├── 📁 Day73-SQL/  
 │   ├── 📄 Find the Error in Query.sql  
 │   └── 📸 Screenshot 2026-10-07 075055.png  
+├── 📁 Day74-SQL/  
+│   └── 📸 Screenshot 2026-10-08 075403.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -321,19 +323,20 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 | 🏆 Day 71 | Player Performance Insights | SQL Challenge | Completed |
 | 🎯 Day 72 | Player Details | SQL Challenge | Completed |
 | 🐞 Day 73 | Find the Error in Query | SQL Challenge | Completed |
-| ⏳ Day 74–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
+| 🧮 Day 74 | Find the Error in Query | SQL Challenge | Completed |
+| ⏳ Day 75–99 | Upcoming Challenges | HackerRank / CodeChef / SQL Challenges | Pending |
 | 🎯 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 73 – Find the Error in Query
+# 🆕 Day 74 – Find the Error in Query
 
 ## 📌 Challenge Information
 
 - 🐞 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 73
+- 📅 **Day:** 74
 - 📚 **Challenge:** Find the Error in Query
 - 🔍 **Topic:** SQL Error Identification
 - 🧮 **Main Function:** COUNT()
@@ -347,46 +350,73 @@ The goal is to solve **one SQL challenge every day for 100 days**, build consist
 
 ## 🎯 Challenge Objective
 
-The Day 73 challenge focuses on identifying the errors in a SQL query that combines an aggregate function with a normal column.
+The Day 74 challenge focuses on identifying errors in a SQL query that combines an aggregate function with a normal column.
 
 The given query is:
 
-SELECT COUNT(), user_name
-FROM Users;
+    SELECT count(), user_name
+    FROM Users;
 
-The objective is to identify why this query is incorrect and understand how aggregate functions should be used when selecting non-aggregated columns.
+The objective is to identify the errors present in the query and understand the correct usage of aggregate functions and the GROUP BY clause.
 
 ---
 
 ## ❌ Errors Identified
 
-### 1. Column or Expression Is Missing in COUNT()
+### 1. Column Name Not Specified in COUNT Function
 
 The query uses:
 
-COUNT()
+    COUNT()
 
-The COUNT function should contain a valid expression, column, or `*`.
+The COUNT function requires a valid expression, column, or `*`.
 
-Examples:
+Examples of valid COUNT usage include:
 
-COUNT(user_name)
+    COUNT(*)
 
-COUNT(*)
+    COUNT(user_name)
+
+`COUNT(*)` counts rows, while `COUNT(user_name)` counts non-NULL values in the `user_name` column.
+
+Therefore, the option:
+
+**Column name not specified in count function**
+
+is one of the identified errors.
 
 ---
 
-### 2. GROUP BY Clause Is Missing
+### 2. GROUP BY Clause Is Not Specified
 
-The query selects an aggregate value using COUNT() together with the non-aggregated column `user_name`.
+The query also selects the non-aggregated column:
 
-For grouped results, `user_name` should be included in the GROUP BY clause.
+    user_name
 
-Example:
+along with an aggregate function:
 
-SELECT user_name, COUNT(user_name)
-FROM Users
-GROUP BY user_name;
+    COUNT()
+
+For grouped results, the selected non-aggregated column should be included in the GROUP BY clause.
+
+Therefore, the option:
+
+**Group By Clause is not specified**
+
+is also an identified error.
+
+---
+
+## ❌ Original Query
+
+    SELECT count(), user_name
+    FROM Users;
+
+### Problems
+
+- ❌ COUNT() has no argument.
+- ❌ `user_name` is a non-aggregated column.
+- ❌ GROUP BY is missing for the intended grouped result.
 
 ---
 
@@ -394,15 +424,15 @@ GROUP BY user_name;
 
 A suitable corrected query is:
 
-SELECT user_name, COUNT(user_name)
-FROM Users
-GROUP BY user_name;
+    SELECT user_name, COUNT(*)
+    FROM Users
+    GROUP BY user_name;
 
 Another valid approach is:
 
-SELECT user_name, COUNT(*)
-FROM Users
-GROUP BY user_name;
+    SELECT user_name, COUNT(user_name)
+    FROM Users
+    GROUP BY user_name;
 
 ---
 
@@ -412,23 +442,23 @@ GROUP BY user_name;
 
 ### Count a Specific Column
 
-SELECT COUNT(user_name)
-FROM Users;
+    SELECT COUNT(user_name)
+    FROM Users;
 
 This counts the non-NULL values in the `user_name` column.
 
 ### Count All Rows
 
-SELECT COUNT(*)
-FROM Users;
+    SELECT COUNT(*)
+    FROM Users;
 
 This counts all rows in the `Users` table.
 
 ### Count Records for Each User
 
-SELECT user_name, COUNT(*)
-FROM Users
-GROUP BY user_name;
+    SELECT user_name, COUNT(*)
+    FROM Users
+    GROUP BY user_name;
 
 This groups records by `user_name` and calculates the number of records in each group.
 
@@ -440,9 +470,9 @@ The `GROUP BY` clause is used to group rows having the same value in one or more
 
 Example:
 
-SELECT user_name, COUNT(*)
-FROM Users
-GROUP BY user_name;
+    SELECT user_name, COUNT(*)
+    FROM Users
+    GROUP BY user_name;
 
 Here:
 
@@ -456,26 +486,27 @@ Here:
 
 ### ❌ Incorrect Query
 
-SELECT COUNT(), user_name
-FROM Users;
+    SELECT COUNT(), user_name
+    FROM Users;
 
-Problems:
+### Problems Identified
 
-- ❌ COUNT() has no argument.
+- ❌ Column name or expression is missing inside COUNT().
 - ❌ `user_name` is a non-aggregated column.
-- ❌ GROUP BY is missing for the intended per-user aggregation.
+- ❌ GROUP BY clause is not specified.
 
 ### ✅ Correct Query
 
-SELECT user_name, COUNT(*)
-FROM Users
-GROUP BY user_name;
+    SELECT user_name, COUNT(*)
+    FROM Users
+    GROUP BY user_name;
 
-The corrected query:
+### Improvements
 
 - ✅ Uses COUNT(*)
-- ✅ Selects user_name
-- ✅ Groups records by user_name
+- ✅ Selects `user_name`
+- ✅ Uses GROUP BY
+- ✅ Groups records according to `user_name`
 - ✅ Calculates the number of records for each user
 
 ---
@@ -500,19 +531,19 @@ The corrected query:
 
 ## 🎓 Learning Outcome
 
-By completing Day 73, I learned how to correctly use aggregate functions with non-aggregated columns.
+By completing **Day 74**, I strengthened my understanding of aggregate functions and SQL query debugging.
 
-I also understood why a `GROUP BY` clause is required when selecting a column along with an aggregate function for grouped results.
+This challenge helped me understand:
 
-This challenge improved my understanding of:
+- 🧮 How COUNT() works
+- 📊 Why COUNT() requires an expression, column, or `*`
+- 📌 Why GROUP BY is used with non-aggregated columns
+- 🐞 How to identify errors in SQL queries
+- 🔍 How to analyze SQL query logic
+- 🗄️ How grouped records are processed
+- 🧠 How aggregate and non-aggregate expressions work together
 
-- 🧮 Aggregate Functions
-- 📊 COUNT()
-- 📌 GROUP BY
-- 🐞 SQL Error Identification
-- 🔍 Query Debugging
-- 🧠 Query Logic
-- 🗄️ Database Data Grouping
+This challenge also reinforced the importance of carefully analyzing SQL queries instead of only focusing on syntax.
 
 ---
 
@@ -540,6 +571,7 @@ This challenge improved my understanding of:
 | Day 71 | Player Performance Insights | SQL Challenge | JOIN, DISTINCT, ORDER BY, DESC, LIMIT, Top-N Analysis |
 | Day 72 | Player Details | SQL Challenge | JOIN, ORDER BY, DESC, LIMIT, Player & Match Analysis |
 | Day 73 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, Aggregate Functions, SQL Debugging |
+| Day 74 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, Query Debugging, Error Identification |
 
 ---
 
@@ -624,10 +656,11 @@ This challenge improved my understanding of:
 - ✅ Day 71 🏆🎯🔥
 - ✅ Day 72 🏆⚔️📅🔥
 - ✅ Day 73 🐞🧮📊🔥
+- ✅ Day 74 🐞🧮📊🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 74 → Day 99
+- ⏳ Day 75 → Day 99
 - 🏆 Day 100 → Final Goal
 
 ---
@@ -636,14 +669,14 @@ This challenge improved my understanding of:
 
 | 📊 Category | Details |
 |---|---|
-| 📅 Days Completed | **73 / 100** |
-| 💻 Challenges Solved | **73** |
+| 📅 Days Completed | **74 / 100** |
+| 💻 Challenges Solved | **74** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef & SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **73% Complete** 🚀 |
-| 🔥 Current Streak | **73 Days** |
-| ⏳ Days Remaining | **27 Days** |
+| 📈 Progress | **74% Complete** 🚀 |
+| 🔥 Current Streak | **74 Days** |
+| ⏳ Days Remaining | **26 Days** |
 | 📊 Main Focus | **SQL, Database, Data Analysis & Problem Solving** |
 | 📋 Latest Challenge | **Find the Error in Query** |
 | 🔍 Latest Topic | **COUNT(), GROUP BY & SQL Error Identification** |
@@ -652,9 +685,9 @@ This challenge improved my understanding of:
 
 # 🔥 Current Streak
 
-## **73 Days of SQL Practice Completed! 🎉🔥🚀**
+## **74 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **73 days down, 27 more to go!**
+> **74 days down, 26 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, department analysis, product analysis, leaderboard analysis, article analysis, view analysis, player performance analysis, match winner analysis, Top-N queries, window functions, SQL pivoting, date-based analysis, pattern generation, recursive queries, aggregate functions, GROUP BY analysis, SQL debugging, and problem-solving abilities.
 
@@ -691,6 +724,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 71 | ✅ Completed 🎉🏆🎯🔥 |
 | 🎯 Day 72 | ✅ Completed 🎉🏆⚔️🔥 |
 | 🎯 Day 73 | ✅ Completed 🎉🐞🧮📊🔥 |
+| 🎯 Day 74 | ✅ Completed 🎉🐞🧮📊🔥 |
 | 🎯 Day 75 | ⏳ Upcoming |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
@@ -756,11 +790,14 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 73**  
 ████████████████████ 100% ✅
 
+**Day 74**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ **73%**
+███████████████░░░░░ **74%**
 
-### **73 / 100 Days Completed**
+### **74 / 100 Days Completed**
 
 ---
 
@@ -953,12 +990,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**73 Days Completed ✅ | 27 Days Remaining ⏳ | 100 Days Goal 🎯**
+**74 Days Completed ✅ | 26 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 73 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 74 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
