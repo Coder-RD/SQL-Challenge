@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-75%25-success?style=for-the-badge" alt="75% Progress">
+  <img src="https://img.shields.io/badge/Progress-76%25-success?style=for-the-badge" alt="76% Progress">
 </p>
 
 <p align="center">
@@ -18,139 +18,118 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through HackerRank, CodeChef, and SQL practice challenges.
+This repository documents my daily SQL programming journey through HackerRank, CodeChef, and other SQL practice challenges.
 
 My goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
 Throughout this challenge, I am practicing concepts such as:
 
-- SQL Fundamentals
-- SELECT Statements
-- WHERE Conditions
-- DISTINCT
-- GROUP BY and HAVING
-- ORDER BY
-- Aggregate Functions
-- COUNT(), SUM(), AVG(), MIN(), MAX()
-- String Operations
-- Pattern Matching
-- Regular Expressions
-- Mathematical Functions
-- ROUND() and MOD()
-- Decimal Precision
+- SQL Fundamentals and SELECT Statements
+- WHERE Conditions and Comparison Operators
+- DISTINCT, GROUP BY, and HAVING
+- ORDER BY and LIMIT
+- Aggregate Functions: COUNT(), SUM(), AVG(), MIN(), MAX()
+- String Operations and Pattern Matching
+- Mathematical Functions and Decimal Precision
 - NULL Value Handling
-- Subqueries
+- Subqueries and Common Table Expressions
 - JOINs and Self JOINs
-- CASE Statements
-- Common Table Expressions
-- Window Functions
-- SQL Pivoting
+- CASE Statements and Conditional Logic
+- Window Functions and SQL Pivoting
 - Recursive Queries
 - Date-Based Analysis
 - Geographic Data Analysis
 - Latitude and Longitude
 - Distance Calculation
-- Salary Analysis
-- Employee Data Analysis
-- Product Analysis
-- Leaderboard Analysis
-- Submission Statistics
-- Activity Tracking
+- Salary and Employee Data Analysis
+- Product and Price Analysis
+- Leaderboard and Ranking Analysis
+- Submission Statistics and Activity Tracking
 - Symmetric Pairs
 - Pattern Generation
 - Unique Record Retrieval
-- Comparison Operators
-- Conditional Filtering
-- Record Counting
-- Sorting and Ordering
 - Article and Author Data Analysis
-- Duplicate Record Handling
-- Player Performance Analysis
-- Match Winner Analysis
+- Player Performance and Match Winner Analysis
 - Top-N Queries
 - Multi-Table Analysis
-- SQL Error Identification
-- Query Debugging
-- Aggregate Functions with Non-Aggregated Columns
-- COUNT() Return Types
+- SQL Error Identification and Query Debugging
+- Aggregate Function Return Types
 - SQL Multiple-Choice Questions
+- Nesting Rules for Aggregate Functions
 
-The goal is to solve one SQL challenge every day for 100 days, build consistency, strengthen my SQL and database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
-
----
-
-# 🎯 Challenge Goals
-
-- 🗄️ Practice SQL every day for 100 days
-- 📚 Strengthen SQL fundamentals
-- 🧠 Improve logical and analytical thinking
-- 🧩 Improve problem-solving skills
-- 💻 Solve SQL challenges on HackerRank
-- 👨‍💻 Solve SQL challenges on CodeChef
-- 📊 Learn data analysis using SQL
-- 🔢 Practice aggregate functions
-- 🔍 Improve filtering and sorting skills
-- 🔤 Practice string operations
-- 🧮 Practice mathematical functions
-- 📐 Understand rounding and truncation
-- 📍 Work with geographic data
-- 🌎 Analyze latitude and longitude
-- 🔗 Understand relational data and JOIN operations
-- 🧠 Practice subqueries and CTEs
-- 🔀 Use CASE statements
-- 📌 Practice DISTINCT, GROUP BY, and HAVING
-- 🏆 Analyze leaderboard and ranking problems
-- 🔄 Analyze symmetric pairs
-- 🪟 Practice window functions
-- 🔁 Practice recursive SQL queries
-- 💰 Practice salary and employee data analysis
-- 📰 Analyze article and publication data
-- 🏆 Analyze player and match performance
-- 🎯 Practice Top-N query problems
-- 🐞 Identify and debug SQL query errors
-- 🧮 Understand aggregate functions and return types
-- 💼 Build a strong SQL and database portfolio
-- 🌱 Learn consistently through daily practice
+The goal is to solve one SQL challenge every day for 100 days, build consistency, strengthen my database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
 ---
 
-# 🛠️ Platforms & Technologies
+## 🎯 Challenge Goals
+
+- 🗄️ Practice SQL every day for 100 days.
+- 📚 Strengthen SQL fundamentals.
+- 🧠 Improve logical and analytical thinking.
+- 🧩 Improve problem-solving skills.
+- 💻 Solve SQL challenges on HackerRank.
+- 👨‍💻 Solve SQL challenges on CodeChef.
+- 📊 Learn data analysis using SQL.
+- 🔢 Practice aggregate functions.
+- 🔍 Improve filtering and sorting skills.
+- 🔤 Practice string operations and pattern matching.
+- 🧮 Understand mathematical functions and decimal precision.
+- 📍 Work with geographic data.
+- 🔗 Understand relational data and JOIN operations.
+- 🧠 Practice subqueries and CTEs.
+- 🔀 Apply CASE statements and conditional logic.
+- 🪟 Practice window functions.
+- 🔄 Understand SQL pivoting and recursive queries.
+- 🏆 Analyze leaderboards and ranking problems.
+- 💰 Practice salary and employee data analysis.
+- 📰 Analyze article and publication data.
+- 🏅 Analyze player and match performance.
+- 🎯 Practice Top-N query problems.
+- 🐞 Identify and debug SQL query errors.
+- 🧮 Understand aggregate functions and their return types.
+- 💼 Build a strong SQL and database portfolio.
+- 🌱 Develop a consistent learning habit.
+
+---
+
+## 🛠️ Platforms & Technologies
 
 | Category | Details |
 |---|---|
 | 💻 Practice Platforms | HackerRank, CodeChef, SQL Challenges |
 | 🗄️ Language | SQL |
 | 🧠 SQL Dialect | MySQL |
-| 🔍 Filtering | WHERE |
+| 🔍 Filtering | WHERE, AND, OR, comparison operators |
 | 📊 Aggregation | COUNT(), SUM(), AVG(), MIN(), MAX() |
-| 🔤 String Operations | String Handling and Text Processing |
-| 🔎 Pattern Matching | LIKE, Wildcards, Regular Expressions |
-| 🔗 Relational Operations | JOINs and Self JOINs |
+| 🔤 String Operations | String handling and text processing |
+| 🔎 Pattern Matching | LIKE, wildcards, regular expressions |
+| 🔗 Relational Operations | INNER JOIN, LEFT JOIN, Self JOIN |
 | 🧠 Advanced Queries | Subqueries and CTEs |
-| 🔀 Conditional Logic | CASE Statements |
+| 🔀 Conditional Logic | CASE statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
-| 📍 Geographic Data | Latitude and Longitude |
-| 🔢 Numerical Processing | ROUND(), MOD(), Decimal Precision |
-| 🏆 Leaderboard Analysis | Ranking, GROUP BY, HAVING |
-| 🪟 Window Functions | ROW_NUMBER(), Ranking, Partitioning |
-| 🔄 SQL Pivoting | CASE and Conditional Aggregation |
-| 📅 Date Analysis | Date Filtering and Date Functions |
-| 👥 Activity Analysis | Daily Submission Tracking |
+| 📍 Geographic Data | Latitude and longitude |
+| 🔢 Numerical Processing | ROUND(), MOD(), decimal precision |
+| 🏆 Leaderboard Analysis | Ranking, grouping, aggregation |
+| 🪟 Window Functions | ROW_NUMBER(), ranking, partitioning |
+| 🔄 SQL Pivoting | CASE and conditional aggregation |
+| 📅 Date Analysis | Date filtering and date functions |
+| 👥 Activity Analysis | Daily submission and activity tracking |
 | 🔁 Recursive Queries | WITH RECURSIVE |
-| ⭐ Pattern Generation | REPEAT() and String Construction |
-| 🏢 Unique Data | DISTINCT and Duplicate Removal |
+| ⭐ Pattern Generation | REPEAT() and string construction |
+| 🏢 Unique Data | DISTINCT and duplicate removal |
 | ❌ NULL Handling | IS NULL and IS NOT NULL |
-| 💰 Salary Analysis | Salary Filtering and Sorting |
-| 👨‍💼 Employee Analysis | Employee Data Retrieval |
-| 📰 Article Analysis | Author, Publication and View Analysis |
-| 🏆 Player Analysis | Player Scores and Match Winners |
-| 🔝 Top-N Analysis | ORDER BY, DISTINCT and LIMIT |
-| 🐞 Error Identification | SQL Syntax and Query Logic |
-| 🧮 Aggregate Analysis | COUNT(), GROUP BY and Return Types |
+| 💰 Salary Analysis | Salary filtering and sorting |
+| 👨‍💼 Employee Analysis | Employee data retrieval |
+| 📰 Article Analysis | Author, publication, and view analysis |
+| 🏆 Player Analysis | Player scores and match winners |
+| 🔝 Top-N Analysis | ORDER BY, DISTINCT, and LIMIT |
+| 🐞 Error Identification | SQL syntax and query logic |
+| 🧮 Aggregate Analysis | COUNT(), grouping, and return types |
+| 🧩 Aggregate Function Nesting | Understanding SQL aggregate-function restrictions |
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 📁 **SQL-Challenge**
 
@@ -245,6 +224,8 @@ The goal is to solve one SQL challenge every day for 100 days, build consistency
 │   └── 📸 Screenshot 2026-10-08 075403.png  
 ├── 📁 Day75-SQL/  
 │   └── 📸 Screenshot 2026-10-09 210650.png  
+├── 📁 Day76-SQL/  
+│   └── 📸 Screenshot 2026-10-10 062320.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -329,117 +310,124 @@ The goal is to solve one SQL challenge every day for 100 days, build consistency
 | 🐞 Day 73 | Find the Error in Query | SQL Challenge | Completed |
 | 🧮 Day 74 | Find the Error in Query | SQL Challenge | Completed |
 | 🔢 Day 75 | Return Type of COUNT() Function | SQL Challenge | Completed |
-| ⏳ Day 76–99 | Upcoming Challenges | Various SQL Platforms | Pending |
+| 🧩 Day 76 | Nesting in Aggregate Functions | SQL Challenge | Completed |
+| ⏳ Day 77–99 | Upcoming Challenges | Various SQL Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 75 – Return Type of COUNT() Function
+# 🆕 Day 76 – Nesting in Aggregate Functions
 
 ## 📌 Challenge Information
 
-- 🔢 **Platform:** SQL Challenge
+- 🧩 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 75
-- 📚 **Challenge:** Return Type of COUNT() Function
-- 🔍 **Topic:** Aggregate Functions
-- 🧮 **Function:** COUNT()
-- 🎯 **Correct Answer:** INT
-- 📊 **Category:** SQL Fundamentals and Data Types
+- 📅 **Day:** 76
+- 📚 **Challenge:** Nesting in Aggregate Functions
+- 🔍 **Topic:** Aggregate Function Rules
+- 🧮 **Concept:** Nesting Aggregate Functions
+- 🎯 **Correct Answer:** Nesting Not Possible
+- 📊 **Category:** SQL Fundamentals and Aggregate Functions
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The objective of Day 75 is to identify the return type of the SQL `COUNT()` function.
-
-The `COUNT()` function is an aggregate function used to count rows or non-NULL values in a specified column.
+The objective of Day 76 is to understand whether SQL aggregate functions can be nested directly within one another.
 
 The challenge asks:
 
-**What is the return type of the COUNT function?**
+**Till how many levels (maximum) can we nest aggregate functions?**
 
 ### ✅ Correct Answer
 
-**INT**
+**Nesting Not Possible**
 
-The correct option selected in the challenge is `int`.
+In a standard SQL query, aggregate functions generally cannot be directly nested inside other aggregate functions at the same query level.
+
+For example, a query such as `SELECT MAX(AVG(salary)) FROM Employees;` is generally invalid because one aggregate function is directly nested inside another at the same query level.
+
+However, aggregate results can be calculated in separate query levels using a subquery or a Common Table Expression (CTE).
 
 ---
 
-## 🧮 Understanding the COUNT() Function
+## 🧮 Understanding Aggregate Functions
 
-The `COUNT()` function calculates the number of records that match a specified condition or the number of non-NULL values in a column.
+Aggregate functions perform calculations on a set of rows and return a single result for each group or query result.
 
-### 1. COUNT(*)
+Common aggregate functions include:
 
-Counts all rows in a table.
+- `COUNT()` — Counts rows or non-NULL values.
+- `SUM()` — Calculates the total of numeric values.
+- `AVG()` — Calculates the average of numeric values.
+- `MIN()` — Returns the minimum value.
+- `MAX()` — Returns the maximum value.
 
-Example:
+### ❌ Example: Direct Nesting
 
-    SELECT COUNT(*)
-    FROM Users;
+A query such as the following is generally invalid:
 
-This query returns the total number of rows in the `Users` table.
+    SELECT MAX(AVG(salary))
+    FROM Employees;
 
-### 2. COUNT(column_name)
+The problem is that `AVG()` is directly nested inside `MAX()` at the same query level.
 
-Counts non-NULL values in a specified column.
+### ✅ Example: Using a Subquery
 
-Example:
+Suppose we want to find the highest average salary among departments.
 
-    SELECT COUNT(user_name)
-    FROM Users;
+    SELECT MAX(avg_salary)
+    FROM (
+        SELECT AVG(salary) AS avg_salary
+        FROM Employees
+        GROUP BY department_id
+    ) AS DepartmentAverages;
 
-This query counts the non-NULL values in the `user_name` column.
+### 🔍 How It Works
 
-### 3. COUNT() with WHERE
+1. The inner query calculates the average salary for each department.
+2. The subquery returns the average salary for every department.
+3. The outer query applies `MAX()` to those calculated averages.
+4. The final result is the highest departmental average salary.
 
-Counts records that satisfy a specified condition.
+This approach separates the aggregate calculations into different query levels instead of directly nesting aggregate functions.
 
-Example:
-
-    SELECT COUNT(*)
-    FROM Users
-    WHERE user_name IS NOT NULL;
-
-This query counts the records where `user_name` is not NULL.
+**Important:** SQL rules can differ by database system and query context. The answer above reflects the option accepted by this challenge.
 
 ---
 
 ## 📚 Concepts Practiced
 
 - SQL Aggregate Functions
-- COUNT() Function
-- COUNT(*)
-- COUNT(column_name)
-- SQL Return Types
-- Integer Data Types
-- NULL Value Handling
-- SQL Fundamentals
-- Database Queries
-- Multiple-Choice SQL Questions
+- Aggregate Function Restrictions
+- COUNT(), SUM(), AVG(), MIN(), MAX()
+- SQL Query Levels
+- Nested Queries
+- Subqueries
+- Common Table Expressions
+- GROUP BY
+- SQL Syntax Rules
+- SQL Multiple-Choice Questions
+- Query Structure and Evaluation
 
 ---
 
 ## 🎓 Learning Outcome
 
-By completing **Day 75**, I strengthened my understanding of the SQL `COUNT()` function and its return type.
+By completing **Day 76**, I strengthened my understanding of aggregate functions and their nesting restrictions.
 
 This challenge helped me understand:
 
-- 🔢 The purpose of the COUNT() function
-- 📊 How SQL counts records
-- 🧮 The difference between COUNT(*) and COUNT(column_name)
-- ❌ How COUNT(column_name) handles NULL values
-- 🗄️ The role of aggregate functions in SQL
-- 🎯 How to identify the correct answer to SQL concept questions
+- 🧮 The purpose of aggregate functions.
+- ❌ Why direct aggregate-function nesting is generally invalid.
+- 🔍 How SQL evaluates aggregate calculations.
+- 🧠 How subqueries can separate aggregate calculations.
+- 📊 How GROUP BY can calculate aggregates for different groups.
+- 🗄️ How to structure complex SQL queries correctly.
 
-**Key Takeaway:** The correct option for this challenge is `INT`.
-
-Note: Exact return-type behavior can depend on the database system and its SQL implementation. The answer above reflects the option accepted by the challenge.
+**Key Takeaway:** Directly nesting aggregate functions at the same query level is generally not allowed. Use a subquery or CTE when one aggregate calculation depends on another.
 
 ---
 
@@ -447,28 +435,29 @@ Note: Exact return-type behavior can depend on the database system and its SQL i
 
 | Day | Challenge | Platform | Key Concepts |
 |---|---|---|---|
-| Day 54 | Interviews | HackerRank | JOINs, Aggregation, Subqueries, Statistics |
-| Day 55 | Print Prime Numbers | HackerRank | MOD(), Prime Logic, String Aggregation |
-| Day 56 | Occupations | HackerRank | Pivoting, ROW_NUMBER(), CASE, Aggregation |
-| Day 57 | 15 Days of Learning SQL | HackerRank | CTEs, Window Functions, Date Analysis |
-| Day 58 | Draw The Triangle 1 | HackerRank | Pattern Generation, String Functions |
-| Day 59 | Draw The Triangle 2 | HackerRank | WITH RECURSIVE, REPEAT(), Pattern Generation |
-| Day 60 | SELECT Statement Challenge | CodeChef | SELECT, Data Retrieval |
-| Day 61 | High Price of Products | CodeChef | Product Prices, Filtering, Comparison |
-| Day 62 | Average Salary | CodeChef | AVG(), Aggregate Functions, Salary Analysis |
-| Day 63 | Locate People | SQL Challenge | LIKE, Wildcards, Pattern Matching |
-| Day 64 | Distinct Companies | SQL Challenge | DISTINCT, Unique Records, Duplicate Removal |
-| Day 65 | Fiction Collection Size | SQL Challenge | COUNT(), WHERE, Conditional Filtering |
-| Day 66 | List of Movies with Ratings | SQL Challenge | WHERE, AND, Comparison Operators |
-| Day 67 | Handling NULL Values | SQL Challenge | IS NULL, NULL Handling, WHERE |
-| Day 68 | Salary of Employees | SQL Challenge | WHERE, ORDER BY, DESC, Salary Analysis |
-| Day 69 | Department of Each Employee | SQL Challenge | GROUP BY, COUNT(), Aggregation |
+| Day 54 | Interviews | HackerRank | JOINs, aggregation, subqueries, statistics |
+| Day 55 | Print Prime Numbers | HackerRank | MOD(), prime logic, string aggregation |
+| Day 56 | Occupations | HackerRank | Pivoting, ROW_NUMBER(), CASE, aggregation |
+| Day 57 | 15 Days of Learning SQL | HackerRank | CTEs, window functions, date analysis |
+| Day 58 | Draw The Triangle 1 | HackerRank | Pattern generation, string functions |
+| Day 59 | Draw The Triangle 2 | HackerRank | WITH RECURSIVE, REPEAT(), pattern generation |
+| Day 60 | SELECT Statement Challenge | CodeChef | SELECT, data retrieval |
+| Day 61 | High Price of Products | CodeChef | Product prices, filtering, comparison |
+| Day 62 | Average Salary | CodeChef | AVG(), aggregate functions, salary analysis |
+| Day 63 | Locate People | SQL Challenge | LIKE, wildcards, pattern matching |
+| Day 64 | Distinct Companies | SQL Challenge | DISTINCT, unique records, duplicate removal |
+| Day 65 | Fiction Collection Size | SQL Challenge | COUNT(), WHERE, conditional filtering |
+| Day 66 | List of Movies with Ratings | SQL Challenge | WHERE, AND, comparison operators |
+| Day 67 | Handling NULL Values | SQL Challenge | IS NULL, NULL handling, WHERE |
+| Day 68 | Salary of Employees | SQL Challenge | WHERE, ORDER BY, DESC, salary analysis |
+| Day 69 | Department of Each Employee | SQL Challenge | GROUP BY, COUNT(), aggregation |
 | Day 70 | Article Views | SQL Challenge | WHERE, DISTINCT, ORDER BY |
 | Day 71 | Player Performance Insights | SQL Challenge | JOIN, DISTINCT, ORDER BY, LIMIT |
-| Day 72 | Player Details | SQL Challenge | JOIN, ORDER BY, LIMIT, Player Analysis |
-| Day 73 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, SQL Debugging |
-| Day 74 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, Query Debugging |
-| Day 75 | Return Type of COUNT() Function | SQL Challenge | COUNT(), Aggregate Functions, Return Types |
+| Day 72 | Player Details | SQL Challenge | JOIN, ORDER BY, LIMIT, player analysis |
+| Day 73 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, SQL debugging |
+| Day 74 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, query debugging |
+| Day 75 | Return Type of COUNT() Function | SQL Challenge | COUNT(), aggregate functions, return types |
+| Day 76 | Nesting in Aggregate Functions | SQL Challenge | Aggregate-function restrictions, subqueries |
 
 ---
 
@@ -497,7 +486,7 @@ Note: Exact return-type behavior can depend on the database system and its SQL i
 - 💰 Product Price Analysis
 - 📊 Average Salary Analysis
 - 👨‍💼 Employee Data Analysis
-- 🏢 Department-wise Employee Analysis
+- 🏢 Department-Wise Employee Analysis
 - 📰 Article and Publication Analysis
 - 👁️ View Count Analysis
 - 🏆 Player Performance Analysis
@@ -527,6 +516,7 @@ Note: Exact return-type behavior can depend on the database system and its SQL i
 - 🔧 Query Debugging
 - 📈 Sorting and Ordering
 - 🎯 SQL Return Types
+- 🧩 Aggregate Function Nesting Rules
 - 🗄️ Database Concepts
 
 ---
@@ -556,10 +546,11 @@ Note: Exact return-type behavior can depend on the database system and its SQL i
 - ✅ Day 73 🐞🧮📊🔥
 - ✅ Day 74 🐞🧮📊🔥
 - ✅ Day 75 🔢🧮🔥
+- ✅ Day 76 🧩📊🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 76–99
+- ⏳ Day 77–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -568,25 +559,25 @@ Note: Exact return-type behavior can depend on the database system and its SQL i
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **75 / 100** |
-| 💻 Challenges Solved | **75** |
+| 📅 Days Completed | **76 / 100** |
+| 💻 Challenges Solved | **76** |
 | 🗄️ Language | **SQL** |
-| 🏆 Practice Platforms | **HackerRank, CodeChef and SQL Challenges** |
+| 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **75% Complete** 🚀 |
-| 🔥 Current Streak | **75 Days** |
-| ⏳ Days Remaining | **25 Days** |
-| 📊 Main Focus | **SQL, Database, Data Analysis and Problem Solving** |
-| 📋 Latest Challenge | **Return Type of COUNT() Function** |
-| 🔍 Latest Topic | **COUNT() and Aggregate Function Return Types** |
+| 📈 Progress | **76% Complete** 🚀 |
+| 🔥 Challenge Streak | **76 Days Completed** |
+| ⏳ Days Remaining | **24 Days** |
+| 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
+| 📋 Latest Challenge | **Nesting in Aggregate Functions** |
+| 🔍 Latest Topic | **Aggregate Function Nesting Rules** |
 
 ---
 
 # 🔥 Current Streak
 
-## **75 Days of SQL Practice Completed! 🎉🔥🚀**
+## **76 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **75 days down, 25 more to go!**
+> **76 days down, 24 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, article analysis, player performance analysis, Top-N queries, window functions, recursive queries, aggregate functions, SQL debugging, and problem-solving abilities.
 
@@ -625,6 +616,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 73 | ✅ Completed 🎉🐞🧮📊🔥 |
 | 🎯 Day 74 | ✅ Completed 🎉🐞🧮📊🔥 |
 | 🎯 Day 75 | ✅ Completed 🎉🔢🧮🔥 |
+| 🎯 Day 76 | ✅ Completed 🎉🧩📊🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -695,11 +687,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 75**  
 ████████████████████ 100% ✅
 
+**Day 76**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ **75%**
+███████████████░░░░░ **76%**
 
-### **75 / 100 Days Completed**
+### **76 / 100 Days Completed**
+
+- ✅ Completed: 76 days
+- ⏳ Remaining: 24 days
+- 🏆 Final target: 100 days
 
 ---
 
@@ -770,6 +769,7 @@ It is also about:
 - 📊 Understanding GROUP BY
 - 🔧 Debugging SQL queries
 - 🎯 Understanding SQL return types
+- 🧩 Understanding aggregate-function nesting restrictions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -814,6 +814,7 @@ Every challenge helps me improve my:
 - 🏆 Player Performance Analysis
 - 🏅 Match Winner Analysis
 - 🔝 Top-N Query Skills
+- 🧩 Aggregate Function Nesting Rules
 - 💼 Technical Interview Preparation
 
 ---
@@ -886,7 +887,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#Count` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#CountFunction` `#SQLDataTypes`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#Count` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#CountFunction` `#SQLDataTypes` `#AggregateNesting`
 
 ---
 
@@ -896,12 +897,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**75 Days Completed ✅ | 25 Days Remaining ⏳ | 100 Days Goal 🎯**
+**76 Days Completed ✅ | 24 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 75 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 76 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
