@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-76%25-success?style=for-the-badge" alt="76% Progress">
+  <img src="https://img.shields.io/badge/Progress-77%25-success?style=for-the-badge" alt="77% Progress">
 </p>
 
 <p align="center">
@@ -226,6 +226,8 @@ The goal is to solve one SQL challenge every day for 100 days, build consistency
 │   └── 📸 Screenshot 2026-10-09 210650.png  
 ├── 📁 Day76-SQL/  
 │   └── 📸 Screenshot 2026-10-10 062320.png  
+├── 📁 Day77-SQL/  
+│   └── 📸 Screenshot 2026-10-11 060038.png  
 ├── 📄 README.md  
 └── 📄 LICENSE
 
@@ -311,7 +313,8 @@ The goal is to solve one SQL challenge every day for 100 days, build consistency
 | 🧮 Day 74 | Find the Error in Query | SQL Challenge | Completed |
 | 🔢 Day 75 | Return Type of COUNT() Function | SQL Challenge | Completed |
 | 🧩 Day 76 | Nesting in Aggregate Functions | SQL Challenge | Completed |
-| ⏳ Day 77–99 | Upcoming Challenges | Various SQL Platforms | Pending |
+| 🧮 Day 77 | Find Incorrect Queries | SQL Challenge | Completed |
+| ⏳ Day 78–99 | Upcoming Challenges | Various SQL Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
 
 ---
@@ -431,6 +434,58 @@ This challenge helped me understand:
 
 ---
 
+# 🆕 Day 77 – Find Incorrect Queries
+
+## 📌 Challenge Information
+
+- 🧩 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 77
+- 📚 **Challenge:** Find Incorrect Queries
+- 🔍 **Topic:** Aggregate Functions and Query Debugging
+- 🧮 **Concepts:** AVG(), SUM(), ROUND(), COUNT()
+- ✅ **Status:** Completed
+
+---
+
+## 🎯 Challenge Objective
+
+The objective of Day 77 is to identify incorrect SQL queries by checking aggregate-function syntax and the arguments supplied to each function.
+
+The challenge presents queries involving rating and review data and asks which queries are incorrect.
+
+### 🔍 Queries Reviewed
+
+- `SELECT AVG(rating) FROM Users;` — Uses `AVG()` with one numeric column to calculate an average.
+- `SELECT SUM(rating, review) FROM Users;` — Incorrect because `SUM()` accepts a single expression, not two comma-separated arguments.
+- `SELECT ROUND(SUM(rating), 2) FROM Users;` — Uses `SUM()` and rounds the result to two decimal places.
+- `SELECT COUNT(users) FROM Users;` — Validity depends on whether `users` is a column in the table; use the actual column name or `COUNT(*)` to count rows.
+
+**Key takeaway:** Check each aggregate function's syntax and arguments carefully. `SUM()` takes one expression, `AVG()` calculates an average, `ROUND()` controls decimal precision, and `COUNT(*)` counts rows.
+
+---
+
+## 📚 Concepts Practiced
+
+- SQL Aggregate Functions
+- AVG() and SUM()
+- ROUND() and Decimal Precision
+- COUNT() and Row Counting
+- SQL Syntax Validation
+- Identifying Incorrect Queries
+- Query Debugging
+
+---
+
+## 🎓 Learning Outcome
+
+By completing **Day 77**, I practiced recognizing errors in SQL queries and reviewing the correct use of aggregate functions.
+
+This challenge strengthened my understanding of function arguments, numeric calculations, and query debugging.
+
+---
+
 # 🧠 Recent SQL Challenges
 
 | Day | Challenge | Platform | Key Concepts |
@@ -458,6 +513,7 @@ This challenge helped me understand:
 | Day 74 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, query debugging |
 | Day 75 | Return Type of COUNT() Function | SQL Challenge | COUNT(), aggregate functions, return types |
 | Day 76 | Nesting in Aggregate Functions | SQL Challenge | Aggregate-function restrictions, subqueries |
+| Day 77 | Find Incorrect Queries | SQL Challenge | AVG(), SUM(), ROUND(), COUNT(), query debugging |
 
 ---
 
@@ -547,10 +603,11 @@ This challenge helped me understand:
 - ✅ Day 74 🐞🧮📊🔥
 - ✅ Day 75 🔢🧮🔥
 - ✅ Day 76 🧩📊🔥
+- ✅ Day 77 🧮🐞🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 77–99
+- ⏳ Day 78–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -559,25 +616,25 @@ This challenge helped me understand:
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **76 / 100** |
-| 💻 Challenges Solved | **76** |
+| 📅 Days Completed | **77 / 100** |
+| 💻 Challenges Solved | **77** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **76% Complete** 🚀 |
-| 🔥 Challenge Streak | **76 Days Completed** |
-| ⏳ Days Remaining | **24 Days** |
+| 📈 Progress | **77% Complete** 🚀 |
+| 🔥 Challenge Streak | **77 Days Completed** |
+| ⏳ Days Remaining | **23 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Nesting in Aggregate Functions** |
-| 🔍 Latest Topic | **Aggregate Function Nesting Rules** |
+| 📋 Latest Challenge | **Find Incorrect Queries** |
+| 🔍 Latest Topic | **Aggregate Functions and Query Debugging** |
 
 ---
 
 # 🔥 Current Streak
 
-## **76 Days of SQL Practice Completed! 🎉🔥🚀**
+## **77 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **76 days down, 24 more to go!**
+> **77 days down, 23 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, article analysis, player performance analysis, Top-N queries, window functions, recursive queries, aggregate functions, SQL debugging, and problem-solving abilities.
 
@@ -617,6 +674,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 74 | ✅ Completed 🎉🐞🧮📊🔥 |
 | 🎯 Day 75 | ✅ Completed 🎉🔢🧮🔥 |
 | 🎯 Day 76 | ✅ Completed 🎉🧩📊🔥 |
+| 🎯 Day 77 | ✅ Completed 🎉🧮🐞🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -690,14 +748,17 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 76**  
 ████████████████████ 100% ✅
 
+**Day 77**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ **76%**
+███████████████░░░░░ **77%**
 
-### **76 / 100 Days Completed**
+### **77 / 100 Days Completed**
 
-- ✅ Completed: 76 days
-- ⏳ Remaining: 24 days
+- ✅ Completed: 77 days
+- ⏳ Remaining: 23 days
 - 🏆 Final target: 100 days
 
 ---
@@ -897,12 +958,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**76 Days Completed ✅ | 24 Days Remaining ⏳ | 100 Days Goal 🎯**
+**77 Days Completed ✅ | 23 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 76 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 77 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
