@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL SQL">
-  <img src="https://img.shields.io/badge/Progress-77%25-success?style=for-the-badge" alt="77% Progress">
+  <img src="https://img.shields.io/badge/Progress-78%25-success?style=for-the-badge" alt="78% Progress">
 </p>
 
 <p align="center">
@@ -55,7 +55,7 @@ Throughout this challenge, I am practicing concepts such as:
 - SQL Error Identification and Query Debugging
 - Aggregate Function Return Types
 - SQL Multiple-Choice Questions
-- Nesting Rules for Aggregate Functions
+- Aggregate Function Nesting Rules
 
 The goal is to solve one SQL challenge every day for 100 days, build consistency, strengthen my database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -133,103 +133,40 @@ The goal is to solve one SQL challenge every day for 100 days, build consistency
 
 📁 **SQL-Challenge**
 
-├── 📁 Day1-SQL/  
-├── 📁 Day2-SQL/  
-├── 📁 Day3-SQL/  
-├── 📁 Day4-SQL/  
-├── 📁 Day5-SQL/  
-├── 📁 Day6-SQL/  
-├── 📁 Day7-SQL/  
-├── 📁 Day8-SQL/  
-├── 📁 Day9-SQL/  
-├── 📁 Day10-SQL/  
-├── 📁 Day11-SQL/  
-├── 📁 Day12-SQL/  
-├── 📁 Day13-SQL/  
-├── 📁 Day14-SQL/  
-├── 📁 Day15-SQL/  
-├── 📁 Day16-SQL/  
-├── 📁 Day17-SQL/  
-├── 📁 Day18-SQL/  
-├── 📁 Day19-SQL/  
-├── 📁 Day20-SQL/  
-├── 📁 Day21-SQL/  
-├── 📁 Day22-SQL/  
-├── 📁 Day23-SQL/  
-├── 📁 Day24-SQL/  
-├── 📁 Day25-SQL/  
-├── 📁 Day26-SQL/  
-├── 📁 Day27-SQL/  
-├── 📁 Day28-SQL/  
-├── 📁 Day29-SQL/  
-├── 📁 Day30-SQL/  
-├── 📁 Day31-SQL/  
-├── 📁 Day32-SQL/  
-├── 📁 Day33-SQL/  
-├── 📁 Day34-SQL/  
-├── 📁 Day35-SQL/  
-├── 📁 Day36-SQL/  
-├── 📁 Day37-SQL/  
-├── 📁 Day38-SQL/  
-├── 📁 Day39-SQL/  
-├── 📁 Day40-SQL/  
-├── 📁 Day41-SQL/  
-├── 📁 Day42-SQL/  
-├── 📁 Day43-SQL/  
-├── 📁 Day44-SQL/  
-├── 📁 Day45-SQL/  
-├── 📁 Day46-SQL/  
-├── 📁 Day47-SQL/  
-├── 📁 Day48-SQL/  
-├── 📁 Day49-SQL/  
-├── 📁 Day50-SQL/  
-├── 📁 Day51-SQL/  
-├── 📁 Day52-SQL/  
-├── 📁 Day53-SQL/  
-├── 📁 Day54-SQL/  
-├── 📁 Day55-SQL/  
-├── 📁 Day56-SQL/  
-├── 📁 Day57-SQL/  
-├── 📁 Day58-SQL/  
-├── 📁 Day59-SQL/  
-├── 📁 Day60-SQL/  
-├── 📁 Day61-SQL/  
-├── 📁 Day62-SQL/  
-├── 📁 Day63-SQL/  
-├── 📁 Day64-SQL/  
-├── 📁 Day65-SQL/  
-├── 📁 Day66-SQL/  
-├── 📁 Day67-SQL/  
-│   ├── 📄 Handling NULL Values.sql  
-│   └── 📸 Screenshot 2026-10-01 075111.png  
-├── 📁 Day68-SQL/  
-│   ├── 📄 Salary of Employees.sql  
-│   └── 📸 Screenshot 2026-10-02 081530.png  
-├── 📁 Day69-SQL/  
-│   ├── 📄 Department of Each Employee.sql  
-│   └── 📸 Screenshot 2026-10-03 074754.png  
-├── 📁 Day70-SQL/  
-│   ├── 📄 Article views.sql  
-│   └── 📸 Screenshot 2026-10-04 132834.png  
-├── 📁 Day71-SQL/  
-│   ├── 📄 Player Performance Insights.sql  
-│   └── 📸 Screenshot 2026-10-05 081925.png  
-├── 📁 Day72-SQL/  
-│   ├── 📄 Player Details.sql  
-│   └── 📸 Screenshot 2026-10-06 070128.png  
-├── 📁 Day73-SQL/  
-│   ├── 📄 Find the Error in Query.sql  
-│   └── 📸 Screenshot 2026-10-07 075055.png  
-├── 📁 Day74-SQL/  
-│   └── 📸 Screenshot 2026-10-08 075403.png  
-├── 📁 Day75-SQL/  
-│   └── 📸 Screenshot 2026-10-09 210650.png  
-├── 📁 Day76-SQL/  
-│   └── 📸 Screenshot 2026-10-10 062320.png  
-├── 📁 Day77-SQL/  
-│   └── 📸 Screenshot 2026-10-11 060038.png  
-├── 📄 README.md  
-└── 📄 LICENSE
+- 📁 Day1-SQL/ through 📁 Day66-SQL/
+- 📁 Day67-SQL/
+  - 📄 Handling NULL Values.sql
+  - 📸 Screenshot 2026-10-01 075111.png
+- 📁 Day68-SQL/
+  - 📄 Salary of Employees.sql
+  - 📸 Screenshot 2026-10-02 081530.png
+- 📁 Day69-SQL/
+  - 📄 Department of Each Employee.sql
+  - 📸 Screenshot 2026-10-03 074754.png
+- 📁 Day70-SQL/
+  - 📄 Article views.sql
+  - 📸 Screenshot 2026-10-04 132834.png
+- 📁 Day71-SQL/
+  - 📄 Player Performance Insights.sql
+  - 📸 Screenshot 2026-10-05 081925.png
+- 📁 Day72-SQL/
+  - 📄 Player Details.sql
+  - 📸 Screenshot 2026-10-06 070128.png
+- 📁 Day73-SQL/
+  - 📄 Find the Error in Query.sql
+  - 📸 Screenshot 2026-10-07 075055.png
+- 📁 Day74-SQL/
+  - 📸 Screenshot 2026-10-08 075403.png
+- 📁 Day75-SQL/
+  - 📸 Screenshot 2026-10-09 210650.png
+- 📁 Day76-SQL/
+  - 📸 Screenshot 2026-10-10 062320.png
+- 📁 Day77-SQL/
+  - 📸 Screenshot 2026-10-11 060038.png
+- 📁 Day78-SQL/
+  - 📸 Screenshot 2026-10-12 130935.png
+- 📄 README.md
+- 📄 LICENSE
 
 ---
 
@@ -314,155 +251,76 @@ The goal is to solve one SQL challenge every day for 100 days, build consistency
 | 🔢 Day 75 | Return Type of COUNT() Function | SQL Challenge | Completed |
 | 🧩 Day 76 | Nesting in Aggregate Functions | SQL Challenge | Completed |
 | 🧮 Day 77 | Find Incorrect Queries | SQL Challenge | Completed |
-| ⏳ Day 78–99 | Upcoming Challenges | Various SQL Platforms | Pending |
+| 🧮 Day 78 | Find Incorrect Queries | SQL Challenge | Completed |
+| ⏳ Day 79–99 | Upcoming Challenges | Various SQL Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
 
 ---
 
-# 🆕 Day 76 – Nesting in Aggregate Functions
+# 🆕 Day 78 – Find Incorrect Queries
 
 ## 📌 Challenge Information
 
 - 🧩 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
 - 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 76
-- 📚 **Challenge:** Nesting in Aggregate Functions
-- 🔍 **Topic:** Aggregate Function Rules
-- 🧮 **Concept:** Nesting Aggregate Functions
-- 🎯 **Correct Answer:** Nesting Not Possible
-- 📊 **Category:** SQL Fundamentals and Aggregate Functions
-- ✅ **Status:** Completed
-
----
-
-## 🎯 Challenge Objective
-
-The objective of Day 76 is to understand whether SQL aggregate functions can be nested directly within one another.
-
-The challenge asks:
-
-**Till how many levels (maximum) can we nest aggregate functions?**
-
-### ✅ Correct Answer
-
-**Nesting Not Possible**
-
-In a standard SQL query, aggregate functions generally cannot be directly nested inside other aggregate functions at the same query level.
-
-For example, a query such as `SELECT MAX(AVG(salary)) FROM Employees;` is generally invalid because one aggregate function is directly nested inside another at the same query level.
-
-However, aggregate results can be calculated in separate query levels using a subquery or a Common Table Expression (CTE).
-
----
-
-## 🧮 Understanding Aggregate Functions
-
-Aggregate functions perform calculations on a set of rows and return a single result for each group or query result.
-
-Common aggregate functions include:
-
-- `COUNT()` — Counts rows or non-NULL values.
-- `SUM()` — Calculates the total of numeric values.
-- `AVG()` — Calculates the average of numeric values.
-- `MIN()` — Returns the minimum value.
-- `MAX()` — Returns the maximum value.
-
-### ❌ Example: Direct Nesting
-
-A query such as the following is generally invalid:
-
-    SELECT MAX(AVG(salary))
-    FROM Employees;
-
-The problem is that `AVG()` is directly nested inside `MAX()` at the same query level.
-
-### ✅ Example: Using a Subquery
-
-Suppose we want to find the highest average salary among departments.
-
-    SELECT MAX(avg_salary)
-    FROM (
-        SELECT AVG(salary) AS avg_salary
-        FROM Employees
-        GROUP BY department_id
-    ) AS DepartmentAverages;
-
-### 🔍 How It Works
-
-1. The inner query calculates the average salary for each department.
-2. The subquery returns the average salary for every department.
-3. The outer query applies `MAX()` to those calculated averages.
-4. The final result is the highest departmental average salary.
-
-This approach separates the aggregate calculations into different query levels instead of directly nesting aggregate functions.
-
-**Important:** SQL rules can differ by database system and query context. The answer above reflects the option accepted by this challenge.
-
----
-
-## 📚 Concepts Practiced
-
-- SQL Aggregate Functions
-- Aggregate Function Restrictions
-- COUNT(), SUM(), AVG(), MIN(), MAX()
-- SQL Query Levels
-- Nested Queries
-- Subqueries
-- Common Table Expressions
-- GROUP BY
-- SQL Syntax Rules
-- SQL Multiple-Choice Questions
-- Query Structure and Evaluation
-
----
-
-## 🎓 Learning Outcome
-
-By completing **Day 76**, I strengthened my understanding of aggregate functions and their nesting restrictions.
-
-This challenge helped me understand:
-
-- 🧮 The purpose of aggregate functions.
-- ❌ Why direct aggregate-function nesting is generally invalid.
-- 🔍 How SQL evaluates aggregate calculations.
-- 🧠 How subqueries can separate aggregate calculations.
-- 📊 How GROUP BY can calculate aggregates for different groups.
-- 🗄️ How to structure complex SQL queries correctly.
-
-**Key Takeaway:** Directly nesting aggregate functions at the same query level is generally not allowed. Use a subquery or CTE when one aggregate calculation depends on another.
-
----
-
-# 🆕 Day 77 – Find Incorrect Queries
-
-## 📌 Challenge Information
-
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 77
+- 📅 **Day:** 78
 - 📚 **Challenge:** Find Incorrect Queries
 - 🔍 **Topic:** Aggregate Functions and Query Debugging
 - 🧮 **Concepts:** AVG(), SUM(), ROUND(), COUNT()
+- 📸 **Submission Screenshot:** Screenshot 2026-10-12 130935.png
 - ✅ **Status:** Completed
 
 ---
 
 ## 🎯 Challenge Objective
 
-The objective of Day 77 is to identify incorrect SQL queries by checking aggregate-function syntax and the arguments supplied to each function.
+The objective of Day 78 is to identify incorrect SQL queries by examining the syntax and usage of aggregate functions.
 
-The challenge presents queries involving rating and review data and asks which queries are incorrect.
+The challenge presents four SQL queries using the `Users` table and asks which queries are incorrect.
 
 ### 🔍 Queries Reviewed
 
-- `SELECT AVG(rating) FROM Users;` — Uses `AVG()` with one numeric column to calculate an average.
-- `SELECT SUM(rating, review) FROM Users;` — Incorrect because `SUM()` accepts a single expression, not two comma-separated arguments.
-- `SELECT ROUND(SUM(rating), 2) FROM Users;` — Uses `SUM()` and rounds the result to two decimal places.
-- `SELECT COUNT(users) FROM Users;` — Validity depends on whether `users` is a column in the table; use the actual column name or `COUNT(*)` to count rows.
+**1. Calculate the average rating**
 
-**Key takeaway:** Check each aggregate function's syntax and arguments carefully. `SUM()` takes one expression, `AVG()` calculates an average, `ROUND()` controls decimal precision, and `COUNT(*)` counts rows.
+`SELECT AVG(rating) FROM Users;`
+
+- Uses `AVG()` to calculate the average of the rating values.
+- Assumes `rating` is a valid numeric column.
+- This query is correct when the column exists and contains compatible data.
+
+**2. Calculate the sum of rating and review**
+
+`SELECT SUM(rating, review) FROM Users;`
+
+- Incorrect because `SUM()` accepts a single expression, not two comma-separated arguments.
+- The function cannot be used this way to add two separate columns.
+- A row-wise addition would use an expression such as `rating + review`, if that is the intended calculation.
+
+**3. Calculate the rounded sum of ratings**
+
+`SELECT ROUND(SUM(rating), 2) FROM Users;`
+
+- Uses `SUM()` to calculate the total rating.
+- Uses `ROUND()` to round the result to two decimal places.
+- This query is correct when `rating` is a valid numeric column.
+
+**4. Count values in the users column**
+
+`SELECT COUNT(users) FROM Users;`
+
+- The query is incorrect if `users` is not a column in the `Users` table.
+- If the objective is to count all rows, `COUNT(*)` is the appropriate expression.
+- If `users` is a valid column, `COUNT(users)` counts its non-NULL values.
+
+### ✅ Correct Option Selection
+
+The expected incorrect queries for this challenge are:
+
+- `SELECT SUM(rating, review) FROM Users;`
+- `SELECT COUNT(users) FROM Users;`
+
+**Important:** The second query is invalid because of its use of two arguments in `SUM()`. The fourth query depends on the actual table schema; the challenge expects it to be incorrect because `users` is not a valid column in the provided dataset.
 
 ---
 
@@ -475,14 +333,26 @@ The challenge presents queries involving rating and review data and asks which q
 - SQL Syntax Validation
 - Identifying Incorrect Queries
 - Query Debugging
+- Function Arguments
+- Database Table and Column References
 
 ---
 
 ## 🎓 Learning Outcome
 
-By completing **Day 77**, I practiced recognizing errors in SQL queries and reviewing the correct use of aggregate functions.
+By completing **Day 78**, I strengthened my understanding of aggregate functions and SQL query validation.
 
-This challenge strengthened my understanding of function arguments, numeric calculations, and query debugging.
+This challenge helped me understand:
+
+- 🧮 How aggregate functions calculate results.
+- 📊 How `AVG()` calculates average values.
+- ➕ Why `SUM()` accepts a single expression.
+- 🔢 How `ROUND()` controls decimal precision.
+- 🔍 How `COUNT(*)` differs from `COUNT(column)`.
+- 🐞 How to identify incorrect SQL syntax.
+- 🗄️ Why table and column names must match the database schema.
+
+**Key Takeaway:** Understanding function arguments and validating column names are essential for writing correct SQL queries.
 
 ---
 
@@ -513,7 +383,8 @@ This challenge strengthened my understanding of function arguments, numeric calc
 | Day 74 | Find the Error in Query | SQL Challenge | COUNT(), GROUP BY, query debugging |
 | Day 75 | Return Type of COUNT() Function | SQL Challenge | COUNT(), aggregate functions, return types |
 | Day 76 | Nesting in Aggregate Functions | SQL Challenge | Aggregate-function restrictions, subqueries |
-| Day 77 | Find Incorrect Queries | SQL Challenge | AVG(), SUM(), ROUND(), COUNT(), query debugging |
+| Day 77 | Find Incorrect Queries | SQL Challenge | AVG(), SUM(), ROUND(), COUNT() |
+| Day 78 | Find Incorrect Queries | SQL Challenge | Aggregate functions, function arguments, query debugging |
 
 ---
 
@@ -604,10 +475,11 @@ This challenge strengthened my understanding of function arguments, numeric calc
 - ✅ Day 75 🔢🧮🔥
 - ✅ Day 76 🧩📊🔥
 - ✅ Day 77 🧮🐞🔥
+- ✅ Day 78 🧮🐞🔥
 
 ## ⏳ Remaining
 
-- ⏳ Day 78–99
+- ⏳ Day 79–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -616,14 +488,14 @@ This challenge strengthened my understanding of function arguments, numeric calc
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **77 / 100** |
-| 💻 Challenges Solved | **77** |
+| 📅 Days Completed | **78 / 100** |
+| 💻 Challenges Solved | **78** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **77% Complete** 🚀 |
-| 🔥 Challenge Streak | **77 Days Completed** |
-| ⏳ Days Remaining | **23 Days** |
+| 📈 Progress | **78% Complete** 🚀 |
+| 🔥 Challenge Streak | **78 Days Completed** |
+| ⏳ Days Remaining | **22 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
 | 📋 Latest Challenge | **Find Incorrect Queries** |
 | 🔍 Latest Topic | **Aggregate Functions and Query Debugging** |
@@ -632,9 +504,9 @@ This challenge strengthened my understanding of function arguments, numeric calc
 
 # 🔥 Current Streak
 
-## **77 Days of SQL Practice Completed! 🎉🔥🚀**
+## **78 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **77 days down, 23 more to go!**
+> **78 days down, 22 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, SQL fundamentals, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, article analysis, player performance analysis, Top-N queries, window functions, recursive queries, aggregate functions, SQL debugging, and problem-solving abilities.
 
@@ -675,6 +547,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 75 | ✅ Completed 🎉🔢🧮🔥 |
 | 🎯 Day 76 | ✅ Completed 🎉🧩📊🔥 |
 | 🎯 Day 77 | ✅ Completed 🎉🧮🐞🔥 |
+| 🎯 Day 78 | ✅ Completed 🎉🧮🐞🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -698,33 +571,6 @@ The journey continues with **consistency, discipline, practice, and continuous l
 ████████████████████ 100% ✅
 
 **Day 60**  
-████████████████████ 100% ✅
-
-**Day 61**  
-████████████████████ 100% ✅
-
-**Day 62**  
-████████████████████ 100% ✅
-
-**Day 63**  
-████████████████████ 100% ✅
-
-**Day 64**  
-████████████████████ 100% ✅
-
-**Day 65**  
-████████████████████ 100% ✅
-
-**Day 66**  
-████████████████████ 100% ✅
-
-**Day 67**  
-████████████████████ 100% ✅
-
-**Day 68**  
-████████████████████ 100% ✅
-
-**Day 69**  
 ████████████████████ 100% ✅
 
 **Day 70**  
@@ -751,14 +597,17 @@ The journey continues with **consistency, discipline, practice, and continuous l
 **Day 77**  
 ████████████████████ 100% ✅
 
+**Day 78**  
+████████████████████ 100% ✅
+
 ## 🚀 Overall Progress
 
-███████████████░░░░░ **77%**
+███████████████░░░░░ **78%**
 
-### **77 / 100 Days Completed**
+### **78 / 100 Days Completed**
 
-- ✅ Completed: 77 days
-- ⏳ Remaining: 23 days
+- ✅ Completed: 78 days
+- ⏳ Remaining: 22 days
 - 🏆 Final target: 100 days
 
 ---
@@ -958,12 +807,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**77 Days Completed ✅ | 23 Days Remaining ⏳ | 100 Days Goal 🎯**
+**78 Days Completed ✅ | 22 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 77 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 78 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
