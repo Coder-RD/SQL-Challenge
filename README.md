@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 Day 79 Completed | 21 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 79 Days Completed | 21 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -26,7 +26,7 @@ This repository documents my daily SQL programming journey through HackerRank, C
 
 My goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
-Throughout this challenge, I am practicing SQL concepts ranging from basic queries and aggregate functions to advanced joins, subqueries, window functions, recursive queries, and data analysis.
+Throughout this challenge, I am exploring SQL concepts ranging from basic queries and aggregate functions to advanced joins, subqueries, window functions, recursive queries, and data analysis.
 
 ### 📚 Topics Covered
 
@@ -39,7 +39,7 @@ Throughout this challenge, I am practicing SQL concepts ranging from basic queri
 - Mathematical Functions and Decimal Precision
 - NULL Value Handling
 - Subqueries and Common Table Expressions (CTEs)
-- INNER JOIN, LEFT JOIN, and Self JOIN
+- JOINs and Self JOINs
 - CASE Statements and Conditional Logic
 - Window Functions and SQL Pivoting
 - Recursive Queries
@@ -62,6 +62,7 @@ Throughout this challenge, I am practicing SQL concepts ranging from basic queri
 - Aggregate Function Return Types
 - SQL Multiple-Choice Questions
 - Aggregate Function Nesting Rules
+- Text-Based Comparisons Using MIN() and MAX()
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -135,11 +136,78 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 
 ---
 
-## 📂 Repository Structure
+# 📂 Repository Structure
 
-📁 **SQL-Challenge**
+The repository is organized into daily folders to track my progress throughout the 100-day SQL challenge.
 
-- 📁 Day1-SQL/ through 📁 Day66-SQL/
+📁 **SQL-Challenge/**
+
+- 📁 Day1-SQL/
+- 📁 Day2-SQL/
+- 📁 Day3-SQL/
+- 📁 Day4-SQL/
+- 📁 Day5-SQL/
+- 📁 Day6-SQL/
+- 📁 Day7-SQL/
+- 📁 Day8-SQL/
+- 📁 Day9-SQL/
+- 📁 Day10-SQL/
+- 📁 Day11-SQL/
+- 📁 Day12-SQL/
+- 📁 Day13-SQL/
+- 📁 Day14-SQL/
+- 📁 Day15-SQL/
+- 📁 Day16-SQL/
+- 📁 Day17-SQL/
+- 📁 Day18-SQL/
+- 📁 Day19-SQL/
+- 📁 Day20-SQL/
+- 📁 Day21-SQL/
+- 📁 Day22-SQL/
+- 📁 Day23-SQL/
+- 📁 Day24-SQL/
+- 📁 Day25-SQL/
+- 📁 Day26-SQL/
+- 📁 Day27-SQL/
+- 📁 Day28-SQL/
+- 📁 Day29-SQL/
+- 📁 Day30-SQL/
+- 📁 Day31-SQL/
+- 📁 Day32-SQL/
+- 📁 Day33-SQL/
+- 📁 Day34-SQL/
+- 📁 Day35-SQL/
+- 📁 Day36-SQL/
+- 📁 Day37-SQL/
+- 📁 Day38-SQL/
+- 📁 Day39-SQL/
+- 📁 Day40-SQL/
+- 📁 Day41-SQL/
+- 📁 Day42-SQL/
+- 📁 Day43-SQL/
+- 📁 Day44-SQL/
+- 📁 Day45-SQL/
+- 📁 Day46-SQL/
+- 📁 Day47-SQL/
+- 📁 Day48-SQL/
+- 📁 Day49-SQL/
+- 📁 Day50-SQL/
+- 📁 Day51-SQL/
+- 📁 Day52-SQL/
+- 📁 Day53-SQL/
+- 📁 Day54-SQL/
+- 📁 Day55-SQL/
+- 📁 Day56-SQL/
+- 📁 Day57-SQL/
+- 📁 Day58-SQL/
+- 📁 Day59-SQL/
+- 📁 Day60-SQL/
+- 📁 Day61-SQL/
+- 📁 Day62-SQL/
+- 📁 Day63-SQL/
+- 📁 Day64-SQL/
+- 📁 Day65-SQL/
+- 📁 Day66-SQL/
 - 📁 Day67-SQL/
   - 📄 Handling NULL Values.sql
   - 📸 Screenshot 2026-10-01 075111.png
@@ -176,7 +244,15 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 📄 README.md
 - 📄 LICENSE
 
-Each daily folder contains the SQL solution, submission screenshot, or other relevant evidence when applicable.
+### 📌 Repository Organization
+
+- **Day 1–59:** SQL practice challenges on HackerRank.
+- **Day 60–62:** SQL practice challenges on CodeChef.
+- **Day 63–79:** SQL practice challenges from SQL Challenge.
+- **Day 80–99:** Upcoming SQL challenges.
+- **Day 100:** Final milestone of the challenge.
+
+Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
 
 ---
 
@@ -263,7 +339,26 @@ Each daily folder contains the SQL solution, submission screenshot, or other rel
 | 🧮 Day 77 | Find Incorrect Queries | SQL Challenge | Completed |
 | 🧮 Day 78 | Find Incorrect Queries | SQL Challenge | Completed |
 | 🔤 Day 79 | Output of MIN(college) Query | SQL Challenge | Completed |
-| ⏳ Day 80–99 | Upcoming Challenges | Various SQL Platforms | Pending |
+| ⏳ Day 80 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 81 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 82 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 83 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 84 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 85 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 86 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 87 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 88 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 89 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 90 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 91 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 92 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 93 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 94 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 95 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 96 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 97 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
 
 ---
@@ -317,7 +412,7 @@ The `MIN()` function can be used with numeric, date, and text values, provided t
 
 ### 🎓 Learning Outcome
 
-By completing **Day 79**, I strengthened my understanding of aggregate functions and learned how `MIN()` can be applied to text data.
+By completing Day 79, I strengthened my understanding of aggregate functions and learned how `MIN()` can be applied to text data.
 
 **Key Takeaway:** Aggregate functions are not limited to numerical calculations. The `MIN()` function can also identify the minimum text value according to the database's comparison rules.
 
@@ -347,38 +442,38 @@ The objective of Day 78 is to identify incorrect SQL queries by examining the sy
 
     SELECT AVG(rating) FROM Users;
 
-- Uses `AVG()` to calculate the average of numeric rating values.
+- Uses AVG() to calculate the average of numeric rating values.
 - Correct when the referenced column exists and contains compatible data.
 
 **2. Calculate the sum of rating and review**
 
     SELECT SUM(rating, review) FROM Users;
 
-- Incorrect because `SUM()` accepts a single expression, not two comma-separated arguments.
-- Row-wise addition can use `rating + review` when that is the intended calculation.
+- Incorrect because SUM() accepts a single expression, not two comma-separated arguments.
+- Row-wise addition can use rating + review when that is the intended calculation.
 
 **3. Calculate the rounded sum of ratings**
 
     SELECT ROUND(SUM(rating), 2) FROM Users;
 
-- Uses `SUM()` to calculate the total rating.
-- Uses `ROUND()` to round the result to two decimal places.
+- Uses SUM() to calculate the total rating.
+- Uses ROUND() to round the result to two decimal places.
 - Correct when the referenced column exists and is numeric.
 
 **4. Count values in the users column**
 
     SELECT COUNT(users) FROM Users;
 
-- The challenge treats this query as incorrect because `users` is not a valid column in the provided schema.
-- `COUNT(*)` can be used to count all rows.
-- `COUNT(column)` counts non-NULL values in a valid column.
+- The challenge treats this query as incorrect because users is not a valid column in the provided schema.
+- COUNT(*) can be used to count all rows.
+- COUNT(column) counts non-NULL values in a valid column.
 
 ### ✅ Expected Incorrect Queries
 
-- `SELECT SUM(rating, review) FROM Users;`
-- `SELECT COUNT(users) FROM Users;`
+- SELECT SUM(rating, review) FROM Users;
+- SELECT COUNT(users) FROM Users;
 
-**Note:** The validity of `COUNT(users)` depends on whether `users` exists as a column. For this challenge, the supplied dataset determines the expected answer.
+**Note:** The validity of COUNT(users) depends on whether users exists as a column. For this challenge, the supplied dataset determines the expected answer.
 
 ### 📚 Concepts Practiced
 
@@ -487,7 +582,7 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 - 📈 Sorting and Ordering
 - 🎯 SQL Return Types
 - 🧩 Aggregate Function Nesting Rules
-- 🔠 Text-Based MIN() and MAX() Comparisons
+- 🔤 Text-Based MIN() and MAX() Comparisons
 - 🗄️ Database Concepts
 
 ---
