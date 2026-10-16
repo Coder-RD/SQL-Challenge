@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL">
-  <img src="https://img.shields.io/badge/Progress-81%25-success?style=for-the-badge" alt="81% Progress">
+  <img src="https://img.shields.io/badge/Progress-82%25-success?style=for-the-badge" alt="82% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 81 Days Completed | 19 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 82 Days Completed | 18 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -28,7 +28,7 @@ My goal is to strengthen my SQL fundamentals, database knowledge, logical thinki
 
 Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to advanced joins, subqueries, window functions, recursive queries, and data analysis.
 
-Every day provides an opportunity to learn something new, solve problems, understand query logic, and improve my database programming skills.
+Each day provides an opportunity to learn something new, solve problems, understand query logic, and improve my database programming skills.
 
 ### 📚 Topics Covered
 
@@ -252,6 +252,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-14 081933.png
 - 📁 Day81-SQL/
   - 📸 Screenshot 2026-10-15 075025.png
+- 📁 Day82-SQL/
+  - 📸 Screenshot 2026-10-16 084101.png
 - 📄 README.md
 - 📄 LICENSE
 
@@ -259,8 +261,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 - **Day 1–59:** SQL practice challenges on HackerRank.
 - **Day 60–62:** SQL practice challenges on CodeChef.
-- **Day 63–81:** SQL practice challenges from SQL Challenge.
-- **Day 82–99:** Upcoming SQL challenges.
+- **Day 63–82:** SQL practice challenges from SQL Challenge.
+- **Day 83–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -352,7 +354,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | 🔤 Day 79 | Output of MIN(college) Query | SQL Challenge | Completed |
 | 🧮 Day 80 | Aggregate Functions and SQL Output | SQL Challenge | Completed |
 | ⭐ Day 81 | Count Star in NULL Columns | SQL Challenge | Completed |
-| ⏳ Day 82 | Upcoming SQL Challenge | Various Platforms | Pending |
+| 🔢 Day 82 | SQL Challenge | SQL Challenge | Completed |
 | ⏳ Day 83 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 84 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 85 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -371,6 +373,43 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 82 – SQL Challenge
+
+## 📌 Challenge Information
+
+- 🧩 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 82
+- 📚 **Challenge:** SQL Challenge
+- 📸 **Submission Screenshot:** Screenshot 2026-10-16 084101.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+Day 82 marks another milestone in my 100 Days of SQL Challenge.
+
+This challenge continues my daily practice of understanding SQL problem statements, analyzing query logic, identifying the correct approach, and interpreting query results.
+
+### 📚 Concepts Practiced
+
+- SQL Fundamentals
+- SQL Query Analysis
+- Database Concepts
+- Query Logic and Interpretation
+- Analytical Thinking
+- Problem-Solving Skills
+
+### 🎓 Learning Outcome
+
+Completing Day 82 represents another step toward my goal of completing 100 days of consistent SQL practice.
+
+Every challenge helps me strengthen my SQL knowledge, improve my logical thinking, and become more confident in solving database-related problems.
+
+**Key Takeaway:** Consistent SQL practice helps develop stronger query-writing skills, analytical thinking, and database knowledge.
 
 ---
 
@@ -465,9 +504,7 @@ By completing Day 81, I strengthened my understanding of SQL aggregate functions
 
 ## 🎯 Challenge Objective
 
-Day 80 marks another milestone in my 100 Days of SQL Challenge.
-
-This challenge continues my practice of understanding SQL queries, interpreting their outputs, and applying database concepts to solve SQL questions.
+Day 80 continues my practice of understanding SQL queries, interpreting their outputs, and applying database concepts to solve SQL questions.
 
 ### 📚 Concepts Practiced
 
@@ -636,6 +673,7 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 | Day 79 | Output of MIN(college) Query | SQL Challenge | MIN(), text comparison |
 | Day 80 | Aggregate Functions and SQL Output | SQL Challenge | Query interpretation, SQL fundamentals |
 | Day 81 | Count Star in NULL Columns | SQL Challenge | COUNT(*), NULL values, row counting |
+| Day 82 | SQL Challenge | SQL Challenge | SQL fundamentals, query analysis |
 
 ---
 
@@ -712,11 +750,11 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81
+- ✅ Day 81–82
 
 ## ⏳ Remaining
 
-- ⏳ Day 82–99
+- ⏳ Day 83–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -725,25 +763,25 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **81 / 100** |
-| 💻 Challenges Solved | **81** |
+| 📅 Days Completed | **82 / 100** |
+| 💻 Challenges Solved | **82** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **81% Complete** 🚀 |
-| 🔥 Challenge Streak | **81 Days Completed** |
-| ⏳ Days Remaining | **19 Days** |
+| 📈 Progress | **82% Complete** 🚀 |
+| 🔥 Challenge Streak | **82 Days Completed** |
+| ⏳ Days Remaining | **18 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 81 – Count Star in NULL Columns** |
-| 🔍 Latest Topic | **COUNT(*) and NULL Values** |
+| 📋 Latest Challenge | **Day 82 – SQL Challenge** |
+| 🔍 Latest Focus | **SQL Query Analysis and Problem-Solving** |
 
 ---
 
 # 🔥 Current Streak
 
-## **81 Days of SQL Practice Completed! 🎉🔥🚀**
+## **82 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **81 days down, 19 more to go!**
+> **82 days down, 18 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, article analysis, player performance analysis, Top-N queries, window functions, recursive queries, aggregate functions, SQL debugging, and problem-solving abilities.
 
@@ -788,6 +826,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 79 | ✅ Completed 🎉🔤🧮🔥 |
 | 🎯 Day 80 | ✅ Completed 🎉🗄️🧮🔥 |
 | 🎯 Day 81 | ✅ Completed 🎉🔢❌🔥 |
+| 🎯 Day 82 | ✅ Completed 🎉🗄️💻🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -827,18 +866,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 81**
+**Day 82**
 
-████████████████░░░░ **81%** 🚀
+████████████████░░░░ **82%** 🚀
 
 ## 🚀 Overall Progress
 
-████████████████░░░░ **81%**
+████████████████░░░░ **82%**
 
-### **81 / 100 Days Completed**
+### **82 / 100 Days Completed**
 
-- ✅ Completed: 81 days
-- ⏳ Remaining: 19 days
+- ✅ Completed: 82 days
+- ⏳ Remaining: 18 days
 - 🏆 Final target: 100 days
 
 ---
@@ -1033,7 +1072,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting` `#SQLQueryAnalysis` `#SQLLearning` `#DailyCoding`
 
 ---
 
@@ -1043,12 +1082,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**81 Days Completed ✅ | 19 Days Remaining ⏳ | 100 Days Goal 🎯**
+**82 Days Completed ✅ | 18 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 81 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 82 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
