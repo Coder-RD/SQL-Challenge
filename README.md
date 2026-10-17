@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL">
-  <img src="https://img.shields.io/badge/Progress-82%25-success?style=for-the-badge" alt="82% Progress">
+  <img src="https://img.shields.io/badge/Progress-83%25-success?style=for-the-badge" alt="83% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 82 Days Completed | 18 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 83 Days Completed | 17 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -22,13 +22,11 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through HackerRank, CodeChef, and other SQL practice challenges.
+This repository documents my daily SQL programming journey through HackerRank, CodeChef, and SQL practice challenges.
 
 My goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
-Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to advanced joins, subqueries, window functions, recursive queries, and data analysis.
-
-Each day provides an opportunity to learn something new, solve problems, understand query logic, and improve my database programming skills.
+Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to JOINs, subqueries, window functions, recursive queries, and data analysis.
 
 ### 📚 Topics Covered
 
@@ -64,9 +62,10 @@ Each day provides an opportunity to learn something new, solve problems, underst
 - Aggregate Function Return Types
 - SQL Multiple-Choice Questions
 - Aggregate Function Nesting Rules
-- Text-Based Comparisons Using MIN() and MAX()
+- Text Comparisons Using MIN() and MAX()
 - COUNT(*) and NULL Values
 - SQL Query Output Interpretation
+- INNER JOIN and Matching Records Across Tables
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -99,6 +98,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🐞 Identify and debug SQL errors.
 - 🧮 Understand aggregate functions and their return types.
 - 🔍 Understand how COUNT(*) handles NULL values.
+- 🔗 Learn how SQL JOINs combine related data.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -115,7 +115,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 📊 Aggregation | COUNT(), SUM(), AVG(), MIN(), MAX() |
 | 🔤 String Operations | String handling and text processing |
 | 🔎 Pattern Matching | LIKE, wildcards, regular expressions |
-| 🔗 Relational Operations | INNER JOIN, LEFT JOIN, Self JOIN |
+| 🔗 Relational Operations | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN concepts |
 | 🧠 Advanced Queries | Subqueries and CTEs |
 | 🔀 Conditional Logic | CASE statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
@@ -136,8 +136,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 🏆 Player Analysis | Player scores and match winners |
 | 🔝 Top-N Analysis | ORDER BY, DISTINCT, and LIMIT |
 | 🐞 Error Identification | SQL syntax and query logic |
-| 🧮 Aggregate Analysis | Aggregate functions, grouping, and return types |
-| 🧩 Aggregate Function Nesting | SQL aggregate-function restrictions |
+| 🧮 Aggregate Analysis | Aggregate functions and return types |
 | 🔢 Row Counting | COUNT(*) and NULL-containing rows |
 | 🔍 Query Interpretation | Predicting SQL query output |
 
@@ -254,6 +253,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-15 075025.png
 - 📁 Day82-SQL/
   - 📸 Screenshot 2026-10-16 084101.png
+- 📁 Day83-SQL/
+  - 📸 Screenshot 2026-10-17 160246.png
 - 📄 README.md
 - 📄 LICENSE
 
@@ -261,8 +262,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 - **Day 1–59:** SQL practice challenges on HackerRank.
 - **Day 60–62:** SQL practice challenges on CodeChef.
-- **Day 63–82:** SQL practice challenges from SQL Challenge.
-- **Day 83–99:** Upcoming SQL challenges.
+- **Day 63–83:** SQL practice challenges from SQL Challenge.
+- **Day 84–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -355,7 +356,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | 🧮 Day 80 | Aggregate Functions and SQL Output | SQL Challenge | Completed |
 | ⭐ Day 81 | Count Star in NULL Columns | SQL Challenge | Completed |
 | 🔢 Day 82 | SQL Challenge | SQL Challenge | Completed |
-| ⏳ Day 83 | Upcoming SQL Challenge | Various Platforms | Pending |
+| 🔗 Day 83 | Introduction to Cab Booking Dataset – INNER JOIN | SQL Challenge | Completed |
 | ⏳ Day 84 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 85 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 86 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -373,6 +374,76 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 83 – Introduction to Cab Booking Dataset
+
+## 📌 Challenge Information
+
+- 🧩 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 83
+- 📚 **Challenge:** Introduction to Cab Booking Dataset
+- 🔍 **Topic:** SQL JOINs
+- 🔗 **Concept:** INNER JOIN
+- 📸 **Submission Screenshot:** Screenshot 2026-10-17 160246.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+The objective of Day 83 is to understand SQL JOINs through a cab-booking case study involving user complaints and ride information associated with the ABC Cab-booking App.
+
+The challenge asks:
+
+**Which JOIN type returns only the rows that have matching values in both tables?**
+
+### ✅ Correct Answer
+
+**INNER JOIN**
+
+### 💡 Explanation
+
+An `INNER JOIN` returns only the rows that have matching values in both tables based on the specified join condition.
+
+It combines related records from two tables and excludes rows that do not have a matching record in the other table.
+
+### 📝 Example SQL Query
+
+    SELECT
+        A.column_name,
+        B.column_name
+    FROM TableA AS A
+    INNER JOIN TableB AS B
+        ON A.id = B.id;
+
+### 🔍 How INNER JOIN Works
+
+1. Identify the two tables to combine.
+2. Specify the columns that establish the relationship between the tables.
+3. Use the `INNER JOIN` keyword.
+4. Define the matching condition using `ON`.
+5. Retrieve only records that satisfy the join condition.
+
+### 📚 Concepts Practiced
+
+- SQL JOINs
+- INNER JOIN
+- Relational Database Concepts
+- Matching Records Across Tables
+- Table Relationships
+- Join Conditions
+- Cab Booking Data Analysis
+- SQL Multiple-Choice Questions
+- Database Query Fundamentals
+- Logical Thinking and Problem-Solving
+
+### 🎓 Learning Outcome
+
+By completing Day 83, I strengthened my understanding of SQL JOINs and learned how `INNER JOIN` retrieves matching records from related tables.
+
+**Key Takeaway:** `INNER JOIN` returns only rows with matching values in both tables.
 
 ---
 
@@ -406,8 +477,6 @@ This challenge continues my daily practice of understanding SQL problem statemen
 ### 🎓 Learning Outcome
 
 Completing Day 82 represents another step toward my goal of completing 100 days of consistent SQL practice.
-
-Every challenge helps me strengthen my SQL knowledge, improve my logical thinking, and become more confident in solving database-related problems.
 
 **Key Takeaway:** Consistent SQL practice helps develop stronger query-writing skills, analytical thinking, and database knowledge.
 
@@ -454,23 +523,13 @@ The given table contains two rows, and both rows have NULL values in both column
 
 Therefore, the query returns **2**.
 
-### 📚 Concepts Practiced
-
-- SQL Aggregate Functions
-- COUNT(*) Function
-- NULL Value Handling
-- SQL Query Interpretation
-- Row Counting
-- Database Fundamentals
-- Understanding Query Output
-
 ### 🔍 Important Difference: COUNT(*) vs COUNT(column)
 
 | Function | What It Counts |
 |---|---|
 | `COUNT(*)` | Counts all rows, including rows containing NULL values |
-| `COUNT(column1)` | Counts rows where `column1` is not NULL |
-| `COUNT(column2)` | Counts rows where `column2` is not NULL |
+| `COUNT(column1)` | Counts rows where column1 is not NULL |
+| `COUNT(column2)` | Counts rows where column2 is not NULL |
 
 For the given table:
 
@@ -485,159 +544,6 @@ For the given table:
 By completing Day 81, I strengthened my understanding of SQL aggregate functions and the difference between counting rows and counting non-NULL column values.
 
 **Key Takeaway:** `COUNT(*)` counts all rows, even when every column in those rows contains NULL.
-
----
-
-# 🆕 Day 80 – Aggregate Functions and SQL Output
-
-## 📌 Challenge Information
-
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 80
-- 📚 **Challenge:** SQL Aggregate Functions and Query Output
-- 🔍 **Topic:** SQL Query Interpretation
-- 🧮 **Concept:** Aggregate Functions
-- 📸 **Submission Screenshot:** Screenshot 2026-10-14 081933.png
-- ✅ **Status:** Completed
-
-## 🎯 Challenge Objective
-
-Day 80 continues my practice of understanding SQL queries, interpreting their outputs, and applying database concepts to solve SQL questions.
-
-### 📚 Concepts Practiced
-
-- SQL Query Interpretation
-- Aggregate Functions
-- SELECT Statements
-- Database Query Logic
-- Understanding Query Output
-- SQL Problem-Solving
-- Analytical Thinking
-
-### 🎓 Learning Outcome
-
-Completing Day 80 represents another step toward my goal of completing 100 days of SQL practice.
-
-**Key Takeaway:** Understanding how SQL functions operate and how queries produce results is essential for writing correct and efficient database queries.
-
----
-
-# 🆕 Day 79 – Output of MIN(college) Query
-
-## 📌 Challenge Information
-
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 79
-- 📚 **Challenge:** Choose the Output of the Following Query
-- 🔍 **Topic:** Aggregate Functions
-- 🧮 **Concept:** MIN()
-- 📋 **Table:** Users
-- 📸 **Submission Screenshot:** Screenshot 2026-10-13 073627.png
-- ✅ **Status:** Completed
-
-## 🎯 Challenge Objective
-
-The objective of Day 79 is to determine the output of an SQL query that uses the `MIN()` aggregate function on a text column.
-
-### 📝 SQL Query
-
-    SELECT MIN(college)
-    FROM Users;
-
-### ✅ Correct Answer
-
-**Caltech**
-
-### 💡 Explanation
-
-The `MIN()` aggregate function returns the minimum value from a column.
-
-When applied to text values, the result depends on the database's string comparison and collation rules. In the provided challenge dataset, the expected answer is `Caltech`.
-
-The `MIN()` function can be used with numeric, date, and text values, provided the data type supports the comparison.
-
-### 📚 Concepts Practiced
-
-- SQL Aggregate Functions
-- MIN() Function
-- Text-Based Comparisons
-- String Comparison Rules
-- SELECT Statements
-- Database Query Interpretation
-- Understanding SQL Output
-
-### 🎓 Learning Outcome
-
-By completing Day 79, I strengthened my understanding of aggregate functions and learned how `MIN()` can be applied to text data.
-
-**Key Takeaway:** The `MIN()` function can identify the minimum text value according to the database's comparison rules.
-
----
-
-# 🆕 Day 78 – Find Incorrect Queries
-
-## 📌 Challenge Information
-
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 78
-- 📚 **Challenge:** Find Incorrect Queries
-- 🔍 **Topic:** Aggregate Functions and Query Debugging
-- 🧮 **Concepts:** AVG(), SUM(), ROUND(), COUNT()
-- 📸 **Submission Screenshot:** Screenshot 2026-10-12 130935.png
-- ✅ **Status:** Completed
-
-## 🎯 Challenge Objective
-
-The objective of Day 78 is to identify incorrect SQL queries by examining the syntax and usage of aggregate functions.
-
-### 🔍 Queries Reviewed
-
-**1. Calculate the average rating**
-
-    SELECT AVG(rating) FROM Users;
-
-Uses `AVG()` to calculate the average of numeric rating values.
-
-**2. Calculate the sum of rating and review**
-
-    SELECT SUM(rating, review) FROM Users;
-
-Incorrect because `SUM()` accepts a single expression, not two comma-separated arguments.
-
-**3. Calculate the rounded sum of ratings**
-
-    SELECT ROUND(SUM(rating), 2) FROM Users;
-
-Uses `SUM()` to calculate the total rating and `ROUND()` to round the result to two decimal places.
-
-**4. Count values in the users column**
-
-    SELECT COUNT(users) FROM Users;
-
-The challenge treats this query as incorrect because `users` is not a valid column in the provided schema.
-
-### 📚 Concepts Practiced
-
-- SQL Aggregate Functions
-- AVG() and SUM()
-- ROUND() and Decimal Precision
-- COUNT() and Row Counting
-- SQL Syntax Validation
-- Function Arguments
-- Table and Column References
-- Query Debugging
-
-### 🎓 Learning Outcome
-
-This challenge strengthened my understanding of aggregate function syntax, function arguments, and column references.
-
-**Key Takeaway:** Correct SQL requires both valid syntax and accurate knowledge of the database schema.
 
 ---
 
@@ -674,6 +580,7 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 | Day 80 | Aggregate Functions and SQL Output | SQL Challenge | Query interpretation, SQL fundamentals |
 | Day 81 | Count Star in NULL Columns | SQL Challenge | COUNT(*), NULL values, row counting |
 | Day 82 | SQL Challenge | SQL Challenge | SQL fundamentals, query analysis |
+| Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | INNER JOIN, matching rows |
 
 ---
 
@@ -727,13 +634,13 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 - 🔢 Record Counting
 - 🐞 SQL Error Identification
 - 🧮 Aggregate Functions
-- 📊 GROUP BY Analysis
 - 🔧 Query Debugging
 - 📈 Sorting and Ordering
 - 🎯 SQL Return Types
 - 🔤 Text-Based Comparisons Using MIN() and MAX()
 - 🧩 Aggregate Function Nesting Rules
 - 🔢 COUNT(*) and NULL-Containing Rows
+- 🔗 INNER JOIN and Matching Records
 - 🧠 SQL Query Output Interpretation
 
 ---
@@ -750,11 +657,11 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81–82
+- ✅ Day 81–83
 
 ## ⏳ Remaining
 
-- ⏳ Day 83–99
+- ⏳ Day 84–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -763,27 +670,27 @@ This challenge strengthened my understanding of aggregate function syntax, funct
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **82 / 100** |
-| 💻 Challenges Solved | **82** |
+| 📅 Days Completed | **83 / 100** |
+| 💻 Challenges Solved | **83** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **82% Complete** 🚀 |
-| 🔥 Challenge Streak | **82 Days Completed** |
-| ⏳ Days Remaining | **18 Days** |
+| 📈 Progress | **83% Complete** 🚀 |
+| 🔥 Challenge Streak | **83 Days Completed** |
+| ⏳ Days Remaining | **17 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 82 – SQL Challenge** |
-| 🔍 Latest Focus | **SQL Query Analysis and Problem-Solving** |
+| 📋 Latest Challenge | **Day 83 – Introduction to Cab Booking Dataset – INNER JOIN** |
+| 🔍 Latest Focus | **SQL JOINs and Matching Rows in Both Tables** |
 
 ---
 
 # 🔥 Current Streak
 
-## **82 Days of SQL Practice Completed! 🎉🔥🚀**
+## **83 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **82 days down, 18 more to go!**
+> **83 days down, 17 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, salary comparison, employee analysis, article analysis, player performance analysis, Top-N queries, window functions, recursive queries, aggregate functions, SQL debugging, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, employee analysis, window functions, recursive queries, SQL debugging, and problem-solving abilities.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -827,6 +734,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 80 | ✅ Completed 🎉🗄️🧮🔥 |
 | 🎯 Day 81 | ✅ Completed 🎉🔢❌🔥 |
 | 🎯 Day 82 | ✅ Completed 🎉🗄️💻🔥 |
+| 🎯 Day 83 | ✅ Completed 🎉🔗🗄️🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -866,18 +774,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 82**
+**Day 83**
 
-████████████████░░░░ **82%** 🚀
+█████████████████░░░ **83%** 🚀
 
 ## 🚀 Overall Progress
 
-████████████████░░░░ **82%**
+█████████████████░░░ **83%**
 
-### **82 / 100 Days Completed**
+### **83 / 100 Days Completed**
 
-- ✅ Completed: 82 days
-- ⏳ Remaining: 18 days
+- ✅ Completed: 83 days
+- ⏳ Remaining: 17 days
 - 🏆 Final target: 100 days
 
 ---
@@ -952,6 +860,7 @@ It is also about:
 - 🔤 Comparing text values using MIN() and MAX()
 - 🧩 Understanding aggregate-function nesting restrictions
 - 🔢 Distinguishing COUNT(*) from COUNT(column)
+- 🔗 Understanding INNER JOIN and matching records
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -999,6 +908,7 @@ Every challenge helps me improve my:
 - 🧩 Aggregate Function Nesting Rules
 - 🔤 Text-Based Comparisons
 - 🔢 COUNT(*) and NULL Values
+- 🔗 INNER JOIN and Matching Records
 - 🗄️ SQL Query Interpretation
 - 💼 Technical Interview Preparation
 
@@ -1072,7 +982,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting` `#SQLQueryAnalysis` `#SQLLearning` `#DailyCoding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#InnerJoin` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting` `#SQLQueryAnalysis` `#SQLLearning` `#DailyCoding`
 
 ---
 
@@ -1082,12 +992,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**82 Days Completed ✅ | 18 Days Remaining ⏳ | 100 Days Goal 🎯**
+**83 Days Completed ✅ | 17 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 82 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 83 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
