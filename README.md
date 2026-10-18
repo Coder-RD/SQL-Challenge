@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL">
-  <img src="https://img.shields.io/badge/Progress-83%25-success?style=for-the-badge" alt="83% Progress">
+  <img src="https://img.shields.io/badge/Progress-84%25-success?style=for-the-badge" alt="84% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 83 Days Completed | 17 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 84 Days Completed | 16 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -39,7 +39,7 @@ Throughout this challenge, I have explored SQL concepts ranging from basic queri
 - Mathematical Functions and Decimal Precision
 - NULL Value Handling
 - Subqueries and Common Table Expressions (CTEs)
-- JOINs and Self JOINs
+- SQL JOINs and Relational Database Operations
 - CASE Statements and Conditional Logic
 - Window Functions and SQL Pivoting
 - Recursive Queries
@@ -66,6 +66,7 @@ Throughout this challenge, I have explored SQL concepts ranging from basic queri
 - COUNT(*) and NULL Values
 - SQL Query Output Interpretation
 - INNER JOIN and Matching Records Across Tables
+- RIGHT JOIN and Preserving All Rows from the Right Table
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -99,6 +100,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🧮 Understand aggregate functions and their return types.
 - 🔍 Understand how COUNT(*) handles NULL values.
 - 🔗 Learn how SQL JOINs combine related data.
+- 📊 Understand the differences between INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -139,6 +141,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 🧮 Aggregate Analysis | Aggregate functions and return types |
 | 🔢 Row Counting | COUNT(*) and NULL-containing rows |
 | 🔍 Query Interpretation | Predicting SQL query output |
+| 🔗 JOIN Analysis | Matching records and preserving unmatched rows |
 
 ---
 
@@ -255,6 +258,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-16 084101.png
 - 📁 Day83-SQL/
   - 📸 Screenshot 2026-10-17 160246.png
+- 📁 Day84-SQL/
+  - 📸 Screenshot 2026-10-18 110848.png
 - 📄 README.md
 - 📄 LICENSE
 
@@ -262,8 +267,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 - **Day 1–59:** SQL practice challenges on HackerRank.
 - **Day 60–62:** SQL practice challenges on CodeChef.
-- **Day 63–83:** SQL practice challenges from SQL Challenge.
-- **Day 84–99:** Upcoming SQL challenges.
+- **Day 63–84:** SQL practice challenges from SQL Challenge.
+- **Day 85–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -357,7 +362,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⭐ Day 81 | Count Star in NULL Columns | SQL Challenge | Completed |
 | 🔢 Day 82 | SQL Challenge | SQL Challenge | Completed |
 | 🔗 Day 83 | Introduction to Cab Booking Dataset – INNER JOIN | SQL Challenge | Completed |
-| ⏳ Day 84 | Upcoming SQL Challenge | Various Platforms | Pending |
+| 🔗 Day 84 | Figure Out the Correct Join – RIGHT JOIN | CodeChef SQL Practice | Completed |
 | ⏳ Day 85 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 86 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 87 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -374,6 +379,90 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 84 – Figure Out the Correct Join
+
+## 📌 Challenge Information
+
+- 🧩 **Platform:** CodeChef SQL Practice
+- 🗄️ **Language:** SQL
+- 🧠 **SQL Dialect:** MySQL
+- 📅 **Day:** 84
+- 📚 **Challenge:** Figure Out the Correct Join
+- 🔍 **Topic:** SQL JOINs
+- 🔗 **Concept:** RIGHT JOIN
+- 📸 **Submission Screenshot:** Screenshot 2026-10-18 110848.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+The objective of Day 84 is to understand the different types of SQL JOINs and identify the correct JOIN based on the required output.
+
+The challenge asks:
+
+**Which JOIN type returns all the rows from the right table and the matching rows from the left table?**
+
+### ✅ Correct Answer
+
+**RIGHT JOIN**
+
+### 💡 Explanation
+
+A `RIGHT JOIN`, also called a `RIGHT OUTER JOIN`, returns every row from the right table and the matching rows from the left table.
+
+If a row in the right table does not have a matching row in the left table, the result still includes that right-table row. The columns belonging to the left table contain `NULL` values when no match exists.
+
+### 📝 Example SQL Query
+
+    SELECT
+        A.column_name,
+        B.column_name
+    FROM TableA AS A
+    RIGHT JOIN TableB AS B
+        ON A.id = B.id;
+
+### 🔍 How RIGHT JOIN Works
+
+1. Identify the left and right tables in the query.
+2. Specify the columns that establish the relationship between the tables.
+3. Use the `RIGHT JOIN` keyword.
+4. Define the matching condition using `ON`.
+5. Retrieve every row from the right table.
+6. Include matching data from the left table.
+7. Return `NULL` for left-table columns when no matching row exists.
+
+### 📊 Understanding SQL JOIN Types
+
+| JOIN Type | Description |
+|---|---|
+| INNER JOIN | Returns only rows that match in both tables. |
+| LEFT JOIN | Returns all rows from the left table and matching rows from the right table. |
+| RIGHT JOIN | Returns all rows from the right table and matching rows from the left table. |
+| FULL OUTER JOIN | Returns matching rows and unmatched rows from both tables, where supported. |
+
+**Note:** MySQL does not directly support `FULL OUTER JOIN`. Similar results can be constructed using a combination of LEFT JOIN, RIGHT JOIN, and UNION.
+
+### 📚 Concepts Practiced
+
+- SQL JOINs
+- RIGHT JOIN
+- RIGHT OUTER JOIN
+- Relational Database Concepts
+- Matching Records Across Tables
+- Preserving All Rows from the Right Table
+- NULL Values in JOIN Results
+- Join Conditions
+- SQL Multiple-Choice Questions
+- Database Query Fundamentals
+- Logical Thinking and Problem-Solving
+
+### 🎓 Learning Outcome
+
+By completing Day 84, I strengthened my understanding of SQL JOINs and learned how `RIGHT JOIN` preserves every row from the right table while retrieving matching data from the left table.
+
+**Key Takeaway:** `RIGHT JOIN` returns all rows from the right table and matching rows from the left table.
 
 ---
 
@@ -581,6 +670,7 @@ By completing Day 81, I strengthened my understanding of SQL aggregate functions
 | Day 81 | Count Star in NULL Columns | SQL Challenge | COUNT(*), NULL values, row counting |
 | Day 82 | SQL Challenge | SQL Challenge | SQL fundamentals, query analysis |
 | Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | INNER JOIN, matching rows |
+| Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | RIGHT JOIN, preserving right-table rows |
 
 ---
 
@@ -639,8 +729,9 @@ By completing Day 81, I strengthened my understanding of SQL aggregate functions
 - 🎯 SQL Return Types
 - 🔤 Text-Based Comparisons Using MIN() and MAX()
 - 🧩 Aggregate Function Nesting Rules
-- 🔢 COUNT(*) and NULL-Containing Rows
+- 🔢 COUNT(*) and COUNT(column)
 - 🔗 INNER JOIN and Matching Records
+- ↔️ LEFT JOIN and RIGHT JOIN
 - 🧠 SQL Query Output Interpretation
 
 ---
@@ -657,11 +748,11 @@ By completing Day 81, I strengthened my understanding of SQL aggregate functions
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81–83
+- ✅ Day 81–84
 
 ## ⏳ Remaining
 
-- ⏳ Day 84–99
+- ⏳ Day 85–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -670,25 +761,25 @@ By completing Day 81, I strengthened my understanding of SQL aggregate functions
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **83 / 100** |
-| 💻 Challenges Solved | **83** |
+| 📅 Days Completed | **84 / 100** |
+| 💻 Challenges Solved | **84** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **83% Complete** 🚀 |
-| 🔥 Challenge Streak | **83 Days Completed** |
-| ⏳ Days Remaining | **17 Days** |
+| 📈 Progress | **84% Complete** 🚀 |
+| 🔥 Challenge Streak | **84 Days Completed** |
+| ⏳ Days Remaining | **16 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 83 – Introduction to Cab Booking Dataset – INNER JOIN** |
-| 🔍 Latest Focus | **SQL JOINs and Matching Rows in Both Tables** |
+| 📋 Latest Challenge | **Day 84 – Figure Out the Correct Join** |
+| 🔍 Latest Focus | **RIGHT JOIN and Preserving All Rows from the Right Table** |
 
 ---
 
 # 🔥 Current Streak
 
-## **83 Days of SQL Practice Completed! 🎉🔥🚀**
+## **84 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **83 days down, 17 more to go!**
+> **84 days down, 16 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, employee analysis, window functions, recursive queries, SQL debugging, and problem-solving abilities.
 
@@ -735,6 +826,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 81 | ✅ Completed 🎉🔢❌🔥 |
 | 🎯 Day 82 | ✅ Completed 🎉🗄️💻🔥 |
 | 🎯 Day 83 | ✅ Completed 🎉🔗🗄️🔥 |
+| 🎯 Day 84 | ✅ Completed 🎉🔗↔️🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -774,18 +866,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 83**
+**Day 84**
 
-█████████████████░░░ **83%** 🚀
+█████████████████░░░ **84%** 🚀
 
 ## 🚀 Overall Progress
 
-█████████████████░░░ **83%**
+█████████████████░░░ **84%**
 
-### **83 / 100 Days Completed**
+### **84 / 100 Days Completed**
 
-- ✅ Completed: 83 days
-- ⏳ Remaining: 17 days
+- ✅ Completed: 84 days
+- ⏳ Remaining: 16 days
 - 🏆 Final target: 100 days
 
 ---
@@ -861,6 +953,7 @@ It is also about:
 - 🧩 Understanding aggregate-function nesting restrictions
 - 🔢 Distinguishing COUNT(*) from COUNT(column)
 - 🔗 Understanding INNER JOIN and matching records
+- ↔️ Understanding LEFT JOIN and RIGHT JOIN
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -909,6 +1002,7 @@ Every challenge helps me improve my:
 - 🔤 Text-Based Comparisons
 - 🔢 COUNT(*) and NULL Values
 - 🔗 INNER JOIN and Matching Records
+- ↔️ LEFT JOIN and RIGHT JOIN
 - 🗄️ SQL Query Interpretation
 - 💼 Technical Interview Preparation
 
@@ -982,7 +1076,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#InnerJoin` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting` `#SQLQueryAnalysis` `#SQLLearning` `#DailyCoding`
+`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#InnerJoin` `#LeftJoin` `#RightJoin` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting` `#SQLQueryAnalysis` `#SQLLearning` `#DailyCoding`
 
 ---
 
@@ -992,12 +1086,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**83 Days Completed ✅ | 17 Days Remaining ⏳ | 100 Days Goal 🎯**
+**84 Days Completed ✅ | 16 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 83 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 84 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
