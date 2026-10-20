@@ -4,8 +4,8 @@
   <img src="https://img.shields.io/badge/100%20Days-SQL%20Challenge-blue?style=for-the-badge" alt="100 Days SQL Challenge">
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
-  <img src="https://img.shields.io/badge/MySQL-SQL-orange?style=for-the-badge" alt="MySQL">
-  <img src="https://img.shields.io/badge/Progress-85%25-success?style=for-the-badge" alt="85% Progress">
+  <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
+  <img src="https://img.shields.io/badge/Progress-86%25-success?style=for-the-badge" alt="86% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 85 Days Completed | 15 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 86 Days Completed | 14 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -22,11 +22,13 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL programming journey through HackerRank, CodeChef, and SQL practice challenges.
+This repository documents my daily SQL learning journey through HackerRank, CodeChef, and SQL practice challenges.
 
 My goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
 Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to JOINs, subqueries, window functions, recursive queries, and data analysis.
+
+Every day provides an opportunity to learn a new concept, understand database operations, and improve my technical skills.
 
 ### 📚 Topics Covered
 
@@ -46,26 +48,18 @@ Throughout this challenge, I have explored SQL concepts ranging from basic queri
 - Recursive Queries
 - Date-Based Analysis
 - Geographic Data Analysis
-- Latitude and Longitude
-- Distance Calculation
 - Salary and Employee Data Analysis
 - Product and Price Analysis
 - Leaderboard and Ranking Analysis
-- Submission Statistics and Activity Tracking
 - Symmetric Pairs
 - Pattern Generation
-- Unique Record Retrieval
-- Article and Author Data Analysis
-- Player Performance and Match Winner Analysis
-- Top-N Queries
-- Multi-Table Analysis
 - SQL Error Identification and Query Debugging
-- Aggregate Function Return Types
 - SQL Multiple-Choice Questions
-- Aggregate Function Nesting Rules
-- Text Comparisons Using MIN() and MAX()
 - COUNT(*) and NULL Values
+- Aggregate Function Nesting Rules
 - SQL Query Output Interpretation
+- Matching and Unmatched Records
+- LEFT JOIN and NULL Values in JOIN Results
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -84,7 +78,6 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🔍 Improve filtering and sorting skills.
 - 🔤 Practice string operations and pattern matching.
 - 🧮 Understand mathematical functions and decimal precision.
-- 📍 Work with geographic data.
 - 🔗 Understand relational data and JOIN operations.
 - 🧠 Practice subqueries and CTEs.
 - 🔀 Apply CASE statements and conditional logic.
@@ -92,13 +85,9 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🔄 Understand SQL pivoting and recursive queries.
 - 🏆 Analyze leaderboards and ranking problems.
 - 💰 Practice salary and employee data analysis.
-- 📰 Analyze article and publication data.
-- 🏅 Analyze player and match performance.
-- 🎯 Solve Top-N query problems.
 - 🐞 Identify and debug SQL errors.
 - ❌ Understand NULL value handling.
-- 🔗 Learn how different SQL JOINs work.
-- 📊 Understand how JOINs handle matching and unmatched rows.
+- 📊 Understand matching and unmatched records in JOIN operations.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -114,29 +103,18 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 🔍 Filtering | WHERE, AND, OR, comparison operators |
 | 📊 Aggregation | COUNT(), SUM(), AVG(), MIN(), MAX() |
 | 🔤 String Operations | String handling and text processing |
-| 🔎 Pattern Matching | LIKE, wildcards, regular expressions |
+| 🔎 Pattern Matching | LIKE and wildcards |
 | 🔗 Relational Operations | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN concepts |
 | 🧠 Advanced Queries | Subqueries and CTEs |
 | 🔀 Conditional Logic | CASE statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
-| 📍 Geographic Data | Latitude and longitude |
+| 📍 Geographic Data | Geographic data analysis |
 | 🔢 Numerical Processing | ROUND(), MOD(), decimal precision |
-| 🏆 Leaderboard Analysis | Ranking, grouping, aggregation |
 | 🪟 Window Functions | ROW_NUMBER(), ranking, partitioning |
 | 🔄 SQL Pivoting | CASE and conditional aggregation |
 | 📅 Date Analysis | Date filtering and date functions |
-| 👥 Activity Analysis | Daily submission and activity tracking |
-| 🔁 Recursive Queries | WITH RECURSIVE |
-| ⭐ Pattern Generation | REPEAT() and string construction |
-| 🏢 Unique Data | DISTINCT and duplicate removal |
 | ❌ NULL Handling | IS NULL and IS NOT NULL |
-| 💰 Salary Analysis | Salary filtering and sorting |
-| 👨‍💼 Employee Analysis | Employee data retrieval |
-| 📰 Article Analysis | Author, publication, and view analysis |
-| 🏆 Player Analysis | Player scores and match winners |
-| 🔝 Top-N Analysis | ORDER BY, DISTINCT, and LIMIT |
 | 🐞 Error Identification | SQL syntax and query logic |
-| 🔢 Row Counting | COUNT(*) and NULL-containing rows |
 | 🔗 JOIN Analysis | Matching records and preserving unmatched rows |
 
 ---
@@ -232,7 +210,8 @@ The repository is organized into daily folders to track my progress throughout t
 - 📁 Day83-SQL/
 - 📁 Day84-SQL/
 - 📁 Day85-SQL/
-  - 📸 Screenshot 2026-10-19 081322.png
+- 📁 Day86-SQL/
+  - 📸 Screenshot 2026-10-20 104958.png
 - 📄 README.md
 - 📄 LICENSE
 
@@ -241,9 +220,10 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 1–59:** SQL practice challenges on HackerRank.
 - **Day 60–62:** SQL practice challenges on CodeChef.
 - **Day 63–83:** SQL practice challenges from SQL Challenge.
-- **Day 84:** SQL JOIN practice using CodeChef SQL Practice.
+- **Day 84:** SQL JOIN practice covering RIGHT JOIN.
 - **Day 85:** SQL JOIN practice covering FULL JOIN.
-- **Day 86–99:** Upcoming SQL challenges.
+- **Day 86:** SQL LEFT JOIN multiple-choice question.
+- **Day 87–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -339,7 +319,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | 🔗 Day 83 | Introduction to Cab Booking Dataset – INNER JOIN | SQL Challenge | Completed |
 | 🔗 Day 84 | Figure Out the Correct Join – RIGHT JOIN | CodeChef SQL Practice | Completed |
 | 🔗 Day 85 | Join Which Returns All Rows From Both Tables – FULL JOIN | SQL Practice | Completed |
-| ⏳ Day 86 | Upcoming SQL Challenge | Various Platforms | Pending |
+| 🔗 Day 86 | LEFT JOIN MCQ | SQL Challenge | Completed |
 | ⏳ Day 87 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 88 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 89 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -357,44 +337,36 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 
 ---
 
-# 🆕 Day 85 – Join Which Returns All Rows From Both Tables
+# 🆕 Day 86 – LEFT JOIN MCQ
 
 ## 📌 Challenge Information
 
-- 🧩 **Platform:** SQL Practice
+- 📅 **Day:** 86
+- 🧩 **Challenge:** LEFT JOIN MCQ
+- 💻 **Platform:** SQL Challenge
 - 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 85
-- 📚 **Challenge:** Join Which Returns All Rows From Both Tables
 - 🔍 **Topic:** SQL JOINs
-- 🔗 **Concept:** FULL JOIN / FULL OUTER JOIN
-- 📸 **Submission Screenshot:** Screenshot 2026-10-19 081322.png
+- 🔗 **Concept:** LEFT JOIN
+- 📸 **Submission Screenshot:** Screenshot 2026-10-20 104958.png
 - ✅ **Status:** Completed
 
 ## 🎯 Challenge Objective
 
-The objective of Day 85 is to understand which SQL JOIN returns all rows from both tables, regardless of whether matching records exist.
+The objective of Day 86 is to understand which table's rows are included in the result of a LEFT JOIN, even when there is no matching row in the other table.
 
-The challenge asks:
+### ❓ Question
 
-**Which JOIN type returns all the rows from both tables, regardless of whether they have matching rows or not?**
+In a LEFT JOIN operation, which table's rows are included in the result, even if there is no matching row in the other table?
 
 ### ✅ Correct Answer
 
-**FULL JOIN**
-
-FULL JOIN is also commonly known as FULL OUTER JOIN.
+**Left table**
 
 ## 💡 Explanation
 
-A `FULL JOIN` returns:
+A `LEFT JOIN`, also known as a `LEFT OUTER JOIN`, returns all rows from the left table and the matching rows from the right table.
 
-- All matching rows from both tables.
-- All unmatched rows from the left table.
-- All unmatched rows from the right table.
-- NULL values for columns where a matching record does not exist.
-
-It combines the results of a LEFT JOIN and a RIGHT JOIN conceptually, preserving records from both tables.
+If a row in the left table does not have a matching row in the right table, the result still includes that left-table row. The columns from the right table contain `NULL` values when no match exists.
 
 ### 📝 Example SQL Query
 
@@ -402,13 +374,11 @@ It combines the results of a LEFT JOIN and a RIGHT JOIN conceptually, preserving
         A.id,
         A.name,
         B.department
-    FROM TableA AS A
-    FULL OUTER JOIN TableB AS B
+    FROM Employees AS A
+    LEFT JOIN Departments AS B
         ON A.id = B.id;
 
-**Note:** MySQL does not directly support the `FULL OUTER JOIN` syntax. In MySQL, equivalent results can be produced using LEFT JOIN with a UNION-based approach.
-
-### 🔍 Example of FULL JOIN
+### 📋 Example Tables
 
 **Table A: Employees**
 
@@ -424,47 +394,101 @@ It combines the results of a LEFT JOIN and a RIGHT JOIN conceptually, preserving
 |---:|---|
 | 2 | IT |
 | 3 | HR |
-| 4 | Finance |
 
-**Conceptual FULL JOIN Result**
+### 📊 Expected Result
 
 | id | name | department |
 |---:|---|---|
 | 1 | Amit | NULL |
 | 2 | Priya | IT |
 | 3 | Rahul | HR |
-| 4 | NULL | Finance |
 
-The result includes matching rows and unmatched rows from both tables.
+### 🔍 Understanding the Result
 
-### 🔗 FULL JOIN vs Other JOIN Types
+- Amit appears in the result because all rows from the left table are preserved.
+- Amit has no matching department, so the department column contains `NULL`.
+- Priya appears with the IT department because a matching record exists.
+- Rahul appears with the HR department because a matching record exists.
+
+The LEFT JOIN preserves every row from the left table, whether a matching row exists in the right table or not.
+
+## 🔗 LEFT JOIN vs Other JOIN Types
 
 | JOIN Type | Description |
 |---|---|
 | INNER JOIN | Returns only matching rows from both tables. |
 | LEFT JOIN | Returns all rows from the left table and matching rows from the right table. |
 | RIGHT JOIN | Returns all rows from the right table and matching rows from the left table. |
-| FULL JOIN | Returns all rows from both tables, including matching and unmatched rows. |
+| FULL JOIN | Returns matching and unmatched rows from both tables. |
 
-### 🧠 Concepts Practiced
+## 🧠 Concepts Practiced
 
-- SQL JOINs
-- FULL JOIN
-- FULL OUTER JOIN
-- LEFT JOIN
-- RIGHT JOIN
-- INNER JOIN
+- SQL JOIN Operations
+- LEFT JOIN and LEFT OUTER JOIN
 - Relational Database Concepts
 - Matching and Unmatched Records
 - NULL Values in JOIN Results
 - JOIN Conditions
+- Table Relationships
 - SQL Query Interpretation
 - Database Fundamentals
 - Logical Thinking and Problem-Solving
 
+## 🎓 Learning Outcome
+
+By completing Day 86, I strengthened my understanding of LEFT JOIN and learned how SQL preserves all rows from the left table, even when corresponding records are missing from the right table.
+
+**Key Takeaway:** LEFT JOIN returns every row from the left table and matching rows from the right table. If no match exists, the right table's columns contain NULL values.
+
+---
+
+# 🆕 Day 85 – Join Which Returns All Rows From Both Tables
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 85
+- 🧩 **Challenge:** Join Which Returns All Rows From Both Tables
+- 💻 **Platform:** SQL Practice
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL JOINs
+- 🔗 **Concept:** FULL JOIN / FULL OUTER JOIN
+- 📸 **Submission Screenshot:** Screenshot 2026-10-19 081322.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+Understand which SQL JOIN returns all rows from both tables, regardless of whether matching records exist.
+
+### ✅ Correct Answer
+
+**FULL JOIN**
+
+FULL JOIN is also commonly known as FULL OUTER JOIN.
+
+### 💡 Explanation
+
+A FULL JOIN returns:
+
+- All matching rows from both tables.
+- All unmatched rows from the left table.
+- All unmatched rows from the right table.
+- NULL values for columns where matching records do not exist.
+
+### 📝 Example SQL Query
+
+    SELECT
+        A.id,
+        A.name,
+        B.department
+    FROM TableA AS A
+    FULL OUTER JOIN TableB AS B
+        ON A.id = B.id;
+
+**Note:** MySQL does not directly support FULL OUTER JOIN syntax. Similar results can be obtained using LEFT JOIN and UNION-based queries.
+
 ### 🎓 Learning Outcome
 
-By completing Day 85, I strengthened my understanding of SQL JOINs and learned how FULL JOIN preserves all rows from both tables, including records that do not have matching values.
+Day 85 strengthened my understanding of SQL JOINs and how FULL JOIN preserves records from both tables.
 
 **Key Takeaway:** FULL JOIN returns matching and unmatched rows from both tables.
 
@@ -474,11 +498,10 @@ By completing Day 85, I strengthened my understanding of SQL JOINs and learned h
 
 ## 📌 Challenge Information
 
-- 🧩 **Platform:** CodeChef SQL Practice
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
 - 📅 **Day:** 84
-- 📚 **Challenge:** Figure Out the Correct Join
+- 🧩 **Challenge:** Figure Out the Correct Join
+- 💻 **Platform:** CodeChef SQL Practice
+- 🗄️ **Language:** SQL
 - 🔍 **Topic:** SQL JOINs
 - 🔗 **Concept:** RIGHT JOIN
 - 📸 **Submission Screenshot:** Screenshot 2026-10-18 110848.png
@@ -494,7 +517,7 @@ Identify the JOIN type that returns every row from the right table and matching 
 
 ### 💡 Explanation
 
-A `RIGHT JOIN`, also called a `RIGHT OUTER JOIN`, returns every row from the right table and matching rows from the left table.
+A RIGHT JOIN, also called a RIGHT OUTER JOIN, returns every row from the right table and matching rows from the left table.
 
 If a row in the right table has no matching record in the left table, the result still includes that row. The columns belonging to the left table contain NULL values when no match exists.
 
@@ -519,11 +542,10 @@ Day 84 strengthened my understanding of preserving all records from the right ta
 
 ## 📌 Challenge Information
 
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
 - 📅 **Day:** 83
-- 📚 **Challenge:** Introduction to Cab Booking Dataset
+- 🧩 **Challenge:** Introduction to Cab Booking Dataset
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
 - 🔍 **Topic:** SQL JOINs
 - 🔗 **Concept:** INNER JOIN
 - 📸 **Submission Screenshot:** Screenshot 2026-10-17 160246.png
@@ -541,7 +563,7 @@ The challenge focuses on identifying the JOIN that returns only matching records
 
 ### 💡 Explanation
 
-An `INNER JOIN` returns only rows that have matching values in both tables according to the specified join condition.
+An INNER JOIN returns only rows that have matching values in both tables according to the specified join condition.
 
 It combines related records and excludes rows that do not have a matching record in the other table.
 
@@ -562,111 +584,12 @@ Day 83 improved my understanding of matching records across related tables using
 
 ---
 
-# 🆕 Day 82 – SQL Challenge
-
-## 📌 Challenge Information
-
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 82
-- 📚 **Challenge:** SQL Challenge
-- 📸 **Submission Screenshot:** Screenshot 2026-10-16 084101.png
-- ✅ **Status:** Completed
-
-## 🎯 Challenge Objective
-
-Day 82 marks another milestone in my 100 Days of SQL Challenge.
-
-This challenge continues my daily practice of understanding SQL problem statements, analyzing query logic, identifying the correct approach, and interpreting query results.
-
-### 📚 Concepts Practiced
-
-- SQL Fundamentals
-- SQL Query Analysis
-- Database Concepts
-- Query Logic and Interpretation
-- Analytical Thinking
-- Problem-Solving Skills
-
-### 🎓 Learning Outcome
-
-Completing Day 82 represents another step toward my goal of completing 100 days of consistent SQL practice.
-
-**Key Takeaway:** Consistent SQL practice helps develop stronger query-writing skills, analytical thinking, and database knowledge.
-
----
-
-# 🆕 Day 81 – Count Star in NULL Columns
-
-## 📌 Challenge Information
-
-- 🧩 **Platform:** SQL Challenge
-- 🗄️ **Language:** SQL
-- 🧠 **SQL Dialect:** MySQL
-- 📅 **Day:** 81
-- 📚 **Challenge:** Count Star in NULL Columns
-- 🔍 **Topic:** COUNT(*) and NULL Values
-- 📸 **Submission Screenshot:** Screenshot 2026-10-15 075025.png
-- ✅ **Status:** Completed
-
-## 🎯 Challenge Objective
-
-Determine the output of an SQL query that uses `COUNT(*)` on a table containing NULL values.
-
-### 📝 SQL Query
-
-    SELECT COUNT(*) FROM Given_table;
-
-### 📋 Given Table
-
-| column1 | column2 |
-|---|---|
-| NULL | NULL |
-| NULL | NULL |
-
-### ✅ Correct Answer
-
-**2**
-
-### 💡 Explanation
-
-The `COUNT(*)` function counts every row in a table, regardless of whether its columns contain NULL values.
-
-The given table contains two rows, and both rows have NULL values in both columns.
-
-Therefore, the query returns **2**.
-
-### 🔍 COUNT(*) vs COUNT(column)
-
-| Function | What It Counts |
-|---|---|
-| COUNT(*) | Counts all rows, including rows containing NULL values. |
-| COUNT(column1) | Counts rows where column1 is not NULL. |
-| COUNT(column2) | Counts rows where column2 is not NULL. |
-
-For the given table:
-
-| SQL Expression | Output |
-|---|---:|
-| SELECT COUNT(*) FROM Given_table; | 2 |
-| SELECT COUNT(column1) FROM Given_table; | 0 |
-| SELECT COUNT(column2) FROM Given_table; | 0 |
-
-### 🎓 Learning Outcome
-
-Day 81 strengthened my understanding of SQL aggregate functions and the difference between counting rows and counting non-NULL column values.
-
-**Key Takeaway:** COUNT(*) counts all rows, even when every column in those rows contains NULL.
-
----
-
 # 🧠 Recent SQL Challenges
 
 | Day | Challenge | Platform | Key Concepts |
 |---|---|---|---|
 | Day 54 | Interviews | HackerRank | JOINs, aggregation, subqueries |
-| Day 55 | Print Prime Numbers | HackerRank | MOD(), prime logic |
+| Day 55 | Print Prime Numbers | HackerRank | MOD(), mathematical logic |
 | Day 56 | Occupations | HackerRank | Pivoting, ROW_NUMBER(), CASE |
 | Day 57 | 15 Days of Learning SQL | HackerRank | CTEs, window functions, date analysis |
 | Day 58 | Draw The Triangle 1 | HackerRank | Pattern generation |
@@ -697,6 +620,7 @@ Day 81 strengthened my understanding of SQL aggregate functions and the differen
 | Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | INNER JOIN |
 | Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | RIGHT JOIN |
 | Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN |
+| Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, unmatched records |
 
 ---
 
@@ -711,55 +635,36 @@ Day 81 strengthened my understanding of SQL aggregate functions and the differen
 - 🔎 Pattern Matching
 - 🔗 JOIN Operations
 - 🔄 Self JOIN Operations
-- 🧠 Subqueries
+- 🧠 Subqueries and CTEs
 - 🔀 Conditional Logic
 - 📌 DISTINCT
-- 📊 GROUP BY
-- 📌 HAVING
+- 📊 GROUP BY and HAVING
 - 📍 Geographic Data Analysis
-- 🌎 Latitude and Longitude Processing
-- 📏 Distance Calculation
-- 🔢 Decimal Precision
-- 💰 Salary Comparison
-- 💰 Product Price Analysis
-- 📊 Average Salary Analysis
+- 💰 Salary and Product Price Analysis
 - 👨‍💼 Employee Data Analysis
-- 🏢 Department-Wise Employee Analysis
 - 📰 Article and Publication Analysis
-- 👁️ View Count Analysis
 - 🏆 Player Performance Analysis
-- 🏅 Match Winner Analysis
 - 🔝 Top-N Query Analysis
 - 🔄 Symmetric Pair Analysis
-- 🔗 Multi-Table Analysis
 - 🏆 Leaderboard Analysis
 - 📊 Submission Statistics
 - 🪟 Window Functions
 - 🔄 SQL Pivoting
 - 📅 Date-Based Analysis
-- 👥 Daily Activity Tracking
-- 🏆 Ranking and Tie-Breaking
-- 🧩 Common Table Expressions
 - 🔁 Recursive Queries
 - ⭐ Pattern Generation
-- 🔤 String Repetition
-- 📋 SELECT Statements
-- 🔎 Data Retrieval
-- ⚖️ Comparison Operators
 - ❌ NULL Value Handling
 - 🔢 Record Counting
 - 🐞 SQL Error Identification
-- 🧮 Aggregate Functions
+- 🧮 Aggregate Function Usage
 - 🔧 Query Debugging
+- ⚖️ Comparison-Based Filtering
 - 📈 Sorting and Ordering
-- 🎯 SQL Return Types
-- 🔤 Text Comparisons Using MIN() and MAX()
-- 🧩 Aggregate Function Nesting Rules
-- 🔢 COUNT(*) and COUNT(column)
 - 🔗 INNER JOIN and Matching Records
 - ↔️ LEFT JOIN and RIGHT JOIN
-- 🌐 FULL JOIN and FULL OUTER JOIN
+- 🌐 FULL JOIN and Unmatched Records
 - 🧠 SQL Query Output Interpretation
+- 🎯 Technical Interview Preparation
 
 ---
 
@@ -775,11 +680,11 @@ Day 81 strengthened my understanding of SQL aggregate functions and the differen
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81–85
+- ✅ Day 81–86
 
 ## ⏳ Remaining Days
 
-- ⏳ Day 86–99
+- ⏳ Day 87–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -788,27 +693,29 @@ Day 81 strengthened my understanding of SQL aggregate functions and the differen
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **85 / 100** |
-| 💻 Challenges Solved | **85** |
+| 📅 Days Completed | **86 / 100** |
+| 💻 Challenges Completed | **86** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **85% Complete** 🚀 |
-| 🔥 Challenge Streak | **85 Days Completed** |
-| ⏳ Days Remaining | **15 Days** |
+| 📈 Progress | **86% Complete** 🚀 |
+| 🔥 Challenge Streak | **86 Days Completed** |
+| ⏳ Days Remaining | **14 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 85 – Join Which Returns All Rows From Both Tables** |
-| 🔍 Latest Focus | **FULL JOIN and Preserving All Rows From Both Tables** |
+| 📋 Latest Challenge | **Day 86 – LEFT JOIN MCQ** |
+| 🔍 Latest Focus | **LEFT JOIN and Preserving All Rows From the Left Table** |
 
 ---
 
 # 🔥 Current Streak
 
-## **85 Days of SQL Practice Completed! 🎉🔥🚀**
+## **86 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **85 days down, 15 more to go!**
+> **86 days down, 14 more to go!**
 
-Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, pattern matching, NULL value handling, subqueries, JOINs, conditional logic, geographic data analysis, statistical analysis, relational analysis, employee analysis, window functions, recursive queries, SQL debugging, and problem-solving abilities.
+Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
+
+My recent challenges have focused on understanding the differences between INNER JOIN, RIGHT JOIN, FULL JOIN, and LEFT JOIN.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -834,7 +741,8 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 82 | ✅ Completed |
 | 🎯 Day 83 | ✅ Completed |
 | 🎯 Day 84 | ✅ Completed |
-| 🎯 Day 85 | ✅ Completed 🎉🔗🔥 |
+| 🎯 Day 85 | ✅ Completed |
+| 🎯 Day 86 | ✅ Completed 🎉🔗🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -874,18 +782,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 85**
+**Day 86**
 
-█████████████████░░░ **85%** 🚀
+█████████████████░░░ **86%** 🚀
 
 ## 🚀 Overall Progress
 
-█████████████████░░░ **85%**
+█████████████████░░░ **86%**
 
-### **85 / 100 Days Completed**
+### **86 / 100 Days Completed**
 
-- ✅ Completed: 85 days
-- ⏳ Remaining: 15 days
+- ✅ Completed: 86 days
+- ⏳ Remaining: 14 days
 - 🏆 Final target: 100 days
 
 ---
@@ -931,35 +839,19 @@ It is also about:
 - 📊 Understanding aggregation
 - 🏆 Analyzing leaderboard data
 - 💰 Comparing related data
-- 📊 Calculating averages
 - 👨‍💼 Analyzing employee data
-- 🏢 Analyzing employees by department
 - 📰 Analyzing article and publication data
-- 👁️ Analyzing article views
-- 🏆 Analyzing player performance
-- 🏅 Identifying match winners
-- 🔝 Solving Top-N problems
 - 🪟 Practicing window functions
 - 🔄 Learning SQL pivoting
 - 📅 Analyzing date-based data
-- 👥 Tracking user activity
-- 🏆 Applying ranking logic
-- 🧩 Using CTEs
 - 🔁 Practicing recursive queries
 - ⭐ Generating patterns
 - 🔎 Practicing pattern matching
-- 📌 Practicing DISTINCT
-- 🔢 Counting filtered records
-- ⚖️ Applying comparison operators
 - ❌ Handling NULL values
 - 🐞 Identifying SQL errors
 - 🧮 Using aggregate functions correctly
-- 📊 Understanding GROUP BY
 - 🔧 Debugging SQL queries
 - 🎯 Understanding SQL return types
-- 🔤 Comparing text values using MIN() and MAX()
-- 🧩 Understanding aggregate-function nesting restrictions
-- 🔢 Distinguishing COUNT(*) from COUNT(column)
 - 🔗 Understanding INNER JOIN and matching records
 - ↔️ Understanding LEFT JOIN and RIGHT JOIN
 - 🌐 Understanding FULL JOIN and unmatched records
@@ -987,29 +879,16 @@ Every challenge helps me improve my:
 - 🧠 Subquery Skills
 - 🔗 JOIN Operations
 - 🔀 Conditional Logic
-- 📌 DISTINCT
-- 📊 GROUP BY
-- 📌 HAVING
 - 🪟 Window Functions
 - 🔄 SQL Pivoting
 - 📅 Date-Based Analysis
 - 🔁 Recursive Queries
-- ⭐ Pattern Generation
 - ❌ NULL Value Handling
 - 🔢 Record Counting
 - 🐞 SQL Error Identification
 - 🧮 Aggregate Function Usage
 - 🔧 Query Debugging
-- ⚖️ Comparison-Based Filtering
 - 📈 Sorting and Ordering
-- 📰 Article and Publication Analysis
-- 👁️ View Count Analysis
-- 🏆 Player Performance Analysis
-- 🏅 Match Winner Analysis
-- 🔝 Top-N Query Skills
-- 🧩 Aggregate Function Nesting Rules
-- 🔤 Text-Based Comparisons
-- 🔢 COUNT(*) and NULL Values
 - 🔗 INNER JOIN and Matching Records
 - ↔️ LEFT JOIN and RIGHT JOIN
 - 🌐 FULL JOIN and Unmatched Records
@@ -1080,13 +959,13 @@ Let's learn, build, and grow together! 🌱
 
 ### 🗄️ SQL Challenge Repository
 
-🔗 https://github.com/Coder-RD/SQL-Challenge
+🔗 https://github.com/Coder-RD/SQL-Challenge/
 
 ---
 
 # 🔖 Hashtags
 
-`#100DaysOfSQL` `#100DaysOfCode` `#SQL` `#SQLChallenge` `#SQLProgramming` `#MySQL` `#HackerRank` `#CodeChef` `#Database` `#DatabaseManagement` `#CodingChallenge` `#LearningInPublic` `#GitHub` `#CodingJourney` `#Developer` `#ProblemSolving` `#DataAnalysis` `#DataAnalytics` `#SQLQueries` `#SQLPractice` `#AggregateFunctions` `#MinFunction` `#MaxFunction` `#CountFunction` `#GroupBy` `#WhereClause` `#OrderBy` `#Limit` `#Sorting` `#IsNull` `#NullValues` `#NullHandling` `#ComparisonOperators` `#Joins` `#InnerJoin` `#LeftJoin` `#RightJoin` `#FullJoin` `#FullOuterJoin` `#SelfJoin` `#Subqueries` `#CaseStatement` `#StringFunctions` `#RegularExpressions` `#PatternMatching` `#LikeOperator` `#MathematicalFunctions` `#Statistics` `#GeographicData` `#RelationalData` `#SymmetricPairs` `#LeaderboardAnalysis` `#SalaryComparison` `#ProductAnalysis` `#PriceAnalysis` `#MultiTableQueries` `#SubmissionStatistics` `#WindowFunctions` `#SQLPivot` `#CTE` `#RecursiveCTE` `#DateAnalysis` `#PatternGeneration` `#SelectStatement` `#DataRetrieval` `#DatabaseProgramming` `#SQLDebugging` `#QueryDebugging` `#SQLDataTypes` `#AggregateNesting` `#SQLQueryAnalysis` `#SQLLearning` `#DailyCoding`
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding
 
 ---
 
@@ -1096,12 +975,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**85 Days Completed ✅ | 15 Days Remaining ⏳ | 100 Days Goal 🎯**
+**86 Days Completed ✅ | 14 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
-  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📍 📈 💰 👨‍💼 🏢 📰 👁️ 🏆 📅 👥 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
+  🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 85 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 86 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
