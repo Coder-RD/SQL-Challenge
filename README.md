@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-86%25-success?style=for-the-badge" alt="86% Progress">
+  <img src="https://img.shields.io/badge/Progress-87%25-success?style=for-the-badge" alt="87% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 86 Days Completed | 14 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 87 Days Completed | 13 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -22,13 +22,13 @@
 
 Welcome to my **#100DaysOfSQL Challenge** repository! 🚀
 
-This repository documents my daily SQL learning journey through HackerRank, CodeChef, and SQL practice challenges.
+This repository documents my daily SQL learning journey through HackerRank, CodeChef, and other SQL practice challenges.
 
 My goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
-Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to JOINs, subqueries, window functions, recursive queries, and data analysis.
+Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to JOINs, subqueries, window functions, recursive queries, and relational data analysis.
 
-Every day provides an opportunity to learn a new concept, understand database operations, and improve my technical skills.
+Each day provides an opportunity to learn a new concept, understand database operations, and improve my technical skills.
 
 ### 📚 Topics Covered
 
@@ -60,6 +60,8 @@ Every day provides an opportunity to learn a new concept, understand database op
 - SQL Query Output Interpretation
 - Matching and Unmatched Records
 - LEFT JOIN and NULL Values in JOIN Results
+- Database Schema and Table Identification
+- Complaint Data Organization
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -88,6 +90,8 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🐞 Identify and debug SQL errors.
 - ❌ Understand NULL value handling.
 - 📊 Understand matching and unmatched records in JOIN operations.
+- 🗂️ Learn to identify tables within a database schema.
+- 📋 Understand how databases organize complaint-related information.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -100,22 +104,23 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 💻 Practice Platforms | HackerRank, CodeChef, SQL Challenges |
 | 🗄️ Language | SQL |
 | 🧠 SQL Dialect | MySQL |
-| 🔍 Filtering | WHERE, AND, OR, comparison operators |
+| 🔍 Filtering | WHERE, AND, OR, Comparison Operators |
 | 📊 Aggregation | COUNT(), SUM(), AVG(), MIN(), MAX() |
-| 🔤 String Operations | String handling and text processing |
-| 🔎 Pattern Matching | LIKE and wildcards |
-| 🔗 Relational Operations | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN concepts |
+| 🔤 String Operations | String Handling and Text Processing |
+| 🔎 Pattern Matching | LIKE and Wildcards |
+| 🔗 Relational Operations | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN Concepts |
 | 🧠 Advanced Queries | Subqueries and CTEs |
-| 🔀 Conditional Logic | CASE statements |
+| 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
-| 📍 Geographic Data | Geographic data analysis |
-| 🔢 Numerical Processing | ROUND(), MOD(), decimal precision |
-| 🪟 Window Functions | ROW_NUMBER(), ranking, partitioning |
-| 🔄 SQL Pivoting | CASE and conditional aggregation |
-| 📅 Date Analysis | Date filtering and date functions |
+| 📍 Geographic Data | Geographic Data Analysis |
+| 🔢 Numerical Processing | ROUND(), MOD(), Decimal Precision |
+| 🪟 Window Functions | ROW_NUMBER(), Ranking, Partitioning |
+| 🔄 SQL Pivoting | CASE and Conditional Aggregation |
+| 📅 Date Analysis | Date Filtering and Date Functions |
 | ❌ NULL Handling | IS NULL and IS NOT NULL |
-| 🐞 Error Identification | SQL syntax and query logic |
-| 🔗 JOIN Analysis | Matching records and preserving unmatched rows |
+| 🐞 Error Identification | SQL Syntax and Query Logic |
+| 🔗 JOIN Analysis | Matching Records and Preserving Unmatched Rows |
+| 🗂️ Database Schema | Table Identification and Data Organization |
 
 ---
 
@@ -212,6 +217,8 @@ The repository is organized into daily folders to track my progress throughout t
 - 📁 Day85-SQL/
 - 📁 Day86-SQL/
   - 📸 Screenshot 2026-10-20 104958.png
+- 📁 Day87-SQL/
+  - 📸 Screenshot 2026-10-21 080025.png
 - 📄 README.md
 - 📄 LICENSE
 
@@ -223,7 +230,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 84:** SQL JOIN practice covering RIGHT JOIN.
 - **Day 85:** SQL JOIN practice covering FULL JOIN.
 - **Day 86:** SQL LEFT JOIN multiple-choice question.
-- **Day 87–99:** Upcoming SQL challenges.
+- **Day 87:** User Complaints — database schema and table identification.
+- **Day 88–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -320,7 +328,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | 🔗 Day 84 | Figure Out the Correct Join – RIGHT JOIN | CodeChef SQL Practice | Completed |
 | 🔗 Day 85 | Join Which Returns All Rows From Both Tables – FULL JOIN | SQL Practice | Completed |
 | 🔗 Day 86 | LEFT JOIN MCQ | SQL Challenge | Completed |
-| ⏳ Day 87 | Upcoming SQL Challenge | Various Platforms | Pending |
+| 🗂️ Day 87 | User Complaints | SQL Challenge | Completed |
 | ⏳ Day 88 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 89 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 90 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -334,6 +342,73 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 87 – User Complaints
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 87
+- 🧩 **Challenge:** User Complaints
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** Database Schema and Table Identification
+- 📋 **Concept:** Identifying the Table That Stores User Complaints
+- 📸 **Submission Screenshot:** Screenshot 2026-10-21 080025.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+The objective of Day 87 is to identify the correct table in a case study database schema that stores information about users' complaints.
+
+### ❓ Question
+
+Which table in the case study schema stores information about the users' complaints?
+
+**Options:**
+
+- `user_information`
+- `complaint_status`
+- `user_complaints`
+- `complaint_category`
+
+### ✅ Correct Answer
+
+**`user_complaints`**
+
+## 💡 Explanation
+
+The `user_complaints` table is the correct answer because it is intended to store information about users' complaints.
+
+The other table names suggest different purposes:
+
+- **`user_information`** — Information about users.
+- **`complaint_status`** — Information about complaint statuses.
+- **`user_complaints`** — Information about users' complaints.
+- **`complaint_category`** — Categories used to classify complaints.
+
+The answer is based on the table names provided in the question. The exact columns and relationships depend on the full case study schema.
+
+## 🧠 Concepts Practiced
+
+- Database Schema Understanding
+- Table Identification
+- Relational Database Fundamentals
+- Database Table Naming
+- Complaint Data Organization
+- Understanding Table Responsibilities
+- Reading and Interpreting Database Structures
+- SQL Fundamentals
+- Logical Thinking and Problem-Solving
+
+## 🎓 Learning Outcome
+
+By completing Day 87, I strengthened my understanding of database schemas and learned how to identify a table based on its intended purpose and name.
+
+This challenge reinforced the importance of understanding database organization before writing queries.
+
+**Key Takeaway:** Understanding the purpose of each table is an essential first step when working with relational databases.
 
 ---
 
@@ -352,7 +427,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 
 ## 🎯 Challenge Objective
 
-The objective of Day 86 is to understand which table's rows are included in the result of a LEFT JOIN, even when there is no matching row in the other table.
+Understand which table's rows are included in the result of a LEFT JOIN, even when there is no matching row in the other table.
 
 ### ❓ Question
 
@@ -364,7 +439,7 @@ In a LEFT JOIN operation, which table's rows are included in the result, even if
 
 ## 💡 Explanation
 
-A `LEFT JOIN`, also known as a `LEFT OUTER JOIN`, returns all rows from the left table and the matching rows from the right table.
+A `LEFT JOIN`, also known as a `LEFT OUTER JOIN`, returns all rows from the left table and matching rows from the right table.
 
 If a row in the left table does not have a matching row in the right table, the result still includes that left-table row. The columns from the right table contain `NULL` values when no match exists.
 
@@ -405,7 +480,7 @@ If a row in the left table does not have a matching row in the right table, the 
 
 ### 🔍 Understanding the Result
 
-- Amit appears in the result because all rows from the left table are preserved.
+- Amit appears because all rows from the left table are preserved.
 - Amit has no matching department, so the department column contains `NULL`.
 - Priya appears with the IT department because a matching record exists.
 - Rahul appears with the HR department because a matching record exists.
@@ -553,7 +628,7 @@ Day 84 strengthened my understanding of preserving all records from the right ta
 
 ## 🎯 Challenge Objective
 
-Understand SQL JOINs through a cab-booking case study involving user complaints and ride information associated with a cab-booking application.
+Understand SQL JOINs through a cab-booking case study involving related records.
 
 The challenge focuses on identifying the JOIN that returns only matching records from both tables.
 
@@ -593,7 +668,7 @@ Day 83 improved my understanding of matching records across related tables using
 | Day 56 | Occupations | HackerRank | Pivoting, ROW_NUMBER(), CASE |
 | Day 57 | 15 Days of Learning SQL | HackerRank | CTEs, window functions, date analysis |
 | Day 58 | Draw The Triangle 1 | HackerRank | Pattern generation |
-| Day 59 | Draw The Triangle 2 | HackerRank | Recursive queries |
+| Day 59 | Draw The Triangle 2 | HackerRank | Pattern generation |
 | Day 60 | SELECT Statement Challenge | CodeChef | SELECT, data retrieval |
 | Day 61 | High Price of Products | CodeChef | Product prices, filtering |
 | Day 62 | Average Salary | CodeChef | AVG(), salary analysis |
@@ -621,6 +696,7 @@ Day 83 improved my understanding of matching records across related tables using
 | Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | RIGHT JOIN |
 | Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN |
 | Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, unmatched records |
+| Day 87 | User Complaints | SQL Challenge | Database schema, table identification |
 
 ---
 
@@ -664,6 +740,8 @@ Day 83 improved my understanding of matching records across related tables using
 - ↔️ LEFT JOIN and RIGHT JOIN
 - 🌐 FULL JOIN and Unmatched Records
 - 🧠 SQL Query Output Interpretation
+- 🗂️ Database Schema and Table Identification
+- 📋 Complaint Data Organization
 - 🎯 Technical Interview Preparation
 
 ---
@@ -680,11 +758,11 @@ Day 83 improved my understanding of matching records across related tables using
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81–86
+- ✅ Day 81–87
 
 ## ⏳ Remaining Days
 
-- ⏳ Day 87–99
+- ⏳ Day 88–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -693,29 +771,29 @@ Day 83 improved my understanding of matching records across related tables using
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **86 / 100** |
-| 💻 Challenges Completed | **86** |
+| 📅 Days Completed | **87 / 100** |
+| 💻 Challenges Completed | **87** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **86% Complete** 🚀 |
-| 🔥 Challenge Streak | **86 Days Completed** |
-| ⏳ Days Remaining | **14 Days** |
+| 📈 Progress | **87% Complete** 🚀 |
+| 🔥 Challenge Streak | **87 Days Completed** |
+| ⏳ Days Remaining | **13 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 86 – LEFT JOIN MCQ** |
-| 🔍 Latest Focus | **LEFT JOIN and Preserving All Rows From the Left Table** |
+| 📋 Latest Challenge | **Day 87 – User Complaints** |
+| 🔍 Latest Focus | **Database Schema and Table Identification** |
 
 ---
 
 # 🔥 Current Streak
 
-## **86 Days of SQL Practice Completed! 🎉🔥🚀**
+## **87 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **86 days down, 14 more to go!**
+> **87 days down, 13 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
 
-My recent challenges have focused on understanding the differences between INNER JOIN, RIGHT JOIN, FULL JOIN, and LEFT JOIN.
+My recent challenges have focused on understanding SQL JOINs, matching and unmatched records, database schemas, and identifying tables based on their intended purposes.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -742,7 +820,8 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 83 | ✅ Completed |
 | 🎯 Day 84 | ✅ Completed |
 | 🎯 Day 85 | ✅ Completed |
-| 🎯 Day 86 | ✅ Completed 🎉🔗🔥 |
+| 🎯 Day 86 | ✅ Completed |
+| 🎯 Day 87 | ✅ Completed 🎉🗂️🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -782,18 +861,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 86**
+**Day 87**
 
-█████████████████░░░ **86%** 🚀
+█████████████████░░░ **87%** 🚀
 
 ## 🚀 Overall Progress
 
-█████████████████░░░ **86%**
+█████████████████░░░ **87%**
 
-### **86 / 100 Days Completed**
+### **87 / 100 Days Completed**
 
-- ✅ Completed: 86 days
-- ⏳ Remaining: 14 days
+- ✅ Completed: 87 days
+- ⏳ Remaining: 13 days
 - 🏆 Final target: 100 days
 
 ---
@@ -855,45 +934,10 @@ It is also about:
 - 🔗 Understanding INNER JOIN and matching records
 - ↔️ Understanding LEFT JOIN and RIGHT JOIN
 - 🌐 Understanding FULL JOIN and unmatched records
+- 🗂️ Understanding database schemas
+- 📋 Identifying tables based on their purpose
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
-
----
-
-# 🎯 Why This Repository?
-
-This repository documents my SQL learning journey and showcases my daily progress while solving SQL challenges.
-
-It serves as a portfolio of my SQL and database skills and demonstrates my commitment to continuous learning through the **#100DaysOfSQL** challenge.
-
-Every challenge helps me improve my:
-
-- 🧠 Logical Thinking
-- 🗄️ SQL Programming Skills
-- 🧩 Problem-Solving Ability
-- 📊 Data Analysis
-- 🔍 Data Filtering
-- 📈 Data Aggregation
-- 🔤 String Handling
-- 🔎 Pattern Matching
-- 🧠 Subquery Skills
-- 🔗 JOIN Operations
-- 🔀 Conditional Logic
-- 🪟 Window Functions
-- 🔄 SQL Pivoting
-- 📅 Date-Based Analysis
-- 🔁 Recursive Queries
-- ❌ NULL Value Handling
-- 🔢 Record Counting
-- 🐞 SQL Error Identification
-- 🧮 Aggregate Function Usage
-- 🔧 Query Debugging
-- 📈 Sorting and Ordering
-- 🔗 INNER JOIN and Matching Records
-- ↔️ LEFT JOIN and RIGHT JOIN
-- 🌐 FULL JOIN and Unmatched Records
-- 🗄️ SQL Query Interpretation
-- 💼 Technical Interview Preparation
 
 ---
 
@@ -965,7 +1009,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints
 
 ---
 
@@ -975,12 +1019,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**86 Days Completed ✅ | 14 Days Remaining ⏳ | 100 Days Goal 🎯**
+**87 Days Completed ✅ | 13 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 86 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 87 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
