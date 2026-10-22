@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-87%25-success?style=for-the-badge" alt="87% Progress">
+  <img src="https://img.shields.io/badge/Progress-88%25-success?style=for-the-badge" alt="88% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 87 Days Completed | 13 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 88 Days Completed | 12 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -43,6 +43,7 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - Subqueries and Common Table Expressions (CTEs)
 - SQL JOINs and Relational Database Operations
 - INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN Concepts
+- CROSS JOIN and Cartesian Products
 - CASE Statements and Conditional Logic
 - Window Functions and SQL Pivoting
 - Recursive Queries
@@ -81,6 +82,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🔤 Practice string operations and pattern matching.
 - 🧮 Understand mathematical functions and decimal precision.
 - 🔗 Understand relational data and JOIN operations.
+- ✖️ Learn CROSS JOIN and Cartesian products.
 - 🧠 Practice subqueries and CTEs.
 - 🔀 Apply CASE statements and conditional logic.
 - 🪟 Practice window functions.
@@ -109,6 +111,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 🔤 String Operations | String Handling and Text Processing |
 | 🔎 Pattern Matching | LIKE and Wildcards |
 | 🔗 Relational Operations | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN Concepts |
+| ✖️ Cartesian Products | CROSS JOIN |
 | 🧠 Advanced Queries | Subqueries and CTEs |
 | 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
@@ -219,6 +222,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-20 104958.png
 - 📁 Day87-SQL/
   - 📸 Screenshot 2026-10-21 080025.png
+- 📁 Day88-SQL/
+  - 📸 Screenshot 2026-10-22 160521.png
 - 📄 README.md
 - 📄 LICENSE
 
@@ -231,7 +236,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 85:** SQL JOIN practice covering FULL JOIN.
 - **Day 86:** SQL LEFT JOIN multiple-choice question.
 - **Day 87:** User Complaints — database schema and table identification.
-- **Day 88–99:** Upcoming SQL challenges.
+- **Day 88:** Join Without a Matching Column — CROSS JOIN.
+- **Day 89–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -329,7 +335,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | 🔗 Day 85 | Join Which Returns All Rows From Both Tables – FULL JOIN | SQL Practice | Completed |
 | 🔗 Day 86 | LEFT JOIN MCQ | SQL Challenge | Completed |
 | 🗂️ Day 87 | User Complaints | SQL Challenge | Completed |
-| ⏳ Day 88 | Upcoming SQL Challenge | Various Platforms | Pending |
+| 🔗 Day 88 | Join Without a Matching Column | SQL Challenge | Completed |
 | ⏳ Day 89 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 90 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 91 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -342,6 +348,108 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 88 – Join Without a Matching Column
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 88
+- 🧩 **Challenge:** Join Without a Matching Column
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL JOINs
+- 🔗 **Concept:** CROSS JOIN
+- 📸 **Submission Screenshot:** Screenshot 2026-10-22 160521.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+Identify the SQL JOIN type that combines rows from two or more tables without requiring a matching-column condition.
+
+### ❓ Question
+
+Which JOIN type combines rows from two or more tables based on a condition that is not related to a specific column?
+
+### ✅ Correct Answer
+
+**CROSS JOIN**
+
+## 💡 Explanation
+
+A `CROSS JOIN` produces the Cartesian product of two tables. Every row from the first table is combined with every row from the second table.
+
+Unlike an `INNER JOIN`, a CROSS JOIN does not require matching values between specific columns. It produces all possible combinations of rows from the two tables.
+
+If the first table contains **m** rows and the second table contains **n** rows, the result contains **m × n** combinations.
+
+### 📝 Example SQL Query
+
+    SELECT *
+    FROM TableA
+    CROSS JOIN TableB;
+
+### 📊 Example Tables
+
+**TableA**
+
+| A |
+|---:|
+| 1 |
+| 2 |
+
+**TableB**
+
+| B |
+|---|
+| X |
+| Y |
+
+### 📈 Expected Result
+
+| A | B |
+|---:|---|
+| 1 | X |
+| 1 | Y |
+| 2 | X |
+| 2 | Y |
+
+### 🔍 Understanding the Result
+
+- The first row of TableA is combined with every row of TableB.
+- The second row of TableA is also combined with every row of TableB.
+- Since each table contains two rows, the result contains four combinations.
+- No matching-column condition is required to produce these combinations.
+
+## 🔗 CROSS JOIN vs Other JOIN Types
+
+| JOIN Type | Description |
+|---|---|
+| INNER JOIN | Returns rows that match the specified join condition in both tables. |
+| LEFT JOIN | Returns all rows from the left table and matching rows from the right table. |
+| RIGHT JOIN | Returns all rows from the right table and matching rows from the left table. |
+| FULL JOIN | Returns matching and unmatched rows from both tables. |
+| CROSS JOIN | Returns every possible combination of rows from both tables. |
+
+## 🧠 Concepts Practiced
+
+- SQL JOIN Operations
+- CROSS JOIN
+- Cartesian Product
+- Combining Rows from Multiple Tables
+- Understanding JOIN Conditions
+- Relational Database Concepts
+- SQL Multiple-Choice Question Analysis
+- Logical Thinking and Problem-Solving
+
+## 🎓 Learning Outcome
+
+By completing Day 88, I strengthened my understanding of SQL JOIN operations and learned how CROSS JOIN combines every row from one table with every row from another table.
+
+This challenge helped me distinguish CROSS JOIN from other JOIN types that depend on matching conditions or preserve specific sets of rows.
+
+**Key Takeaway:** CROSS JOIN creates all possible row combinations between two tables.
 
 ---
 
@@ -495,6 +603,7 @@ The LEFT JOIN preserves every row from the left table, whether a matching row ex
 | LEFT JOIN | Returns all rows from the left table and matching rows from the right table. |
 | RIGHT JOIN | Returns all rows from the right table and matching rows from the left table. |
 | FULL JOIN | Returns matching and unmatched rows from both tables. |
+| CROSS JOIN | Returns every possible combination of rows from both tables. |
 
 ## 🧠 Concepts Practiced
 
@@ -697,6 +806,7 @@ Day 83 improved my understanding of matching records across related tables using
 | Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN |
 | Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, unmatched records |
 | Day 87 | User Complaints | SQL Challenge | Database schema, table identification |
+| Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN, Cartesian product |
 
 ---
 
@@ -711,6 +821,7 @@ Day 83 improved my understanding of matching records across related tables using
 - 🔎 Pattern Matching
 - 🔗 JOIN Operations
 - 🔄 Self JOIN Operations
+- ✖️ CROSS JOIN and Cartesian Products
 - 🧠 Subqueries and CTEs
 - 🔀 Conditional Logic
 - 📌 DISTINCT
@@ -758,11 +869,11 @@ Day 83 improved my understanding of matching records across related tables using
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81–87
+- ✅ Day 81–88
 
 ## ⏳ Remaining Days
 
-- ⏳ Day 88–99
+- ⏳ Day 89–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -771,29 +882,29 @@ Day 83 improved my understanding of matching records across related tables using
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **87 / 100** |
-| 💻 Challenges Completed | **87** |
+| 📅 Days Completed | **88 / 100** |
+| 💻 Challenges Completed | **88** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **87% Complete** 🚀 |
-| 🔥 Challenge Streak | **87 Days Completed** |
-| ⏳ Days Remaining | **13 Days** |
+| 📈 Progress | **88% Complete** 🚀 |
+| 🔥 Challenge Streak | **88 Days Completed** |
+| ⏳ Days Remaining | **12 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 87 – User Complaints** |
-| 🔍 Latest Focus | **Database Schema and Table Identification** |
+| 📋 Latest Challenge | **Day 88 – Join Without a Matching Column** |
+| 🔍 Latest Focus | **CROSS JOIN and Cartesian Product** |
 
 ---
 
 # 🔥 Current Streak
 
-## **87 Days of SQL Practice Completed! 🎉🔥🚀**
+## **88 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **87 days down, 13 more to go!**
+> **88 days down, 12 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
 
-My recent challenges have focused on understanding SQL JOINs, matching and unmatched records, database schemas, and identifying tables based on their intended purposes.
+My recent challenges have focused on understanding SQL JOINs, matching and unmatched records, database schemas, identifying tables based on their intended purposes, and combining tables using CROSS JOIN.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -822,6 +933,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 85 | ✅ Completed |
 | 🎯 Day 86 | ✅ Completed |
 | 🎯 Day 87 | ✅ Completed 🎉🗂️🔥 |
+| 🎯 Day 88 | ✅ Completed 🎉🔗🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -861,18 +973,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 87**
+**Day 88**
 
-█████████████████░░░ **87%** 🚀
+██████████████████░░ **88%** 🚀
 
 ## 🚀 Overall Progress
 
-█████████████████░░░ **87%**
+██████████████████░░ **88%**
 
-### **87 / 100 Days Completed**
+### **88 / 100 Days Completed**
 
-- ✅ Completed: 87 days
-- ⏳ Remaining: 13 days
+- ✅ Completed: 88 days
+- ⏳ Remaining: 12 days
 - 🏆 Final target: 100 days
 
 ---
@@ -934,6 +1046,7 @@ It is also about:
 - 🔗 Understanding INNER JOIN and matching records
 - ↔️ Understanding LEFT JOIN and RIGHT JOIN
 - 🌐 Understanding FULL JOIN and unmatched records
+- ✖️ Understanding CROSS JOIN and Cartesian products
 - 🗂️ Understanding database schemas
 - 📋 Identifying tables based on their purpose
 - 🎯 Preparing for technical interviews
@@ -1009,7 +1122,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints
 
 ---
 
@@ -1019,12 +1132,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**87 Days Completed ✅ | 13 Days Remaining ⏳ | 100 Days Goal 🎯**
+**88 Days Completed ✅ | 12 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 87 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 88 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
