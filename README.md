@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-88%25-success?style=for-the-badge" alt="88% Progress">
+  <img src="https://img.shields.io/badge/Progress-89%25-success?style=for-the-badge" alt="89% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 88 Days Completed | 12 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 89 Days Completed | 11 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -60,7 +60,6 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - Aggregate Function Nesting Rules
 - SQL Query Output Interpretation
 - Matching and Unmatched Records
-- LEFT JOIN and NULL Values in JOIN Results
 - Database Schema and Table Identification
 - Complaint Data Organization
 
@@ -91,9 +90,9 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 💰 Practice salary and employee data analysis.
 - 🐞 Identify and debug SQL errors.
 - ❌ Understand NULL value handling.
-- 📊 Understand matching and unmatched records in JOIN operations.
+- 📊 Understand matching and unmatched records.
 - 🗂️ Learn to identify tables within a database schema.
-- 📋 Understand how databases organize complaint-related information.
+- 📋 Understand database table organization.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -122,7 +121,6 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 📅 Date Analysis | Date Filtering and Date Functions |
 | ❌ NULL Handling | IS NULL and IS NOT NULL |
 | 🐞 Error Identification | SQL Syntax and Query Logic |
-| 🔗 JOIN Analysis | Matching Records and Preserving Unmatched Rows |
 | 🗂️ Database Schema | Table Identification and Data Organization |
 
 ---
@@ -133,88 +131,13 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/
-- 📁 Day2-SQL/
-- 📁 Day3-SQL/
-- 📁 Day4-SQL/
-- 📁 Day5-SQL/
-- 📁 Day6-SQL/
-- 📁 Day7-SQL/
-- 📁 Day8-SQL/
-- 📁 Day9-SQL/
-- 📁 Day10-SQL/
-- 📁 Day11-SQL/
-- 📁 Day12-SQL/
-- 📁 Day13-SQL/
-- 📁 Day14-SQL/
-- 📁 Day15-SQL/
-- 📁 Day16-SQL/
-- 📁 Day17-SQL/
-- 📁 Day18-SQL/
-- 📁 Day19-SQL/
-- 📁 Day20-SQL/
-- 📁 Day21-SQL/
-- 📁 Day22-SQL/
-- 📁 Day23-SQL/
-- 📁 Day24-SQL/
-- 📁 Day25-SQL/
-- 📁 Day26-SQL/
-- 📁 Day27-SQL/
-- 📁 Day28-SQL/
-- 📁 Day29-SQL/
-- 📁 Day30-SQL/
-- 📁 Day31-SQL/
-- 📁 Day32-SQL/
-- 📁 Day33-SQL/
-- 📁 Day34-SQL/
-- 📁 Day35-SQL/
-- 📁 Day36-SQL/
-- 📁 Day37-SQL/
-- 📁 Day38-SQL/
-- 📁 Day39-SQL/
-- 📁 Day40-SQL/
-- 📁 Day41-SQL/
-- 📁 Day42-SQL/
-- 📁 Day43-SQL/
-- 📁 Day44-SQL/
-- 📁 Day45-SQL/
-- 📁 Day46-SQL/
-- 📁 Day47-SQL/
-- 📁 Day48-SQL/
-- 📁 Day49-SQL/
-- 📁 Day50-SQL/
-- 📁 Day51-SQL/
-- 📁 Day52-SQL/
-- 📁 Day53-SQL/
-- 📁 Day54-SQL/
-- 📁 Day55-SQL/
-- 📁 Day56-SQL/
-- 📁 Day57-SQL/
-- 📁 Day58-SQL/
-- 📁 Day59-SQL/
-- 📁 Day60-SQL/
-- 📁 Day61-SQL/
-- 📁 Day62-SQL/
-- 📁 Day63-SQL/
-- 📁 Day64-SQL/
-- 📁 Day65-SQL/
-- 📁 Day66-SQL/
-- 📁 Day67-SQL/
-- 📁 Day68-SQL/
-- 📁 Day69-SQL/
-- 📁 Day70-SQL/
-- 📁 Day71-SQL/
-- 📁 Day72-SQL/
-- 📁 Day73-SQL/
-- 📁 Day74-SQL/
-- 📁 Day75-SQL/
-- 📁 Day76-SQL/
-- 📁 Day77-SQL/
-- 📁 Day78-SQL/
-- 📁 Day79-SQL/
-- 📁 Day80-SQL/
-- 📁 Day81-SQL/
-- 📁 Day82-SQL/
+- 📁 Day1-SQL/ through Day89-SQL/
+- 📁 Day90-SQL/ through Day100-SQL/ — Upcoming challenges
+- 📄 README.md
+- 📄 LICENSE
+
+### 📌 Recent Directory Structure
+
 - 📁 Day83-SQL/
 - 📁 Day84-SQL/
 - 📁 Day85-SQL/
@@ -224,8 +147,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-21 080025.png
 - 📁 Day88-SQL/
   - 📸 Screenshot 2026-10-22 160521.png
-- 📄 README.md
-- 📄 LICENSE
+- 📁 Day89-SQL/
+  - 📸 Screenshot 2026-10-23 144815.png
 
 ### 📌 Repository Organization
 
@@ -237,7 +160,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 86:** SQL LEFT JOIN multiple-choice question.
 - **Day 87:** User Complaints — database schema and table identification.
 - **Day 88:** Join Without a Matching Column — CROSS JOIN.
-- **Day 89–99:** Upcoming SQL challenges.
+- **Day 89:** Find the Output for Query — SELECT and WHERE.
+- **Day 90–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -248,95 +172,57 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 
 | Day | Challenge | Platform | Status |
 |---|---|---|---|
-| ✅ Day 1 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 2 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 3 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 4 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 5 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 6 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 7 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 8 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 9 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 10 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 11 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 12 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 13 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 14 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 15 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 16 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 17 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 18 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 19 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 20 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 21 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 22 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 23 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 24 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 25 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 26 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 27 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 28 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 29 | SQL Challenge | HackerRank | Completed |
-| 🎉 Day 30 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 31 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 32 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 33 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 34 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 35 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 36 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 37 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 38 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 39 | SQL Challenge | HackerRank | Completed |
-| 🔥 Day 40 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 41 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 42 | SQL Challenge | HackerRank | Completed |
-| ✅ Day 43 | SQL Challenge | HackerRank | Completed |
-| 🎉 Day 44 | New Companies | HackerRank | Completed |
-| 🎉 Day 45 | Weather Observation Station 20 | HackerRank | Completed |
-| 🎉 Day 46 | The Report | HackerRank | Completed |
-| 🏆 Day 47 | Top Competitors | HackerRank | Completed |
-| 🪄 Day 48 | Ollivander's Inventory | HackerRank | Completed |
-| 🏆 Day 49 | Challenges | HackerRank | Completed |
-| 🏆 Day 50 | Contest Leaderboard | HackerRank | Completed |
-| 🏆 Day 51 | SQL Project Planning | HackerRank | Completed |
-| 🔗 Day 52 | Placements | HackerRank | Completed |
-| 🔄 Day 53 | Symmetric Pairs | HackerRank | Completed |
-| 💻 Day 54 | Interviews | HackerRank | Completed |
-| 🔢 Day 55 | Print Prime Numbers | HackerRank | Completed |
-| 🔄 Day 56 | Occupations | HackerRank | Completed |
-| 📅 Day 57 | 15 Days of Learning SQL | HackerRank | Completed |
-| 🔺 Day 58 | Draw The Triangle 1 | HackerRank | Completed |
-| 🔺 Day 59 | Draw The Triangle 2 | HackerRank | Completed |
-| 🔍 Day 60 | SELECT Statement Challenge | CodeChef | Completed |
-| 💰 Day 61 | High Price of Products | CodeChef | Completed |
-| 📊 Day 62 | Average Salary | CodeChef | Completed |
-| 📍 Day 63 | Locate People | SQL Challenge | Completed |
-| 🏢 Day 64 | Distinct Companies | SQL Challenge | Completed |
-| 📚 Day 65 | Fiction Collection Size | SQL Challenge | Completed |
-| 🎬 Day 66 | List of Movies with Ratings | SQL Challenge | Completed |
-| ❌ Day 67 | Handling NULL Values | SQL Challenge | Completed |
-| 💰 Day 68 | Salary of Employees | SQL Challenge | Completed |
-| 🏢 Day 69 | Department of Each Employee | SQL Challenge | Completed |
-| 📰 Day 70 | Article Views | SQL Challenge | Completed |
-| 🏆 Day 71 | Player Performance Insights | SQL Challenge | Completed |
-| 🎯 Day 72 | Player Details | SQL Challenge | Completed |
-| 🐞 Day 73 | Find the Error in Query | SQL Challenge | Completed |
-| 🧮 Day 74 | Find the Error in Query | SQL Challenge | Completed |
-| 🔢 Day 75 | Return Type of COUNT() Function | SQL Challenge | Completed |
-| 🧩 Day 76 | Nesting in Aggregate Functions | SQL Challenge | Completed |
-| 🧮 Day 77 | Find Incorrect Queries | SQL Challenge | Completed |
-| 🧮 Day 78 | Find Incorrect Queries | SQL Challenge | Completed |
-| 🔤 Day 79 | Output of MIN(college) Query | SQL Challenge | Completed |
-| 🧮 Day 80 | Aggregate Functions and SQL Output | SQL Challenge | Completed |
-| ⭐ Day 81 | Count Star in NULL Columns | SQL Challenge | Completed |
-| 🔢 Day 82 | SQL Challenge | SQL Challenge | Completed |
-| 🔗 Day 83 | Introduction to Cab Booking Dataset – INNER JOIN | SQL Challenge | Completed |
-| 🔗 Day 84 | Figure Out the Correct Join – RIGHT JOIN | CodeChef SQL Practice | Completed |
-| 🔗 Day 85 | Join Which Returns All Rows From Both Tables – FULL JOIN | SQL Practice | Completed |
-| 🔗 Day 86 | LEFT JOIN MCQ | SQL Challenge | Completed |
-| 🗂️ Day 87 | User Complaints | SQL Challenge | Completed |
-| 🔗 Day 88 | Join Without a Matching Column | SQL Challenge | Completed |
-| ⏳ Day 89 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 1–10 | SQL Challenges | HackerRank | Completed |
+| ✅ Day 11–20 | SQL Challenges | HackerRank | Completed |
+| ✅ Day 21–30 | SQL Challenges | HackerRank | Completed |
+| ✅ Day 31–40 | SQL Challenges | HackerRank | Completed |
+| ✅ Day 41–43 | SQL Challenges | HackerRank | Completed |
+| ✅ Day 44 | New Companies | HackerRank | Completed |
+| ✅ Day 45 | Weather Observation Station 20 | HackerRank | Completed |
+| ✅ Day 46 | The Report | HackerRank | Completed |
+| ✅ Day 47 | Top Competitors | HackerRank | Completed |
+| ✅ Day 48 | Ollivander's Inventory | HackerRank | Completed |
+| ✅ Day 49 | Challenges | HackerRank | Completed |
+| ✅ Day 50 | Contest Leaderboard | HackerRank | Completed |
+| ✅ Day 51 | SQL Project Planning | HackerRank | Completed |
+| ✅ Day 52 | Placements | HackerRank | Completed |
+| ✅ Day 53 | Symmetric Pairs | HackerRank | Completed |
+| ✅ Day 54 | Interviews | HackerRank | Completed |
+| ✅ Day 55 | Print Prime Numbers | HackerRank | Completed |
+| ✅ Day 56 | Occupations | HackerRank | Completed |
+| ✅ Day 57 | 15 Days of Learning SQL | HackerRank | Completed |
+| ✅ Day 58 | Draw The Triangle 1 | HackerRank | Completed |
+| ✅ Day 59 | Draw The Triangle 2 | HackerRank | Completed |
+| ✅ Day 60 | SELECT Statement Challenge | CodeChef | Completed |
+| ✅ Day 61 | High Price of Products | CodeChef | Completed |
+| ✅ Day 62 | Average Salary | CodeChef | Completed |
+| ✅ Day 63 | Locate People | SQL Challenge | Completed |
+| ✅ Day 64 | Distinct Companies | SQL Challenge | Completed |
+| ✅ Day 65 | Fiction Collection Size | SQL Challenge | Completed |
+| ✅ Day 66 | List of Movies with Ratings | SQL Challenge | Completed |
+| ✅ Day 67 | Handling NULL Values | SQL Challenge | Completed |
+| ✅ Day 68 | Salary of Employees | SQL Challenge | Completed |
+| ✅ Day 69 | Department of Each Employee | SQL Challenge | Completed |
+| ✅ Day 70 | Article Views | SQL Challenge | Completed |
+| ✅ Day 71 | Player Performance Insights | SQL Challenge | Completed |
+| ✅ Day 72 | Player Details | SQL Challenge | Completed |
+| ✅ Day 73 | Find the Error in Query | SQL Challenge | Completed |
+| ✅ Day 74 | Find the Error in Query | SQL Challenge | Completed |
+| ✅ Day 75 | Return Type of COUNT() Function | SQL Challenge | Completed |
+| ✅ Day 76 | Nesting in Aggregate Functions | SQL Challenge | Completed |
+| ✅ Day 77 | Find Incorrect Queries | SQL Challenge | Completed |
+| ✅ Day 78 | Find Incorrect Queries | SQL Challenge | Completed |
+| ✅ Day 79 | Output of MIN(college) Query | SQL Challenge | Completed |
+| ✅ Day 80 | Aggregate Functions and SQL Output | SQL Challenge | Completed |
+| ✅ Day 81 | Count Star in NULL Columns | SQL Challenge | Completed |
+| ✅ Day 82 | SQL Challenge | SQL Challenge | Completed |
+| ✅ Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | Completed |
+| ✅ Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | Completed |
+| ✅ Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | Completed |
+| ✅ Day 86 | LEFT JOIN MCQ | SQL Challenge | Completed |
+| ✅ Day 87 | User Complaints | SQL Challenge | Completed |
+| ✅ Day 88 | Join Without a Matching Column | SQL Challenge | Completed |
+| ✅ Day 89 | Find the Output for Query | SQL Challenge | Completed |
 | ⏳ Day 90 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 91 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 92 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -348,6 +234,74 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 89 – Find the Output for Query
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 89
+- 🧩 **Challenge:** Find the Output for Query
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Query Output Interpretation
+- 🧾 **Concepts:** SELECT, FROM, WHERE, Conditional Filtering
+- 📸 **Submission Screenshot:** Screenshot 2026-10-23 144815.png
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+Determine which reason values are returned by an SQL query that selects the `reason` column from the `category_description` table for records where `category_id = 4`.
+
+### ❓ SQL Query
+
+    SELECT
+        reason
+    FROM
+        category_description
+    WHERE
+        category_id = 4;
+
+### ✅ Correct Options
+
+- **unclean vehicles**
+- **unpleasant odors**
+
+## 💡 Explanation
+
+The query retrieves the `reason` column from the `category_description` table.
+
+The `WHERE` clause filters the records and includes only those rows where `category_id` equals `4`.
+
+The applicable options shown in the challenge are **unclean vehicles** and **unpleasant odors**.
+
+### 🔍 Understanding the Query
+
+- **SELECT reason:** Returns the values from the `reason` column.
+- **FROM category_description:** Specifies the source table.
+- **WHERE category_id = 4:** Filters records according to the specified category ID.
+- **Query Output:** Displays the reason values that satisfy the condition.
+
+### 🧠 Concepts Practiced
+
+- SELECT Statement
+- FROM Clause
+- WHERE Clause
+- Equality Operator (=)
+- Conditional Data Filtering
+- SQL Query Output Interpretation
+- Selecting Specific Columns
+- Reading and Understanding Database Queries
+- Logical Thinking and Problem-Solving
+
+## 🎓 Learning Outcome
+
+By completing Day 89, I practiced tracing an SQL query to identify the source table, selected column, and filtering condition.
+
+This challenge reinforced how the `WHERE` clause limits query results to records that satisfy a specified condition.
+
+**Key Takeaway:** The WHERE clause filters rows according to a condition, while SELECT determines which column values appear in the result.
 
 ---
 
@@ -366,11 +320,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 
 ## 🎯 Challenge Objective
 
-Identify the SQL JOIN type that combines rows from two or more tables without requiring a matching-column condition.
-
-### ❓ Question
-
-Which JOIN type combines rows from two or more tables based on a condition that is not related to a specific column?
+Identify the SQL JOIN type that combines rows from two tables without requiring a matching-column condition.
 
 ### ✅ Correct Answer
 
@@ -378,11 +328,9 @@ Which JOIN type combines rows from two or more tables based on a condition that 
 
 ## 💡 Explanation
 
-A `CROSS JOIN` produces the Cartesian product of two tables. Every row from the first table is combined with every row from the second table.
+A CROSS JOIN produces the Cartesian product of two tables. Every row from the first table is combined with every row from the second table.
 
-Unlike an `INNER JOIN`, a CROSS JOIN does not require matching values between specific columns. It produces all possible combinations of rows from the two tables.
-
-If the first table contains **m** rows and the second table contains **n** rows, the result contains **m × n** combinations.
+If the first table contains `m` rows and the second table contains `n` rows, the result contains `m × n` combinations.
 
 ### 📝 Example SQL Query
 
@@ -415,39 +363,9 @@ If the first table contains **m** rows and the second table contains **n** rows,
 | 2 | X |
 | 2 | Y |
 
-### 🔍 Understanding the Result
+### 🎓 Learning Outcome
 
-- The first row of TableA is combined with every row of TableB.
-- The second row of TableA is also combined with every row of TableB.
-- Since each table contains two rows, the result contains four combinations.
-- No matching-column condition is required to produce these combinations.
-
-## 🔗 CROSS JOIN vs Other JOIN Types
-
-| JOIN Type | Description |
-|---|---|
-| INNER JOIN | Returns rows that match the specified join condition in both tables. |
-| LEFT JOIN | Returns all rows from the left table and matching rows from the right table. |
-| RIGHT JOIN | Returns all rows from the right table and matching rows from the left table. |
-| FULL JOIN | Returns matching and unmatched rows from both tables. |
-| CROSS JOIN | Returns every possible combination of rows from both tables. |
-
-## 🧠 Concepts Practiced
-
-- SQL JOIN Operations
-- CROSS JOIN
-- Cartesian Product
-- Combining Rows from Multiple Tables
-- Understanding JOIN Conditions
-- Relational Database Concepts
-- SQL Multiple-Choice Question Analysis
-- Logical Thinking and Problem-Solving
-
-## 🎓 Learning Outcome
-
-By completing Day 88, I strengthened my understanding of SQL JOIN operations and learned how CROSS JOIN combines every row from one table with every row from another table.
-
-This challenge helped me distinguish CROSS JOIN from other JOIN types that depend on matching conditions or preserve specific sets of rows.
+Day 88 strengthened my understanding of SQL JOIN operations and how CROSS JOIN combines every row from one table with every row from another table.
 
 **Key Takeaway:** CROSS JOIN creates all possible row combinations between two tables.
 
@@ -468,11 +386,11 @@ This challenge helped me distinguish CROSS JOIN from other JOIN types that depen
 
 ## 🎯 Challenge Objective
 
-The objective of Day 87 is to identify the correct table in a case study database schema that stores information about users' complaints.
+Identify the correct table in a case-study database schema that stores information about users' complaints.
 
 ### ❓ Question
 
-Which table in the case study schema stores information about the users' complaints?
+Which table in the case-study schema stores information about users' complaints?
 
 **Options:**
 
@@ -487,34 +405,20 @@ Which table in the case study schema stores information about the users' complai
 
 ## 💡 Explanation
 
-The `user_complaints` table is the correct answer because it is intended to store information about users' complaints.
+The `user_complaints` table is intended to store information about users' complaints.
 
 The other table names suggest different purposes:
 
-- **`user_information`** — Information about users.
-- **`complaint_status`** — Information about complaint statuses.
-- **`user_complaints`** — Information about users' complaints.
-- **`complaint_category`** — Categories used to classify complaints.
+- `user_information` — Information about users.
+- `complaint_status` — Information about complaint statuses.
+- `user_complaints` — Information about users' complaints.
+- `complaint_category` — Categories used to classify complaints.
 
-The answer is based on the table names provided in the question. The exact columns and relationships depend on the full case study schema.
+The answer is based on the table names provided in the question. The exact columns and relationships depend on the full case-study schema.
 
-## 🧠 Concepts Practiced
+### 🎓 Learning Outcome
 
-- Database Schema Understanding
-- Table Identification
-- Relational Database Fundamentals
-- Database Table Naming
-- Complaint Data Organization
-- Understanding Table Responsibilities
-- Reading and Interpreting Database Structures
-- SQL Fundamentals
-- Logical Thinking and Problem-Solving
-
-## 🎓 Learning Outcome
-
-By completing Day 87, I strengthened my understanding of database schemas and learned how to identify a table based on its intended purpose and name.
-
-This challenge reinforced the importance of understanding database organization before writing queries.
+Day 87 strengthened my understanding of database schemas and identifying tables based on their intended purpose.
 
 **Key Takeaway:** Understanding the purpose of each table is an essential first step when working with relational databases.
 
@@ -535,7 +439,7 @@ This challenge reinforced the importance of understanding database organization 
 
 ## 🎯 Challenge Objective
 
-Understand which table's rows are included in the result of a LEFT JOIN, even when there is no matching row in the other table.
+Understand which table's rows are included in the result of a LEFT JOIN, even when no matching row exists in the other table.
 
 ### ❓ Question
 
@@ -547,9 +451,9 @@ In a LEFT JOIN operation, which table's rows are included in the result, even if
 
 ## 💡 Explanation
 
-A `LEFT JOIN`, also known as a `LEFT OUTER JOIN`, returns all rows from the left table and matching rows from the right table.
+A LEFT JOIN, also known as a LEFT OUTER JOIN, returns all rows from the left table and matching rows from the right table.
 
-If a row in the left table does not have a matching row in the right table, the result still includes that left-table row. The columns from the right table contain `NULL` values when no match exists.
+If a row in the left table does not have a matching row in the right table, the left-table row is still included. The columns from the right table contain NULL values when no match exists.
 
 ### 📝 Example SQL Query
 
@@ -561,68 +465,11 @@ If a row in the left table does not have a matching row in the right table, the 
     LEFT JOIN Departments AS B
         ON A.id = B.id;
 
-### 📋 Example Tables
+### 🎓 Learning Outcome
 
-**Table A: Employees**
+Day 86 strengthened my understanding of LEFT JOIN and how SQL preserves all rows from the left table.
 
-| id | name |
-|---:|---|
-| 1 | Amit |
-| 2 | Priya |
-| 3 | Rahul |
-
-**Table B: Departments**
-
-| id | department |
-|---:|---|
-| 2 | IT |
-| 3 | HR |
-
-### 📊 Expected Result
-
-| id | name | department |
-|---:|---|---|
-| 1 | Amit | NULL |
-| 2 | Priya | IT |
-| 3 | Rahul | HR |
-
-### 🔍 Understanding the Result
-
-- Amit appears because all rows from the left table are preserved.
-- Amit has no matching department, so the department column contains `NULL`.
-- Priya appears with the IT department because a matching record exists.
-- Rahul appears with the HR department because a matching record exists.
-
-The LEFT JOIN preserves every row from the left table, whether a matching row exists in the right table or not.
-
-## 🔗 LEFT JOIN vs Other JOIN Types
-
-| JOIN Type | Description |
-|---|---|
-| INNER JOIN | Returns only matching rows from both tables. |
-| LEFT JOIN | Returns all rows from the left table and matching rows from the right table. |
-| RIGHT JOIN | Returns all rows from the right table and matching rows from the left table. |
-| FULL JOIN | Returns matching and unmatched rows from both tables. |
-| CROSS JOIN | Returns every possible combination of rows from both tables. |
-
-## 🧠 Concepts Practiced
-
-- SQL JOIN Operations
-- LEFT JOIN and LEFT OUTER JOIN
-- Relational Database Concepts
-- Matching and Unmatched Records
-- NULL Values in JOIN Results
-- JOIN Conditions
-- Table Relationships
-- SQL Query Interpretation
-- Database Fundamentals
-- Logical Thinking and Problem-Solving
-
-## 🎓 Learning Outcome
-
-By completing Day 86, I strengthened my understanding of LEFT JOIN and learned how SQL preserves all rows from the left table, even when corresponding records are missing from the right table.
-
-**Key Takeaway:** LEFT JOIN returns every row from the left table and matching rows from the right table. If no match exists, the right table's columns contain NULL values.
+**Key Takeaway:** LEFT JOIN preserves every row from the left table, whether or not a matching row exists in the right table.
 
 ---
 
@@ -647,16 +494,9 @@ Understand which SQL JOIN returns all rows from both tables, regardless of wheth
 
 **FULL JOIN**
 
-FULL JOIN is also commonly known as FULL OUTER JOIN.
+## 💡 Explanation
 
-### 💡 Explanation
-
-A FULL JOIN returns:
-
-- All matching rows from both tables.
-- All unmatched rows from the left table.
-- All unmatched rows from the right table.
-- NULL values for columns where matching records do not exist.
+A FULL JOIN returns matching rows and unmatched rows from both tables. Where a matching record does not exist, the corresponding columns contain NULL values.
 
 ### 📝 Example SQL Query
 
@@ -699,20 +539,11 @@ Identify the JOIN type that returns every row from the right table and matching 
 
 **RIGHT JOIN**
 
-### 💡 Explanation
+## 💡 Explanation
 
 A RIGHT JOIN, also called a RIGHT OUTER JOIN, returns every row from the right table and matching rows from the left table.
 
 If a row in the right table has no matching record in the left table, the result still includes that row. The columns belonging to the left table contain NULL values when no match exists.
-
-### 📝 Example SQL Query
-
-    SELECT
-        A.column_name,
-        B.column_name
-    FROM TableA AS A
-    RIGHT JOIN TableB AS B
-        ON A.id = B.id;
 
 ### 🎓 Learning Outcome
 
@@ -739,26 +570,15 @@ Day 84 strengthened my understanding of preserving all records from the right ta
 
 Understand SQL JOINs through a cab-booking case study involving related records.
 
-The challenge focuses on identifying the JOIN that returns only matching records from both tables.
-
 ### ✅ Correct Answer
 
 **INNER JOIN**
 
-### 💡 Explanation
+## 💡 Explanation
 
 An INNER JOIN returns only rows that have matching values in both tables according to the specified join condition.
 
 It combines related records and excludes rows that do not have a matching record in the other table.
-
-### 📝 Example SQL Query
-
-    SELECT
-        A.column_name,
-        B.column_name
-    FROM TableA AS A
-    INNER JOIN TableB AS B
-        ON A.id = B.id;
 
 ### 🎓 Learning Outcome
 
@@ -807,6 +627,7 @@ Day 83 improved my understanding of matching records across related tables using
 | Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, unmatched records |
 | Day 87 | User Complaints | SQL Challenge | Database schema, table identification |
 | Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN, Cartesian product |
+| Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE, query output interpretation |
 
 ---
 
@@ -869,11 +690,11 @@ Day 83 improved my understanding of matching records across related tables using
 - ✅ Day 51–60
 - ✅ Day 61–70
 - ✅ Day 71–80
-- ✅ Day 81–88
+- ✅ Day 81–89
 
 ## ⏳ Remaining Days
 
-- ⏳ Day 89–99
+- ⏳ Day 90–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -882,29 +703,29 @@ Day 83 improved my understanding of matching records across related tables using
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **88 / 100** |
-| 💻 Challenges Completed | **88** |
+| 📅 Days Completed | **89 / 100** |
+| 💻 Challenges Completed | **89** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **88% Complete** 🚀 |
-| 🔥 Challenge Streak | **88 Days Completed** |
-| ⏳ Days Remaining | **12 Days** |
+| 📈 Progress | **89% Complete** 🚀 |
+| 🔥 Challenge Streak | **89 Days Completed** |
+| ⏳ Days Remaining | **11 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 88 – Join Without a Matching Column** |
-| 🔍 Latest Focus | **CROSS JOIN and Cartesian Product** |
+| 📋 Latest Challenge | **Day 89 – Find the Output for Query** |
+| 🔍 Latest Focus | **SELECT, FROM, WHERE, and Query Output Analysis** |
 
 ---
 
 # 🔥 Current Streak
 
-## **88 Days of SQL Practice Completed! 🎉🔥🚀**
+## **89 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **88 days down, 12 more to go!**
+> **89 days down, 11 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
 
-My recent challenges have focused on understanding SQL JOINs, matching and unmatched records, database schemas, identifying tables based on their intended purposes, and combining tables using CROSS JOIN.
+My recent challenges have focused on understanding SQL JOINs, matching and unmatched records, database schemas, identifying tables based on their intended purposes, combining tables using CROSS JOIN, and interpreting query output using filtering conditions.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -934,6 +755,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 86 | ✅ Completed |
 | 🎯 Day 87 | ✅ Completed 🎉🗂️🔥 |
 | 🎯 Day 88 | ✅ Completed 🎉🔗🔥 |
+| 🎯 Day 89 | ✅ Completed 🎉🗄️🔥 |
 | 🎯 Day 90 | ⏳ Upcoming |
 | 🏆 Day 100 | ⏳ Final Goal |
 
@@ -973,18 +795,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 88**
+**Day 89**
 
-██████████████████░░ **88%** 🚀
+██████████████████░░ **89%** 🚀
 
 ## 🚀 Overall Progress
 
-██████████████████░░ **88%**
+██████████████████░░ **89%**
 
-### **88 / 100 Days Completed**
+### **89 / 100 Days Completed**
 
-- ✅ Completed: 88 days
-- ⏳ Remaining: 12 days
+- ✅ Completed: 89 days
+- ⏳ Remaining: 11 days
 - 🏆 Final target: 100 days
 
 ---
@@ -1122,7 +944,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #QueryOutput
 
 ---
 
@@ -1132,12 +954,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**88 Days Completed ✅ | 12 Days Remaining ⏳ | 100 Days Goal 🎯**
+**89 Days Completed ✅ | 11 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 88 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 89 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
