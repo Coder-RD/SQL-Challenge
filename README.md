@@ -1,4 +1,3 @@
-```markdown
 # 🗄️ 100 Days of SQL Challenge
 
 <p align="center">
@@ -651,4 +650,3 @@ Let's learn, build, and grow together! 🌱
 <p align="center">
   <strong>🔥 90 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
-```
