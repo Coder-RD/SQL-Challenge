@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-90%25-success?style=for-the-badge" alt="90% Progress">
+  <img src="https://img.shields.io/badge/Progress-91%25-success?style=for-the-badge" alt="91% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 90 Days Completed | 10 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 91 Days Completed | 9 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -62,6 +62,10 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - Matching and Unmatched Records
 - Database Schema and Table Identification
 - Customer Complaint Classification
+- Multi-Table Queries
+- INNER JOIN Conditions and Table Relationships
+- SQL Query Rearrangement
+- Filtering Records Using WHERE
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -93,6 +97,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 📊 Understand matching and unmatched records.
 - 🗂️ Learn to identify tables within a database schema.
 - 📋 Understand database table organization.
+- 🔍 Practice multi-table queries.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -122,6 +127,8 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | ❌ NULL Handling | IS NULL and IS NOT NULL |
 | 🐞 Error Identification | SQL Syntax and Query Logic |
 | 🗂️ Database Schema | Table Identification and Data Organization |
+| 🔗 JOIN Conditions | ON and Matching Columns |
+| 🎯 Query Filtering | WHERE Clause and Conditional Retrieval |
 
 ---
 
@@ -131,8 +138,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day90-SQL/ — Completed challenges
-- 📁 Day91-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day91-SQL/ — Completed challenges
+- 📁 Day92-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -152,6 +159,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-23 144815.png
 - 📁 Day90-SQL/
   - 📸 Screenshot 2026-10-24 164125.png
+- 📁 Day91-SQL/
+  - 📸 Screenshot 2026-10-25 070800.png
 
 ### 📌 Repository Organization
 
@@ -165,7 +174,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 88:** Join Without a Matching Column — CROSS JOIN.
 - **Day 89:** Find the Output for Query — SELECT and WHERE.
 - **Day 90:** Find Complaint Category — identifying the Poor Navigation complaint category.
-- **Day 91–99:** Upcoming SQL challenges.
+- **Day 91:** Rearrange the Query - 1 — INNER JOIN, table relationships, and filtering.
+- **Day 92–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -228,7 +238,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 88 | Join Without a Matching Column | SQL Challenge | Completed |
 | ✅ Day 89 | Find the Output for Query | SQL Challenge | Completed |
 | ✅ Day 90 | Find Complaint Category | SQL Challenge | Completed |
-| ⏳ Day 91 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 91 | Rearrange the Query - 1 | SQL Challenge | Completed |
 | ⏳ Day 92 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 93 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 94 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -238,6 +248,115 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 91 – Rearrange the Query - 1
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 91
+- 🧩 **Challenge:** Rearrange the Query - 1
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔗 **Topic:** SQL JOINs
+- 📋 **Concepts:** INNER JOIN, ON, WHERE, Table Relationships
+- 📸 **Submission Screenshot:** Screenshot 2026-10-25 070800.png
+- 📁 **Directory:** Day91-SQL
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+Rearrange the given SQL code fragments into the correct order to retrieve the category ID, category name, subcategory ID, and reason for the complaint category with ID `1`.
+
+The challenge focuses on understanding SQL query structure, joining related tables, and filtering records using a specific category ID.
+
+### ❓ Problem Statement
+
+Apply JOINs and fetch the following information for the category with ID `1`:
+
+- Category ID
+- Category Name
+- Subcategory ID
+- Reason
+
+The query uses the following tables:
+
+- `complaint_category` — stores complaint category information.
+- `category_description` — stores category descriptions, subcategory IDs, and complaint reasons.
+
+The tables are connected through their common `category_id` column.
+
+## 💻 Correct SQL Query
+
+    SELECT
+        cc.category_id,
+        cc.category_name,
+        cd.subcategory_id,
+        cd.reason
+    FROM
+        category_description cd
+    INNER JOIN
+        complaint_category cc
+        ON cc.category_id = cd.category_id
+    WHERE
+        cc.category_id = 1;
+
+## 🔍 Query Explanation
+
+### 1. SELECT Clause
+
+The SELECT clause specifies the columns to retrieve from the joined tables.
+
+- `cc.category_id` — retrieves the complaint category ID.
+- `cc.category_name` — retrieves the complaint category name.
+- `cd.subcategory_id` — retrieves the subcategory ID.
+- `cd.reason` — retrieves the complaint reason.
+
+### 2. FROM Clause
+
+The FROM clause specifies the starting table:
+
+`category_description cd`
+
+Here, `cd` is an alias for the `category_description` table.
+
+### 3. INNER JOIN
+
+The INNER JOIN combines records from `category_description` and `complaint_category` when their category IDs match.
+
+### 4. ON Condition
+
+The condition `cc.category_id = cd.category_id` specifies how the records in the two tables are related.
+
+Only rows satisfying this matching condition are included in the joined result.
+
+### 5. WHERE Clause
+
+The condition `cc.category_id = 1` filters the joined records to include only the requested complaint category.
+
+## 🧠 SQL Concepts Practiced
+
+- SQL Query Structure
+- SELECT Statement
+- FROM Clause
+- INNER JOIN
+- ON Join Condition
+- WHERE Clause
+- Table Aliases
+- Common Columns
+- Relational Database Operations
+- Multi-Table Queries
+- Query Rearrangement
+- Data Filtering
+
+## 🎓 Learning Outcome
+
+By completing Day 91, I strengthened my understanding of SQL query structure and learned how to arrange SQL statements in the correct logical order.
+
+This challenge reinforced how INNER JOIN connects related tables, how the ON clause defines the matching condition, and how the WHERE clause filters the resulting records.
+
+**Key Takeaway:** Use INNER JOIN to combine matching records from related tables and WHERE to retrieve records that satisfy a specific condition.
 
 ---
 
@@ -302,8 +421,6 @@ The other options represent different types of complaints:
 
 By completing Day 90, I improved my understanding of how customer complaints can be classified into appropriate categories based on the issue described.
 
-This challenge reinforced the importance of understanding dataset terminology and identifying the category that best matches a particular complaint.
-
 **Key Takeaway:** Taking incorrect routes is associated with the **Poor Navigation** complaint category.
 
 ---
@@ -315,11 +432,12 @@ This challenge reinforced the importance of understanding dataset terminology an
 | Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | INNER JOIN |
 | Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | RIGHT JOIN |
 | Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN |
-| Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, unmatched records |
-| Day 87 | User Complaints | SQL Challenge | Database schema, table identification |
-| Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN, Cartesian product |
-| Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE, query output interpretation |
-| Day 90 | Find Complaint Category | SQL Challenge | Customer complaint classification |
+| Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, Unmatched Records |
+| Day 87 | User Complaints | SQL Challenge | Database Schema, Table Identification |
+| Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN, Cartesian Product |
+| Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE, Query Output |
+| Day 90 | Find Complaint Category | SQL Challenge | Customer Complaint Classification |
+| Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN, ON, WHERE |
 
 ---
 
@@ -360,6 +478,9 @@ This challenge reinforced the importance of understanding dataset terminology an
 - ✖️ CROSS JOIN and Cartesian Products
 - 🗂️ Database Schema and Table Identification
 - 📋 Customer Complaint Classification
+- 🔗 Multi-Table Query Construction
+- 🎯 SQL Query Rearrangement
+- 🧩 Join Conditions and Common Columns
 - 🎯 Technical Interview Preparation
 
 ---
@@ -377,10 +498,11 @@ This challenge reinforced the importance of understanding dataset terminology an
 - ✅ Day 61–70
 - ✅ Day 71–80
 - ✅ Day 81–90
+- ✅ Day 91
 
 ## ⏳ Remaining Days
 
-- ⏳ Day 91–99
+- ⏳ Day 92–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -389,29 +511,29 @@ This challenge reinforced the importance of understanding dataset terminology an
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **90 / 100** |
-| 💻 Challenges Completed | **90** |
+| 📅 Days Completed | **91 / 100** |
+| 💻 Challenges Completed | **91** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **90% Complete** 🚀 |
-| 🔥 Challenge Streak | **90 Days Completed** |
-| ⏳ Days Remaining | **10 Days** |
+| 📈 Progress | **91% Complete** 🚀 |
+| 🔥 Challenge Streak | **91 Days Completed** |
+| ⏳ Days Remaining | **9 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 90 – Find Complaint Category** |
-| 🔍 Latest Focus | **Customer Complaint Classification** |
+| 📋 Latest Challenge | **Day 91 – Rearrange the Query - 1** |
+| 🔍 Latest Focus | **INNER JOIN, Table Relationships, and Query Filtering** |
 
 ---
 
 # 🔥 Current Streak
 
-## **90 Days of SQL Practice Completed! 🎉🔥🚀**
+## **91 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **90 days down, 10 more to go!**
+> **91 days down, 9 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
 
-My recent challenges have focused on understanding SQL JOINs, matching and unmatched records, database schemas, identifying tables based on their intended purposes, interpreting query output, and classifying customer complaints.
+My recent challenges have focused on SQL JOIN operations, matching and unmatched records, database schemas, identifying tables based on their intended purposes, interpreting query output, classifying customer complaints, and constructing queries using multiple related tables.
 
 The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
 
@@ -443,6 +565,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 88 | ✅ Completed 🎉🔗🔥 |
 | 🎯 Day 89 | ✅ Completed 🎉🗄️🔥 |
 | 🎯 Day 90 | ✅ Completed 🎉📋🔥 |
+| 🎯 Day 91 | ✅ Completed 🎉🔗🔥 |
 | 🏆 Day 100 | ⏳ Final Goal |
 
 ---
@@ -483,16 +606,20 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 **Day 90**
 
-██████████████████░░ **90%** 🚀
+████████████████████ 100% ✅
+
+**Day 91**
+
+██████████████████░░ 91% 🚀
 
 ## 🚀 Overall Progress
 
-██████████████████░░ **90%**
+██████████████████░░ **91%**
 
-### **90 / 100 Days Completed**
+### **91 / 100 Days Completed**
 
-- ✅ Completed: 90 days
-- ⏳ Remaining: 10 days
+- ✅ Completed: 91 days
+- ⏳ Remaining: 9 days
 - 🏆 Final target: 100 days
 
 ---
@@ -558,6 +685,8 @@ It is also about:
 - 🗂️ Understanding database schemas
 - 📋 Identifying tables based on their purpose
 - 🧾 Understanding customer complaint categories
+- 🔍 Constructing multi-table queries
+- 🧩 Applying JOIN conditions
 - 🎯 Preparing for technical interviews
 - 🚀 Building a strong technical portfolio
 
@@ -631,7 +760,7 @@ Let's learn, build, and grow together! 🌱
 
 # 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement
 
 ---
 
@@ -641,12 +770,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**90 Days Completed ✅ | 10 Days Remaining ⏳ | 100 Days Goal 🎯**
+**91 Days Completed ✅ | 9 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 90 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 91 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
