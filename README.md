@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-91%25-success?style=for-the-badge" alt="91% Progress">
+  <img src="https://img.shields.io/badge/Progress-92%25-success?style=for-the-badge" alt="92% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 91 Days Completed | 9 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 92 Days Completed | 8 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -138,8 +138,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day91-SQL/ — Completed challenges
-- 📁 Day92-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day92-SQL/ — Completed challenges
+- 📁 Day93-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -161,6 +161,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-24 164125.png
 - 📁 Day91-SQL/
   - 📸 Screenshot 2026-10-25 070800.png
+- 📁 Day92-SQL/
+  - 📸 Screenshot 2026-10-26 094947.png
 
 ### 📌 Repository Organization
 
@@ -175,7 +177,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 89:** Find the Output for Query — SELECT and WHERE.
 - **Day 90:** Find Complaint Category — identifying the Poor Navigation complaint category.
 - **Day 91:** Rearrange the Query - 1 — INNER JOIN, table relationships, and filtering.
-- **Day 92–99:** Upcoming SQL challenges.
+- **Day 92:** Rearrange the Query - 2 — CROSS JOIN and LIMIT.
+- **Day 93–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -239,7 +242,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 89 | Find the Output for Query | SQL Challenge | Completed |
 | ✅ Day 90 | Find Complaint Category | SQL Challenge | Completed |
 | ✅ Day 91 | Rearrange the Query - 1 | SQL Challenge | Completed |
-| ⏳ Day 92 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 92 | Rearrange the Query - 2 | SQL Challenge | Completed |
 | ⏳ Day 93 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 94 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 95 | Upcoming SQL Challenge | Various Platforms | Pending |
@@ -248,6 +251,71 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Goal | — | Pending |
+
+---
+
+# 🆕 Day 92 – Rearrange the Query - 2
+
+## 📌 Challenge Information
+
+- 📅 **Day:** 92
+- 🧩 **Challenge:** Rearrange the Query - 2
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔗 **Topic:** SQL JOINs
+- 📋 **Concepts:** CROSS JOIN, SELECT *, LIMIT
+- 📸 **Submission Screenshot:** Screenshot 2026-10-26 094947.png
+- 📁 **Directory:** Day92-SQL
+- ✅ **Status:** Completed
+
+## 🎯 Challenge Objective
+
+Combine the `user_information` and `complaint_status` tables using a `CROSS JOIN` and retrieve the first five rows. Observe the result produced by combining every row from the first table with every row from the second table.
+
+## 💻 Correct SQL Query
+
+    SELECT *
+    FROM user_information ui
+    CROSS JOIN complaint_status cs
+    LIMIT 5;
+
+## 🔍 Query Explanation
+
+### 1. SELECT *
+
+The `SELECT *` clause retrieves all columns from both tables included in the query.
+
+### 2. FROM Clause
+
+The `FROM user_information ui` clause selects `user_information` as the first table. The alias `ui` is used as a shorthand name for the table.
+
+### 3. CROSS JOIN
+
+The `CROSS JOIN complaint_status cs` clause combines every row from `user_information` with every row from `complaint_status`. The alias `cs` represents the `complaint_status` table.
+
+A `CROSS JOIN` produces a Cartesian product. If the first table contains *m* rows and the second table contains *n* rows, the combined result contains *m × n* rows before applying any limit.
+
+### 4. LIMIT 5
+
+The `LIMIT 5` clause restricts the output to the first five rows of the result set.
+
+## 🧠 SQL Concepts Practiced
+
+- SELECT Statement
+- SELECT *
+- CROSS JOIN
+- Cartesian Product
+- Table Aliases
+- Multi-Table Queries
+- LIMIT Clause
+- Query Rearrangement
+- Result Set Interpretation
+
+## 🎓 Learning Outcome
+
+By completing Day 92, I strengthened my understanding of how `CROSS JOIN` combines two tables without a matching-column condition and generates all possible row combinations. I also practiced using table aliases and `LIMIT` to control the displayed result set.
+
+**Key Takeaway:** Use `CROSS JOIN` when every possible combination of rows from two tables is required. Use `LIMIT` to restrict the number of rows returned.
 
 ---
 
@@ -438,6 +506,7 @@ By completing Day 90, I improved my understanding of how customer complaints can
 | Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE, Query Output |
 | Day 90 | Find Complaint Category | SQL Challenge | Customer Complaint Classification |
 | Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN, ON, WHERE |
+| Day 92 | Rearrange the Query - 2 | SQL Challenge | CROSS JOIN, LIMIT |
 
 ---
 
@@ -499,10 +568,11 @@ By completing Day 90, I improved my understanding of how customer complaints can
 - ✅ Day 71–80
 - ✅ Day 81–90
 - ✅ Day 91
+- ✅ Day 92
 
 ## ⏳ Remaining Days
 
-- ⏳ Day 92–99
+- ⏳ Day 93–99
 - 🏆 Day 100 – Final Goal
 
 ---
@@ -511,25 +581,25 @@ By completing Day 90, I improved my understanding of how customer complaints can
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **91 / 100** |
-| 💻 Challenges Completed | **91** |
+| 📅 Days Completed | **92 / 100** |
+| 💻 Challenges Completed | **92** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **91% Complete** 🚀 |
-| 🔥 Challenge Streak | **91 Days Completed** |
-| ⏳ Days Remaining | **9 Days** |
+| 📈 Progress | **92% Complete** 🚀 |
+| 🔥 Challenge Streak | **92 Days Completed** |
+| ⏳ Days Remaining | **8 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 91 – Rearrange the Query - 1** |
-| 🔍 Latest Focus | **INNER JOIN, Table Relationships, and Query Filtering** |
+| 📋 Latest Challenge | **Day 92 – Rearrange the Query - 2** |
+| 🔍 Latest Focus | **CROSS JOIN, Cartesian Products, and LIMIT** |
 
 ---
 
 # 🔥 Current Streak
 
-## **91 Days of SQL Practice Completed! 🎉🔥🚀**
+## **92 Days of SQL Practice Completed! 🎉🔥🚀**
 
-> **91 days down, 9 more to go!**
+> **92 days down, 8 more to go!**
 
 Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
 
@@ -566,6 +636,7 @@ The journey continues with **consistency, discipline, practice, and continuous l
 | 🎯 Day 89 | ✅ Completed 🎉🗄️🔥 |
 | 🎯 Day 90 | ✅ Completed 🎉📋🔥 |
 | 🎯 Day 91 | ✅ Completed 🎉🔗🔥 |
+| 🎯 Day 92 | ✅ Completed 🎉✖️🔥 |
 | 🏆 Day 100 | ⏳ Final Goal |
 
 ---
@@ -608,18 +679,18 @@ The journey continues with **consistency, discipline, practice, and continuous l
 
 ████████████████████ 100% ✅
 
-**Day 91**
+**Day 92**
 
-██████████████████░░ 91% 🚀
+███████████████████░ 92% 🚀
 
 ## 🚀 Overall Progress
 
-██████████████████░░ **91%**
+███████████████████░ **92%**
 
-### **91 / 100 Days Completed**
+### **92 / 100 Days Completed**
 
-- ✅ Completed: 91 days
-- ⏳ Remaining: 9 days
+- ✅ Completed: 92 days
+- ⏳ Remaining: 8 days
 - 🏆 Final target: 100 days
 
 ---
@@ -770,12 +841,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**91 Days Completed ✅ | 9 Days Remaining ⏳ | 100 Days Goal 🎯**
+**92 Days Completed ✅ | 8 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 91 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 92 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
