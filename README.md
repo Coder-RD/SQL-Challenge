@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-92%25-success?style=for-the-badge" alt="92% Progress">
+  <img src="https://img.shields.io/badge/Progress-93%25-success?style=for-the-badge" alt="93% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 92 Days Completed | 8 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 93 Days Completed | 7 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -66,6 +66,8 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - INNER JOIN Conditions and Table Relationships
 - SQL Query Rearrangement
 - Filtering Records Using WHERE
+- Subquery Concepts and Usage
+- Database Case Studies and Relational Data Retrieval
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
 
@@ -98,6 +100,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🗂️ Learn to identify tables within a database schema.
 - 📋 Understand database table organization.
 - 🔍 Practice multi-table queries.
+- 🏡 Explore SQL concepts through real-world database case studies.
 - 💼 Build a strong SQL and database portfolio.
 - 🌱 Develop a consistent learning habit.
 
@@ -132,14 +135,14 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 
 ---
 
-# 📂 Repository Structure
+## 📂 Repository Structure
 
 The repository is organized into daily folders to track my progress throughout the 100-day SQL challenge.
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day92-SQL/ — Completed challenges
-- 📁 Day93-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day93-SQL/ — Completed challenges
+- 📁 Day94-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -163,6 +166,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-25 070800.png
 - 📁 Day92-SQL/
   - 📸 Screenshot 2026-10-26 094947.png
+- 📁 Day93-SQL/
+  - 📸 Screenshot 2026-10-27 155855.png
 
 ### 📌 Repository Organization
 
@@ -178,14 +183,15 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 90:** Find Complaint Category — identifying the Poor Navigation complaint category.
 - **Day 91:** Rearrange the Query - 1 — INNER JOIN, table relationships, and filtering.
 - **Day 92:** Rearrange the Query - 2 — CROSS JOIN and LIMIT.
-- **Day 93–99:** Upcoming SQL challenges.
+- **Day 93:** Subqueries in SQL — multiple-choice question using the HappyHaven Rental App case study.
+- **Day 94–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
 
 ---
 
-# ✅ Progress Tracker
+## ✅ Progress Tracker
 
 | Day | Challenge | Platform | Status |
 |---|---|---|---|
@@ -243,20 +249,112 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 90 | Find Complaint Category | SQL Challenge | Completed |
 | ✅ Day 91 | Rearrange the Query - 1 | SQL Challenge | Completed |
 | ✅ Day 92 | Rearrange the Query - 2 | SQL Challenge | Completed |
-| ⏳ Day 93 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 93 | Subqueries in SQL (MCQ) | SQL Challenge | Completed |
 | ⏳ Day 94 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 95 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 96 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 97 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
-| 🏆 Day 100 | Final Goal | — | Pending |
+| 🏆 Day 100 | Final Challenge | — | Pending |
 
 ---
 
-# 🆕 Day 92 – Rearrange the Query - 2
+## 🆕 Day 93 – Subqueries in SQL (MCQ)
 
-## 📌 Challenge Information
+### 📌 Challenge Information
+
+- 📅 **Day:** 93
+- 🧩 **Challenge:** Subqueries in SQL
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Subqueries
+- 🏡 **Case Study:** HappyHaven Rental App
+- 📋 **Question Type:** Multiple-Choice Question
+- 📸 **Submission Screenshot:** Screenshot 2026-10-27 155855.png
+- 📁 **Directory:** Day93-SQL
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Understand the purpose and usage of subqueries in SQL and identify the correct statement about where subqueries can be used.
+
+The HappyHaven Rental App case study contains eight related tables:
+
+- **Users:** Stores user information.
+- **Properties:** Stores rental property details.
+- **Bookings:** Records property bookings and dates.
+- **Reviews:** Stores user reviews and ratings.
+- **Amenities:** Lists available property amenities.
+- **PropertyAmenities:** Connects properties with their amenities.
+- **Favorites:** Stores users' favorite properties.
+- **Payments:** Stores payment information associated with bookings.
+
+### ❓ Question
+
+Which of the following statements about subqueries is true?
+
+**Options:**
+
+1. Subqueries can only be used in SELECT statements.
+2. Subqueries always return a single row of data.
+3. Subqueries must be enclosed in square brackets.
+4. Subqueries can be used in various parts of a SQL statement.
+
+### ✅ Correct Answer
+
+**Option 4: Subqueries can be used in various parts of a SQL statement.**
+
+### 💡 Explanation
+
+A subquery is a query nested inside another SQL query. Depending on the query and SQL dialect, subqueries can be used in different clauses, including SELECT, FROM, WHERE, and HAVING.
+
+They help retrieve data, filter records, compare values, and perform calculations using the results of another query.
+
+### 💻 Example SQL Query
+
+    SELECT title, rating
+    FROM Properties
+    WHERE rating > (
+        SELECT AVG(rating)
+        FROM Properties
+    );
+
+### 🔍 Query Explanation
+
+1. The inner query calculates the average rating of all properties.
+2. The outer query retrieves the property titles and ratings.
+3. The WHERE clause selects properties whose ratings are greater than the calculated average.
+
+### ❌ Why the Other Options Are Incorrect
+
+- **Option 1:** Subqueries are not restricted to SELECT statements. They can appear in several supported SQL clauses.
+- **Option 2:** Subqueries can return a single value, one row, multiple rows, or multiple columns, depending on their structure.
+- **Option 3:** SQL subqueries are generally enclosed in parentheses `()`, not square brackets `[]`.
+
+### 🧠 Concepts Practiced
+
+- SQL Subqueries
+- Nested Queries
+- SELECT Statement
+- WHERE Clause
+- Aggregate Functions
+- AVG() Function
+- SQL Query Structure
+- Multiple-Choice Question Solving
+- Database Case Study Analysis
+
+### 🎓 Learning Outcome
+
+By completing Day 93, I strengthened my understanding of SQL subqueries and their role in retrieving and filtering data. I also learned how a subquery can calculate an aggregate value that is used by an outer query.
+
+**Key Takeaway:** Subqueries allow one SQL query to use the results of another query, making complex data retrieval and filtering easier.
+
+---
+
+## 🆕 Day 92 – Rearrange the Query - 2
+
+### 📌 Challenge Information
 
 - 📅 **Day:** 92
 - 🧩 **Challenge:** Rearrange the Query - 2
@@ -268,41 +366,38 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 - 📁 **Directory:** Day92-SQL
 - ✅ **Status:** Completed
 
-## 🎯 Challenge Objective
+### 🎯 Challenge Objective
 
-Combine the `user_information` and `complaint_status` tables using a `CROSS JOIN` and retrieve the first five rows. Observe the result produced by combining every row from the first table with every row from the second table.
+Combine the `user_information` and `complaint_status` tables using a CROSS JOIN and retrieve the first five rows.
 
-## 💻 Correct SQL Query
+### 💻 Correct SQL Query
 
     SELECT *
     FROM user_information ui
     CROSS JOIN complaint_status cs
     LIMIT 5;
 
-## 🔍 Query Explanation
+### 🔍 Query Explanation
 
-### 1. SELECT *
+**1. SELECT \***
 
-The `SELECT *` clause retrieves all columns from both tables included in the query.
+Retrieves all columns from both tables.
 
-### 2. FROM Clause
+**2. FROM Clause**
 
-The `FROM user_information ui` clause selects `user_information` as the first table. The alias `ui` is used as a shorthand name for the table.
+Selects `user_information` as the first table. The alias `ui` is used as shorthand.
 
-### 3. CROSS JOIN
+**3. CROSS JOIN**
 
-The `CROSS JOIN complaint_status cs` clause combines every row from `user_information` with every row from `complaint_status`. The alias `cs` represents the `complaint_status` table.
+Combines every row from `user_information` with every row from `complaint_status`.
 
-A `CROSS JOIN` produces a Cartesian product. If the first table contains *m* rows and the second table contains *n* rows, the combined result contains *m × n* rows before applying any limit.
+**4. LIMIT 5**
 
-### 4. LIMIT 5
+Restricts the displayed output to five rows. Without an ORDER BY clause, the particular five rows returned are not guaranteed.
 
-The `LIMIT 5` clause restricts the output to the first five rows of the result set.
-
-## 🧠 SQL Concepts Practiced
+### 🧠 SQL Concepts Practiced
 
 - SELECT Statement
-- SELECT *
 - CROSS JOIN
 - Cartesian Product
 - Table Aliases
@@ -311,17 +406,17 @@ The `LIMIT 5` clause restricts the output to the first five rows of the result s
 - Query Rearrangement
 - Result Set Interpretation
 
-## 🎓 Learning Outcome
+### 🎓 Learning Outcome
 
-By completing Day 92, I strengthened my understanding of how `CROSS JOIN` combines two tables without a matching-column condition and generates all possible row combinations. I also practiced using table aliases and `LIMIT` to control the displayed result set.
+This challenge strengthened my understanding of how CROSS JOIN produces every possible combination of rows from two tables.
 
-**Key Takeaway:** Use `CROSS JOIN` when every possible combination of rows from two tables is required. Use `LIMIT` to restrict the number of rows returned.
+**Key Takeaway:** If one table contains *m* rows and another contains *n* rows, a CROSS JOIN produces *m × n* combinations before any filtering or limiting.
 
 ---
 
-# 🆕 Day 91 – Rearrange the Query - 1
+## 🆕 Day 91 – Rearrange the Query - 1
 
-## 📌 Challenge Information
+### 📌 Challenge Information
 
 - 📅 **Day:** 91
 - 🧩 **Challenge:** Rearrange the Query - 1
@@ -333,104 +428,53 @@ By completing Day 92, I strengthened my understanding of how `CROSS JOIN` combin
 - 📁 **Directory:** Day91-SQL
 - ✅ **Status:** Completed
 
-## 🎯 Challenge Objective
+### 🎯 Challenge Objective
 
-Rearrange the given SQL code fragments into the correct order to retrieve the category ID, category name, subcategory ID, and reason for the complaint category with ID `1`.
+Rearrange the SQL code fragments into the correct order to retrieve the category ID, category name, subcategory ID, and complaint reason for category ID `1`.
 
-The challenge focuses on understanding SQL query structure, joining related tables, and filtering records using a specific category ID.
-
-### ❓ Problem Statement
-
-Apply JOINs and fetch the following information for the category with ID `1`:
-
-- Category ID
-- Category Name
-- Subcategory ID
-- Reason
-
-The query uses the following tables:
-
-- `complaint_category` — stores complaint category information.
-- `category_description` — stores category descriptions, subcategory IDs, and complaint reasons.
-
-The tables are connected through their common `category_id` column.
-
-## 💻 Correct SQL Query
+### 💻 Correct SQL Query
 
     SELECT
         cc.category_id,
         cc.category_name,
         cd.subcategory_id,
         cd.reason
-    FROM
-        category_description cd
-    INNER JOIN
-        complaint_category cc
+    FROM category_description cd
+    INNER JOIN complaint_category cc
         ON cc.category_id = cd.category_id
-    WHERE
-        cc.category_id = 1;
+    WHERE cc.category_id = 1;
 
-## 🔍 Query Explanation
+### 🔍 Query Explanation
 
-### 1. SELECT Clause
+- **SELECT:** Specifies the columns to retrieve.
+- **FROM:** Identifies the starting table.
+- **INNER JOIN:** Combines records from related tables.
+- **ON:** Specifies the matching category ID in both tables.
+- **WHERE:** Filters the results to category ID `1`.
 
-The SELECT clause specifies the columns to retrieve from the joined tables.
-
-- `cc.category_id` — retrieves the complaint category ID.
-- `cc.category_name` — retrieves the complaint category name.
-- `cd.subcategory_id` — retrieves the subcategory ID.
-- `cd.reason` — retrieves the complaint reason.
-
-### 2. FROM Clause
-
-The FROM clause specifies the starting table:
-
-`category_description cd`
-
-Here, `cd` is an alias for the `category_description` table.
-
-### 3. INNER JOIN
-
-The INNER JOIN combines records from `category_description` and `complaint_category` when their category IDs match.
-
-### 4. ON Condition
-
-The condition `cc.category_id = cd.category_id` specifies how the records in the two tables are related.
-
-Only rows satisfying this matching condition are included in the joined result.
-
-### 5. WHERE Clause
-
-The condition `cc.category_id = 1` filters the joined records to include only the requested complaint category.
-
-## 🧠 SQL Concepts Practiced
+### 🧠 SQL Concepts Practiced
 
 - SQL Query Structure
 - SELECT Statement
-- FROM Clause
 - INNER JOIN
 - ON Join Condition
 - WHERE Clause
 - Table Aliases
 - Common Columns
 - Relational Database Operations
-- Multi-Table Queries
 - Query Rearrangement
-- Data Filtering
 
-## 🎓 Learning Outcome
+### 🎓 Learning Outcome
 
-By completing Day 91, I strengthened my understanding of SQL query structure and learned how to arrange SQL statements in the correct logical order.
+This challenge reinforced the importance of arranging SQL clauses correctly and understanding how JOIN conditions connect related tables.
 
-This challenge reinforced how INNER JOIN connects related tables, how the ON clause defines the matching condition, and how the WHERE clause filters the resulting records.
-
-**Key Takeaway:** Use INNER JOIN to combine matching records from related tables and WHERE to retrieve records that satisfy a specific condition.
+**Key Takeaway:** INNER JOIN retrieves matching records from related tables, while WHERE filters the resulting records.
 
 ---
 
-# 🆕 Day 90 – Find Complaint Category
+## 🆕 Day 90 – Find Complaint Category
 
-## 📌 Challenge Information
+### 📌 Challenge Information
 
 - 📅 **Day:** 90
 - 🧩 **Challenge:** Find Complaint Category
@@ -442,75 +486,57 @@ This challenge reinforced how INNER JOIN connects related tables, how the ON cla
 - 📁 **Directory:** Day90-SQL
 - ✅ **Status:** Completed
 
-## 🎯 Challenge Objective
+### 🎯 Challenge Objective
 
-Identify the complaint category associated with the issue described as "taking incorrect routes" by analyzing the available complaint categories.
+Identify the complaint category associated with the issue described as "taking incorrect routes."
 
 ### ❓ Question
 
-**"Taking incorrect routes" is associated with which of the following complaint categories?**
-
-### Options
-
-- Overcharging
-- Driver Behavior
-- Cleanliness
-- Poor Navigation
-- Payment Issues
+**"Taking incorrect routes" is associated with which complaint category?**
 
 ### ✅ Correct Answer
 
 **Poor Navigation**
 
-## 💡 Explanation
+### 💡 Explanation
 
-Taking incorrect routes means that a driver does not follow the appropriate route to reach the passenger's destination.
+Taking incorrect routes means a driver does not follow an appropriate route to reach the passenger's destination. This issue is associated with Poor Navigation because it relates to route selection and navigation.
 
-This issue is associated with **Poor Navigation** because it relates to route selection and navigation.
-
-The other options represent different types of complaints:
-
-- **Overcharging:** Charging more than the appropriate fare.
-- **Driver Behavior:** Complaints about a driver's conduct or attitude.
-- **Cleanliness:** Issues related to vehicle cleanliness.
-- **Poor Navigation:** Problems involving incorrect routes or navigation.
-- **Payment Issues:** Problems related to fare payments or transactions.
-
-## 🧠 Concepts Practiced
+### 🧠 Concepts Practiced
 
 - Customer Complaint Classification
-- Understanding Complaint Categories
 - Dataset Interpretation
 - Logical and Analytical Thinking
-- Multiple-Choice SQL Challenge
+- Multiple-Choice Questions
 - Real-World Problem-Solving
 
-## 🎓 Learning Outcome
+### 🎓 Learning Outcome
 
-By completing Day 90, I improved my understanding of how customer complaints can be classified into appropriate categories based on the issue described.
+This challenge improved my understanding of classifying customer complaints according to the issue described.
 
-**Key Takeaway:** Taking incorrect routes is associated with the **Poor Navigation** complaint category.
+**Key Takeaway:** Taking incorrect routes is associated with the Poor Navigation complaint category.
 
 ---
 
-# 🧠 Recent SQL Challenges
+## 🧠 Recent SQL Challenges
 
 | Day | Challenge | Platform | Key Concepts |
 |---|---|---|---|
-| Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | INNER JOIN |
+| Day 83 | Introduction to Cab Booking Dataset | SQL Challenge | Dataset and JOIN Concepts |
 | Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | RIGHT JOIN |
-| Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN |
+| Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN Concepts |
 | Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, Unmatched Records |
 | Day 87 | User Complaints | SQL Challenge | Database Schema, Table Identification |
 | Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN, Cartesian Product |
 | Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE, Query Output |
-| Day 90 | Find Complaint Category | SQL Challenge | Customer Complaint Classification |
+| Day 90 | Find Complaint Category | SQL Challenge | Complaint Classification |
 | Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN, ON, WHERE |
 | Day 92 | Rearrange the Query - 2 | SQL Challenge | CROSS JOIN, LIMIT |
+| Day 93 | Subqueries in SQL | SQL Challenge | Subqueries, Nested Queries |
 
 ---
 
-# 🧠 SQL Skills I'm Building
+## 🧠 SQL Skills I'm Building
 
 - 🗄️ SQL Fundamentals
 - 💻 Database Querying
@@ -544,19 +570,19 @@ By completing Day 90, I improved my understanding of how customer complaints can
 - 🔗 INNER JOIN and Matching Records
 - ↔️ LEFT JOIN and RIGHT JOIN
 - 🌐 FULL JOIN and Unmatched Records
-- ✖️ CROSS JOIN and Cartesian Products
 - 🗂️ Database Schema and Table Identification
 - 📋 Customer Complaint Classification
-- 🔗 Multi-Table Query Construction
+- 🔍 Multi-Table Query Construction
 - 🎯 SQL Query Rearrangement
-- 🧩 Join Conditions and Common Columns
+- 🧩 JOIN Conditions and Common Columns
+- 🏡 Real-World Database Case Studies
 - 🎯 Technical Interview Preparation
 
 ---
 
-# 📅 Challenge Progress
+## 📅 Challenge Progress
 
-## 🎯 Completed Days
+### 🎯 Completed Days
 
 - ✅ Day 1–10
 - ✅ Day 11–20
@@ -569,133 +595,39 @@ By completing Day 90, I improved my understanding of how customer complaints can
 - ✅ Day 81–90
 - ✅ Day 91
 - ✅ Day 92
+- ✅ Day 93
 
-## ⏳ Remaining Days
+### ⏳ Remaining Days
 
-- ⏳ Day 93–99
-- 🏆 Day 100 – Final Goal
+- ⏳ Day 94
+- ⏳ Day 95
+- ⏳ Day 96
+- ⏳ Day 97
+- ⏳ Day 98
+- ⏳ Day 99
+- 🏆 Day 100 — Final Goal
 
 ---
 
-# 📊 Current Statistics
+## 📊 Current Statistics
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **92 / 100** |
-| 💻 Challenges Completed | **92** |
+| 📅 Days Completed | **93 / 100** |
+| 💻 Challenges Completed | **93** |
 | 🗄️ Language | **SQL** |
-| 🏆 Practice Platforms | **HackerRank, CodeChef, and SQL Challenges** |
+| 🏆 Practice Platforms | **HackerRank, CodeChef, SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **92% Complete** 🚀 |
-| 🔥 Challenge Streak | **92 Days Completed** |
-| ⏳ Days Remaining | **8 Days** |
+| 📈 Progress | **93% Complete** 🚀 |
+| 🔥 Challenge Streak | **93 Days Completed** |
+| ⏳ Days Remaining | **7 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 92 – Rearrange the Query - 2** |
-| 🔍 Latest Focus | **CROSS JOIN, Cartesian Products, and LIMIT** |
+| 📋 Latest Challenge | **Day 93 – Subqueries in SQL** |
+| 🔍 Latest Focus | **Subqueries and Nested Queries** |
 
 ---
 
-# 🔥 Current Streak
-
-## **92 Days of SQL Practice Completed! 🎉🔥🚀**
-
-> **92 days down, 8 more to go!**
-
-Every SQL challenge helps me strengthen my database querying, aggregation, filtering, sorting, mathematical functions, string handling, NULL value handling, subqueries, JOINs, conditional logic, data analysis, SQL debugging, and problem-solving abilities.
-
-My recent challenges have focused on SQL JOIN operations, matching and unmatched records, database schemas, identifying tables based on their intended purposes, interpreting query output, classifying customer complaints, and constructing queries using multiple related tables.
-
-The journey continues with **consistency, discipline, practice, and continuous learning.** 🗄️💻🔥
-
----
-
-# 🏆 Milestones
-
-| Milestone | Status |
-|---|---|
-| 🎯 Day 10 | ✅ Completed |
-| 🎯 Day 20 | ✅ Completed |
-| 🎯 Day 25 | ✅ Completed |
-| 🎯 Day 30 | ✅ Completed 🎉 |
-| 🎯 Day 40 | ✅ Completed 🎉🔥 |
-| 🎯 Day 50 | ✅ Completed 🎉🏆🔥 |
-| 🎯 Day 55 | ✅ Completed |
-| 🎯 Day 60 | ✅ Completed |
-| 🎯 Day 65 | ✅ Completed |
-| 🎯 Day 70 | ✅ Completed |
-| 🎯 Day 75 | ✅ Completed |
-| 🎯 Day 80 | ✅ Completed |
-| 🎯 Day 81 | ✅ Completed |
-| 🎯 Day 82 | ✅ Completed |
-| 🎯 Day 83 | ✅ Completed |
-| 🎯 Day 84 | ✅ Completed |
-| 🎯 Day 85 | ✅ Completed |
-| 🎯 Day 86 | ✅ Completed |
-| 🎯 Day 87 | ✅ Completed 🎉🗂️🔥 |
-| 🎯 Day 88 | ✅ Completed 🎉🔗🔥 |
-| 🎯 Day 89 | ✅ Completed 🎉🗄️🔥 |
-| 🎯 Day 90 | ✅ Completed 🎉📋🔥 |
-| 🎯 Day 91 | ✅ Completed 🎉🔗🔥 |
-| 🎯 Day 92 | ✅ Completed 🎉✖️🔥 |
-| 🏆 Day 100 | ⏳ Final Goal |
-
----
-
-# 📊 Progress Tracker
-
-**Day 10**
-
-████████████████████ 100% ✅
-
-**Day 20**
-
-████████████████████ 100% ✅
-
-**Day 30**
-
-████████████████████ 100% ✅
-
-**Day 40**
-
-████████████████████ 100% ✅
-
-**Day 50**
-
-████████████████████ 100% ✅
-
-**Day 60**
-
-████████████████████ 100% ✅
-
-**Day 70**
-
-████████████████████ 100% ✅
-
-**Day 80**
-
-████████████████████ 100% ✅
-
-**Day 90**
-
-████████████████████ 100% ✅
-
-**Day 92**
-
-███████████████████░ 92% 🚀
-
-## 🚀 Overall Progress
-
-███████████████████░ **92%**
-
-### **92 / 100 Days Completed**
-
-- ✅ Completed: 92 days
-- ⏳ Remaining: 8 days
-- 🏆 Final target: 100 days
-
----
-
-# 📖 Learning Approach
+## 📖 Learning Approach
 
 My daily learning process includes:
 
@@ -716,96 +648,71 @@ My daily learning process includes:
 
 ---
 
-# 🌱 Learning in Public
+## 🌱 Learning in Public
 
-This challenge is not only about solving SQL problems.
+This challenge is not only about solving SQL problems. It is also about building consistency, improving logical thinking, learning database concepts, and developing practical problem-solving skills.
 
-It is also about:
+Throughout this journey, I am practicing:
 
-- 🔥 Building consistency
-- 📚 Learning new SQL concepts
-- 🧠 Improving logical thinking
-- 📊 Improving analytical thinking
-- 💻 Writing better SQL queries
-- 🧩 Improving problem-solving skills
-- 🗄️ Understanding databases
-- 📈 Learning data analysis
-- 🔗 Understanding relational data
-- 🔄 Understanding relationships between records
-- 🧠 Practicing subqueries
-- 📊 Understanding aggregation
-- 🏆 Analyzing leaderboard data
-- 💰 Comparing related data
-- 👨‍💼 Analyzing employee data
-- 📰 Analyzing article and publication data
-- 🪟 Practicing window functions
-- 🔄 Learning SQL pivoting
-- 📅 Analyzing date-based data
-- 🔁 Practicing recursive queries
-- ⭐ Generating patterns
-- 🔎 Practicing pattern matching
-- ❌ Handling NULL values
-- 🐞 Identifying SQL errors
-- 🧮 Using aggregate functions correctly
-- 🔧 Debugging SQL queries
-- 🎯 Understanding SQL return types
-- 🔗 Understanding INNER JOIN and matching records
-- ↔️ Understanding LEFT JOIN and RIGHT JOIN
-- 🌐 Understanding FULL JOIN and unmatched records
-- ✖️ Understanding CROSS JOIN and Cartesian products
-- 🗂️ Understanding database schemas
-- 📋 Identifying tables based on their purpose
-- 🧾 Understanding customer complaint categories
-- 🔍 Constructing multi-table queries
-- 🧩 Applying JOIN conditions
-- 🎯 Preparing for technical interviews
+- 🔥 Consistent daily learning
+- 📚 SQL fundamentals and advanced concepts
+- 🧠 Logical and analytical thinking
+- 💻 Writing structured SQL queries
+- 🧩 Problem-solving and debugging
+- 🗄️ Relational database operations
+- 📈 Data analysis and interpretation
+- 🔗 JOINs and table relationships
+- 🧠 Subqueries and nested queries
+- 📊 Aggregate functions and grouping
+- 🪟 Window functions and ranking
+- 📅 Date-based analysis
+- ❌ NULL value handling
+- 🗂️ Database schema identification
+- 📋 Real-world case study analysis
+- 🎯 Technical interview preparation
 - 🚀 Building a strong technical portfolio
 
 ---
 
-# 🌟 Future Topics
+## 🌟 Future Learning Goals
 
-The upcoming days will focus on more SQL concepts, including:
+The remaining days will provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
+
+Potential areas for further practice include:
 
 - 🔹 Advanced SQL Queries
-- 🔹 Advanced Aggregate Functions
-- 🔹 Advanced JOIN Operations
-- 🔹 Complex Subqueries
 - 🔹 Correlated Subqueries
-- 🔹 Advanced CASE Statements
+- 🔹 Advanced JOIN Operations
+- 🔹 Complex Filtering
+- 🔹 Advanced Aggregate Functions
+- 🔹 CASE Statements
 - 🔹 Advanced GROUP BY
-- 🔹 Advanced String Functions
-- 🔹 Regular Expressions
-- 🔹 Date and Time Functions
-- 🔹 Mathematical Functions
-- 🔹 Statistical Analysis
-- 🔹 Geographic Data Analysis
-- 🔹 Relational Data Analysis
-- 🔹 Hierarchical Data Analysis
-- 🔹 Advanced Multi-Table Queries
-- 🔹 Complex Data Comparisons
-- 🔹 Advanced Data Processing
-- 🔹 Recursive Query Techniques
-- 🔹 Advanced Database Concepts
-- 🔹 SQL Query Debugging
-- 🔹 Aggregate Function Optimization
+- 🔹 String and Date Functions
+- 🔹 Window Functions
+- 🔹 Recursive Queries
+- 🔹 Complex Multi-Table Queries
+- 🔹 SQL Query Optimization
+- 🔹 Database Design Fundamentals
+- 🔹 Real-World Data Analysis
+- 🔹 SQL Interview Questions
 
 ---
 
-# 📌 Daily Practice
+## 📌 Daily Practice
 
 Every day, I solve a new SQL problem and add the solution or submission evidence to this repository.
 
 Each day's folder may contain:
 
-- 💻 SQL Solution, when applicable
+- 💻 SQL solution, when applicable
 - 📸 HackerRank, CodeChef, or SQL Challenge submission screenshot
+- 📝 Relevant notes or explanations
 
-This repository serves as a record of my **100 Days of SQL learning journey**.
+This repository serves as a record of my **100 Days of SQL learning journey** and the concepts I practice along the way.
 
 ---
 
-# ⭐ Support
+## ⭐ Support
 
 If you find this repository helpful or inspiring, please consider giving it a **⭐ Star**.
 
@@ -813,7 +720,7 @@ Your support motivates me to continue learning and sharing my journey! 🚀
 
 ---
 
-# 🤝 Connect With Me
+## 🤝 Connect With Me
 
 Let's learn, build, and grow together! 🌱
 
@@ -829,24 +736,24 @@ Let's learn, build, and grow together! 🌱
 
 ---
 
-# 🔖 Hashtags
+## 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #IsNull #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #NestedQueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
 
 ---
 
-# 🚀 Keep Learning. Keep Coding. Keep Growing.
+## 🚀 Keep Learning. Keep Coding. Keep Growing.
 
 > **"Consistency is the key to mastering any skill."** 💻🔥
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**92 Days Completed ✅ | 8 Days Remaining ⏳ | 100 Days Goal 🎯**
+**93 Days Completed ✅ | 7 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 92 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 93 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
