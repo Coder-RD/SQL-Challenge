@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-93%25-success?style=for-the-badge" alt="93% Progress">
+  <img src="https://img.shields.io/badge/Progress-94%25-success?style=for-the-badge" alt="94% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 93 Days Completed | 7 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 94 Days Completed | 6 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -26,7 +26,7 @@ This repository documents my daily SQL learning journey through HackerRank, Code
 
 My goal is to strengthen my SQL fundamentals, database knowledge, logical thinking, analytical skills, and problem-solving abilities through consistent daily practice.
 
-Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to JOINs, subqueries, window functions, recursive queries, and relational data analysis.
+Throughout this challenge, I have explored SQL concepts ranging from basic queries and aggregate functions to JOINs, subqueries, conditional logic, window functions, recursive queries, and relational data analysis.
 
 Each day provides an opportunity to learn a new concept, understand database operations, and improve my technical skills.
 
@@ -141,8 +141,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day93-SQL/ — Completed challenges
-- 📁 Day94-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day94-SQL/ — Completed challenges
+- 📁 Day95-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -168,6 +168,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-26 094947.png
 - 📁 Day93-SQL/
   - 📸 Screenshot 2026-10-27 155855.png
+- 📁 Day94-SQL/
+  - 📸 Screenshot 2026-10-28 082921.png
 
 ### 📌 Repository Organization
 
@@ -175,7 +177,7 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 60–62:** SQL practice challenges on CodeChef.
 - **Day 63–83:** SQL practice challenges from SQL Challenge.
 - **Day 84:** SQL JOIN practice covering RIGHT JOIN.
-- **Day 85:** SQL JOIN practice covering FULL JOIN.
+- **Day 85:** SQL JOIN practice covering FULL JOIN concepts.
 - **Day 86:** SQL LEFT JOIN multiple-choice question.
 - **Day 87:** User Complaints — database schema and table identification.
 - **Day 88:** Join Without a Matching Column — CROSS JOIN.
@@ -184,7 +186,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 91:** Rearrange the Query - 1 — INNER JOIN, table relationships, and filtering.
 - **Day 92:** Rearrange the Query - 2 — CROSS JOIN and LIMIT.
 - **Day 93:** Subqueries in SQL — multiple-choice question using the HappyHaven Rental App case study.
-- **Day 94–99:** Upcoming SQL challenges.
+- **Day 94:** Purpose of a Subquery — understanding nested queries and SQL filtering.
+- **Day 95–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -250,13 +253,80 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 91 | Rearrange the Query - 1 | SQL Challenge | Completed |
 | ✅ Day 92 | Rearrange the Query - 2 | SQL Challenge | Completed |
 | ✅ Day 93 | Subqueries in SQL (MCQ) | SQL Challenge | Completed |
-| ⏳ Day 94 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 94 | Purpose of a Subquery | SQL Challenge | Completed |
 | ⏳ Day 95 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 96 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 97 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
-| 🏆 Day 100 | Final Challenge | — | Pending |
+| 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
+
+---
+
+## 🆕 Day 94 – Purpose of a Subquery
+
+### 📌 Challenge Information
+
+- 📅 **Day:** 94
+- 🧩 **Challenge:** Purpose of a Subquery
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Subqueries
+- 📋 **Difficulty:** 550
+- 📸 **Submission Screenshot:** Screenshot 2026-10-28 082921.png
+- 📁 **Directory:** Day94-SQL
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Understand the purpose of a subquery in SQL and identify how nested queries can help filter or retrieve data based on specific conditions.
+
+### ❓ Question
+
+What is the purpose of a subquery?
+
+### ✅ Correct Answer
+
+To filter or retrieve data based on a condition.
+
+### 💡 Explanation
+
+A subquery is a SQL query nested inside another SQL statement. It allows the outer query to use the result of an inner query to filter records, compare values, retrieve related information, or perform calculations.
+
+Subqueries can be used in different parts of a SQL statement, including SELECT, FROM, WHERE, and HAVING, depending on the query structure and SQL dialect.
+
+### 💻 Example SQL Query
+
+    SELECT title, rating
+    FROM Properties
+    WHERE rating > (
+        SELECT AVG(rating)
+        FROM Properties
+    );
+
+### 🔍 Query Explanation
+
+1. The inner query calculates the average rating of all properties.
+2. The outer query retrieves property titles and ratings.
+3. The WHERE clause returns properties whose ratings are greater than the average.
+
+### 🧠 Concepts Practiced
+
+- SQL Subqueries
+- Nested Queries
+- SELECT Statement
+- WHERE Clause
+- Aggregate Functions
+- AVG() Function
+- Conditional Data Retrieval
+- SQL Query Structure
+- Multiple-Choice Question Solving
+
+### 🎓 Learning Outcome
+
+By completing Day 94, I strengthened my understanding of the purpose of SQL subqueries and how they support condition-based data retrieval.
+
+**Key Takeaway:** Subqueries allow one SQL query to use the result of another query to filter or retrieve data based on specified conditions.
 
 ---
 
@@ -533,6 +603,7 @@ This challenge improved my understanding of classifying customer complaints acco
 | Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN, ON, WHERE |
 | Day 92 | Rearrange the Query - 2 | SQL Challenge | CROSS JOIN, LIMIT |
 | Day 93 | Subqueries in SQL | SQL Challenge | Subqueries, Nested Queries |
+| Day 94 | Purpose of a Subquery | SQL Challenge | Subqueries, Filtering, Nested Queries |
 
 ---
 
@@ -596,10 +667,10 @@ This challenge improved my understanding of classifying customer complaints acco
 - ✅ Day 91
 - ✅ Day 92
 - ✅ Day 93
+- ✅ Day 94
 
 ### ⏳ Remaining Days
 
-- ⏳ Day 94
 - ⏳ Day 95
 - ⏳ Day 96
 - ⏳ Day 97
@@ -613,17 +684,17 @@ This challenge improved my understanding of classifying customer complaints acco
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **93 / 100** |
-| 💻 Challenges Completed | **93** |
+| 📅 Days Completed | **94 / 100** |
+| 💻 Challenges Completed | **94** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **93% Complete** 🚀 |
-| 🔥 Challenge Streak | **93 Days Completed** |
-| ⏳ Days Remaining | **7 Days** |
+| 📈 Progress | **94% Complete** 🚀 |
+| 🔥 Challenge Streak | **94 Days Completed** |
+| ⏳ Days Remaining | **6 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 93 – Subqueries in SQL** |
-| 🔍 Latest Focus | **Subqueries and Nested Queries** |
+| 📋 Latest Challenge | **Day 94 – Purpose of a Subquery** |
+| 🔍 Latest Focus | **Subqueries and Condition-Based Data Retrieval** |
 
 ---
 
@@ -676,7 +747,7 @@ Throughout this journey, I am practicing:
 
 ## 🌟 Future Learning Goals
 
-The remaining days will provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
+The remaining six days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
 
 Potential areas for further practice include:
 
@@ -748,12 +819,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**93 Days Completed ✅ | 7 Days Remaining ⏳ | 100 Days Goal 🎯**
+**94 Days Completed ✅ | 6 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 93 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 94 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
