@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-94%25-success?style=for-the-badge" alt="94% Progress">
+  <img src="https://img.shields.io/badge/Progress-95%25-success?style=for-the-badge" alt="95% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 94 Days Completed | 6 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 95 Days Completed | 5 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -67,6 +67,7 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - SQL Query Rearrangement
 - Filtering Records Using WHERE
 - Subquery Concepts and Usage
+- Typical Subquery Use Cases
 - Database Case Studies and Relational Data Retrieval
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
@@ -141,8 +142,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day94-SQL/ — Completed challenges
-- 📁 Day95-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day95-SQL/ — Completed challenges
+- 📁 Day96-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -170,24 +171,27 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-27 155855.png
 - 📁 Day94-SQL/
   - 📸 Screenshot 2026-10-28 082921.png
+- 📁 Day95-SQL/
+  - 📸 Screenshot 2026-10-29 135008.png
 
 ### 📌 Repository Organization
 
 - **Day 1–59:** SQL practice challenges on HackerRank.
 - **Day 60–62:** SQL practice challenges on CodeChef.
 - **Day 63–83:** SQL practice challenges from SQL Challenge.
-- **Day 84:** SQL JOIN practice covering RIGHT JOIN.
-- **Day 85:** SQL JOIN practice covering FULL JOIN concepts.
-- **Day 86:** SQL LEFT JOIN multiple-choice question.
+- **Day 84:** Figure Out the Correct Join — RIGHT JOIN.
+- **Day 85:** Join Which Returns All Rows From Both Tables — FULL JOIN concepts.
+- **Day 86:** LEFT JOIN MCQ.
 - **Day 87:** User Complaints — database schema and table identification.
 - **Day 88:** Join Without a Matching Column — CROSS JOIN.
 - **Day 89:** Find the Output for Query — SELECT and WHERE.
-- **Day 90:** Find Complaint Category — identifying the Poor Navigation complaint category.
-- **Day 91:** Rearrange the Query - 1 — INNER JOIN, table relationships, and filtering.
+- **Day 90:** Find Complaint Category — Poor Navigation.
+- **Day 91:** Rearrange the Query - 1 — INNER JOIN and filtering.
 - **Day 92:** Rearrange the Query - 2 — CROSS JOIN and LIMIT.
-- **Day 93:** Subqueries in SQL — multiple-choice question using the HappyHaven Rental App case study.
-- **Day 94:** Purpose of a Subquery — understanding nested queries and SQL filtering.
-- **Day 95–99:** Upcoming SQL challenges.
+- **Day 93:** Subqueries in SQL — HappyHaven Rental App case study.
+- **Day 94:** Purpose of a Subquery — nested queries and SQL filtering.
+- **Day 95:** SQL Subqueries: Typical Use Cases — WHERE, FROM, and SELECT.
+- **Day 96–99:** Upcoming SQL challenges.
 - **Day 100:** Final milestone of the challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -254,12 +258,90 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 92 | Rearrange the Query - 2 | SQL Challenge | Completed |
 | ✅ Day 93 | Subqueries in SQL (MCQ) | SQL Challenge | Completed |
 | ✅ Day 94 | Purpose of a Subquery | SQL Challenge | Completed |
-| ⏳ Day 95 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 95 | SQL Subqueries: Typical Use Cases | SQL Challenge | Completed |
 | ⏳ Day 96 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 97 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
+
+---
+
+## 🆕 Day 95 – SQL Subqueries: Typical Use Cases
+
+### 📌 Challenge Information
+
+- 📅 **Day:** 95
+- 🧩 **Challenge:** SQL Subqueries: Typical Use Cases
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Subqueries
+- 📋 **Key Concepts:** Nested Queries, WHERE, FROM, SELECT
+- 📸 **Submission Screenshot:** Screenshot 2026-10-29 135008.png
+- 📁 **Directory:** Day95-SQL
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Understand typical SQL subquery use cases and learn how nested queries help retrieve and filter data based on the results of another query.
+
+### 📚 What Is a Subquery?
+
+A subquery is a SQL query nested inside another SQL statement. The inner query supplies a result that the outer query can use to filter records, compare values, retrieve information, or perform calculations.
+
+Subqueries are commonly used in the WHERE clause and can also appear in the FROM and SELECT clauses, depending on the query structure and SQL dialect.
+
+### 💡 What I Learned
+
+- 🔹 Understanding inner queries and outer queries.
+- 🔹 Using subqueries in the WHERE clause for conditional filtering.
+- 🔹 Using comparison operators with subqueries.
+- 🔹 Applying aggregate functions inside subqueries.
+- 🔹 Exploring subqueries in FROM as derived tables.
+- 🔹 Using scalar subqueries in SELECT.
+- 🔹 Retrieving data dynamically without hardcoding calculated values.
+- 🔹 Understanding how nested queries simplify multi-step data retrieval.
+
+### 💻 Example SQL Query
+
+    SELECT name, salary
+    FROM employees
+    WHERE salary > (
+        SELECT AVG(salary)
+        FROM employees
+    );
+
+### 🔍 Query Explanation
+
+1. The inner query calculates the average salary of all employees.
+2. The outer query retrieves employee names and salaries.
+3. The WHERE clause compares each employee's salary with the calculated average.
+4. Only employees earning more than the average salary are returned.
+
+### 🧠 Concepts Practiced
+
+- SQL Subqueries
+- Nested Queries
+- SELECT Statement
+- WHERE Clause
+- FROM Clause
+- Scalar Subqueries
+- Aggregate Functions
+- AVG() Function
+- Comparison Operators
+- Conditional Data Retrieval
+- SQL Query Structure
+- Query Logic
+
+### 🎓 Learning Outcome
+
+By completing Day 95, I strengthened my understanding of typical SQL subquery use cases and how nested queries help answer multi-step database questions.
+
+**Key Takeaway:** Subqueries allow SQL statements to use the results of another query for dynamic filtering, comparisons, and data retrieval without hardcoding calculated values.
+
+### 🚀 Daily Achievement
+
+Successfully completed Day 95 of my 100 Days of SQL Challenge and continued building my SQL and database problem-solving skills.
 
 ---
 
@@ -279,7 +361,7 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 
 ### 🎯 Challenge Objective
 
-Understand the purpose of a subquery in SQL and identify how nested queries can help filter or retrieve data based on specific conditions.
+Understand the purpose of a subquery in SQL and identify how nested queries help filter or retrieve data based on specific conditions.
 
 ### ❓ Question
 
@@ -349,17 +431,6 @@ By completing Day 94, I strengthened my understanding of the purpose of SQL subq
 
 Understand the purpose and usage of subqueries in SQL and identify the correct statement about where subqueries can be used.
 
-The HappyHaven Rental App case study contains eight related tables:
-
-- **Users:** Stores user information.
-- **Properties:** Stores rental property details.
-- **Bookings:** Records property bookings and dates.
-- **Reviews:** Stores user reviews and ratings.
-- **Amenities:** Lists available property amenities.
-- **PropertyAmenities:** Connects properties with their amenities.
-- **Favorites:** Stores users' favorite properties.
-- **Payments:** Stores payment information associated with bookings.
-
 ### ❓ Question
 
 Which of the following statements about subqueries is true?
@@ -393,7 +464,7 @@ They help retrieve data, filter records, compare values, and perform calculation
 ### 🔍 Query Explanation
 
 1. The inner query calculates the average rating of all properties.
-2. The outer query retrieves the property titles and ratings.
+2. The outer query retrieves property titles and ratings.
 3. The WHERE clause selects properties whose ratings are greater than the calculated average.
 
 ### ❌ Why the Other Options Are Incorrect
@@ -603,7 +674,8 @@ This challenge improved my understanding of classifying customer complaints acco
 | Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN, ON, WHERE |
 | Day 92 | Rearrange the Query - 2 | SQL Challenge | CROSS JOIN, LIMIT |
 | Day 93 | Subqueries in SQL | SQL Challenge | Subqueries, Nested Queries |
-| Day 94 | Purpose of a Subquery | SQL Challenge | Subqueries, Filtering, Nested Queries |
+| Day 94 | Purpose of a Subquery | SQL Challenge | Subqueries, Filtering |
+| Day 95 | SQL Subqueries: Typical Use Cases | SQL Challenge | WHERE, FROM, SELECT |
 
 ---
 
@@ -668,10 +740,10 @@ This challenge improved my understanding of classifying customer complaints acco
 - ✅ Day 92
 - ✅ Day 93
 - ✅ Day 94
+- ✅ Day 95
 
 ### ⏳ Remaining Days
 
-- ⏳ Day 95
 - ⏳ Day 96
 - ⏳ Day 97
 - ⏳ Day 98
@@ -684,17 +756,17 @@ This challenge improved my understanding of classifying customer complaints acco
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **94 / 100** |
-| 💻 Challenges Completed | **94** |
+| 📅 Days Completed | **95 / 100** |
+| 💻 Challenges Completed | **95** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **94% Complete** 🚀 |
-| 🔥 Challenge Streak | **94 Days Completed** |
-| ⏳ Days Remaining | **6 Days** |
+| 📈 Progress | **95% Complete** 🚀 |
+| 🔥 Challenge Streak | **95 Days Completed** |
+| ⏳ Days Remaining | **5 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 94 – Purpose of a Subquery** |
-| 🔍 Latest Focus | **Subqueries and Condition-Based Data Retrieval** |
+| 📋 Latest Challenge | **Day 95 – SQL Subqueries: Typical Use Cases** |
+| 🔍 Latest Focus | **Subqueries and Nested Queries** |
 
 ---
 
@@ -747,7 +819,7 @@ Throughout this journey, I am practicing:
 
 ## 🌟 Future Learning Goals
 
-The remaining six days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
+The remaining five days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
 
 Potential areas for further practice include:
 
@@ -819,12 +891,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**94 Days Completed ✅ | 6 Days Remaining ⏳ | 100 Days Goal 🎯**
+**95 Days Completed ✅ | 5 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 94 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 95 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
 </p>
