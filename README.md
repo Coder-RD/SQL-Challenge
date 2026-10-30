@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-95%25-success?style=for-the-badge" alt="95% Progress">
+  <img src="https://img.shields.io/badge/Progress-96%25-success?style=for-the-badge" alt="96% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 95 Days Completed | 5 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 96 Days Completed | 4 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -41,6 +41,7 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - Mathematical Functions and Decimal Precision
 - NULL Value Handling
 - Subqueries and Common Table Expressions (CTEs)
+- Scalar and Correlated Subqueries
 - SQL JOINs and Relational Database Operations
 - INNER JOIN, LEFT JOIN, RIGHT JOIN, and FULL JOIN Concepts
 - CROSS JOIN and Cartesian Products
@@ -67,6 +68,7 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - SQL Query Rearrangement
 - Filtering Records Using WHERE
 - Subquery Concepts and Usage
+- Scalar Subquery Execution
 - Typical Subquery Use Cases
 - Database Case Studies and Relational Data Retrieval
 
@@ -90,6 +92,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 - 🔗 Understand relational data and JOIN operations.
 - ✖️ Learn CROSS JOIN and Cartesian products.
 - 🧠 Practice subqueries and CTEs.
+- 🔍 Understand scalar and correlated subqueries.
 - 🔀 Apply CASE statements and conditional logic.
 - 🪟 Practice window functions.
 - 🔄 Understand SQL pivoting and recursive queries.
@@ -121,6 +124,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | 🔗 Relational Operations | INNER JOIN, LEFT JOIN, RIGHT JOIN, FULL JOIN Concepts |
 | ✖️ Cartesian Products | CROSS JOIN |
 | 🧠 Advanced Queries | Subqueries and CTEs |
+| 🔍 Subquery Types | Scalar and Correlated Subqueries |
 | 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
 | 📍 Geographic Data | Geographic Data Analysis |
@@ -142,8 +146,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day95-SQL/ — Completed challenges
-- 📁 Day96-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day96-SQL/ — Completed challenges
+- 📁 Day97-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -173,6 +177,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-28 082921.png
 - 📁 Day95-SQL/
   - 📸 Screenshot 2026-10-29 135008.png
+- 📁 Day96-SQL/
+  - 📸 Screenshot 2026-10-30 093721.png
 
 ### 📌 Repository Organization
 
@@ -182,17 +188,18 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 84:** Figure Out the Correct Join — RIGHT JOIN.
 - **Day 85:** Join Which Returns All Rows From Both Tables — FULL JOIN concepts.
 - **Day 86:** LEFT JOIN MCQ.
-- **Day 87:** User Complaints — database schema and table identification.
+- **Day 87:** User Complaints — Database Schema and Table Identification.
 - **Day 88:** Join Without a Matching Column — CROSS JOIN.
 - **Day 89:** Find the Output for Query — SELECT and WHERE.
 - **Day 90:** Find Complaint Category — Poor Navigation.
-- **Day 91:** Rearrange the Query - 1 — INNER JOIN and filtering.
+- **Day 91:** Rearrange the Query - 1 — INNER JOIN and Filtering.
 - **Day 92:** Rearrange the Query - 2 — CROSS JOIN and LIMIT.
-- **Day 93:** Subqueries in SQL — HappyHaven Rental App case study.
-- **Day 94:** Purpose of a Subquery — nested queries and SQL filtering.
+- **Day 93:** Subqueries in SQL — HappyHaven Rental App Case Study.
+- **Day 94:** Purpose of a Subquery — Nested Queries and SQL Filtering.
 - **Day 95:** SQL Subqueries: Typical Use Cases — WHERE, FROM, and SELECT.
-- **Day 96–99:** Upcoming SQL challenges.
-- **Day 100:** Final milestone of the challenge.
+- **Day 96:** Sub-query Which Executes Only Once — Scalar Subquery.
+- **Day 97–99:** Upcoming SQL Challenges.
+- **Day 100:** Final Milestone of the Challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
 
@@ -259,11 +266,101 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 93 | Subqueries in SQL (MCQ) | SQL Challenge | Completed |
 | ✅ Day 94 | Purpose of a Subquery | SQL Challenge | Completed |
 | ✅ Day 95 | SQL Subqueries: Typical Use Cases | SQL Challenge | Completed |
-| ⏳ Day 96 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 96 | Sub-query Which Executes Only Once | SQL Challenge | Completed |
 | ⏳ Day 97 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
+
+---
+
+## 🆕 Day 96 – SQL Subqueries: Sub-query Which Executes Only Once
+
+### 📌 Challenge Information
+
+- 📅 **Day:** 96
+- 🧩 **Challenge:** Sub-query Which Executes Only Once
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Subqueries
+- 📋 **Concept:** Scalar Subquery
+- 📊 **Difficulty:** 750
+- 📸 **Submission Screenshot:** Screenshot 2026-10-30 093721.png
+- 📁 **Directory:** Day96-SQL
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Identify the type of subquery that executes once for the entire outer query and understand the difference between scalar and correlated subqueries.
+
+### ❓ Question
+
+Which type of subquery is executed once for the entire outer query?
+
+**Options:**
+
+1. Scalar Subquery
+2. Correlated Subquery
+3. Nested Subquery
+4. Inline Subquery
+
+### ✅ Correct Answer
+
+**Option 1: Scalar Subquery**
+
+### 💡 Explanation
+
+A scalar subquery returns a single value consisting of one row and one column.
+
+An uncorrelated scalar subquery does not depend on the outer query. Its result can be evaluated once and reused by the outer query.
+
+A correlated subquery, on the other hand, depends on values from the outer query and is logically evaluated for each outer row.
+
+### 💻 Example SQL Query
+
+    SELECT name, salary
+    FROM employees
+    WHERE salary > (
+        SELECT AVG(salary)
+        FROM employees
+    );
+
+### 🔍 Query Explanation
+
+1. The inner query calculates the average salary of all employees.
+2. The inner query returns a single value.
+3. The outer query retrieves employee names and salaries.
+4. The WHERE clause compares each employee's salary with the calculated average.
+5. Employees earning more than the average salary are returned.
+
+### 🧠 Key Learnings
+
+- 🔹 Scalar subqueries return one row and one column.
+- 🔹 An uncorrelated scalar subquery can be evaluated once and its result reused.
+- 🔹 Correlated subqueries depend on the outer query.
+- 🔹 Correlated subqueries are logically evaluated for each outer row.
+- 🔹 Nested subqueries are queries placed inside other subqueries.
+- 🔹 Inline views are subqueries used in the FROM clause as temporary result sets.
+- 🔹 Subqueries make complex data retrieval easier and more flexible.
+
+### 📊 Comparison of Subquery Types
+
+| Subquery Type | Description |
+|---|---|
+| Scalar Subquery | Returns a single value (one row and one column). |
+| Correlated Subquery | Depends on the outer query and is logically evaluated for each outer row. |
+| Nested Subquery | A subquery placed inside another subquery. |
+| Inline Subquery | A subquery used in the FROM clause as a derived table. |
+
+### 🎓 Learning Outcome
+
+By completing Day 96, I strengthened my understanding of scalar subqueries, their execution behavior, and the differences between various SQL subquery types.
+
+**Key Takeaway:** An uncorrelated scalar subquery can calculate a single value once and allow the outer query to reuse that result for filtering and comparison.
+
+### 🚀 Daily Achievement
+
+Successfully completed Day 96 of my 100 Days of SQL Challenge, reaching **96% completion** and getting closer to the final milestone! 🎯
 
 ---
 
@@ -291,17 +388,6 @@ A subquery is a SQL query nested inside another SQL statement. The inner query s
 
 Subqueries are commonly used in the WHERE clause and can also appear in the FROM and SELECT clauses, depending on the query structure and SQL dialect.
 
-### 💡 What I Learned
-
-- 🔹 Understanding inner queries and outer queries.
-- 🔹 Using subqueries in the WHERE clause for conditional filtering.
-- 🔹 Using comparison operators with subqueries.
-- 🔹 Applying aggregate functions inside subqueries.
-- 🔹 Exploring subqueries in FROM as derived tables.
-- 🔹 Using scalar subqueries in SELECT.
-- 🔹 Retrieving data dynamically without hardcoding calculated values.
-- 🔹 Understanding how nested queries simplify multi-step data retrieval.
-
 ### 💻 Example SQL Query
 
     SELECT name, salary
@@ -318,30 +404,20 @@ Subqueries are commonly used in the WHERE clause and can also appear in the FROM
 3. The WHERE clause compares each employee's salary with the calculated average.
 4. Only employees earning more than the average salary are returned.
 
-### 🧠 Concepts Practiced
+### 💡 What I Learned
 
-- SQL Subqueries
-- Nested Queries
-- SELECT Statement
-- WHERE Clause
-- FROM Clause
-- Scalar Subqueries
-- Aggregate Functions
-- AVG() Function
-- Comparison Operators
-- Conditional Data Retrieval
-- SQL Query Structure
-- Query Logic
+- Understanding inner queries and outer queries.
+- Using subqueries in the WHERE clause.
+- Applying aggregate functions inside subqueries.
+- Exploring subqueries in FROM as derived tables.
+- Using scalar subqueries in SELECT.
+- Retrieving data dynamically without hardcoding calculated values.
 
 ### 🎓 Learning Outcome
 
-By completing Day 95, I strengthened my understanding of typical SQL subquery use cases and how nested queries help answer multi-step database questions.
+Strengthened my understanding of typical SQL subquery use cases and how nested queries support multi-step data retrieval.
 
-**Key Takeaway:** Subqueries allow SQL statements to use the results of another query for dynamic filtering, comparisons, and data retrieval without hardcoding calculated values.
-
-### 🚀 Daily Achievement
-
-Successfully completed Day 95 of my 100 Days of SQL Challenge and continued building my SQL and database problem-solving skills.
+**Key Takeaway:** Subqueries allow SQL statements to use the results of another query for dynamic filtering, comparisons, and data retrieval.
 
 ---
 
@@ -371,12 +447,6 @@ What is the purpose of a subquery?
 
 To filter or retrieve data based on a condition.
 
-### 💡 Explanation
-
-A subquery is a SQL query nested inside another SQL statement. It allows the outer query to use the result of an inner query to filter records, compare values, retrieve related information, or perform calculations.
-
-Subqueries can be used in different parts of a SQL statement, including SELECT, FROM, WHERE, and HAVING, depending on the query structure and SQL dialect.
-
 ### 💻 Example SQL Query
 
     SELECT title, rating
@@ -392,23 +462,11 @@ Subqueries can be used in different parts of a SQL statement, including SELECT, 
 2. The outer query retrieves property titles and ratings.
 3. The WHERE clause returns properties whose ratings are greater than the average.
 
-### 🧠 Concepts Practiced
-
-- SQL Subqueries
-- Nested Queries
-- SELECT Statement
-- WHERE Clause
-- Aggregate Functions
-- AVG() Function
-- Conditional Data Retrieval
-- SQL Query Structure
-- Multiple-Choice Question Solving
-
 ### 🎓 Learning Outcome
 
-By completing Day 94, I strengthened my understanding of the purpose of SQL subqueries and how they support condition-based data retrieval.
+Strengthened my understanding of SQL subqueries and their role in condition-based data retrieval.
 
-**Key Takeaway:** Subqueries allow one SQL query to use the result of another query to filter or retrieve data based on specified conditions.
+**Key Takeaway:** Subqueries allow one SQL query to use the result of another query to filter or retrieve data.
 
 ---
 
@@ -448,9 +506,7 @@ Which of the following statements about subqueries is true?
 
 ### 💡 Explanation
 
-A subquery is a query nested inside another SQL query. Depending on the query and SQL dialect, subqueries can be used in different clauses, including SELECT, FROM, WHERE, and HAVING.
-
-They help retrieve data, filter records, compare values, and perform calculations using the results of another query.
+Subqueries are queries nested inside another SQL query. Depending on the query and SQL dialect, they can be used in SELECT, FROM, WHERE, and HAVING clauses.
 
 ### 💻 Example SQL Query
 
@@ -461,35 +517,11 @@ They help retrieve data, filter records, compare values, and perform calculation
         FROM Properties
     );
 
-### 🔍 Query Explanation
-
-1. The inner query calculates the average rating of all properties.
-2. The outer query retrieves property titles and ratings.
-3. The WHERE clause selects properties whose ratings are greater than the calculated average.
-
-### ❌ Why the Other Options Are Incorrect
-
-- **Option 1:** Subqueries are not restricted to SELECT statements. They can appear in several supported SQL clauses.
-- **Option 2:** Subqueries can return a single value, one row, multiple rows, or multiple columns, depending on their structure.
-- **Option 3:** SQL subqueries are generally enclosed in parentheses `()`, not square brackets `[]`.
-
-### 🧠 Concepts Practiced
-
-- SQL Subqueries
-- Nested Queries
-- SELECT Statement
-- WHERE Clause
-- Aggregate Functions
-- AVG() Function
-- SQL Query Structure
-- Multiple-Choice Question Solving
-- Database Case Study Analysis
-
 ### 🎓 Learning Outcome
 
-By completing Day 93, I strengthened my understanding of SQL subqueries and their role in retrieving and filtering data. I also learned how a subquery can calculate an aggregate value that is used by an outer query.
+Improved my understanding of SQL subqueries and their role in retrieving and filtering data.
 
-**Key Takeaway:** Subqueries allow one SQL query to use the results of another query, making complex data retrieval and filtering easier.
+**Key Takeaway:** Subqueries allow one SQL query to use the results of another query.
 
 ---
 
@@ -507,10 +539,6 @@ By completing Day 93, I strengthened my understanding of SQL subqueries and thei
 - 📁 **Directory:** Day92-SQL
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
-
-Combine the `user_information` and `complaint_status` tables using a CROSS JOIN and retrieve the first five rows.
-
 ### 💻 Correct SQL Query
 
     SELECT *
@@ -520,38 +548,16 @@ Combine the `user_information` and `complaint_status` tables using a CROSS JOIN 
 
 ### 🔍 Query Explanation
 
-**1. SELECT \***
-
-Retrieves all columns from both tables.
-
-**2. FROM Clause**
-
-Selects `user_information` as the first table. The alias `ui` is used as shorthand.
-
-**3. CROSS JOIN**
-
-Combines every row from `user_information` with every row from `complaint_status`.
-
-**4. LIMIT 5**
-
-Restricts the displayed output to five rows. Without an ORDER BY clause, the particular five rows returned are not guaranteed.
-
-### 🧠 SQL Concepts Practiced
-
-- SELECT Statement
-- CROSS JOIN
-- Cartesian Product
-- Table Aliases
-- Multi-Table Queries
-- LIMIT Clause
-- Query Rearrangement
-- Result Set Interpretation
+- SELECT * retrieves all columns from both tables.
+- FROM identifies the starting table.
+- CROSS JOIN combines every row from both tables.
+- LIMIT 5 restricts the displayed output to five rows.
 
 ### 🎓 Learning Outcome
 
-This challenge strengthened my understanding of how CROSS JOIN produces every possible combination of rows from two tables.
+Strengthened my understanding of CROSS JOIN and Cartesian products.
 
-**Key Takeaway:** If one table contains *m* rows and another contains *n* rows, a CROSS JOIN produces *m × n* combinations before any filtering or limiting.
+**Key Takeaway:** If one table contains m rows and another contains n rows, CROSS JOIN produces m × n combinations before filtering or limiting.
 
 ---
 
@@ -569,10 +575,6 @@ This challenge strengthened my understanding of how CROSS JOIN produces every po
 - 📁 **Directory:** Day91-SQL
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
-
-Rearrange the SQL code fragments into the correct order to retrieve the category ID, category name, subcategory ID, and complaint reason for category ID `1`.
-
 ### 💻 Correct SQL Query
 
     SELECT
@@ -587,29 +589,15 @@ Rearrange the SQL code fragments into the correct order to retrieve the category
 
 ### 🔍 Query Explanation
 
-- **SELECT:** Specifies the columns to retrieve.
-- **FROM:** Identifies the starting table.
-- **INNER JOIN:** Combines records from related tables.
-- **ON:** Specifies the matching category ID in both tables.
-- **WHERE:** Filters the results to category ID `1`.
-
-### 🧠 SQL Concepts Practiced
-
-- SQL Query Structure
-- SELECT Statement
-- INNER JOIN
-- ON Join Condition
-- WHERE Clause
-- Table Aliases
-- Common Columns
-- Relational Database Operations
-- Query Rearrangement
+- SELECT specifies the columns to retrieve.
+- FROM identifies the starting table.
+- INNER JOIN combines records from related tables.
+- ON specifies the matching category ID.
+- WHERE filters the results to category ID 1.
 
 ### 🎓 Learning Outcome
 
-This challenge reinforced the importance of arranging SQL clauses correctly and understanding how JOIN conditions connect related tables.
-
-**Key Takeaway:** INNER JOIN retrieves matching records from related tables, while WHERE filters the resulting records.
+Improved my understanding of SQL query structure and how JOIN conditions connect related tables.
 
 ---
 
@@ -627,13 +615,9 @@ This challenge reinforced the importance of arranging SQL clauses correctly and 
 - 📁 **Directory:** Day90-SQL
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
-
-Identify the complaint category associated with the issue described as "taking incorrect routes."
-
 ### ❓ Question
 
-**"Taking incorrect routes" is associated with which complaint category?**
+"Taking incorrect routes" is associated with which complaint category?
 
 ### ✅ Correct Answer
 
@@ -641,21 +625,11 @@ Identify the complaint category associated with the issue described as "taking i
 
 ### 💡 Explanation
 
-Taking incorrect routes means a driver does not follow an appropriate route to reach the passenger's destination. This issue is associated with Poor Navigation because it relates to route selection and navigation.
-
-### 🧠 Concepts Practiced
-
-- Customer Complaint Classification
-- Dataset Interpretation
-- Logical and Analytical Thinking
-- Multiple-Choice Questions
-- Real-World Problem-Solving
+Taking incorrect routes means a driver does not follow an appropriate route to reach the passenger's destination. This issue is associated with Poor Navigation.
 
 ### 🎓 Learning Outcome
 
-This challenge improved my understanding of classifying customer complaints according to the issue described.
-
-**Key Takeaway:** Taking incorrect routes is associated with the Poor Navigation complaint category.
+Improved my understanding of classifying customer complaints according to the issue described.
 
 ---
 
@@ -667,15 +641,16 @@ This challenge improved my understanding of classifying customer complaints acco
 | Day 84 | Figure Out the Correct Join | CodeChef SQL Practice | RIGHT JOIN |
 | Day 85 | Join Which Returns All Rows From Both Tables | SQL Practice | FULL JOIN Concepts |
 | Day 86 | LEFT JOIN MCQ | SQL Challenge | LEFT JOIN, Unmatched Records |
-| Day 87 | User Complaints | SQL Challenge | Database Schema, Table Identification |
-| Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN, Cartesian Product |
-| Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE, Query Output |
+| Day 87 | User Complaints | SQL Challenge | Database Schema |
+| Day 88 | Join Without a Matching Column | SQL Challenge | CROSS JOIN |
+| Day 89 | Find the Output for Query | SQL Challenge | SELECT, WHERE |
 | Day 90 | Find Complaint Category | SQL Challenge | Complaint Classification |
-| Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN, ON, WHERE |
+| Day 91 | Rearrange the Query - 1 | SQL Challenge | INNER JOIN |
 | Day 92 | Rearrange the Query - 2 | SQL Challenge | CROSS JOIN, LIMIT |
-| Day 93 | Subqueries in SQL | SQL Challenge | Subqueries, Nested Queries |
+| Day 93 | Subqueries in SQL | SQL Challenge | Nested Queries |
 | Day 94 | Purpose of a Subquery | SQL Challenge | Subqueries, Filtering |
 | Day 95 | SQL Subqueries: Typical Use Cases | SQL Challenge | WHERE, FROM, SELECT |
+| Day 96 | Sub-query Which Executes Only Once | SQL Challenge | Scalar Subquery |
 
 ---
 
@@ -692,6 +667,7 @@ This challenge improved my understanding of classifying customer complaints acco
 - 🔄 Self JOIN Operations
 - ✖️ CROSS JOIN and Cartesian Products
 - 🧠 Subqueries and CTEs
+- 🔍 Scalar and Correlated Subqueries
 - 🔀 Conditional Logic
 - 📌 DISTINCT
 - 📊 GROUP BY and HAVING
@@ -741,10 +717,10 @@ This challenge improved my understanding of classifying customer complaints acco
 - ✅ Day 93
 - ✅ Day 94
 - ✅ Day 95
+- ✅ Day 96
 
 ### ⏳ Remaining Days
 
-- ⏳ Day 96
 - ⏳ Day 97
 - ⏳ Day 98
 - ⏳ Day 99
@@ -756,17 +732,17 @@ This challenge improved my understanding of classifying customer complaints acco
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **95 / 100** |
-| 💻 Challenges Completed | **95** |
+| 📅 Days Completed | **96 / 100** |
+| 💻 Challenges Completed | **96** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **95% Complete** 🚀 |
-| 🔥 Challenge Streak | **95 Days Completed** |
-| ⏳ Days Remaining | **5 Days** |
+| 📈 Progress | **96% Complete** 🚀 |
+| 🔥 Challenge Streak | **96 Days Completed** |
+| ⏳ Days Remaining | **4 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 95 – SQL Subqueries: Typical Use Cases** |
-| 🔍 Latest Focus | **Subqueries and Nested Queries** |
+| 📋 Latest Challenge | **Day 96 – Sub-query Which Executes Only Once** |
+| 🔍 Latest Focus | **Scalar Subqueries** |
 
 ---
 
@@ -819,7 +795,7 @@ Throughout this journey, I am practicing:
 
 ## 🌟 Future Learning Goals
 
-The remaining five days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
+The remaining four days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
 
 Potential areas for further practice include:
 
@@ -881,7 +857,7 @@ Let's learn, build, and grow together! 🌱
 
 ## 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #NestedQueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #ScalarSubquery #CorrelatedSubquery #NestedQueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
 
 ---
 
@@ -891,12 +867,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**95 Days Completed ✅ | 5 Days Remaining ⏳ | 100 Days Goal 🎯**
+**96 Days Completed ✅ | 4 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 95 Days of Consistent SQL Practice — Keep Going! 🔥</strong>
+  <strong>🔥 96 Days of Consistent SQL Practice — Just 4 More Days to Go! 🔥</strong>
 </p>
