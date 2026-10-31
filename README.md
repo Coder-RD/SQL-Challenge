@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-96%25-success?style=for-the-badge" alt="96% Progress">
+  <img src="https://img.shields.io/badge/Progress-97%25-success?style=for-the-badge" alt="97% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 96 Days Completed | 4 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 97 Days Completed | 3 Days Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -70,6 +70,7 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - Subquery Concepts and Usage
 - Scalar Subquery Execution
 - Typical Subquery Use Cases
+- IN Operator with Subqueries
 - Database Case Studies and Relational Data Retrieval
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
@@ -125,6 +126,7 @@ The objective is simple: solve one SQL challenge every day for 100 days, build c
 | ✖️ Cartesian Products | CROSS JOIN |
 | 🧠 Advanced Queries | Subqueries and CTEs |
 | 🔍 Subquery Types | Scalar and Correlated Subqueries |
+| 🎯 Subquery Operators | IN, EXISTS |
 | 🔀 Conditional Logic | CASE Statements |
 | 📌 Data Grouping | GROUP BY and HAVING |
 | 📍 Geographic Data | Geographic Data Analysis |
@@ -146,8 +148,8 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day96-SQL/ — Completed challenges
-- 📁 Day97-SQL/ through Day99-SQL/ — Upcoming challenges
+- 📁 Day1-SQL/ through Day97-SQL/ — Completed challenges
+- 📁 Day98-SQL/ through Day99-SQL/ — Upcoming challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -179,6 +181,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-29 135008.png
 - 📁 Day96-SQL/
   - 📸 Screenshot 2026-10-30 093721.png
+- 📁 Day97-SQL/
+  - 📸 Screenshot 2026-10-31 155416.png
 
 ### 📌 Repository Organization
 
@@ -198,7 +202,8 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 94:** Purpose of a Subquery — Nested Queries and SQL Filtering.
 - **Day 95:** SQL Subqueries: Typical Use Cases — WHERE, FROM, and SELECT.
 - **Day 96:** Sub-query Which Executes Only Once — Scalar Subquery.
-- **Day 97–99:** Upcoming SQL Challenges.
+- **Day 97:** Matching Subquery Result with a Column — IN Operator.
+- **Day 98–99:** Upcoming SQL Challenges.
 - **Day 100:** Final Milestone of the Challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -267,10 +272,92 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 94 | Purpose of a Subquery | SQL Challenge | Completed |
 | ✅ Day 95 | SQL Subqueries: Typical Use Cases | SQL Challenge | Completed |
 | ✅ Day 96 | Sub-query Which Executes Only Once | SQL Challenge | Completed |
-| ⏳ Day 97 | Upcoming SQL Challenge | Various Platforms | Pending |
+| ✅ Day 97 | Matching Subquery Result with a Column | SQL Challenge | Completed |
 | ⏳ Day 98 | Upcoming SQL Challenge | Various Platforms | Pending |
 | ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
 | 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
+
+---
+
+## 🆕 Day 97 – Matching Subquery Result with a Column
+
+### 📌 Challenge Information
+
+- 📅 **Day:** 97
+- 🧩 **Challenge:** Matching Subquery Result with a Column
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Subqueries
+- 📋 **Concept:** IN Operator
+- 📊 **Difficulty:** 750
+- 📸 **Submission Screenshot:** Screenshot 2026-10-31 155416.png
+- 📁 **Directory:** Day97-SQL
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Identify the SQL keyword used to compare a column value in the outer query with the result returned by a subquery.
+
+### ❓ Question
+
+Which keyword is used to compare a subquery result with a column value in the outer query?
+
+**Options:**
+
+1. BETWEEN
+2. EXISTS
+3. IN
+4. LIKE
+
+### ✅ Correct Answer
+
+**Option 3: IN**
+
+### 💡 Explanation
+
+The `IN` operator checks whether a value matches any value in a list or in the result returned by a subquery. It is useful when the inner query returns multiple values and the outer query needs to retrieve rows whose column values match one of those results.
+
+- `IN` compares a value with a list of values.
+- A subquery can provide the list used by `IN`.
+- The outer query returns rows that satisfy the membership condition.
+- `BETWEEN` checks whether a value falls within a range.
+- `EXISTS` checks whether a subquery returns at least one row.
+- `LIKE` is used for pattern matching in text.
+
+### 💻 Example SQL Query
+
+    SELECT *
+    FROM employees
+    WHERE department_id IN (
+        SELECT department_id
+        FROM departments
+        WHERE location = 'Pune'
+    );
+
+### 🔍 Query Explanation
+
+1. The inner query retrieves department IDs for departments located in Pune.
+2. The `IN` operator compares each employee's `department_id` with the values returned by the inner query.
+3. The outer query returns employees whose department IDs appear in the subquery result.
+4. This allows the query to filter records using values retrieved dynamically from another table.
+
+### 🧠 Key Learnings
+
+- 🔹 Understood how the `IN` operator works with a subquery.
+- 🔹 Learned how to compare an outer-query column with multiple values.
+- 🔹 Practiced using inner queries to filter records in an outer query.
+- 🔹 Distinguished `IN` from `BETWEEN`, `EXISTS`, and `LIKE`.
+- 🔹 Improved my understanding of nested queries and relational data filtering.
+
+### 🎓 Learning Outcome
+
+By completing Day 97, I strengthened my understanding of using the `IN` operator with subqueries to match column values against a dynamically generated result set.
+
+**Key Takeaway:** Use `IN` when a column value in the outer query needs to match any value returned by a subquery.
+
+### 🚀 Daily Achievement
+
+Successfully completed Day 97 of my 100 Days of SQL Challenge, reaching **97% completion** with only three days remaining! 🎯
 
 ---
 
@@ -651,6 +738,7 @@ Improved my understanding of classifying customer complaints according to the is
 | Day 94 | Purpose of a Subquery | SQL Challenge | Subqueries, Filtering |
 | Day 95 | SQL Subqueries: Typical Use Cases | SQL Challenge | WHERE, FROM, SELECT |
 | Day 96 | Sub-query Which Executes Only Once | SQL Challenge | Scalar Subquery |
+| Day 97 | Matching Subquery Result with a Column | SQL Challenge | IN Operator, Subqueries |
 
 ---
 
@@ -668,6 +756,7 @@ Improved my understanding of classifying customer complaints according to the is
 - ✖️ CROSS JOIN and Cartesian Products
 - 🧠 Subqueries and CTEs
 - 🔍 Scalar and Correlated Subqueries
+- 🎯 IN and EXISTS Operators
 - 🔀 Conditional Logic
 - 📌 DISTINCT
 - 📊 GROUP BY and HAVING
@@ -718,10 +807,10 @@ Improved my understanding of classifying customer complaints according to the is
 - ✅ Day 94
 - ✅ Day 95
 - ✅ Day 96
+- ✅ Day 97
 
 ### ⏳ Remaining Days
 
-- ⏳ Day 97
 - ⏳ Day 98
 - ⏳ Day 99
 - 🏆 Day 100 — Final Goal
@@ -732,17 +821,17 @@ Improved my understanding of classifying customer complaints according to the is
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **96 / 100** |
-| 💻 Challenges Completed | **96** |
+| 📅 Days Completed | **97 / 100** |
+| 💻 Challenges Completed | **97** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **96% Complete** 🚀 |
-| 🔥 Challenge Streak | **96 Days Completed** |
-| ⏳ Days Remaining | **4 Days** |
+| 📈 Progress | **97% Complete** 🚀 |
+| 🔥 Challenge Streak | **97 Days Completed** |
+| ⏳ Days Remaining | **3 Days** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 96 – Sub-query Which Executes Only Once** |
-| 🔍 Latest Focus | **Scalar Subqueries** |
+| 📋 Latest Challenge | **Day 97 – Matching Subquery Result with a Column** |
+| 🔍 Latest Focus | **IN Operator and Subqueries** |
 
 ---
 
@@ -795,7 +884,7 @@ Throughout this journey, I am practicing:
 
 ## 🌟 Future Learning Goals
 
-The remaining four days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
+The remaining three days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
 
 Potential areas for further practice include:
 
@@ -857,7 +946,7 @@ Let's learn, build, and grow together! 🌱
 
 ## 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #ScalarSubquery #CorrelatedSubquery #NestedQueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #INOperator #ExistsOperator #ScalarSubquery #CorrelatedSubquery #NestedQueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
 
 ---
 
@@ -867,12 +956,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**96 Days Completed ✅ | 4 Days Remaining ⏳ | 100 Days Goal 🎯**
+**97 Days Completed ✅ | 3 Days Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 96 Days of Consistent SQL Practice — Just 4 More Days to Go! 🔥</strong>
+  <strong>🔥 97 Days of Consistent SQL Practice — Just 3 More Days to Go! 🔥</strong>
 </p>
