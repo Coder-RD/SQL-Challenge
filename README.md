@@ -5,7 +5,7 @@
   <img src="https://img.shields.io/badge/HackerRank-SQL-brightgreen?style=for-the-badge" alt="HackerRank SQL">
   <img src="https://img.shields.io/badge/CodeChef-SQL-brown?style=for-the-badge" alt="CodeChef SQL">
   <img src="https://img.shields.io/badge/Language-SQL-orange?style=for-the-badge" alt="SQL">
-  <img src="https://img.shields.io/badge/Progress-98%25-success?style=for-the-badge" alt="98% Progress">
+  <img src="https://img.shields.io/badge/Progress-99%25-success?style=for-the-badge" alt="99% Progress">
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 </p>
 
 <p align="center">
-  <strong>📅 98 Days Completed | 2 Days Remaining | 🎯 Goal: 100 Days</strong>
+  <strong>📅 99 Days Completed | 1 Day Remaining | 🎯 Goal: 100 Days</strong>
 </p>
 
 ---
@@ -72,6 +72,7 @@ Each day provides an opportunity to learn a new concept, understand database ope
 - Correlated Subqueries and Outer Query References
 - Typical Subquery Use Cases
 - IN Operator with Subqueries
+- Nested Subquery Concepts
 - Database Case Studies and Relational Data Retrieval
 
 The objective is simple: solve one SQL challenge every day for 100 days, build consistency, strengthen database skills, and continuously improve my problem-solving abilities. 💻🗄️🔥
@@ -146,8 +147,7 @@ The repository is organized into daily folders to track my progress throughout t
 
 📁 **SQL-Challenge/**
 
-- 📁 Day1-SQL/ through Day98-SQL/ — Completed challenges
-- 📁 Day99-SQL/ — Upcoming challenge
+- 📁 Day1-SQL/ through Day99-SQL/ — Completed challenges
 - 📁 Day100-SQL/ — Final challenge
 - 📄 README.md
 - 📄 LICENSE
@@ -183,6 +183,8 @@ The repository is organized into daily folders to track my progress throughout t
   - 📸 Screenshot 2026-10-31 155416.png
 - 📁 Day98-SQL/
   - 📸 Screenshot 2026-11-01 071813.png
+- 📁 Day99-SQL/
+  - 📸 Screenshot 2026-11-02 202539.png
 
 ### 📌 Repository Organization
 
@@ -204,7 +206,7 @@ The repository is organized into daily folders to track my progress throughout t
 - **Day 96:** Sub-query Which Executes Only Once — Scalar Subquery.
 - **Day 97:** Matching Subquery Result with a Column — IN Operator.
 - **Day 98:** Reference Columns from Outer Query — Correlated Subquery.
-- **Day 99:** Upcoming SQL Challenge.
+- **Day 99:** Maximum Nesting of Subqueries — Nested Subqueries.
 - **Day 100:** Final Milestone of the Challenge.
 
 Each daily folder may contain a SQL solution, a submission screenshot, or other relevant challenge evidence.
@@ -275,8 +277,93 @@ Each daily folder may contain a SQL solution, a submission screenshot, or other 
 | ✅ Day 96 | Sub-query Which Executes Only Once | SQL Challenge | Completed |
 | ✅ Day 97 | Matching Subquery Result with a Column | SQL Challenge | Completed |
 | ✅ Day 98 | Reference Columns from Outer Query | SQL Challenge | Completed |
-| ⏳ Day 99 | Upcoming SQL Challenge | Various Platforms | Pending |
-| 🏆 Day 100 | Final Challenge | Various Platforms | Pending |
+| ✅ Day 99 | Maximum Nesting of Subqueries | SQL Challenge | Completed |
+| ⏳ Day 100 | Final Challenge | Various Platforms | Pending |
+
+---
+
+## 🆕 Day 99 – Maximum Nesting of Subqueries
+
+### 📌 Challenge Information
+
+- 📅 **Day:** 99
+- 🧩 **Challenge:** Maximum Nesting of Subqueries
+- 💻 **Platform:** SQL Challenge
+- 🗄️ **Language:** SQL
+- 🔍 **Topic:** SQL Subqueries
+- 📋 **Concept:** Nested Subqueries
+- 📸 **Submission Screenshot:** Screenshot 2026-11-02 202539.png
+- 📁 **Directory:** Day99-SQL
+- ✅ **Status:** Completed
+
+### 🎯 Challenge Objective
+
+Understand the concept of nested subqueries and identify whether SQL has a specific fixed limit on the number of subqueries that can be nested within a single SQL statement.
+
+### ❓ Question
+
+What is the maximum number of subqueries that can be nested in a single SQL statement?
+
+### ✅ Correct Answer
+
+**There is no specific limit.**
+
+### 💡 Explanation
+
+Nested subqueries are SQL queries placed inside another SQL query.
+
+They allow one query to use the results of another query for filtering, comparison, and data retrieval.
+
+There is no universal fixed maximum number of nested subqueries applicable to every SQL database system. Actual nesting limits may depend on the database engine, SQL dialect, and system implementation.
+
+### 💻 Example SQL Query
+
+    SELECT employee_name, salary
+    FROM employees
+    WHERE department_id IN (
+        SELECT department_id
+        FROM departments
+        WHERE location_id IN (
+            SELECT location_id
+            FROM locations
+            WHERE city = 'Pune'
+        )
+    );
+
+### 🔍 Query Explanation
+
+1. The innermost query retrieves the location ID for Pune.
+2. The middle query retrieves department IDs associated with that location.
+3. The outer query retrieves employees belonging to those departments.
+4. Multiple subqueries work together to retrieve the required records.
+
+### 🧠 Key Learnings
+
+- 🔹 Understood the concept of nested SQL subqueries.
+- 🔹 Learned how multiple subqueries work within a single SQL statement.
+- 🔹 Explored the relationship between inner and outer queries.
+- 🔹 Improved understanding of nested query structures.
+- 🔹 Learned how subqueries support complex data retrieval.
+- 🔹 Strengthened SQL query-writing and problem-solving skills.
+
+### 📊 Understanding Subquery Types
+
+| Subquery Type | Description |
+|---|---|
+| Scalar Subquery | Returns a single value consisting of one row and one column. |
+| Correlated Subquery | References columns from the outer query. |
+| Nested Subquery | A query placed inside another query. |
+| Inline Subquery | A subquery used in the FROM clause as a derived table. |
+
+### 🎓 Learning Outcome
+
+By completing Day 99, I strengthened my understanding of nested SQL queries and learned how multiple subqueries can be combined to retrieve data through different levels of conditions.
+
+**Key Takeaway:** SQL supports nested subqueries, but the actual maximum nesting depth depends on the database system.
+
+### 🚀 Daily Achievement
+
+Successfully completed Day 99 of my 100 Days of SQL Challenge, reaching **99% completion** with only ONE DAY remaining! 🎯
 
 ---
 
@@ -335,7 +422,7 @@ It is logically evaluated for each row processed by the outer query, although da
 
 1. The outer query retrieves employee details.
 2. The inner query calculates the average salary for the employee's department.
-3. The inner query references `e1.department_id` from the outer query.
+3. The inner query references e1.department_id from the outer query.
 4. The WHERE condition compares each employee's salary with their department's average salary.
 5. The query returns employees earning more than their respective department's average salary.
 
@@ -346,27 +433,17 @@ It is logically evaluated for each row processed by the outer query, although da
 - 🔹 Explored the relationship between inner and outer queries.
 - 🔹 Understood how correlated subqueries depend on outer-query values.
 - 🔹 Practiced using table aliases in nested SQL queries.
-- 🔹 Learned how correlated subqueries can perform department-wise comparisons.
 - 🔹 Improved my understanding of advanced SQL query execution.
-
-### 📊 Comparison of Subquery Types
-
-| Subquery Type | Description |
-|---|---|
-| Scalar Subquery | Returns a single value consisting of one row and one column. |
-| Correlated Subquery | References columns from the outer query. |
-| Nested Subquery | A query placed inside another query. |
-| Inline Subquery | A subquery used in the FROM clause as a derived table. |
 
 ### 🎓 Learning Outcome
 
-By completing Day 98, I strengthened my understanding of correlated subqueries and learned how an inner query can access values from an outer query to perform dynamic comparisons.
+Strengthened my understanding of correlated subqueries and how inner queries can access values from outer queries to perform dynamic comparisons.
 
 **Key Takeaway:** A correlated subquery references columns from the outer query and depends on its values.
 
 ### 🚀 Daily Achievement
 
-Successfully completed Day 98 of my 100 Days of SQL Challenge, reaching **98% completion** with only two days remaining! 🎯
+Successfully completed Day 98 of my 100 Days of SQL Challenge, reaching **98% completion**! 🎯
 
 ---
 
@@ -406,14 +483,14 @@ Which keyword is used to compare a subquery result with a column value in the ou
 
 ### 💡 Explanation
 
-The `IN` operator checks whether a value matches any value in a list or in the result returned by a subquery.
+The IN operator checks whether a value matches any value in a list or in the result returned by a subquery.
 
-- `IN` compares a value with a list of values.
-- A subquery can provide the list used by `IN`.
+- IN compares a value with a list of values.
+- A subquery can provide the list used by IN.
 - The outer query returns rows that satisfy the membership condition.
-- `BETWEEN` checks whether a value falls within a range.
-- `EXISTS` checks whether a subquery returns at least one row.
-- `LIKE` is used for pattern matching in text.
+- BETWEEN checks whether a value falls within a range.
+- EXISTS checks whether a subquery returns at least one row.
+- LIKE is used for pattern matching in text.
 
 ### 💻 Example SQL Query
 
@@ -425,34 +502,15 @@ The `IN` operator checks whether a value matches any value in a list or in the r
         WHERE location = 'Pune'
     );
 
-### 🔍 Query Explanation
-
-1. The inner query retrieves department IDs for departments located in Pune.
-2. The `IN` operator compares each employee's department ID with the values returned by the inner query.
-3. The outer query returns employees whose department IDs appear in the subquery result.
-4. This allows the query to filter records using values retrieved dynamically from another table.
-
-### 🧠 Key Learnings
-
-- 🔹 Understood how the `IN` operator works with a subquery.
-- 🔹 Learned how to compare an outer-query column with multiple values.
-- 🔹 Practiced using inner queries to filter records in an outer query.
-- 🔹 Distinguished `IN` from `BETWEEN`, `EXISTS`, and `LIKE`.
-- 🔹 Improved my understanding of nested queries and relational data filtering.
-
 ### 🎓 Learning Outcome
 
-By completing Day 97, I strengthened my understanding of using the `IN` operator with subqueries to match column values against a dynamically generated result set.
+Strengthened my understanding of using the IN operator with subqueries to match column values against a dynamically generated result set.
 
-**Key Takeaway:** Use `IN` when a column value in the outer query needs to match any value returned by a subquery.
-
-### 🚀 Daily Achievement
-
-Successfully completed Day 97 of my 100 Days of SQL Challenge, reaching **97% completion** with only three days remaining! 🎯
+**Key Takeaway:** Use IN when a column value in the outer query needs to match any value returned by a subquery.
 
 ---
 
-## 🆕 Day 96 – SQL Subqueries: Sub-query Which Executes Only Once
+## 🆕 Day 96 – Sub-query Which Executes Only Once
 
 ### 📌 Challenge Information
 
@@ -467,32 +525,19 @@ Successfully completed Day 97 of my 100 Days of SQL Challenge, reaching **97% co
 - 📁 **Directory:** Day96-SQL
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
-
-Identify the type of subquery that executes once for the entire outer query and understand the difference between scalar and correlated subqueries.
-
 ### ❓ Question
 
 Which type of subquery is executed once for the entire outer query?
 
-**Options:**
-
-1. Scalar Subquery
-2. Correlated Subquery
-3. Nested Subquery
-4. Inline Subquery
-
 ### ✅ Correct Answer
 
-**Option 1: Scalar Subquery**
+**Scalar Subquery**
 
 ### 💡 Explanation
 
 A scalar subquery returns a single value consisting of one row and one column.
 
 An uncorrelated scalar subquery does not depend on the outer query. Its result can be evaluated once and reused by the outer query.
-
-A correlated subquery, on the other hand, depends on values from the outer query and is logically evaluated for each outer row.
 
 ### 💻 Example SQL Query
 
@@ -503,42 +548,11 @@ A correlated subquery, on the other hand, depends on values from the outer query
         FROM employees
     );
 
-### 🔍 Query Explanation
-
-1. The inner query calculates the average salary of all employees.
-2. The inner query returns a single value.
-3. The outer query retrieves employee names and salaries.
-4. The WHERE clause compares each employee's salary with the calculated average.
-5. Employees earning more than the average salary are returned.
-
-### 🧠 Key Learnings
-
-- 🔹 Scalar subqueries return one row and one column.
-- 🔹 An uncorrelated scalar subquery can be evaluated once and its result reused.
-- 🔹 Correlated subqueries depend on the outer query.
-- 🔹 Correlated subqueries are logically evaluated for each outer row.
-- 🔹 Nested subqueries are queries placed inside other subqueries.
-- 🔹 Inline views are subqueries used in the FROM clause as temporary result sets.
-- 🔹 Subqueries make complex data retrieval easier and more flexible.
-
-### 📊 Comparison of Subquery Types
-
-| Subquery Type | Description |
-|---|---|
-| Scalar Subquery | Returns a single value (one row and one column). |
-| Correlated Subquery | Depends on the outer query and references its columns. |
-| Nested Subquery | A subquery placed inside another subquery. |
-| Inline Subquery | A subquery used in the FROM clause as a derived table. |
-
 ### 🎓 Learning Outcome
 
-By completing Day 96, I strengthened my understanding of scalar subqueries, their execution behavior, and the differences between various SQL subquery types.
+Strengthened my understanding of scalar subqueries, their execution behavior, and the differences between various SQL subquery types.
 
-**Key Takeaway:** An uncorrelated scalar subquery can calculate a single value once and allow the outer query to reuse that result for filtering and comparison.
-
-### 🚀 Daily Achievement
-
-Successfully completed Day 96 of my 100 Days of SQL Challenge, reaching **96% completion** and getting closer to the final milestone! 🎯
+**Key Takeaway:** An uncorrelated scalar subquery can calculate a single value for use by the outer query.
 
 ---
 
@@ -556,15 +570,9 @@ Successfully completed Day 96 of my 100 Days of SQL Challenge, reaching **96% co
 - 📁 **Directory:** Day95-SQL
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
-
-Understand typical SQL subquery use cases and learn how nested queries help retrieve and filter data based on the results of another query.
-
 ### 📚 What Is a Subquery?
 
 A subquery is a SQL query nested inside another SQL statement. The inner query supplies a result that the outer query can use to filter records, compare values, retrieve information, or perform calculations.
-
-Subqueries are commonly used in the WHERE clause and can also appear in the FROM and SELECT clauses, depending on the query structure and SQL dialect.
 
 ### 💻 Example SQL Query
 
@@ -574,13 +582,6 @@ Subqueries are commonly used in the WHERE clause and can also appear in the FROM
         SELECT AVG(salary)
         FROM employees
     );
-
-### 🔍 Query Explanation
-
-1. The inner query calculates the average salary of all employees.
-2. The outer query retrieves employee names and salaries.
-3. The WHERE clause compares each employee's salary with the calculated average.
-4. Only employees earning more than the average salary are returned.
 
 ### 💡 What I Learned
 
@@ -594,8 +595,6 @@ Subqueries are commonly used in the WHERE clause and can also appear in the FROM
 ### 🎓 Learning Outcome
 
 Strengthened my understanding of typical SQL subquery use cases and how nested queries support multi-step data retrieval.
-
-**Key Takeaway:** Subqueries allow SQL statements to use the results of another query for dynamic filtering, comparisons, and data retrieval.
 
 ---
 
@@ -612,10 +611,6 @@ Strengthened my understanding of typical SQL subquery use cases and how nested q
 - 📸 **Submission Screenshot:** Screenshot 2026-10-28 082921.png
 - 📁 **Directory:** Day94-SQL
 - ✅ **Status:** Completed
-
-### 🎯 Challenge Objective
-
-Understand the purpose of a subquery in SQL and identify how nested queries help filter or retrieve data based on specific conditions.
 
 ### ❓ Question
 
@@ -634,17 +629,9 @@ To filter or retrieve data based on a condition.
         FROM Properties
     );
 
-### 🔍 Query Explanation
-
-1. The inner query calculates the average rating of all properties.
-2. The outer query retrieves property titles and ratings.
-3. The WHERE clause returns properties whose ratings are greater than the average.
-
 ### 🎓 Learning Outcome
 
 Strengthened my understanding of SQL subqueries and their role in condition-based data retrieval.
-
-**Key Takeaway:** Subqueries allow one SQL query to use the result of another query to filter or retrieve data.
 
 ---
 
@@ -663,24 +650,13 @@ Strengthened my understanding of SQL subqueries and their role in condition-base
 - 📁 **Directory:** Day93-SQL
 - ✅ **Status:** Completed
 
-### 🎯 Challenge Objective
-
-Understand the purpose and usage of subqueries in SQL and identify the correct statement about where subqueries can be used.
-
 ### ❓ Question
 
 Which of the following statements about subqueries is true?
 
-**Options:**
-
-1. Subqueries can only be used in SELECT statements.
-2. Subqueries always return a single row of data.
-3. Subqueries must be enclosed in square brackets.
-4. Subqueries can be used in various parts of a SQL statement.
-
 ### ✅ Correct Answer
 
-**Option 4: Subqueries can be used in various parts of a SQL statement.**
+Subqueries can be used in various parts of a SQL statement.
 
 ### 💡 Explanation
 
@@ -698,8 +674,6 @@ Subqueries are queries nested inside another SQL query. Depending on the query a
 ### 🎓 Learning Outcome
 
 Improved my understanding of SQL subqueries and their role in retrieving and filtering data.
-
-**Key Takeaway:** Subqueries allow one SQL query to use the results of another query.
 
 ---
 
@@ -734,8 +708,6 @@ Improved my understanding of SQL subqueries and their role in retrieving and fil
 ### 🎓 Learning Outcome
 
 Strengthened my understanding of CROSS JOIN and Cartesian products.
-
-**Key Takeaway:** If one table contains m rows and another contains n rows, CROSS JOIN produces m × n combinations before filtering or limiting.
 
 ---
 
@@ -831,6 +803,7 @@ Improved my understanding of classifying customer complaints according to the is
 | Day 96 | Sub-query Which Executes Only Once | SQL Challenge | Scalar Subquery |
 | Day 97 | Matching Subquery Result with a Column | SQL Challenge | IN Operator |
 | Day 98 | Reference Columns from Outer Query | SQL Challenge | Correlated Subquery |
+| Day 99 | Maximum Nesting of Subqueries | SQL Challenge | Nested Subqueries |
 
 ---
 
@@ -901,11 +874,11 @@ Improved my understanding of classifying customer complaints according to the is
 - ✅ Day 96
 - ✅ Day 97
 - ✅ Day 98
+- ✅ Day 99
 
 ### ⏳ Remaining Days
 
-- ⏳ Day 99
-- 🏆 Day 100 — Final Goal
+- 🏆 Day 100 — Final Challenge
 
 ---
 
@@ -913,17 +886,17 @@ Improved my understanding of classifying customer complaints according to the is
 
 | Category | Details |
 |---|---|
-| 📅 Days Completed | **98 / 100** |
-| 💻 Challenges Completed | **98** |
+| 📅 Days Completed | **99 / 100** |
+| 💻 Challenges Completed | **99** |
 | 🗄️ Language | **SQL** |
 | 🏆 Practice Platforms | **HackerRank, CodeChef, SQL Challenges** |
 | 🧠 SQL Dialect | **MySQL** |
-| 📈 Progress | **98% Complete** 🚀 |
-| 🔥 Challenge Streak | **98 Days Completed** |
-| ⏳ Days Remaining | **2 Days** |
+| 📈 Progress | **99% Complete** 🚀 |
+| 🔥 Challenge Streak | **99 Days Completed** |
+| ⏳ Days Remaining | **1 Day** |
 | 📊 Main Focus | **SQL, Databases, Data Analysis, and Problem Solving** |
-| 📋 Latest Challenge | **Day 98 – Reference Columns from Outer Query** |
-| 🔍 Latest Focus | **Correlated Subqueries** |
+| 📋 Latest Challenge | **Day 99 – Maximum Nesting of Subqueries** |
+| 🔍 Latest Focus | **Nested Subqueries** |
 
 ---
 
@@ -974,27 +947,23 @@ Throughout this journey, I am practicing:
 
 ---
 
-## 🌟 Future Learning Goals
+## 🌟 Final Challenge – Day 100
 
-The remaining two days provide opportunities to practice additional SQL concepts and reinforce existing knowledge.
+Only one day remains to complete this 100 Days of SQL Challenge!
 
-Potential areas for further practice include:
+The final day represents the completion of a consistent learning journey filled with new concepts, challenging problems, practical SQL queries, and valuable learning experiences.
 
-- 🔹 Advanced SQL Queries
-- 🔹 Advanced Correlated Subqueries
-- 🔹 Advanced JOIN Operations
-- 🔹 Complex Filtering
-- 🔹 Advanced Aggregate Functions
-- 🔹 CASE Statements
-- 🔹 Advanced GROUP BY
-- 🔹 String and Date Functions
-- 🔹 Window Functions
-- 🔹 Recursive Queries
-- 🔹 Complex Multi-Table Queries
-- 🔹 SQL Query Optimization
-- 🔹 Database Design Fundamentals
-- 🔹 Real-World Data Analysis
-- 🔹 SQL Interview Questions
+### 🎯 Final Milestone
+
+- ✅ 99 Days Successfully Completed
+- 🔥 99 SQL Challenges Practiced
+- 📚 Multiple SQL Concepts Explored
+- 💻 Three Practice Platforms
+- 🧠 Improved Problem-Solving Skills
+- ⏳ One Final Challenge Remaining
+- 🏆 Target: 100 Days of SQL
+
+**One more challenge. One final milestone. One step closer to the goal!** 🚀
 
 ---
 
@@ -1038,7 +1007,7 @@ Let's learn, build, and grow together! 🌱
 
 ## 🔖 Hashtags
 
-#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #INOperator #ExistsOperator #ScalarSubquery #CorrelatedSubquery #NestedQueries #CaseStatement #StringFunctions #RegularExpressions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
+#100DaysOfSQL #100DaysOfCode #SQL #SQLChallenge #SQLProgramming #MySQL #HackerRank #CodeChef #Database #DatabaseManagement #CodingChallenge #LearningInPublic #GitHub #CodingJourney #Developer #ProblemSolving #DataAnalysis #DataAnalytics #SQLQueries #SQLPractice #AggregateFunctions #GroupBy #WhereClause #OrderBy #Sorting #NullValues #NullHandling #ComparisonOperators #Joins #InnerJoin #LeftJoin #RightJoin #FullJoin #FullOuterJoin #CrossJoin #CartesianProduct #SelfJoin #Subqueries #INOperator #ExistsOperator #ScalarSubquery #CorrelatedSubquery #NestedQueries #CaseStatement #StringFunctions #PatternMatching #MathematicalFunctions #Statistics #GeographicData #RelationalData #SymmetricPairs #LeaderboardAnalysis #MultiTableQueries #WindowFunctions #SQLPivot #CTE #RecursiveCTE #DateAnalysis #PatternGeneration #SelectStatement #DataRetrieval #SQLDebugging #QueryDebugging #SQLLearning #DailyCoding #DatabaseSchema #UserComplaints #ComplaintCategory #PoorNavigation #QueryOutput #TableRelationships #JoinConditions #SQLQueryRearrangement #HappyHaven #DatabaseCaseStudy
 
 ---
 
@@ -1048,12 +1017,12 @@ Let's learn, build, and grow together! 🌱
 
 ### 🎯 Goal: Complete 100 Days of SQL
 
-**98 Days Completed ✅ | 2 Days Remaining ⏳ | 100 Days Goal 🎯**
+**99 Days Completed ✅ | 1 Day Remaining ⏳ | 100 Days Goal 🎯**
 
 <p align="center">
   🗄️ 💻 📊 🔍 🔢 🔤 🔗 🔄 🧠 📈 💰 👨‍💼 🏢 📰 🏆 📅 🪟 ⭐ 🧩 🔁 📋 ⚖️ ❌ 🐞 🧮 🌐 🚀
 </p>
 
 <p align="center">
-  <strong>🔥 98 Days of Consistent SQL Practice — Just 2 More Days to Go! 🔥</strong>
+  <strong>🔥 99 Days of Consistent SQL Practice — Just 1 More Day to Go! 🔥</strong>
 </p>
